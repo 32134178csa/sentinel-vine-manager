@@ -1,0 +1,34 @@
+{
+  "trazabilidad-sanitaria": {
+    "filename": "trazabilidad-sanitaria",
+    "image": "/blog-images/mapping_emlid_cropped.png",
+    "author": "Por el Equipo de Sentinel",
+    "title": "La Traza Sanitaria: Lo Que Piden las Bodegas de Alto Nivel y Cómo Entregarlo con Sentinel",
+    "content": "Las bodegas de prestigio exigen transparencia sobre el estado sanitario de las uvas que compran. Sentinel permite a los productores vitícolas ofrecer informes verificables, cepa por cepa, directamente desde el viñedo.",
+    "url": "/blog/trazabilidad-sanitaria"
+  },
+  "replantar-con-inteligencia": {
+    "filename": "replantar-con-inteligencia",
+    "image": "/blog-images/complicated-block.png",
+    "author": "Por el Equipo de Sentinel",
+    "title": "Replantar con Inteligencia: Cómo Sentinel Ayuda a Evitar Errores Costosos en el Viñedo",
+    "content": "Muchos viticultores replantan demasiado pronto o en zonas equivocadas. Sentinel permite decisiones precisas gracias a un historial visual de producción, enfermedades y tratamientos a nivel de cepa.",
+    "url": "/blog/replantar-con-inteligencia"
+  },
+  "reviviendo-valle-uco": {
+    "filename": "reviviendo-valle-uco",
+    "image": "/blog-images/andes_thumbnail.png",
+    "author": "Por el Equipo de Sentinel",
+    "title": "Reviviendo Viñas Antiguas en el Valle de Uco: Cómo Sentinel Ayuda a los Productores Argentinos",
+    "content": "Sentinel ayuda a productores del Valle de Uco a mapear enfermedades locales, optimizar el riego por altitud y revivir viñedos antiguos con precisión centimétrica. Algunos de estos productores venden uvas a Catena.",
+    "url": "/blog/reviviendo-valle-uco"
+  },
+  "flavescencia-dorada": {
+    "filename": "flavescencia-dorada",
+    "image": "/blog-images/historique_sanitaire.png",
+    "author": "Por el Equipo de Sentinel",
+    "title": "Cómo Combatir la Flavescencia Dorada con Cartografía: Un Enfoque Proactivo Cepa por Cepa",
+    "content": "La flavescencia dorada es una amenaza para los viñedos europeos. Con Sentinel, los productores pueden rastrear su progresión, reducir los arranques innecesarios y demostrar una gestión proactiva ante las autoridades.",
+    "url": "/blog/flavescencia-dorada"
+  }
+}

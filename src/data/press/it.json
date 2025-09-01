@@ -1,0 +1,44 @@
+{
+  "sentinel-in-italia": {
+    "filename": "sentinel-in-italia",
+    "author": "Il Blog di Sentinel Vine Manager",
+    "image": "/blog-images/sentinel-italia.png",
+    "title": "Sentinel in Italia? Sì!",
+    "content": "Sentinel è presente in Italia! Operiamo con successo nei vigneti italiani, aiutando i produttori a monitorare le loro viti vite per vite grazie alla nostra tecnologia avanzata. Da diversi anni lavoriamo a fianco delle aziende vinicole italiane per migliorare la gestione dei vigneti, ottimizzare le rese e affrontare le sfide del cambiamento climatico.",
+    "url": "/blog/sentinel-in-italia"
+  },
+  "what-are-these-romanians-even-doing": {
+    "filename": "costa-stanno-facendo-questi-romeni",
+    "author": "Il Blog di Sentinel Vine Manager",
+    "image": "/blog-images/romeni.png",
+    "title": "Cosa Stanno Facendo Questi Romeni? Una Guida (Umoristica) al Monitoraggio della Manodopera Agricola",
+    "content": "Ogni vignaiolo ci è passato: assumi una squadra di lavoratori stagionali e ti ritrovi a chiederti — stanno davvero potando ogni vite? O stanno solo prendendo il sole? Con Sentinel puoi smettere di indovinare. Grazie alla nostra mappatura vite per vite e al tracciamento delle attività in campo, puoi vedere esattamente dove e cosa sta succedendo. Che si tratti di potatura, irrigazione o roguing, ora puoi auditare ogni operazione senza inseguire nessuno tra i filari. Basta inviare un supervisore armato di Sentinel e ottenere un report preciso delle attività svolte. Una gestione più serena (e meno ansiosa) del lavoro agricolo è finalmente possibile — senza bisogno di binocoli!",
+    "url": "/blog/costa-stanno-facendo-questi-romeni"
+  },
+  "sentinel-cartografia-vigneti": {
+    "filename": "sentinel-cartografia-vigneti",
+    "image": "/img/750_thumbnail.jpg",
+    "author": "Samantha Cole Johnson",
+    "title": "Una Nuova Tecnologia Rivoluzionaria per la Cartografia dei Vigneti",
+    "content": "Sentinel utilizza la tecnologia GNSS e l’analisi cloud per mappare ogni singolo ceppo. Scopri come questa soluzione sta trasformando la gestione delle vigne e aiutando a prolungare la durata di vita del vigneto.",
+    "url": "/blog/sentinel-cartographie-vigne"
+  },
+  "monitoring-flavescenza-dorata": {
+    "filename": "monitoraggio-della-flavescenza-dorata",
+    "author": "Il Blog di Sentinel Vine Manager",
+    "id": "10",
+    "image": "/blog-images/flavescenza-dorata.png",
+    "title": "Come il Monitoraggio della Flavescenza Dorata Salva i Vigneti Italiani",
+    "content": "La flavescenza dorata sta devastando i vigneti italiani. Con il monitoraggio precoce e il tracciamento storico offerto da Sentinel Vine Manager, i viticoltori possono prevenire la diffusione della malattia e salvare il raccolto, trasformando la gestione del vigneto da reattiva a proattiva.",
+    "url": "/blog/monitoraggio-della-flavescenza-dorata"
+  },
+  "vine-by-vine-mapping-precision": {
+    "filename": "mappatura-vite-per-vite",
+    "author": "Il Blog di Sentinel Vine Manager",
+    "id": "11",
+    "image": "/blog-images/mapping_emlid_cropped.png",
+    "title": "Mappatura Vite per Vite: La Nuova Frontiera della Viticoltura di Precisione",
+    "content": "La mappatura tradizionale a livello di appezzamento non basta più. Sentinel offre una mappatura dettagliata vite per vite, consentendo decisioni mirate per la potatura, il raccolto e la gestione delle malattie, portando la viticoltura di precisione italiana a un livello superiore.",
+    "url": "/blog/mappatura-vite-per-vite"
+  }
+}

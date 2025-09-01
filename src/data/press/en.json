@@ -1,0 +1,65 @@
+{
+  "ndvi-vs-sentinel-vine-mapping": {
+    "filename": "drone-vs-sentinel-vine-mapping",
+    "author": "Sentinel Blog",
+    "id": "6",
+    "image": "/blog-images/drone-vs-sentinel.png",
+    "title": "Drone Mapping for Vineyards: The Good, the Bad, and the Ugly",
+    "content": "NDVI drone mapping may generate colorful heatmaps, but it doesn’t give vineyard managers the actionable, historical insight needed to track disease or manage vines long term. Sentinel Vine Manager captures real vine-level data using smartphones and GNSS, preserving critical information year after year and transforming how vineyards make decisions.",
+    "url": "/blog/drone-vs-sentinel-vine-mapping"
+  },
+  "xchateau-podcast": {
+    "filename": null,
+    "author": "Robert Vernick & Peter Yeung",
+    "id": "0",
+    "image": "/img/xchateau.jpg",
+    "title": "A Medical Record for Each Vine w/ Shawn DeMartino, Sentinel",
+    "content": "After struggling with tracking vineyard data firsthand, Shawn DeMartino, CEO and Founder of Sentinel, decided to create a solution with his partner. Enabling vine by vine mapping and data collection that could stand the test of time enables vineyard managers to increase the lifespan of a vineyard, manage viruses, and effectively create a “medical record” for each individual vine.  ",
+    "url": "https://shows.acast.com/xchateau-wine-podcast-1/episodes/a-medical-record-for-each-vine-w-shawn-demartino-sentinel"
+  },
+  "inside-winemaking-podcast": {
+    "filename": null,
+    "author": "Jim Duane",
+    "id": "1",
+    "image": "/img/inside_winemaking.png",
+    "title": "Exclusive Interview - Sentinel Founder Shawn DeMartino talks vineyard tech on the Inside Winemaking Podcast",
+    "content": "In this episode, winemaker Shawn DeMartino shares his journey from Argentina to becoming a winemaker in Napa Valley. He discusses his experiences working with renowned mentors and the significance of hands-on learning in winemaking. Shawn also highlights his innovative work building the Sentinel Vine Manager app, a program leveraging high fidelity geospatial technology to monitor vineyard health and production. The episode explores the balance between tradition and innovation in winemaking and offers tips for managing vineyards of all sizes.",
+    "url": "https://www.insidewinemaking.com/181-shawn-demartino-sentinel-vine-manager"
+  },
+  "sentinels-technological-revolution-in-vineyards-worldwide": {
+    "filename": null,
+    "author": "James Bayley",
+    "id": "2",
+    "image": "/img/harpers.png",
+    "title": "Harper's Wine and Spirits - Sentinel’s technological revolution in vineyards worldwide",
+    "content": "Sentinel Vine Manager is changing the way vineyards operate across the globe. The innovative tool, developed by Shawn DeMartino and Christian Sidak, is revolutionising vineyard management with precise, vine-by-vine data collection. This new approach is transforming vineyard operations, offering a more efficient and effective way to manage and maintain vineyards.",
+    "url": "https://harpers.co.uk/news/fullstory.php/aid/33132/Tech:_Sentinel_92s_technological_revolution_in_vineyards_worldwide.html"
+  },
+  "a-game-changing-new-vineyard-management-technology": {
+    "filename": null,
+    "author": "Samantha Cole-Johnson",
+    "id": "3",
+    "image": "/img/750_thumbnail.jpg",
+    "title": "SevenFifty Daily - A Game-Changing New Vineyard Management Technology",
+    "content": "A smartphone app called Sentinel Vine Manager generates revolutionary vineyard maps that track individual vine histories using Global Navigation Satellite Systems and cloud analytics.",
+    "url": "https://daily.sevenfifty.com/a-game-changing-new-vineyard-management-technology/"
+  },
+  "the-red-blotch-dilemma": {
+    "filename": "the-red-blotch-dilemma",
+    "author": "Sentinel Blog",
+    "id": "4",
+    "image": "/blog-images/red-blotch-map.png",
+    "title": "Redefining the Red Blotch Challenge: Navigating the Reality of Vineyard Management in Napa",
+    "content": "Napa Valley, renowned for its picturesque vineyards and world-class wines, is facing a challenge that is reshaping the landscape of viticulture. The Red Blotch problem has become a prevalent issue, and while many are diligently working to address it, there are misconceptions about the nature of the problem and how to effectively manage it.",
+    "url": "/blog/the-red-blotch-dilemma"
+  },
+  "why-excel-is-an-expensive-way-to-map-virus": {
+    "filename": "why-excel-is-an-expensive-way-to-map-virus",
+    "author": "Sentinel Blog",
+    "id": "5",
+    "image": "/blog-images/analytics_cropped.png",
+    "title": "Why Spreadsheets are the Most Expensive Way to Map Virus",
+    "content": "In the ever-evolving landscape of viticulture, the Red Blotch virus has presented a formidable challenge to Napa Valley's vineyards. The quest for an elusive zero-virus scenario is proving financially unattainable, with the costs of testing and replanting reaching unprecedented heights. Decision-makers are grappling with the intricacies of managing virus outbreaks, often resorting to traditional tools such as hand-drawn maps and Excel spreadsheets. However, what they may not realize is that these seemingly cost-effective methods are, in fact, the most expensive way to map a virus. In this exploration, we delve into the overlooked labor costs associated with these manual approaches, shedding light on why Sentinel's streamlined solution emerges as the more financially sustainable alternative for Napa's vineyards.",
+    "url": "/blog/why-excel-is-an-expensive-way-to-map-virus"
+  }
+}
