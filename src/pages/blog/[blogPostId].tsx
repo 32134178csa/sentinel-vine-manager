@@ -52,10 +52,12 @@ export default function BlogPostPage({ content, blogPostId, frontmatter }: BlogP
         <meta name="twitter:description" content={frontmatter.description || ''} />
       </Head>
       <AppPage>
-        {<div className="markdown-container">
-          <ReactMarkdown>{content}</ReactMarkdown>
-          <Spacer height={100}/>
-        </div>}
+        <div className="container">
+          <div className="markdown-container">
+            <ReactMarkdown>{content}</ReactMarkdown>
+            <Spacer height={100}/>
+          </div>
+        </div>
       </AppPage>
     </>
   )

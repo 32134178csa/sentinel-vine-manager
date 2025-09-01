@@ -28,6 +28,16 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
   const router = useRouter();
   const imageURL = `/img/phone.png`;
   const MAX_BLOG_INTRO_LENGTH = 200;
+  
+  const [isMobile, setIsMobile] = React.useState(false);
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 900);
+    };
+    handleResize(); // set on mount
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <Container>
@@ -39,13 +49,15 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
             <h3 className="company-title">{t('companySlogan')}</h3>
           </div>
 
-          <Row className="mobile justify-content-center align-items-center">
-            <ImageFadeIn
-              src={imageURL}
-              altText="sentinel-iphone-mobile"
-              imageClassName="mobile-content-picture"
-            />
-          </Row>
+          {isMobile && (
+            <Row className="justify-content-center align-items-center">
+              <ImageFadeIn
+                src={imageURL}
+                altText="sentinel-iphone-mobile"
+                imageClassName="mobile-content-picture"
+              />
+            </Row>
+          )}
 
           <Row className="justify-content-center align-items-center">
             <Col md="auto">
@@ -57,17 +69,18 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
           </Row>
 
 
-          <Row className="justify-content-center align-items-center">
+          <Row className="justify-content-center align-items-center flex-wrap">
             {Object.entries(splashTitles).map(([id, title]) => (
-              <div
-                key={id}
-                className="explore-button darken"
-                onClick={() => {
-                  router.push(`/${id}`);
-                }}
-              >
-                {t(title)}
-              </div>
+              <Col key={id} xs="auto" className="d-flex justify-content-center">
+                <div
+                  className="explore-button darken"
+                  onClick={() => {
+                    router.push(`/${id}`);
+                  }}
+                >
+                  {t(title)}
+                </div>
+              </Col>
             ))}
           </Row>
           

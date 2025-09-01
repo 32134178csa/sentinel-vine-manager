@@ -269,6 +269,7 @@ align-items: center;
 text-decoration: none;
 font-size: 0.5rem;
 z-index: 1001;
+opacity: 0.8;
 }
 
 .gdpr-banner {
@@ -460,7 +461,7 @@ opacity: 1;
 
 .markdown-container {
     max-width: 1200px;
-    margin: 10 auto;
+    margin: 10px auto;
     color: white;
     padding: 0 7vw;
 }

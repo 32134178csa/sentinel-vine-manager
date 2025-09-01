@@ -56,9 +56,8 @@ export default function Header() {
     ]
 
     return (
-        <div>
-          <Nav className="header">
-            <Container>
+          <Nav className="header w-100 container-fluid">
+            <Container fluid>
               <Row className="flex-nowrap">
 
                 <Col>
@@ -85,6 +84,5 @@ export default function Header() {
               {open && mobileMenuItems.map((i, idx) => <Row key={idx} className="mobile-nav-row">{i}</Row>)}
             </Container>
           </Nav>
-        </div>
     );
 };
