@@ -57,7 +57,7 @@ export default function BlogPostPage({ content, blogPostId, frontmatter }: BlogP
             <ReactMarkdown>{content}</ReactMarkdown>
             <Spacer height={100}/>
           </div>
-        </div>
+        </div> 
       </AppPage>
     </>
   )
