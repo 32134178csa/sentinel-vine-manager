@@ -1,9 +1,7 @@
-// components/LandingPage.tsx
-
 import React from 'react';
-import { Row, Col, Container, Image } from 'react-bootstrap'
+import { Row, Col, Container } from 'react-bootstrap'
+import Image from 'next/image'
 import Spacer from './Spacer'
-import ImageFadeIn from './ImageFadeIn'
 import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router';
 import Link from 'next/link';
@@ -26,7 +24,7 @@ const splashTitles: Record<string, string> = {
 export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
   const { t } = useTranslation('common')
   const router = useRouter();
-  const imageURL = `/img/phone.png`;
+  const imageURL = `/img/phone.webp`;
   const MAX_BLOG_INTRO_LENGTH = 200;
   
   const [isMobile, setIsMobile] = React.useState(false);
@@ -38,6 +36,24 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  const splashButtons = React.useMemo(() => (
+    Object.entries(splashTitles).map(([id, title]) => (
+      <Col key={id} xs="auto" className="d-flex justify-content-center">
+        <div
+          className="explore-button darken"
+          onClick={() => router.push(`/${id}`)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') router.push(`/${id}`);
+          }}
+        >
+          {t(title)}
+        </div>
+      </Col>
+    ))
+  ), [t]);
 
   return (
     <Container>
@@ -51,10 +67,13 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
 
           {isMobile && (
             <Row className="justify-content-center align-items-center">
-              <ImageFadeIn
+              <Image
                 src={imageURL}
-                altText="sentinel-iphone-mobile"
-                imageClassName="mobile-content-picture"
+                alt="sentinel-iphone-mobile"
+                className="mobile-content-picture"
+                width={400}
+                height={800}
+                priority={false}
               />
             </Row>
           )}
@@ -70,18 +89,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
 
 
           <Row className="justify-content-center align-items-center flex-wrap">
-            {Object.entries(splashTitles).map(([id, title]) => (
-              <Col key={id} xs="auto" className="d-flex justify-content-center">
-                <div
-                  className="explore-button darken"
-                  onClick={() => {
-                    router.push(`/${id}`);
-                  }}
-                >
-                  {t(title)}
-                </div>
-              </Col>
-            ))}
+            {splashButtons}
           </Row>
           
           <Row className="latest-blog-container">
@@ -92,7 +100,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
               </Col>
             </Row>
             <Col md="auto">
-              <Image src={recommendedBlogPost.image} alt="Blog" className="latest-blog-image" />
+              <Image src={recommendedBlogPost.image} alt="Blog" className="latest-blog-image" width={600} height={400} />
             </Col>
             <Col className="company-text">
               <h4>{recommendedBlogPost.title}</h4>
@@ -106,10 +114,13 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
         </Col>
 
         <Col>
-          <ImageFadeIn
+          <Image
             src={imageURL}
-            altText="sentinel-iphone"
-            imageClassName="phone-image"
+            alt="sentinel-iphone"
+            className="phone-image"
+            width={600}
+            height={1200}
+            loading="lazy"
           />
         </Col>
       </Row>

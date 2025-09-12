@@ -3,7 +3,7 @@
     "filename": "drone-vs-sentinel-vine-mapping",
     "author": "Sentinel Blog",
     "id": "6",
-    "image": "/blog-images/drone-vs-sentinel.png",
+    "image": "/blog-images/drone-vs-sentinel.webp",
     "title": "Drone Mapping for Vineyards: The Good, the Bad, and the Ugly",
     "content": "NDVI drone mapping may generate colorful heatmaps, but it doesn’t give vineyard managers the actionable, historical insight needed to track disease or manage vines long term. Sentinel Vine Manager captures real vine-level data using smartphones and GNSS, preserving critical information year after year and transforming how vineyards make decisions.",
     "url": "/blog/drone-vs-sentinel-vine-mapping"
