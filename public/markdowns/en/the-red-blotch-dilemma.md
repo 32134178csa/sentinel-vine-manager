@@ -21,7 +21,7 @@ In a mature Napa vineyard, it's not uncommon to find about 5% of vines affected 
 
 The spread of Red Blotch across the valley, from Napa to Yountville, is facilitated by insect vectors, making it difficult to contain the virus between properties. It's not uncommon for the average property is going to have at least a few blocks that look like this:
 
-![Red Blotch Zones](/blog-images/red-blotch-map.png)
+![Red Blotch Zones](/blog-images/red-blotch-map.webp)
 
 ## Shifting Perspectives on Replanting
 
@@ -31,7 +31,7 @@ Traditionally, when a virus spread to approximately 15% of a block, the common p
 
 In response to the financial challenges of replanting, vineyard owners are intensifying testing and roguing, a practice of removing infected vines. However, this approach is transforming the appearance of vineyards. The consequence is that the average block will have a higher number of young vines interplanted alongside older ones. The average block is going to look something like this, with more young vines, misses, rootstocks dispersed among mature plants:
 
-![Young Vine Zones](/blog-images/heterogenous-zones.png)
+![Young Vine Zones](/blog-images/heterogenous-zones.webp)
 
 ## Challenges of Managing Young Vines
 

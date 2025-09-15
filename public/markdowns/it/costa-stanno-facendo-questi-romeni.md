@@ -3,7 +3,7 @@ title: "Cosa Stanno Facendo Questi Romeni? Una Guida (Umoristica) al Monitoraggi
 description: "La gestione della manodopera stagionale in viticoltura presenta sfide significative. Scopri come Sentinel aiuta i produttori a superare le barriere linguistiche e migliorare il controllo della qualità."
 author: "Sentinel Blog"
 publishDate: "2025-06-07"
-image: "/blog-images/romeni.png"
+image: "/blog-images/romeni.webp"
 slug: "monitoraggio-manodopera-agricola"
 keywords:
   - viticoltura di precisione
@@ -27,7 +27,7 @@ Quando si assumono squadre di lavoratori stagionali, non è raro trovarsi di fro
 
 Senza un sistema di monitoraggio preciso, l'unico modo per sapere con certezza se un vigneto è stato gestito correttamente è camminare personalmente tra i filari — un compito impegnativo e insostenibile per appezzamenti di grandi dimensioni.
 
-![vigneto con lavoratori stagionali](/blog-images/vineyard_workers.jpg)
+![vigneto con lavoratori stagionali](/blog-images/vineyard_workers.webp)
 
 > Squadre stagionali al lavoro tra i filari 🍇 — con Sentinel, anche appezzamenti remoti o gestiti da team multilingue possono essere monitorati facilmente, dando al viticoltore piena visibilità sul lavoro svolto. 👀✅
 
@@ -41,7 +41,7 @@ Con la nostra tecnologia di mappatura e analisi vite per vite, puoi monitorare e
 
 Tuo figlio, un tirocinante o un viticoltore possono facilmente etichettare le viti sospette e controllare se il lavoro è stato davvero completato: **il roguing è stato fatto ovunque?** Le viti malate sono state davvero rimosse? Basta camminare tra le file con il telefono e un ricevitore GNSS da 500 g: la vite appare automaticamente sullo schermo, permettendo di registrare lo stato della pianta e **creare un audit completo direttamente sul campo.**
 
-![immagine di prova fotografica con Sentinel](/blog-images/in_field_audit.jpg)
+![immagine di prova fotografica con Sentinel](/blog-images/in_field_audit.webp)
 
 > 🌿 Avvicinati alla vite: la scheda 📋 compare subito sul tuo telefono 📱!
 
@@ -63,7 +63,7 @@ Sentinel supporta più lingue, tra cui:
 
 Questo significa che i lavoratori possono registrare note e completare ordini di lavoro nella loro lingua madre, mentre i viticoltori e i proprietari possono visualizzare le informazioni nella lingua preferita, eliminando ogni barriera comunicativa.
 
-![Inserire immagine dell'interfaccia multilingue](/blog-images/multilingue.png)
+![Inserire immagine dell'interfaccia multilingue](/blog-images/multilingue.webp)
 
 > Voilà! 🌱 Possiamo vedere la stessa vite: a sinistra in italiano 🇮🇹, a destra in romeno 🇷🇴 — la collaborazione multilingue diventa semplice! 🤝
 

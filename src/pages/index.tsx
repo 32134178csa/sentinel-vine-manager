@@ -23,11 +23,13 @@ const Home: NextPage<{ firstBlogPost: BlogPost }> = ({ firstBlogPost }) => {
   const { t } = useTranslation('common');
   const pageTitle = t('pageTitle');
   const metaKeywords = t('metaKeywords');
+  const metaDescription = t('metaDescription');
 
   return (
     <>
       <Head>
         <title>{pageTitle}</title>
+        <meta name="description" content={metaDescription} />
         <meta name="keywords" content={metaKeywords} />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>

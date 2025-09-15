@@ -25,7 +25,7 @@ Face à la menace du virus, les propriétaires de vignobles ont principalement r
 
 Les méthodes actuelles font appel à des cartes dessinées à la main, des tableurs Excel, et des logiciels d’arpentage comme ArcGIS. Bien que ces solutions aient un coût initial faible, **les décideurs négligent souvent le coût en main-d'œuvre nécessaire pour collecter et maintenir ces données**. Les équipes viticoles consacrent un temps considérable à la mise à jour de feuilles Excel, ce qui représente un coût de main-d'œuvre important, souvent sous-estimé. Maintenant, un employé salarié coûte facilement au moins 20 000 par an en salaires, taxes et assurances.
 
-![tableurs Excel du virus](/blog-images/french_excel_virus_map.png)
+![tableurs Excel du virus](/blog-images/french_excel_virus_map.webp)
 
 ## Malheureusement, c’est Extrêmement Répandu
 
@@ -41,6 +41,6 @@ Avec Sentinel, la seule main-d'œuvre requise est le repérage, et au lieu d’u
 
 Une fois les données collectées, tout est immédiatement disponible dans notre plateforme d’analyse web. Si vous souhaitez voir le nombre de porte-greffes par rang, obtenir une liste de vignes étiquetées Red Blotch, ou savoir quel porte-greffe est planté à quel endroit, vous pouvez obtenir ces informations en quelques secondes via Sentinel.
 
-![Cartographie digitale du virus](/blog-images/historique_sanitaire.png)
+![Cartographie digitale du virus](/blog-images/historique_sanitaire.webp)
 
 Ainsi, non seulement vous accélérez le processus de repérage (appuyer sur un bouton dans une application est bien plus rapide que de noter sur une feuille), mais vous **éliminez tous les coûts inutiles de saisie de données, de gestion et de visualisation**. De plus, votre visibilité sur l’état du vignoble est multipliée par 10. Il n'est plus nécessaire de consacrer 30 % du temps d’un viticulteur salarié ni d’engager un consultant ArcGIS pour générer une carte des virus ou un diagramme circulaire des porte-greffes, manques et vignes productives.

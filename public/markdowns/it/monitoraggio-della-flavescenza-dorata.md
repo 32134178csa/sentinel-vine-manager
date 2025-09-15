@@ -2,7 +2,7 @@
 title: "Come il Monitoraggio della Flavescenza Dorata Salva i Vigneti Italiani"
 publishDate: "2025-05-17"
 author: "Sentinel Team"
-image: "/img/flavescenza-dorata-monitoraggio.jpg" # [Prompt: A close-up photo of a grapevine infected with flavescenza dorata, showing yellowing leaves]
+image: "/img/flavescenza-dorata-monitoraggio.webp" # [Prompt: A close-up photo of a grapevine infected with flavescenza dorata, showing yellowing leaves]
 keywords: 
  - "Flavescenza Dorata"
  - "Monitoraggio Vigneti"
@@ -31,7 +31,7 @@ Sentinel Vine Manager cambia radicalmente l'approccio alla gestione della malatt
 - **Documentare i casi sospetti con fotografie geolocalizzate**.
 - **Tracciare l'evoluzione della malattia nel tempo**, individuando aree a rischio prima che si diffonda.
 
-![flavescenza dorata](/blog-images/flavescenza-dorata-cartographia.png)
+![flavescenza dorata](/blog-images/flavescenza-dorata-cartographia.webp)
 
 ## Benefici Tangibili per i Viticoltori
 
@@ -48,7 +48,7 @@ Questi strumenti permettono decisioni informate e tempestive, riducendo drastica
 
 Uno dei nostri clienti in Piemonte ha adottato Sentinel per monitorare i suoi 20 ettari di vigneto. Dopo il primo anno di utilizzo, ha ridotto i casi di flavescenza dorata del 40% rispetto all’anno precedente e ha dimezzato i costi di monitoraggio.
 
-![vignetto italiano](/blog-images/vignetto-italiano.png)
+![vignetto italiano](/blog-images/vignetto-italiano.webp)
 
 ## Conclusione: Salvare i Vigneti, Preservare il Territorio
 

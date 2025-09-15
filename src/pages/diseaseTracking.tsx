@@ -39,7 +39,7 @@ const DiseaseTrackingSplashPage: NextPage = () => {
             id={id}
             title={t(`CP${id}Title`)}
             body={t(`CP${id}Body`)}
-            imageUrl={`/img/${id}.png`}
+            imageUrl={`/img/${id}.webp`}
             cta={t(`CP${id}CTA`)}
             exploreMoreFeatures={t("exploreMoreFeatures")}
             splashTitles={translatedSplashTitles}

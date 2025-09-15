@@ -17,7 +17,7 @@ export default function About() {
             <Row className="mt-4 justify-content-center">
                 <Col md="auto">
                     {/* First Picture and Paragraph */}
-                    <ImageFadeIn src="/img/sdemartino.png" altText={"sgdemartino"} imageClassName={"about-picture"}/>
+                    <ImageFadeIn src="/img/sdemartino.webp" altText={"sgdemartino"} imageClassName={"about-picture"}/>
                 </Col>
                 <Col xs={12} md={6} className="mt-4 justify-content-center">
                     <h4 className="company-text">{t('sgdHeading')}</h4>
@@ -27,7 +27,7 @@ export default function About() {
             <Row className="mt-4 justify-content-center">
                 <Col md="auto">
                     {/* Second Picture and Paragraph */}
-                    <ImageFadeIn src="/img/csidak.jpg" altText={"csidak"} imageClassName={"about-picture"}/>
+                    <ImageFadeIn src="/img/csidak.webp" altText={"csidak"} imageClassName={"about-picture"}/>
                 </Col>
                 <Col xs={12} md={6} className="mt-4 justify-content-center">
                     <h4 className="company-text">{t('cgsHeading')}</h4>

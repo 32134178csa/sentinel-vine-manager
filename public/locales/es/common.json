@@ -343,6 +343,7 @@
   "maturityMonitoringDescription": "Supervise la heterogeneidad de los viñedos y el rendimiento de las vides a lo largo del tiempo mediante la recopilación y el análisis de datos personalizables de Sentinel.",
   "maturityMonitoringKeywords": "seguimiento de la madurez, rendimiento de los viñedos, análisis de la heterogeneidad de la vid, Sentinel analytics",
   "maxClustersForThinning": "Introduzca el número máximo de racimos por cepa que desea entresacar:",
+  "metaDescription": "Sentinel Vine Manager permite a los viñedos cartografiar cada cepa con una precisión subcentimétrica y mantener un registro vivo permanente. A diferencia de las imágenes de drones, Sentinel le permite realizar un seguimiento de la salud de la vid, escribir datos directamente en cada vid y gestionar su viñedo vid a vid.",
   "metaKeywords": "Mapeo de vides, control de madurez, seguimiento de enfermedades, análisis de historial, órdenes de trabajo",
   "meters": "metros",
   "metric": "Métrica",

@@ -19,7 +19,7 @@ Une application mobile appelée Sentinelle génère des cartes de vignobles rév
 
 Sentinelle propose à ses utilisateurs une base de données efficace et holistique pour la cartographie du vignoble.
 
-![recepteur](/blog-images/recepteur.jpg)
+![recepteur](/blog-images/recepteur.webp)
 
 Chaque été, les stagiaires en vendanges parcourent les rangs du vignoble avec des planches, des stylos, des compteurs manuels et du ruban de marquage. Ils comptent les ceps, puis les grappes, pour estimer les rendements potentiels. Dans les domaines haut de gamme, où la perte de productivité a de grandes implications financières, ils signalent les ceps malades et marquent leur emplacement sur des cartes ponctuelles dessinées à la main. À la fin des vendanges, les cartes et les notes sont rassemblées dans un classeur et rangées dans un bureau... où elles prennent la poussière. Les données collectées sont désespérément sous-exploitées.
 

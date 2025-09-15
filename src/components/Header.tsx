@@ -41,7 +41,7 @@ export default function Header() {
       <NavItem key="login" as="a" href={`${APP_HOST}/login`} style={activeTab('/login')}>{t("userLogin")}</NavItem>,
       <div key="demo" className="justify-content-center align-items-center d-flex header-button demo-button darken" onClick={() => push('/contact')} style={activeTab('/contact')}><div>{t("bookADemo")}</div></div>,
       <a key="appstore" href="https://apps.apple.com/app/sentinel-vine-manager/id1608970406" target="_blank" rel="noreferrer"><Image alt="sentinel_appstore" className="header-button appstore-button darken" src={`/img/${locale}_appstore.svg`}/></a>,
-      <a key="instagram" href="https://www.instagram.com/sentinelvinemanager/" target="_blank" rel="noreferrer"><Image alt="sentinel_instagram_logo" className="header-button instagram-button darken" src="/img/instagram.png"/></a>,
+      <a key="instagram" href="https://www.instagram.com/sentinelvinemanager/" target="_blank" rel="noreferrer"><Image alt="sentinel_instagram_logo" className="header-button instagram-button darken" src="/img/instagram.webp"/></a>,
     ]
 
     const mobileMenuItems = [
@@ -62,7 +62,7 @@ export default function Header() {
 
                 <Col>
                   <NavLogo onClick={() => push('/')} className="flex-nowrap text-nowrap darken">
-                    <Image style={{height: "8vh", padding:"3px"}} src="/img/transparent-logo.png" alt="Sentinel Vine Manager Logo" />
+                    <Image style={{height: "8vh", padding:"3px"}} src="/img/transparent-logo.webp" alt="Sentinel Vine Manager Logo" />
                     <div className="nav-logo-text">{t("Sentinel")}</div>
                   </NavLogo>
                 </Col>

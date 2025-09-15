@@ -343,6 +343,7 @@
   "maturityMonitoringDescription": "Monitorizați eterogenitatea podgoriei și performanța viței de vie în timp, utilizând colectarea și analiza personalizabilă a datelor Sentinel.",
   "maturityMonitoringKeywords": "monitorizarea maturității, performanța viței de vie, analiza eterogenității viței de vie, analiza Sentinel",
   "maxClustersForThinning": "Introduceți numărul maxim de ciorchini pe viță de vie la care intenționați să subțiați:",
+  "metaDescription": "Sentinel Vine Manager permite podgoriilor să cartografieze fiecare viță de vie individuală cu o precizie subcentimetrică și să mențină o înregistrare vie permanentă. Spre deosebire de imaginile obținute cu drona, Sentinel vă permite să urmăriți starea de sănătate a viței de vie, să scrieți date direct pe fiecare viță de vie și să vă gestionați podgoria viță de vie cu viță de vie.",
   "metaKeywords": "Cartografierea viței de vie, monitorizarea maturității, urmărirea bolilor, analizarea istoricului, ordine de lucru",
   "meters": "metri",
   "metric": "Metric",

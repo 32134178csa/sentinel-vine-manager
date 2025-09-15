@@ -39,6 +39,6 @@ With Sentinel, the only labor involved is scouting, and instead of clipboards, t
 
 Once the data collected, everything is readily available within our web analytics platform. If you want to see a count of rootstocks by row, get a list of vines tagged with Red Blotch, see what rootstock is planted where, you can get this information off Sentinel in a few seconds.
 
-![Sentinel Analytics](/blog-images/analytics.png)
+![Sentinel Analytics](/blog-images/analytics.webp)
 
 So not only do you speed up the scouting process (tapping a button on an app is faster than writing on a clipboard), but you **eliminate all of the needless data entry, wrangling, and visualization costs**. Add to that, your visibility into what's going on in the vineyard has increased 10x. You no longer need to dedicate 30% of a salaried viticulturist's time or hire an ArcGIS consultant to generate a map of virus or a pie chart of rootstocks, misses and producing vines.

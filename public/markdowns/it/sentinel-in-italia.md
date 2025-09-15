@@ -2,7 +2,7 @@
 title: "Sentinel in Italia? Sì!"
 description: "Sentinel è presente in Italia! Scopri come stiamo aiutando i produttori vinicoli italiani a monitorare e ottimizzare i loro vigneti con una tecnologia avanzata, completamente supportata anche in italiano."
 author: "Sentinel Blog"
-image: "/blog-images/sentinel-italia.png"
+image: "/blog-images/sentinel-italia.webp"
 keywords:
  - vigneto
  - GNSS
@@ -33,7 +33,7 @@ Oltre alla viticoltura, Sentinel è anche utilizzabile per la mappatura precisa 
 
 La piattaforma Sentinel è completamente supportata in italiano e, dato che molti lavoratori stagionali provengono da paesi come la Romania, supportiamo anche lingue come il romeno per facilitare la gestione della forza lavoro.
 
-![Umbria Bella](/blog-images/umbria.png)
+![Umbria Bella](/blog-images/umbria.webp)
 > _La splendida campagna umbra!_
 
 ## Cosa interessa di più ai nostri clienti italiani
@@ -60,7 +60,7 @@ Per utilizzare Sentinel nel tuo vigneto italiano, hai bisogno di:
 
 Serve trovarsi a circa 50 km da una stazione [EUREF RTK](https://epncb.oma.be/_networkdata/stationmaps.php) (consulta la mappa delle stazioni disponibili). Fortunatamente, la rete EUREF copre gran parte dell'Italia:
 
-![Mappa Stazioni EUREF in Italia](/blog-images/gnss-italiano.png)
+![Mappa Stazioni EUREF in Italia](/blog-images/gnss-italiano.webp)
 > _La copertura RTK è ampiamente disponibile in tutta Italia_
 
 Se non ti trovi vicino a una stazione EUREF, è comunque possibile installare una stazione privata RTK sul tuo terreno o utilizzare una rete privata esistente. Tieni presente che questa opzione comporta costi aggiuntivi di installazione e gestione, ma consente di ottenere una copertura precisa anche in aree remote.

@@ -15,7 +15,7 @@ author: "Christian Sidak"
 
 Des maladies comme le **court-noué**, l’**esca**, ou encore la **flavescence dorée** ne frappent pas une fois — elles **évoluent dans le temps**, souvent de manière invisible au début. Pourtant, de nombreux domaines français continuent d’enregistrer les cas par bloc ou parcelle, sans véritable mémoire historique. C’est là que la **cartographie par cep**, année après année, devient un atout stratégique.
 
-![Photo d’un cep malade avec symptômes visibles](/blog-images/esca.png)
+![Photo d’un cep malade avec symptômes visibles](/blog-images/esca.webp)
 
 ---
 
@@ -39,7 +39,7 @@ La majorité des producteurs notent les cas de maladies dans un carnet, une feui
 
 Avec **Sentinelle**, chaque cep est géolocalisé et peut être marqué selon son statut sanitaire.
 
-![Carte Sentinelle montrant l’évolution de foyers](/blog-images/court-noue-et-lesca.png)
+![Carte Sentinelle montrant l’évolution de foyers](/blog-images/court-noue-et-lesca.webp)
 
 ---
 

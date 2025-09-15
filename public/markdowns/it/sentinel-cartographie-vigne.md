@@ -19,7 +19,7 @@ Un'app mobile chiamata Sentinel genera mappe di vigneti rivoluzionarie che tracc
 
 Sentinel offre ai suoi utenti un database efficiente e completo per la cartografia del vigneto.
 
-![recepteur](/blog-images/recepteur.jpg)
+![recepteur](/blog-images/recepteur.webp)
 
 Ogni estate, gli stagisti delle vendemmie percorrono i filari del vigneto con tavole, penne, contatori manuali e nastro segnaletico. Contano le viti, poi i grappoli, per stimare le rese potenziali. Nelle aziende vinicole di alta gamma, dove la perdita di produttività ha grandi implicazioni finanziarie, segnalano le viti malate e marcano la loro posizione su mappe puntuali disegnate a mano. Alla fine della vendemmia, le mappe e le note vengono raccolte in un raccoglitore e riposte in un ufficio... dove rimangono inutilizzate. I dati raccolti sono tristemente sottoutilizzati.
 

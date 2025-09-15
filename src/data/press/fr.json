@@ -1,7 +1,7 @@
 {
   "pourquoi-sentinel-change-tout": {
     "filename": "pourquoi-sentinel-change-tout",
-    "image": "/blog-images/mapping_emlid_cropped.png",
+    "image": "/blog-images/mapping_emlid_cropped.webp",
     "author": "Par l’Équipe Sentinelle",
     "title": "Pourquoi Cartographier le Court-noué et l’Esca par Cep Change Tout",
     "content": "Comment le suivi historique et la cartographie individuelle des ceps aident les vignerons français à combattre les maladies comme le court-noué, l’esca, et la flavescence dorée.",
@@ -9,7 +9,7 @@
   },
   "flavescence-doree": {
     "filename": "flavescence-doree",
-    "image": "/blog-images/historique_sanitaire.png",
+    "image": "/blog-images/historique_sanitaire.webp",
     "author": "Par l’Équipe Sentinelle",
     "title": "Combattre la Flavescence Dorée avec la Cartographie : Une Approche Proactive Cep par Cep",
     "content": "La flavescence dorée impose des arrachages, des traitements et une vigilance extrême. Découvrez comment la cartographie cep par cep avec Sentinelle aide à anticiper et documenter la progression des foyers, tout en réduisant les arrachages inutiles.",
@@ -17,7 +17,7 @@
   },
    "sentinel-cartographie-vigne": {
     "filename": "sentinel-cartographie-vigne",
-    "image": "/img/750_thumbnail.jpg",
+    "image": "/img/750_thumbnail.webp",
     "author": "Samantha Cole Johnson",
     "title": "Une Nouvelle Technologie Révolutionnaire pour la Cartographie des Vignobles",
     "content": "Sentinelle utilise la technologie GNSS et l’analyse cloud pour cartographier chaque cep. Découvrez comment cette solution transforme la gestion des vignes et aide à prolonger la durée de vie du vignoble.",
@@ -25,7 +25,7 @@
   },
   "why-excel-is-an-expensive-way-to-map-virus": {
     "filename": "porquoi-le-excel-est-plus-couteuse-de-cartographier",
-    "image": "/blog-images/french_excel_virus_map.png",
+    "image": "/blog-images/french_excel_virus_map.webp",
     "author": "Par l’Équipe Sentinelle",
     "title": "Pourquoi les Tableurs sont la Façon la Plus Coûteuse de Cartographier un Virus",
     "content": "Pourquoi Excel et les méthodes manuelles coûtent plus cher pour la cartographie des virus dans les vignobles, en raison des coûts de main-d'œuvre, comparé à la solution optimisée de Sentinel.",

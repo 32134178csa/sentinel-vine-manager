@@ -29,7 +29,7 @@ _Exihibit A - Your typical NDVI-based vegetation index map – beautiful but abs
 
 _Exhibit B - A Sentinel Vine Manager map, with each vine pinpointed and its status directly actionable._
 
-![Example Sentinel Map](/blog-images/red-blotch-map.png "Sentinel Vine Manager map showing vine-by-vine status")
+![Example Sentinel Map](/blog-images/red-blotch-map.webp "Sentinel Vine Manager map showing vine-by-vine status")
 
 ---
 
@@ -71,9 +71,9 @@ NDVI can show you a “red zone.” But Sentinel tells you:
 - Roguing and replanting efforts have already begun—Sentinel clearly shows the missing vines and the newly planted rootstocks (with precise counts!).
 - Without immediate intervention, you’re looking at a full-block replant by 2025. With Sentinel, you can send your finance team a clear, concise image, instantly communicating the urgency and securing the necessary budget. 😉💰
 
-![Example Sentinel Map](/blog-images/complicated-block.png "vine-by-vine production and disease map")
+![Example Sentinel Map](/blog-images/complicated-block.webp "vine-by-vine production and disease map")
 
-![Example Sentinel Map](/blog-images/complicated-block-piechart.png "Sentinel block level aggregation and precise vine counts")
+![Example Sentinel Map](/blog-images/complicated-block-piechart.webp "Sentinel block level aggregation and precise vine counts")
 
 This is **operationally relevant, ground-truthed data.** Not just pixels.
 

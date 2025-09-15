@@ -65,18 +65,18 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
             <h3 className="company-title">{t('companySlogan')}</h3>
           </div>
 
-          {isMobile && (
-            <Row className="justify-content-center align-items-center">
-              <Image
-                src={imageURL}
-                alt="sentinel-iphone-mobile"
-                className="mobile-content-picture"
-                width={400}
-                height={800}
-                priority={false}
-              />
-            </Row>
-          )}
+          <Row className="justify-content-center align-items-center">
+            <Image
+              src={imageURL}
+              alt="sentinel-iphone-mobile"
+              className="mobile-content-picture d-block d-md-none" // only show on mobile
+              width={400}
+              height={800}
+              priority
+              fetchPriority="high"
+              sizes="(max-width: 900px) 90vw, 400px"
+            />
+          </Row>
 
           <Row className="justify-content-center align-items-center">
             <Col md="auto">
@@ -100,28 +100,39 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
               </Col>
             </Row>
             <Col md="auto">
-              <Image src={recommendedBlogPost.image} alt="Blog" className="latest-blog-image" width={600} height={400} />
+              <Image
+                src={recommendedBlogPost.image}
+                alt="Blog"
+                className="latest-blog-image"
+                width={600}
+                height={400}
+                sizes="(max-width: 768px) 100vw, 600px"
+              />
             </Col>
             <Col className="company-text">
-              <h4>{recommendedBlogPost.title}</h4>
+              <Link href={recommendedBlogPost.url} className="latest-blog-link">
+                <h4>{recommendedBlogPost.title}</h4>
+              </Link>
               <p>{recommendedBlogPost.author}</p>
               <p>{formatBlogContent(recommendedBlogPost.content, MAX_BLOG_INTRO_LENGTH)}</p>
-              <Link href={recommendedBlogPost.url} className="latest-blog-link">
-                {t('readMore')}
-              </Link>
+              
             </Col>
           </Row>
         </Col>
 
         <Col>
+         {!isMobile && (
           <Image
             src={imageURL}
             alt="sentinel-iphone"
             className="phone-image"
             width={600}
             height={1200}
-            loading="lazy"
+            priority
+            fetchPriority="low"
+            sizes="(max-width: 1024px) 90vw, 600px"
           />
+        )}
         </Col>
       </Row>
 

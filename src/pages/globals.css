@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
-@import url(https://fonts.googleapis.com/css?family=Lato:400);
   
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
@@ -114,10 +112,10 @@ background: #f2f2f2;
 }
 
 .error {
-font-family: "Roboto", sans-serif;
-font-size: 14px;
-color: red;
-margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: red;
+    margin-bottom: 15px;
 }
 
 button {

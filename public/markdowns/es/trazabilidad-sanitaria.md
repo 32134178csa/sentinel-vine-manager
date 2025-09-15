@@ -19,7 +19,7 @@ Las principales bodegas de Argentina, España y México —como Catena, Torres o
 
 Con Sentinel, los productores ahora pueden entregar **informes verificables y exportables**, generados directamente desde el campo, que muestran el estado sanitario de cada parcela —y de cada cepa.
 
-![Informe sanitario exportado desde Sentinel](/blog-images/estado-sanitario.png)
+![Informe sanitario exportado desde Sentinel](/blog-images/estado-sanitario.webp)
 > *Ejemplo de informe con historial por bloque y estado sanitario actual.*
 
 ## 📈 ¿Qué es una traza sanitaria y por qué te conviene?
@@ -50,7 +50,7 @@ Sentinel convierte tus observaciones en un **informe estructurado**, que puedes 
 - Adjuntar a una inspección o auditoría
 - Mostrar durante visitas comerciales
 
-![Historial sanitario de cepas en la app](/blog-images/historial-cepas-sanitario.png)
+![Historial sanitario de cepas en la app](/blog-images/historial-cepas-sanitario.webp)
 > *Registros y análisis precisos sobre cuántas vides están infectadas, mes a mes*
 
 ## 🌍 Habla el idioma de tus trabajadores… y de tus compradores

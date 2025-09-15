@@ -2,7 +2,7 @@
 title: "Mappatura Vite per Vite: La Nuova Frontiera della Viticoltura di Precisione"
 date: "2025-06-07"
 author: "Sentinel Blog"
-image: "/blog-images/tagging.jpg" # [Prompt: Close-up photo of a vineyard worker tagging individual vines]
+image: "/blog-images/tagging.webp" # [Prompt: Close-up photo of a vineyard worker tagging individual vines]
 description: "Scopri come la mappatura vite per vite rivoluziona la viticoltura di precisione italiana, migliorando resa, qualità e gestione dei vigneti grazie alla tecnologia di Sentinel Vine Manager."
 keywords: 
     - "Mappatura Vigneti"
@@ -21,7 +21,7 @@ La mappatura tradizionale dei vigneti a livello di appezzamento non è più suff
 
 Le mappature classiche suddividono i vigneti in blocchi o appezzamenti generici. Tuttavia, i problemi fitosanitari, la produttività e la qualità variano spesso da una vite all'altra.
 
-![Vista aerea di un vigneto con variabilità tra i filari](/blog-images/blocce-variamento.png)
+![Vista aerea di un vigneto con variabilità tra i filari](/blog-images/blocce-variamento.webp)
 
 Questa variabilità richiede un approccio più preciso: monitorare e intervenire su ogni singola vite.
 
@@ -34,7 +34,7 @@ Con la nostra piattaforma puoi:
 - Registrare dati agronomici e fitosanitari per singola pianta.
 - Creare mappe di salute, produttività e interventi passati.
 
-![Interfaccia di Sentinel Vine Manager per la mappatura delle viti](/blog-images/copia-digitale-del-vigneto.jpg)
+![Interfaccia di Sentinel Vine Manager per la mappatura delle viti](/blog-images/copia-digitale-del-vigneto.webp)
 
 ## Vantaggi della Mappatura Vite per Vite
 
@@ -44,7 +44,7 @@ Implementare una mappatura vite per vite permette di:
 - Migliorare la resa e la qualità delle uve.
 - Ridurre i costi intervenendo solo dove necessario.
 
-![Tecnologia digitale per la gestione delle viti individuali](/blog-images/vite-per-vite.jpg)
+![Tecnologia digitale per la gestione delle viti individuali](/blog-images/vite-per-vite.webp)
 
 ## Case Study: Un Vigneto in Umbria
 
@@ -52,7 +52,7 @@ Un produttore in Umbria ha implementato la mappatura vite per vite con Sentinel,
 
 > "Monitorare ogni vite singolarmente ci consente di intervenire in modo tempestivo e preciso, migliorando la salute complessiva del vigneto," afferma il responsabile agronomico dell'azienda.
 
-![Vigneto umbro al sorgere del sole con viti ben curate e monitorate](/blog-images/umbrian-vineyard-sunrise.png)
+![Vigneto umbro al sorgere del sole con viti ben curate e monitorate](/blog-images/umbrian-vineyard-sunrise.webp)
 
 ## Trend Futuri nella Viticoltura di Precisione
 

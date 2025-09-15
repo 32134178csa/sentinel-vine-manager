@@ -343,6 +343,7 @@
   "maturityMonitoringDescription": "Surveillez l'hétérogénéité du vignoble et la performance des vignes au fil du temps grâce à la collecte de données et aux analyses personnalisables de Sentinel.",
   "maturityMonitoringKeywords": "suivi de la maturité, performance du vignoble, analyse de l'hétérogénéité de la vigne, Sentinel analytics",
   "maxClustersForThinning": "Indiquez le nombre maximum de grappes par vigne que vous prévoyez d'éclaircir :",
+  "metaDescription": "Sentinel Vine Manager permet aux vignobles de cartographier chaque pied de vigne avec une précision de l'ordre du centimètre et de tenir un registre vivant permanent. Contrairement à l'imagerie par drone, Sentinel vous permet de suivre la santé des vignes, d'écrire des données directement sur chaque pied et de gérer votre vignoble pied par pied.",
   "metaKeywords": "Cartographier les vignes, Suivi de la maturité, Suivi des maladies, Analyse historique, Ordres de travail",
   "meters": "mètres",
   "metric": "Métrique",

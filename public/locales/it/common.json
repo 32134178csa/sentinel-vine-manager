@@ -343,6 +343,7 @@
   "maturityMonitoringDescription": "Monitorare l'eterogeneità del vigneto e le prestazioni delle viti nel tempo utilizzando la raccolta dati e le analisi personalizzabili di Sentinel.",
   "maturityMonitoringKeywords": "monitoraggio della maturità, performance del vigneto, analisi dell'eterogeneità della vite, analisi Sentinel",
   "maxClustersForThinning": "Inserire il numero massimo di grappoli per vite che si intende diradare:",
+  "metaDescription": "Sentinel Vine Manager consente ai vigneti di mappare ogni singola vite con una precisione sub-centimetrica e di mantenere un registro vivente permanente. A differenza delle immagini da drone, Sentinel consente di monitorare la salute delle viti, di scrivere i dati direttamente su ogni vite e di gestire il vigneto vite per vite.",
   "metaKeywords": "Mappatura delle viti, monitoraggio della maturità, tracciamento delle malattie, analisi della storia, ordini di lavoro",
   "meters": "metri",
   "metric": "Metrico",

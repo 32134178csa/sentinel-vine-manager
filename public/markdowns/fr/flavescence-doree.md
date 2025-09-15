@@ -18,7 +18,7 @@ La flavescence dorée est l’une des maladies les plus redoutées par les vigne
 
 Avec **Sentinelle**, il est désormais possible de tracer l’historique de chaque cep, d’identifier l’évolution des foyers et de construire une véritable mémoire sanitaire pour chaque parcelle.
 
-![Carte interactive Sentinelle montrant des ceps colorés par statut sanitaire](/blog-images/historique_sanitaire.png)
+![Carte interactive Sentinelle montrant des ceps colorés par statut sanitaire](/blog-images/historique_sanitaire.webp)
 > *Visualisation de la progression de la flavescence dorée sur plusieurs années.*
 
 ## 📍 Pourquoi la cartographie est cruciale face à la flavescence dorée
@@ -34,7 +34,7 @@ Avec **Sentinelle**, il est désormais possible de tracer l’historique de chaq
 * **Rapports exportables** à fournir aux techniciens DRAAF ou aux inspecteurs terrain
 * **Identification des foyers persistants** pour adapter les traitements
 
-![Application mobile Sentinelle utilisée pour marquer un cep suspect](/blog-images/tagging.jpg)
+![Application mobile Sentinelle utilisée pour marquer un cep suspect](/blog-images/tagging.webp)
 > *L’opérateur peut ajouter un statut, une photo et un commentaire directement sur le terrain.*
 
 ## ✅ Gagner du temps et de la crédibilité
@@ -53,7 +53,7 @@ Pour y parvenir, Sentinelle utilise un **récepteur GNSS RTK** (Real-Time Kinema
 
 Chaque modification effectuée sur un cep (ajout de symptôme, changement de statut, traitement appliqué) est **archivée automatiquement**. Cela permet de reconstruire une chronologie complète de l’état sanitaire du vignoble, année après année.
 
-![Historique des modifications d’un cep dans Sentinelle](/blog-images/graphique_de_l_historique_sanitaire.png)
+![Historique des modifications d’un cep dans Sentinelle](/blog-images/graphique_de_l_historique_sanitaire.webp)
 > *Chaque changement est enregistré automatiquement dans la base de données.*
 
 Sentinel est également conçu pour le **travail collaboratif**, avec des interfaces disponibles en **français, espagnol, anglais, roumain**, et d'autres langues parlées par les travailleurs agricoles. De nouvelles langues seront ajoutées au fur et à mesure du déploiement international.

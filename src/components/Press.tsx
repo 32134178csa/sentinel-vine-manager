@@ -34,12 +34,12 @@ const Press: React.FC<PressProps> = ({ posts }) => {
                         <ImageFadeIn src={posts[key].image} altText={"Blog Image"} imageClassName={"about-picture"} />
                     </Col>
                     <Col xs={12} md={6} className="mt-4 justify-content-center">
-                        <h4 className="company-text">{posts[key].title}</h4>
+                        <Link href={posts[key].url} target="_blank" rel="noopener noreferrer" className="company-text">
+                            <h4 className="company-text">{posts[key].title}</h4>
+                        </Link>
                         <h6 className="company-text">{posts[key].author}</h6>
                         <p className="company-text">{formatBlogContent(posts[key].content, MAX_BLOG_INTRO_LENGTH)}</p>
-                        <Link href={posts[key].url} target="_blank" rel="noopener noreferrer" className="company-text">
-                            {t('readMore')}
-                        </Link>
+                       
                     </Col>
                 </Row>
             ))}

@@ -17,7 +17,7 @@ author: "Por el Equipo de Sentinel"
 
 En el corazón del Valle de Uco, una de las regiones vitivinícolas más prestigiosas de Argentina, un número creciente de productores está utilizando **Sentinel** para transformar su manera de trabajar. Algunos de estos productores venden uvas a grandes referentes como **Catena Zapata**, mientras otros buscan mejorar la calidad de sus propias vinificaciones con tecnología de punta.
 
-![Uvas cosechadas en un viñedo mapeado con Sentinel en el Valle de Uc](/blog-images/uko_thumbnail.png)
+![Uvas cosechadas en un viñedo mapeado con Sentinel en el Valle de Uc](/blog-images/uko_thumbnail.webp)
 
 > Uvas cosechadas en un viñedo mapeado con Sentinel en el Valle de Uco.
 
@@ -27,7 +27,7 @@ Muchas parcelas en el Valle de Uco tienen décadas de historia —pero también 
 
 Sentinel permite a estos productores **registrar el estado de cada cepa con precisión centimétrica** y crear un historial completo de síntomas, tratamientos, y producción por planta.
 
-![Mapa de Sentinel en viñedos del Valle de Uco](/blog-images/uco_altitude.png)
+![Mapa de Sentinel en viñedos del Valle de Uco](/blog-images/uco_altitude.webp)
 > *Visualización por cepa en una finca a 1.000 metros de altitud en el Valle de Uco.*
 
 ## 💧 Altitud y riego por inundación: un factor crítico en Argentina
@@ -41,7 +41,7 @@ Esto permite:
 * Detectar zonas crónicamente secas o sobrehidratadas
 * Tomar decisiones informadas sobre nivelación, drenaje o cambio de sistema
 
-![Captura de altitud precisa en Sentinel](/blog-images/watergates.png)
+![Captura de altitud precisa en Sentinel](/blog-images/watergates.webp)
 > *Mapa de compuertas de canal y gradiente de altitud en un viñedo del Valle de Uco.*
 
 ## 🦠 Enfermedades locales: pie negro, yesca y virosis

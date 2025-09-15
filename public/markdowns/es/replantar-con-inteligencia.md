@@ -18,7 +18,7 @@ La decisión de arrancar y replantar es una de las más costosas en la viticultu
 
 **Sentinel** ayuda a los viticultores a identificar con precisión qué zonas están en declive, qué variedades son más longevas, y cómo priorizar replantaciones año tras año.
 
-![Mapa Sentinel mostrando zonas con distinta productividad histórica](/blog-images/zonas_replantacion.png)
+![Mapa Sentinel mostrando zonas con distinta productividad histórica](/blog-images/zonas_replantacion.webp)
 > *Visualización de bloques con vigor y producción decreciente según registros históricos.*
 
 ## 🔍 Qué errores ayuda a evitar Sentinel
@@ -35,7 +35,7 @@ La decisión de arrancar y replantar es una de las más costosas en la viticultu
 * Estado actual del cep (activo, joven, fallido, etc.)
 * Eventos culturales: podas, injertos, sustituciones
 
-![Una memoria viva del viñedo](/blog-images/copia-digitale-del-vigneto.jpg)
+![Una memoria viva del viñedo](/blog-images/copia-digitale-del-vigneto.webp)
 > *Cada acción y observación queda archivada automáticamente, creando una memoria viva del viñedo.*
 
 ## 🧭 Planificación más clara, viñedo más rentable

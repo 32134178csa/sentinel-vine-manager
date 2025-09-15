@@ -18,7 +18,7 @@ La flavescencia dorada es una de las enfermedades más temidas por los viticulto
 
 Con **Sentinel**, ahora es posible trazar el historial de cada cepa, identificar la evolución de los focos y construir una verdadera memoria sanitaria por parcela.
 
-![Mapa interactivo de Sentinel que muestra cepas codificadas por estado sanitario](/blog-images/historique_sanitaire.png)
+![Mapa interactivo de Sentinel que muestra cepas codificadas por estado sanitario](/blog-images/historique_sanitaire.webp)
 > *Visualización de la progresión de la flavescencia dorada a lo largo de varias campañas.*
 
 ## 📍 Por qué la cartografía es clave frente a la flavescencia dorada
@@ -34,7 +34,7 @@ Con **Sentinel**, ahora es posible trazar el historial de cada cepa, identificar
 * **Informes exportables** para técnicos e inspectores
 * **Identificación de focos persistentes** para adaptar los tratamientos
 
-![Aplicación móvil Sentinel usada para marcar una cepa sospechosa](/blog-images/tagging.jpg)
+![Aplicación móvil Sentinel usada para marcar una cepa sospechosa](/blog-images/tagging.webp)
 > *El operario puede añadir un estado, una foto y un comentario directamente desde el campo.*
 
 ## ✅ Ahorro de tiempo y mayor credibilidad
@@ -53,7 +53,7 @@ Para lograrlo, Sentinel utiliza un **receptor GNSS RTK** (cinemática en tiempo 
 
 Cada cambio (síntomas, tratamientos, modificaciones de estado) se **archiva automáticamente**, permitiendo reconstruir el historial completo de salud del viñedo año tras año.
 
-![Historial de modificaciones de una cepa en Sentinel](/blog-images/graphique_de_l_historique_sanitaire.png)
+![Historial de modificaciones de una cepa en Sentinel](/blog-images/graphique_de_l_historique_sanitaire.webp)
 > *Cada cambio queda registrado automáticamente en la base de datos.*
 
 Sentinel también está diseñado para el **trabajo colaborativo**, con interfaces disponibles en **francés, español, inglés, rumano** y otros idiomas hablados por trabajadores agrícolas. Se irán añadiendo más idiomas conforme expandimos internacionalmente.
