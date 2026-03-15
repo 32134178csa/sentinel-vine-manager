@@ -34,9 +34,13 @@ async function submitContactForm(email: string, message: string) {
           'message': message
         })
     })
-    .then(response => response.json()) 
-    .then((data) => {
-        return data
+    .then(response => {
+        if (response.ok) {
+            // API may return empty body on success
+            const text = response.text();
+            return text.then(t => t ? JSON.parse(t) : { status: response.status });
+        }
+        return { status: response.status, message: 'Request failed' };
     })
     .catch((err) => console.log(err))
    };
