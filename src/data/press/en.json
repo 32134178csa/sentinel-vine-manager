@@ -61,5 +61,32 @@
     "title": "Why Spreadsheets are the Most Expensive Way to Map Virus",
     "content": "In the ever-evolving landscape of viticulture, the Red Blotch virus has presented a formidable challenge to Napa Valley's vineyards. The quest for an elusive zero-virus scenario is proving financially unattainable, with the costs of testing and replanting reaching unprecedented heights. Decision-makers are grappling with the intricacies of managing virus outbreaks, often resorting to traditional tools such as hand-drawn maps and Excel spreadsheets. However, what they may not realize is that these seemingly cost-effective methods are, in fact, the most expensive way to map a virus. In this exploration, we delve into the overlooked labor costs associated with these manual approaches, shedding light on why Sentinel's streamlined solution emerges as the more financially sustainable alternative for Napa's vineyards.",
     "url": "/blog/why-excel-is-an-expensive-way-to-map-virus"
+  },
+  "vine-data-during-a-downturn": {
+    "filename": "vine-data-during-a-downturn",
+    "author": "Sentinel Blog",
+    "id": "7",
+    "image": "/blog-images/analytics_cropped.webp",
+    "title": "The Downturn Is the Wrong Time to Stop Counting Your Vines",
+    "content": "When the California wine market tightens, vineyard monitoring is the first budget line to get cut. That instinct is backwards. In a downturn, vine-level data is worth more than ever -- because the margins no longer cover the cost of decisions made without it.",
+    "url": "/blog/vine-data-during-a-downturn"
+  },
+  "the-replant-decision": {
+    "filename": "the-replant-decision",
+    "author": "Sentinel Blog",
+    "id": "8",
+    "image": "/blog-images/replanting.webp",
+    "title": "The $80,000-Per-Acre Question: When to Replant",
+    "content": "Replanting a Napa vineyard block costs $50,000 to $80,000 per acre in real terms. Most estates still make that decision by feel. Vine-level data turns a gut call into a precise, block-by-block analysis -- and reveals how often the answer is a partial replant instead of a full one.",
+    "url": "/blog/the-replant-decision"
+  },
+  "the-knowledge-that-walks-out-the-door": {
+    "filename": "the-knowledge-that-walks-out-the-door",
+    "author": "Sentinel Blog",
+    "id": "9",
+    "image": "/blog-images/complicated-block.webp",
+    "title": "The Knowledge That Walks Out the Door",
+    "content": "When your most experienced vineyard worker retires, decades of vine-level knowledge leaves with them. Which row always gets mildew first. Where the old virus pocket was. Which vines are on different rootstock. A permanent digital record is the only way to keep that knowledge inside your estate.",
+    "url": "/blog/the-knowledge-that-walks-out-the-door"
   }
 }
