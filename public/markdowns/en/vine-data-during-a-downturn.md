@@ -28,6 +28,8 @@ That argument holds up in good years. When yields are strong and grape prices ar
 
 In a downturn, the margins do not cover it. That is precisely when every vine matters.
 
+![Vine-by-vine health map showing Red Blotch spread patterns](/blog-images/red-blotch-map.webp "Sentinel map showing vine-by-vine virus status across a Napa block")
+
 ## What You Cannot See at Walking Speed
 
 Consider a 40-acre Cabernet block in Rutherford. At roughly 1,200 vines per acre, that is 48,000 individual plants. A vineyard manager walking rows will catch the obvious problems: dead vines, severe virus symptoms, broken trellis wire. What they will not catch, or will not catch consistently, is the slow accumulation of underperformance that erodes your economics.
@@ -35,6 +37,8 @@ Consider a 40-acre Cabernet block in Rutherford. At roughly 1,200 vines per acre
 Red Blotch is the clearest example. Across large Napa datasets, roughly 20% of infected vines show no visible symptoms in any given year. They look healthy. They produce fruit. But that fruit has lower Brix, muted color, and reduced phenolic content. It gets blended in at harvest and quietly drags down your lot quality. In a year when you need every lot to perform at its price point, those hidden infections become a material problem.
 
 The same logic applies to vine mortality tracking, replant success rates, and irrigation efficiency. When you are selling fruit at $8,000 to $12,000 per ton, a 5% yield gap from poor vine health is not an abstraction. On a 40-acre block, that could represent $150,000 to $250,000 in lost revenue. The cost of knowing where that gap is coming from is a fraction of that number.
+
+![Detailed vine-level production and disease data](/blog-images/complicated-block.webp "Vine-by-vine production and disease map in Sentinel")
 
 ## The Counterintuitive Math of Downturns
 
@@ -55,6 +59,8 @@ The estates that navigate downturns well tend to share a pattern: they get more 
 Some of the best-run properties in Napa have moved to vine-by-vine tracking systems, including tools like Sentinel, that give them a living inventory of their vineyard. They know their virus load by block and by row. They can show a buyer or an insurance adjuster exactly what happened to a specific vine over three seasons. They catch replant failures in the first year instead of the third.
 
 This is not about technology for its own sake. It is about having the information you need to make good decisions when bad decisions are unusually costly.
+
+![Sentinel analytics dashboard](/blog-images/analytics_cropped.webp "Block-level analytics and vine health trends")
 
 ## The Real Risk Is What You Discover Too Late
 

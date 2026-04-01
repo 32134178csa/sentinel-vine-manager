@@ -21,6 +21,8 @@ A full replant in Napa -- vine removal, soil prep, new rootstock and budwood, tr
 
 Given those numbers, you would expect replant decisions to be among the most data-driven calls in the business. They are not. Most are still made by feel.
 
+![Vineyard replanting](/blog-images/replanting.webp "Young replanted vines alongside mature vineyard rows")
+
 ## How Replant Decisions Actually Get Made
 
 The typical process looks something like this: the vineyard manager walks a block, notes that it looks "tired," and flags it for discussion. Maybe yields have been declining for a few years. Maybe there is visible virus pressure. Maybe the vine age is pushing 25 or 30 years and the assumption is that it is time.
@@ -35,6 +37,8 @@ But in a softer market, imprecision gets expensive. And the most common form of 
 
 When you evaluate a block in aggregate -- average yield, average vine age, general health impression -- you lose the variation that actually matters. A block that averages 3.5 tons per acre might have sections producing 5 tons and sections producing 1.5 tons. The declining sections might be concentrated along a specific row where virus spread from an adjacent block, or where drainage is poor, or where a particular rootstock is underperforming.
 
+![Block-level aggregation with precise vine counts](/blog-images/complicated-block-piechart.webp "Sentinel block-level aggregation showing vine health distribution")
+
 If you pull the whole block, you are spending $50,000+ per acre to replace vines that were still producing $10,000 per ton fruit. That is not a replant decision. That is a write-off disguised as one.
 
 The alternative -- and this is where vine-level data changes the calculus -- is to know exactly which vines are declining and why. Not at the block level. Not at the row level. At the individual plant.
@@ -44,6 +48,8 @@ The alternative -- and this is where vine-level data changes the calculus -- is 
 When every vine has its own record -- GPS coordinates, variety, clone, rootstock, planting date, virus test history, yield estimates, crew observations -- the replant question changes fundamentally. Instead of "should we replant Block 7," the question becomes "which vines in Block 7 have declining health, what is causing it, and what is the cost of replacing just those vines versus nursing them through another few seasons?"
 
 Here is what that looks like in practice:
+
+![Heterogeneous vine health zones within a single block](/blog-images/heterogenous-zones.webp "Different health zones visible at the vine level")
 
 **Virus mapping changes the boundary.** Red Blotch and Leafroll do not spread uniformly. They follow insect vectors, row patterns, and proximity gradients. With vine-by-vine virus tracking over multiple seasons, you can see exactly where the infection front is. Maybe 30% of the block is compromised and spreading. Maybe 70% is clean and will stay clean if you remove the infected vines and replant just those sections. That is a very different economic decision than pulling 100% of the block.
 
