@@ -2,7 +2,7 @@
 import type { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { roboto, lato } from '@/styles/fonts';
+import { interTight, jetbrainsMono, spaceGrotesk } from '@/styles/fonts';
 import './globals.css';
 import { useEffect } from 'react';
 
@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <main className={`${roboto.className} ${lato.className}`}>
+    <main className={`${interTight.variable} ${jetbrainsMono.variable} ${spaceGrotesk.variable}`}>
       <Component {...pageProps} />
     </main>
   );
