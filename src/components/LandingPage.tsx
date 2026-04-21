@@ -175,6 +175,21 @@ function UtcClock() {
   return <span>UTC <b>{time}</b></span>;
 }
 
+function GnssReadout() {
+  const [val, setVal] = useState('0.009');
+  useEffect(() => {
+    const tick = () => {
+      const base = 0.009;
+      const jitter = (Math.random() - 0.5) * 0.004;
+      const v = Math.max(0.006, Math.min(0.012, base + jitter));
+      setVal(v.toFixed(3));
+    };
+    const id = setInterval(tick, 2200);
+    return () => clearInterval(id);
+  }, []);
+  return <span>GNSS ACC <b>{val} m</b></span>;
+}
+
 /* ------------------------------------------------------------------ */
 /*  Main component                                                     */
 /* ------------------------------------------------------------------ */
@@ -198,7 +213,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
           </span>
         </span>
         <span className="spacer" />
-        <span>GNSS ACC <b>0.009 m</b></span>
+        <GnssReadout />
         <span className="sep">|</span>
         <UtcClock />
       </div>
