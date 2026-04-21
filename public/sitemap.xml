@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Pages -->
+  <url><loc>https://site.sentineltech.eu/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://site.sentineltech.eu/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://site.sentineltech.eu/rapidMapping</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://site.sentineltech.eu/maturityMonitoring</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://site.sentineltech.eu/diseaseTracking</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://site.sentineltech.eu/historicalAnalysis</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://site.sentineltech.eu/workOrders</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://site.sentineltech.eu/faqs</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://site.sentineltech.eu/press</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://site.sentineltech.eu/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://site.sentineltech.eu/ndvi</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://site.sentineltech.eu/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://site.sentineltech.eu/cookies</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+  <!-- Blog Posts (SEO-targeted) -->
+  <url><loc>https://site.sentineltech.eu/blog/vineyard-management-software-buyers-guide-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/vine-level-disease-tracking-program</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/rtk-gps-vineyard-guide</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/drone-vineyard-mapping-vs-ground-truth</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/cellar-management-software-winery-guide</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Blog Posts (editorial) -->
+  <url><loc>https://site.sentineltech.eu/blog/drone-vs-sentinel-vine-mapping</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/red-blotch-in-2025</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/the-red-blotch-dilemma</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/leafroll-virus-vineyard-tracking-software</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/vine-by-vine-tracking-vineyard-gps</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/vineyard-management-company-software</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/vineyard-work-order-management</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/california-pur-reporting-vineyard-automation</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/should-i-fire-my-farming-company</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/the-knowledge-that-walks-out-the-door</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/the-replant-decision</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/vine-data-during-a-downturn</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/why-excel-is-an-expensive-way-to-map-virus</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/rtk-gps-vineyards-pinpoint-rtk-vs-sentinel</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+</urlset>
