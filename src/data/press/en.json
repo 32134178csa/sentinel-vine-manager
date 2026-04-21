@@ -133,5 +133,14 @@
     "title": "Cellar Management Software: Why Your Winery Should Not Need Two Systems",
     "content": "If you run a winery that grows its own fruit, you have probably encountered this problem: the software you use in the vineyard does not talk to the software you use in the cellar. This guide covers lot tracking, lab analysis, barrel inventory, and why bundling cellar with vineyard management eliminates data gaps and duplicate costs.",
     "url": "/blog/cellar-management-software-winery-guide"
+  },
+  "vineyard-work-orders-crew-management": {
+    "filename": "vineyard-work-orders-crew-management",
+    "author": "Sentinel Blog",
+    "id": "15",
+    "image": "/img/blog/work-orders.webp",
+    "title": "Vineyard Work Orders: How to Close the Loop Between Scout and Field Crew",
+    "content": "Vineyard work orders break down when scouting data does not connect to crew execution. Learn how vine-level work orders with auto-updating statuses close the gap between what your scout finds and what your crew does about it.",
+    "url": "/blog/vineyard-work-orders-crew-management"
   }
 }
