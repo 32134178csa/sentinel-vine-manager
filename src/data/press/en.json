@@ -115,5 +115,14 @@
     "title": "RTK GPS for Vineyards: Why Sub-Inch Accuracy Changes Everything",
     "content": "If you manage a vineyard and have started looking into GPS mapping, you have probably noticed that the technology landscape is confusing. This guide covers everything a vineyard manager needs to know about RTK GPS.",
     "url": "/blog/rtk-gps-vineyard-guide"
+  },
+  "drone-vineyard-mapping-vs-ground-truth": {
+    "filename": "drone-vineyard-mapping-vs-ground-truth",
+    "author": "Sentinel Blog",
+    "id": "13",
+    "image": "/img/blog/drone-vs-ground-truth.webp",
+    "title": "Drone Mapping vs. Ground-Truth Scouting: What Your Vineyard Actually Needs",
+    "content": "Drone vineyard mapping gives you a canopy heatmap. Ground-truth scouting gives you vine-by-vine records. This post breaks down when you need each, where they overlap, and why the best operations use both.",
+    "url": "/blog/drone-vineyard-mapping-vs-ground-truth"
   }
 }
