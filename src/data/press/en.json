@@ -88,5 +88,32 @@
     "title": "The Knowledge That Walks Out the Door",
     "content": "When your most experienced vineyard worker retires, decades of vine-level knowledge leaves with them. Which row always gets mildew first. Where the old virus pocket was. Which vines are on different rootstock. A permanent digital record is the only way to keep that knowledge inside your estate.",
     "url": "/blog/the-knowledge-that-walks-out-the-door"
+  },
+  "vineyard-management-software-buyers-guide-2026": {
+    "filename": "vineyard-management-software-buyers-guide-2026",
+    "author": "Sentinel Blog",
+    "id": "10",
+    "image": "/img/blog/vineyard-software-guide.webp",
+    "title": "Vineyard Management Software: The 2026 Buyer's Guide",
+    "content": "If you manage a vineyard and you are evaluating software for the first time, or reconsidering what you already use, this guide is for you. The vineyard management software market has matured considerably over the past few years, but it has also become harder to navigate.",
+    "url": "/blog/vineyard-management-software-buyers-guide-2026"
+  },
+  "vine-level-disease-tracking-program": {
+    "filename": "vine-level-disease-tracking-program",
+    "author": "Sentinel Blog",
+    "id": "11",
+    "image": "/img/blog/disease-tracking.webp",
+    "title": "How to Build a Vine-Level Disease Tracking Program",
+    "content": "Every vineyard has disease. Red blotch, leafroll, crown gall, Esca -- the specific pathogen varies by region, but the management challenge is universal. The vineyards that contain disease effectively are the ones that know exactly where every infected vine is.",
+    "url": "/blog/vine-level-disease-tracking-program"
+  },
+  "rtk-gps-vineyard-guide": {
+    "filename": "rtk-gps-vineyard-guide",
+    "author": "Sentinel Blog",
+    "id": "12",
+    "image": "/img/blog/rtk-gps-vineyard.webp",
+    "title": "RTK GPS for Vineyards: Why Sub-Inch Accuracy Changes Everything",
+    "content": "If you manage a vineyard and have started looking into GPS mapping, you have probably noticed that the technology landscape is confusing. This guide covers everything a vineyard manager needs to know about RTK GPS.",
+    "url": "/blog/rtk-gps-vineyard-guide"
   }
 }

@@ -1,5 +1,7 @@
 ---
 title: "How to Build a Vine-Level Disease Tracking Program"
+description: "Step-by-step guide to building a vine-level disease tracking program. Covers red blotch, leafroll, GPS mapping, lab testing workflows, and containment strategies."
+keywords: ["vineyard disease tracking", "red blotch tracking", "leafroll management", "vine virus monitoring"]
 author: "Christian Sidak"
 date: "2026-04-21"
 image: "/img/blog/disease-tracking.webp"

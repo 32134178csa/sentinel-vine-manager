@@ -1,5 +1,7 @@
 ---
 title: "RTK GPS for Vineyards: Why Sub-Inch Accuracy Changes Everything"
+description: "Complete guide to RTK GPS for vineyard mapping. Covers accuracy specs, equipment recommendations, setup instructions, costs, and how sub-inch precision transforms vine management."
+keywords: ["RTK GPS vineyard", "precision GPS vine mapping", "vineyard GPS mapping", "RTK GNSS agriculture"]
 author: "Christian Sidak"
 date: "2026-04-21"
 image: "/img/blog/rtk-gps-vineyard.webp"

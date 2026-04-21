@@ -1,5 +1,7 @@
 ---
 title: "Vineyard Management Software: The 2026 Buyer's Guide"
+description: "Compare vineyard management software options for 2026. Covers vine mapping, disease tracking, work orders, cellar management, and pricing -- everything you need to choose the right platform."
+keywords: ["vineyard management software", "vine mapping software", "vineyard technology", "precision viticulture software"]
 author: "Christian Sidak"
 date: "2026-04-21"
 image: "/img/blog/vineyard-software-guide.webp"
