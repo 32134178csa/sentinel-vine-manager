@@ -124,5 +124,14 @@
     "title": "Drone Mapping vs. Ground-Truth Scouting: What Your Vineyard Actually Needs",
     "content": "Drone vineyard mapping gives you a canopy heatmap. Ground-truth scouting gives you vine-by-vine records. This post breaks down when you need each, where they overlap, and why the best operations use both.",
     "url": "/blog/drone-vineyard-mapping-vs-ground-truth"
+  },
+  "cellar-management-software-winery-guide": {
+    "filename": "cellar-management-software-winery-guide",
+    "author": "Sentinel Blog",
+    "id": "14",
+    "image": "/img/blog/cellar-software.webp",
+    "title": "Cellar Management Software: Why Your Winery Should Not Need Two Systems",
+    "content": "If you run a winery that grows its own fruit, you have probably encountered this problem: the software you use in the vineyard does not talk to the software you use in the cellar. This guide covers lot tracking, lab analysis, barrel inventory, and why bundling cellar with vineyard management eliminates data gaps and duplicate costs.",
+    "url": "/blog/cellar-management-software-winery-guide"
   }
 }
