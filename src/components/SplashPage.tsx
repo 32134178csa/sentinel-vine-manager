@@ -30,44 +30,47 @@ export default function SplashPage({
         const handleResize = () => {
           setIsMobile(window.innerWidth < 900);
         };
-        handleResize(); // set on mount
+        handleResize();
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
       }, []);
 
     return(
-        <Container>
+        <Container style={{ maxWidth: '1200px', padding: 'var(--space-3xl) var(--space-lg)' }}>
             <Row className="flex-nowrap">
                 <Col xs={12} md={8} lg={6}>
-                    <h3 className="company-title">{title}</h3>
-                    <hr className="company-title"></hr>
-                    <div className='company-text' dangerouslySetInnerHTML={{ __html: body }} />
-                
+                    <h1 style={{ marginBottom: 'var(--space-md)' }}>{title}</h1>
+                    <hr className="section-divider" />
+                    <div style={{ color: 'var(--ink-dim)', lineHeight: 1.7, marginBottom: 'var(--space-lg)' }} dangerouslySetInnerHTML={{ __html: body }} />
+
                 {isMobile && (
-                    <Row className="mobile justify-content-center align-items-center">
+                    <Row className="mobile justify-content-center align-items-center" style={{ marginBottom: 'var(--space-lg)' }}>
                         <ImageFadeIn src={imageUrl} altText={id} imageClassName={"mobile-content-picture"}/>
                     </Row>
                 )}
 
-                <Row className="justify-content-center align-items-center text-center">
+                <Row className="justify-content-center align-items-center text-center" style={{ marginBottom: 'var(--space-xl)' }}>
                     <Col xs="auto">
-                        <div className="explore-button darken" onClick={() => router.push('/contact')}>{cta}</div>
+                        <div className="btn-primary" onClick={() => router.push('/contact')} role="button" tabIndex={0}>{cta}</div>
                     </Col>
                 </Row>
-                <Spacer height={20}/>
-                <Row className="justify-content-center align-items-center text-center">
-                    <h3 className='company-text'>{exploreMoreFeatures}</h3>
+
+                <hr className="section-divider" />
+                <Row className="justify-content-center align-items-center text-center" style={{ marginBottom: 'var(--space-md)' }}>
+                    <p className='overline'>{exploreMoreFeatures}</p>
                 </Row>
                 <Row className="justify-content-center align-items-center flex-wrap">
                   {Object.entries(splashTitles)
                     .filter(([key]) => key !== id)
-                    .map(([key, title]) => (
-                      <Col key={key} xs="auto" className="d-flex justify-content-center">
+                    .map(([key, featureTitle]) => (
+                      <Col key={key} xs="auto" className="d-flex justify-content-center" style={{ marginBottom: 'var(--space-sm)' }}>
                         <div
-                          className="explore-button darken"
+                          className="btn-ghost"
                           onClick={() => router.push(`/${key}`)}
+                          role="button"
+                          tabIndex={0}
                         >
-                          {title}
+                          {featureTitle}
                         </div>
                       </Col>
                     ))}

@@ -26,22 +26,22 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
   const router = useRouter();
   const imageURL = `/img/phone.webp`;
   const MAX_BLOG_INTRO_LENGTH = 200;
-  
+
   const [isMobile, setIsMobile] = React.useState(false);
   React.useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 900);
     };
-    handleResize(); // set on mount
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const splashButtons = React.useMemo(() => (
     Object.entries(splashTitles).map(([id, title]) => (
-      <Col key={id} xs="auto" className="d-flex justify-content-center">
+      <Col key={id} xs="auto" className="d-flex justify-content-center" style={{ marginBottom: 'var(--space-sm)' }}>
         <div
-          className="explore-button darken"
+          className="btn-ghost"
           onClick={() => router.push(`/${id}`)}
           role="button"
           tabIndex={0}
@@ -56,20 +56,25 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
   ), [t]);
 
   return (
-    <Container>
+    <Container style={{ maxWidth: '1200px', padding: 'var(--space-3xl) var(--space-lg)' }}>
       <Row className="flex-nowrap">
         <Col xs={12} md={8} lg={6}>
-          <div className="landing-page-splash">
-            <h1 className="company-title">{t('fullProductName')}</h1>
-            <hr className="company-title" />
-            <h3 className="company-title">{t('companySlogan')}</h3>
+          {/* Hero Section */}
+          <div className="landing-page-splash" style={{ marginBottom: 'var(--space-xl)' }}>
+            <p className="overline" style={{ marginBottom: 'var(--space-sm)' }}>Vine-by-vine precision</p>
+            <h1 style={{ marginBottom: 'var(--space-md)' }}>{t('fullProductName')}</h1>
+            <hr className="section-divider" style={{ margin: 'var(--space-md) 0' }} />
+            <h3 style={{ color: 'var(--ink-dim)', fontFamily: 'var(--font-body)', fontWeight: 300, fontSize: '1.1rem', lineHeight: 1.7, maxWidth: '50ch' }}>
+              {t('companySlogan')}
+            </h3>
           </div>
 
+          {/* Mobile image */}
           <Row className="justify-content-center align-items-center">
             <Image
               src={imageURL}
               alt="sentinel-iphone-mobile"
-              className="mobile-content-picture d-block d-md-none" // only show on mobile
+              className="mobile-content-picture d-block d-md-none"
               width={400}
               height={800}
               priority
@@ -78,25 +83,35 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
             />
           </Row>
 
-          <Row className="justify-content-center align-items-center">
+          {/* CTA */}
+          <Row className="justify-content-center align-items-center" style={{ marginBottom: 'var(--space-xl)' }}>
             <Col md="auto">
-              <h3 className="company-text text-center">
-                {t('exploreOurTechnology')}
-              </h3>
-              <hr className="company-title" />
+              <div className="btn-primary" onClick={() => router.push('/contact')} role="button" tabIndex={0}>
+                {t('bookADemo') || 'Schedule a Demo'}
+              </div>
             </Col>
           </Row>
 
+          {/* Explore Features */}
+          <hr className="section-divider" />
+          <Row className="justify-content-center align-items-center" style={{ marginBottom: 'var(--space-md)' }}>
+            <Col md="auto">
+              <p className="overline" style={{ textAlign: 'center' }}>
+                {t('exploreOurTechnology')}
+              </p>
+            </Col>
+          </Row>
 
-          <Row className="justify-content-center align-items-center flex-wrap">
+          <Row className="justify-content-center align-items-center flex-wrap" style={{ marginBottom: 'var(--space-xl)' }}>
             {splashButtons}
           </Row>
-          
-          <Row className="latest-blog-container">
-            <Row className="mt-4 justify-content-center">
+
+          {/* Blog section */}
+          <hr className="section-divider" />
+          <Row className="latest-blog-container" style={{ padding: 'var(--space-lg) 0' }}>
+            <Row className="justify-content-center" style={{ marginBottom: 'var(--space-md)' }}>
               <Col md="auto">
-                <h3 className="company-text">{t('checkOutLatestBlogPost')}</h3>
-                <hr className="company-title" />
+                <p className="overline">{t('checkOutLatestBlogPost')}</p>
               </Col>
             </Row>
             <Col md="auto">
@@ -107,15 +122,15 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
                 width={600}
                 height={400}
                 sizes="(max-width: 768px) 100vw, 600px"
+                style={{ borderRadius: 'var(--radius-md)' }}
               />
             </Col>
-            <Col className="company-text">
-              <Link href={recommendedBlogPost.url} className="latest-blog-link">
-                <h4>{recommendedBlogPost.title}</h4>
+            <Col>
+              <Link href={recommendedBlogPost.url} style={{ textDecoration: 'none' }}>
+                <h3 style={{ fontSize: '1.25rem', marginBottom: 'var(--space-sm)' }}>{recommendedBlogPost.title}</h3>
               </Link>
-              <p>{recommendedBlogPost.author}</p>
-              <p>{formatBlogContent(recommendedBlogPost.content, MAX_BLOG_INTRO_LENGTH)}</p>
-              
+              <p className="label" style={{ marginBottom: 'var(--space-sm)' }}>{recommendedBlogPost.author}</p>
+              <p style={{ fontSize: '0.9rem' }}>{formatBlogContent(recommendedBlogPost.content, MAX_BLOG_INTRO_LENGTH)}</p>
             </Col>
           </Row>
         </Col>
