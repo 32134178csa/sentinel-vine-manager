@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import LandingPage from '../components/LandingPage'
-import AppPage from '@/components/AppPage'
+import Header from '@/components/Header'
 import { BlogPost } from '@/services/BlogService'
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
@@ -33,9 +33,8 @@ const Home: NextPage<{ firstBlogPost: BlogPost }> = ({ firstBlogPost }) => {
         <meta name="keywords" content={metaKeywords} />
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
-      <AppPage>
-        <LandingPage recommendedBlogPost={firstBlogPost} />
-      </AppPage>
+      <Header />
+      <LandingPage recommendedBlogPost={firstBlogPost} />
     </>
   );
 };

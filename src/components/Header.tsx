@@ -1,86 +1,88 @@
-import {
-    Nav,
-    NavLogo,
-    NavMenu,
-    NavItem,
-    NavChevron
-} from "./Navbar";
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import { ChevronDown, ChevronLeft } from "react-bootstrap-icons";
 import { useState } from "react";
-import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { APP_HOST } from "@/config";
-
+import Link from 'next/link';
 
 export default function Header() {
-    const { t } = useTranslation('common')
-    const router = useRouter();
-    const { locale, pathname } = router;
-    const push = router.push;
-    const [open,setOpen] = useState(false);
-    const defaultPath = "/product"
+  const router = useRouter();
+  const { pathname } = router;
+  const [open, setOpen] = useState(false);
 
-    const activeTab = (path: string) => {
-      if (pathname === '/') {
-        return (path === defaultPath) ? 'active' : ''
-      } else {
-        return pathname.includes(path) ? 'active' : ''
-      }
-    };
+  const isActive = (path: string) => {
+    if (path === '/') return pathname === '/' ? 'active' : '';
+    return pathname.startsWith(path) ? 'active' : '';
+  };
 
-    const handleExternalLink = (url : string) => {
-      window.open(url, '_blank');
-    };
+  const navLinks = [
+    { label: 'Home', href: '/' },
+    { label: 'Product', href: '/rapidMapping' },
+    { label: 'About', href: '/about' },
+    { label: 'FAQs', href: '/faqs' },
+    { label: 'Press', href: '/press' },
+    { label: 'Blog', href: '/blog' },
+  ];
 
-    const menuItems =  [
-      <NavItem key="product" onClick={() => push('/')} className={activeTab('/product')}>{t("product")}</NavItem>,
-      <NavItem key="about" onClick={() => push('/about')} className={activeTab('/about')}>{t("about")}</NavItem>,
-      <NavItem key="faq" onClick={() => push('/faqs')} className={activeTab('/faqs')}>{t("faqs")}</NavItem>,
-      <NavItem key="press" onClick={() => push('/press')} className={activeTab('/press')}>{t("press")}</NavItem>,
-      <NavItem key="login" as="a" href={`${APP_HOST}/login`} className={activeTab('/login')}>{t("userLogin")}</NavItem>,
-      <div key="demo" className="btn-primary" onClick={() => push('/contact')} role="button" tabIndex={0}>{t("bookADemo")}</div>,
-      <a key="appstore" href="https://apps.apple.com/app/sentinel-vine-manager/id1608970406" target="_blank" rel="noreferrer"><Image alt="sentinel_appstore" className="header-button appstore-button darken" src={`/img/${locale}_appstore.svg`}/></a>,
-    ]
+  return (
+    <nav className="top">
+      <div className="row nav-row-v2">
+        {/* Brand */}
+        <Link href="/" className="brand">
+          <span className="mark">
+            <Image
+              style={{ width: 32, height: 32 }}
+              src="/img/transparent-logo.webp"
+              alt="Sentinel"
+            />
+          </span>
+          <span className="name">Sentinel<em>&middot;</em></span>
+        </Link>
 
-    const mobileMenuItems = [
-      <NavItem key="product" onClick={() => push('/')} className={activeTab('/product')}>{t("product")}</NavItem>,
-      <NavItem key="about" onClick={() => push('/about')} className={activeTab('/about')}>{t("about")}</NavItem>,
-      <NavItem key="faq" onClick={() => push('/faqs')} className={activeTab('/faqs')}>{t("faqs")}</NavItem>,
-      <NavItem key="press" onClick={() => push('/press')} className={activeTab('/press')}>{t("press")}</NavItem>,
-      <NavItem key="login" as="a" href={`${APP_HOST}/login`} className={activeTab('/login')}>{t("userLogin")}</NavItem>,
-      <NavItem key="demo" onClick={() => push('/contact')} className={activeTab('/contact')}>{t("bookADemo")}</NavItem>,
-      <NavItem key="appstore" onClick={() => handleExternalLink("https://apps.apple.com/app/sentinel-vine-manager/id1608970406")}>{t("downloadOurApp")}</NavItem>,
-    ]
+        {/* Center nav links */}
+        <div className="navlinks">
+          {navLinks.map(({ label, href }) => (
+            <Link key={href} href={href} className={`${isActive(href)}`}>
+              {label}
+            </Link>
+          ))}
+        </div>
 
-    return (
-          <Nav className="header w-100">
-            <Container fluid style={{ padding: '0 var(--space-lg)' }}>
-              <Row className="flex-nowrap align-items-center">
+        <div className="navspace" />
 
-                <Col>
-                  <NavLogo onClick={() => push('/')} className="darken">
-                    <Image style={{height: "36px", marginRight: "10px"}} src="/img/transparent-logo.webp" alt="Sentinel Vine Manager Logo" />
-                    <span className="nav-logo-text">Sentinel</span>
-                  </NavLogo>
-                </Col>
+        {/* Right CTAs */}
+        <div className="nav-ctas">
+          <a href={APP_HOST + '/login'} className="cta-ghost">
+            User Login
+          </a>
+          <Link href="/contact" className="cta-solid">
+            Schedule a Demo <span className="arrow" />
+          </Link>
+        </div>
 
-                <Col md="auto" className='d-flex align-items-center justify-content-center'>
-                  <NavMenu>
-                    {menuItems}
-                  </NavMenu>
-                  <NavChevron>
-                    <div onClick={() => setOpen(!open)}>
-                      { open ?
-                      (<ChevronDown className="nav-chevron-icon darken"/>) :
-                      (<ChevronLeft className="nav-chevron-icon darken"/>)}
-                    </div>
-                  </NavChevron>
-                </Col>
+        {/* Mobile hamburger */}
+        <div className="nav-mobile-toggle" onClick={() => setOpen(!open)}>
+          {open
+            ? <ChevronDown className="nav-chevron-icon darken" />
+            : <ChevronLeft className="nav-chevron-icon darken" />
+          }
+        </div>
+      </div>
 
-              </Row>
-              {open && mobileMenuItems.map((i, idx) => <Row key={idx} className="mobile-nav-row">{i}</Row>)}
-            </Container>
-          </Nav>
-    );
-};
+      {/* Mobile menu */}
+      {open && (
+        <div className="mobile-menu-v2">
+          {navLinks.map(({ label, href }) => (
+            <Link key={href} href={href} className="mobile-menu-item" onClick={() => setOpen(false)}>
+              {label}
+            </Link>
+          ))}
+          <a href={APP_HOST + '/login'} className="mobile-menu-item">User Login</a>
+          <Link href="/contact" className="mobile-menu-item mobile-menu-cta" onClick={() => setOpen(false)}>
+            Schedule a Demo
+          </Link>
+        </div>
+      )}
+    </nav>
+  );
+}
