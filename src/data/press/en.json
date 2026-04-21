@@ -160,5 +160,14 @@
     "title": "The Vineyard Replant Decision: When the Data Says Pull, When It Says Wait",
     "content": "Vineyard replanting costs $50,000 to $80,000 per acre in Napa Valley when you factor in lost production. Vine-level data turns a gut call into a precise, block-by-block analysis -- and often reveals that a partial replant is the right answer.",
     "url": "/blog/vineyard-replanting-cost-roi-guide"
+  },
+  "precision-viticulture-roi-vine-level-data": {
+    "filename": "precision-viticulture-roi-vine-level-data",
+    "author": "Sentinel Blog",
+    "id": "18",
+    "image": "/img/blog/precision-viticulture-roi.webp",
+    "title": "Precision Viticulture ROI: What Vine-Level Data Actually Saves You",
+    "content": "Vine-level data is not a nice-to-have. It is the foundation that makes every other vineyard decision more precise and less expensive -- from disease containment to replanting to crew management to compliance.",
+    "url": "/blog/precision-viticulture-roi-vine-level-data"
   }
 }
