@@ -6,8 +6,8 @@ export default function PrivacyPolicy() {
     const { t } = useTranslation('common')
 
     return(
-        <div className="company-text p-4">
-        <h3>{t("privacyPolicy")}</h3>
+        <div style={{ color: 'var(--ink-dim)', padding: 'var(--space-lg)', maxWidth: '900px', margin: '0 auto' }}>
+        <h3 style={{ fontFamily: 'var(--font-display)', color: 'var(--ink)' }}>{t("privacyPolicy")}</h3>
         <p>{t("weValueYourPrivacy")}</p>
         <p>{t("ifYouHaveAdditionalQuestions")}</p>
         <h4>{t("GDPR")}</h4>
