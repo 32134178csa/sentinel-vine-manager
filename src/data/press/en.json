@@ -151,5 +151,14 @@
     "title": "Pesticide Use Reporting for Vineyards: How to Automate California PUR Compliance",
     "content": "Pesticide use reporting for vineyards is a compliance requirement that consumes hours of admin time each week. Learn how to automate California PUR filings, track REI/PHI intervals, and eliminate spreadsheet reconciliation.",
     "url": "/blog/pesticide-use-reporting-vineyard-compliance"
+  },
+  "vineyard-replanting-cost-roi-guide": {
+    "filename": "vineyard-replanting-cost-roi-guide",
+    "author": "Sentinel Blog",
+    "id": "17",
+    "image": "/img/blog/replant-decision.webp",
+    "title": "The Vineyard Replant Decision: When the Data Says Pull, When It Says Wait",
+    "content": "Vineyard replanting costs $50,000 to $80,000 per acre in Napa Valley when you factor in lost production. Vine-level data turns a gut call into a precise, block-by-block analysis -- and often reveals that a partial replant is the right answer.",
+    "url": "/blog/vineyard-replanting-cost-roi-guide"
   }
 }
