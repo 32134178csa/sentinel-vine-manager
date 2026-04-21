@@ -1337,6 +1337,127 @@ nav.top {
 }
 .fact-grid .n { font-size: 12px; color: var(--ink-dim); line-height: 1.5; font-weight: 300 }
 
+/* =============================================================
+   FAQ Page V2 -- Shawn's design (Apr 2026)
+   ============================================================= */
+
+/* --- FAQ Body (sidebar + main layout) --- */
+.faq-body {
+  display: grid; grid-template-columns: 220px 1fr; gap: 0;
+  border-bottom: 1px solid var(--line-2); min-height: 80vh;
+}
+
+/* --- FAQ Sidebar --- */
+.faq-sidebar {
+  position: sticky; top: 96px; align-self: start;
+  padding: 40px 24px 40px 0; border-right: 1px solid var(--line-2);
+  display: flex; flex-direction: column; gap: 0;
+}
+.faq-sidebar-label {
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--ink-mute); margin-bottom: 20px;
+}
+.faq-sidebar-link {
+  font-size: 13px; color: var(--ink-dim); text-decoration: none;
+  padding: 8px 0; display: flex; align-items: center; gap: 8px;
+  transition: color var(--duration-fast) var(--ease-default);
+}
+.faq-sidebar-link:hover { color: var(--ink); }
+.faq-sidebar-num {
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em;
+  color: var(--ink-mute); min-width: 24px;
+}
+
+/* --- FAQ Main --- */
+.faq-main { padding: 0 0 0 48px; }
+
+/* --- FAQ Section --- */
+.faq-section {
+  padding: 56px 0 40px; border-bottom: 1px solid var(--line-2);
+}
+.faq-section:last-child { border-bottom: 0; }
+
+.faq-section-title {
+  font-family: var(--font-display); font-size: clamp(32px, 3.5vw, 48px);
+  line-height: 1.05; margin: 0 0 32px; font-weight: 400; letter-spacing: -0.01em;
+}
+.faq-section-title em { font-style: italic; color: var(--ink-dim); }
+.faq-section-num {
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.15em;
+  color: var(--ink-mute); display: block; margin-bottom: 12px; text-transform: uppercase;
+}
+
+/* --- FAQ Accordion Item --- */
+.faq-item {
+  border-top: 1px solid var(--line-2);
+}
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-summary {
+  display: flex; align-items: center; gap: 16px;
+  padding: 20px 0; cursor: pointer;
+  list-style: none; /* Remove default details marker */
+}
+.faq-summary::-webkit-details-marker { display: none; }
+.faq-summary::marker { display: none; content: ''; }
+
+.faq-num {
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em;
+  color: var(--ink-mute); min-width: 40px; flex-shrink: 0;
+}
+.faq-q {
+  font-family: var(--font-body); font-size: 16px; font-weight: 500;
+  color: var(--ink); flex: 1; line-height: 1.4;
+}
+.faq-chevron {
+  width: 12px; height: 12px; flex-shrink: 0; position: relative;
+  transition: transform var(--duration-fast) var(--ease-default);
+}
+.faq-chevron::before, .faq-chevron::after {
+  content: ''; position: absolute; background: var(--ink-dim);
+  transition: transform var(--duration-fast) var(--ease-default);
+}
+.faq-chevron::before {
+  width: 12px; height: 1px; top: 50%; left: 0;
+}
+.faq-chevron::after {
+  width: 1px; height: 12px; left: 50%; top: 0;
+}
+.faq-chevron.open::after {
+  transform: rotate(90deg);
+}
+
+.faq-summary:hover .faq-q { color: var(--accent); }
+
+/* --- FAQ Answer --- */
+.faq-answer {
+  padding: 0 0 24px 56px;
+}
+.faq-answer p {
+  font-size: 15px; line-height: 1.7; color: var(--ink-dim);
+  margin: 0 0 12px; font-weight: 300; max-width: 640px;
+}
+.faq-answer p:last-child { margin-bottom: 0; }
+
+/* --- FAQ page responsive --- */
+@media (max-width: 1100px) {
+  .faq-body { grid-template-columns: 1fr; }
+  .faq-sidebar {
+    position: static; border-right: 0;
+    border-bottom: 1px solid var(--line-2);
+    padding: 32px 0; flex-direction: row; flex-wrap: wrap; gap: 4px 16px;
+  }
+  .faq-sidebar-label { width: 100%; margin-bottom: 12px; }
+  .faq-main { padding: 0; }
+}
+
+@media (max-width: 600px) {
+  .faq-answer { padding: 0 0 24px 0; }
+  .faq-section { padding: 40px 0 24px; }
+}
+
 /* --- About page responsive --- */
 @media (max-width: 1100px) {
   .page-hero { grid-template-columns: 1fr }
