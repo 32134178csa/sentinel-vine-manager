@@ -1,38 +1,222 @@
-import { Container, Row, Col} from "react-bootstrap";
-import Spacer from "./Spacer";
-import ImageFadeIn from "./ImageFadeIn";
 import { useTranslation } from 'next-i18next';
+import Link from 'next/link';
+import Image from 'next/image';
+import { APP_HOST } from '@/config';
 
 export default function About() {
-    const { t } = useTranslation('common');
-    return(
-        <Container>
-            <Row className="justify-content-center">
-                <Col xs={12} md={8} lg={6}>
-                    <div className="overline" style={{ textAlign: 'center', marginBottom: 'var(--space-sm)' }}>Team</div>
-                    <h2 style={{ textAlign: 'center', fontFamily: 'var(--font-display)' }}>{t('ourTeam')}</h2>
-                    <hr className="section-divider" />
-                </Col>
-            </Row>
-            <Row className="mt-4 justify-content-center">
-                <Col md="auto">
-                    <ImageFadeIn src="/img/sdemartino.webp" altText={"sgdemartino"} imageClassName={"about-picture"}/>
-                </Col>
-                <Col xs={12} md={6} className="mt-4 justify-content-center">
-                    <h4 style={{ color: 'var(--ink)', fontFamily: 'var(--font-body)', fontWeight: 600 }}>{t('sgdHeading')}</h4>
-                    <p style={{ color: 'var(--ink-dim)', lineHeight: 1.7 }}>{t('sgdBody')}</p>
-                </Col>
-            </Row>
-            <Row className="mt-4 justify-content-center">
-                <Col md="auto">
-                    <ImageFadeIn src="/img/csidak.webp" altText={"csidak"} imageClassName={"about-picture"}/>
-                </Col>
-                <Col xs={12} md={6} className="mt-4 justify-content-center">
-                    <h4 style={{ color: 'var(--ink)', fontFamily: 'var(--font-body)', fontWeight: 600 }}>{t('cgsHeading')}</h4>
-                    <p style={{ color: 'var(--ink-dim)', lineHeight: 1.7 }}>{t('cgsBody')}</p>
-                </Col>
-            </Row>
-            <Spacer height={200}/>
-        </Container>
-    )
+  useTranslation('common');
+
+  return (
+    <div className="about-v2" data-page="about">
+
+      {/* ============ PAGE HERO ============ */}
+      <header className="page-hero container-lp">
+        <div className="idx">About &middot; Spongy Mesophyll Technologies</div>
+        <h1>
+          Built by vineyard owners <em>for vineyard owners.</em>
+        </h1>
+        <p className="lede">
+          We&apos;re a vineyard technology company working quietly alongside growers in California, Oregon, Mexico, Italy, Armenia and beyond. Our founders grow and make wine; this product is the one we wished existed.
+        </p>
+      </header>
+
+      {/* ============ SECTION 01 -- OUR STORY ============ */}
+      <section className="story container-lp">
+        <div className="idx">01 &middot; Our Story</div>
+        <div>
+          <h2>Twenty years of spreadsheets, <em>pinned to a wall.</em></h2>
+          <p className="first">
+            Sentinel was born from a simple observation: the world&apos;s finest vineyards were making billion-dollar decisions from clipboards, Excel workbooks, and memory.
+          </p>
+          <p>
+            Our team had spent a combined two decades walking vineyard rows -- scouting for Leafroll, flagging Red Blotch symptoms with plastic tape, guessing at cluster counts, and watching the institutional knowledge walk out the gate every time a crew foreman retired.
+          </p>
+          <p>
+            Drones and satellites promised a solution, but NDVI maps stop at the canopy. A vine with Red Blotch can look identical to a shaded, under-irrigated, or simply young vine from above. The ground truth -- the actual condition of the plant -- was still trapped in peoples&apos; heads.
+          </p>
+        </div>
+        <div>
+          <h2 className="story-sub">What we built.</h2>
+          <p>
+            Sentinel is an end-to-end vine-level management system. Drop every vine once with sub-centimeter GNSS. Attach disease status, phenology, yield estimates, photos, and lab results. Issue vine-specific work orders that auto-update as work is completed. Analyze trends across vintages.
+          </p>
+          <p>
+            We operate out of Spongy Mesophyll Technologies -- named for the layer of leaf tissue where photosynthesis, transpiration, and most pathogens quietly do their work. Invisible, essential, and the foundation of everything above.
+          </p>
+        </div>
+      </section>
+
+      {/* ============ SECTION 02 -- PRINCIPLES ============ */}
+      <div className="section-head container-lp">
+        <span className="idx">02 &middot; Principles</span>
+        <h2>What we believe <em>about vineyard data.</em></h2>
+      </div>
+
+      <section className="principles container-lp">
+        <div className="principle">
+          <div className="num">01</div>
+          <h3>Ground truth beats aerial guesses.</h3>
+          <p>A vine&apos;s condition is something a human confirms, not an algorithm. We build tools that make confirming fast -- not tools that pretend pixels are plants.</p>
+        </div>
+        <div className="principle">
+          <div className="num">02</div>
+          <h3>Data has to live longer than crews.</h3>
+          <p>Vineyards outlive employees. The institutional memory of which vine was grafted when, and why, has to survive in a system -- not a crew foreman&apos;s head.</p>
+        </div>
+        <div className="principle">
+          <div className="num">03</div>
+          <h3>Precision is a practice, not a product.</h3>
+          <p>Sub-centimeter accuracy is meaningless if the workflow around it is painful. We obsess over the walk-up loop: the vine, the phone, the record, back to work.</p>
+        </div>
+      </section>
+
+      {/* ============ SECTION 03 -- TEAM ============ */}
+      <section className="team container-lp">
+        <div className="team-head">
+          <div className="idx">03 &middot; Team</div>
+          <h2>A small team, <em>deeply embedded.</em></h2>
+        </div>
+        <div className="team-grid">
+          <div>
+            <div className="portrait" data-initials="SD" />
+            <div>
+              <div className="role">CEO &amp; Co-Founder</div>
+              <h4>Shawn DeMartino</h4>
+              <p>A decade in Napa -- Screaming Eagle, Harlan Estate, Grace Family Vineyards -- where he served as Director of Grace Family. Sentinel began as the spreadsheet he kept pinned to the cellar wall. He now runs the company from the vineyard side of the fence.</p>
+              <dl>
+                <dt>Prior</dt><dd>Grace Family Vineyards &middot; Harlan &middot; Screaming Eagle</dd>
+                <dt>Education</dt><dd>Harvard, A.B. &apos;14</dd>
+                <dt>Based</dt><dd>Napa Valley, CA</dd>
+              </dl>
+            </div>
+          </div>
+          <div>
+            <div className="portrait" data-initials="CS" />
+            <div>
+              <div className="role">CTO &amp; Co-Founder</div>
+              <h4>Christian Sidak</h4>
+              <p>Formerly a product manager and engineer at Palantir, where he shipped data platforms for customers operating in harder conditions than a vineyard row. Leads Sentinel&apos;s geospatial stack, offline-first mobile capture, and the sync model that ties field data to web analytics.</p>
+              <dl>
+                <dt>Prior</dt><dd>Palantir Technologies</dd>
+                <dt>Education</dt><dd>Harvard, A.B. &apos;17</dd>
+                <dt>Languages</dt><dd>Eleven, and counting</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ SECTION 04 -- BY THE NUMBERS ============ */}
+      <section className="facts container-lp">
+        <div className="idx">04 &middot; By the Numbers</div>
+        <div className="fact-grid">
+          <div>
+            <div className="k">Client AUM</div>
+            <div className="v">$3.2<small>B</small></div>
+            <div className="n">Vineyard assets under management by our clients.</div>
+          </div>
+          <div>
+            <div className="k">Acres Mapped</div>
+            <div className="v">2,400<small>+</small></div>
+            <div className="n">Vine By Vine&trade; across CA, OR, and international sites.</div>
+          </div>
+          <div>
+            <div className="k">Vines Tracked</div>
+            <div className="v">3.1<small>M</small></div>
+            <div className="n">Permanent records, updated each vintage.</div>
+          </div>
+          <div>
+            <div className="k">Countries</div>
+            <div className="v">5</div>
+            <div className="n">US &middot; France &middot; Australia &middot; NZ &middot; Chile (pilot).</div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ SECTION 05 -- CONTACT CTA ============ */}
+      <section>
+        <div className="cta-band container-lp">
+          <div>
+            <div className="kicker" style={{ marginBottom: 24 }}>05 &middot; Contact</div>
+            <h3>Tell us about <em>your vineyard.</em></h3>
+          </div>
+          <div className="actions">
+            <Link href="/press" className="cta-ghost">Press</Link>
+            <Link href="/contact" className="cta-solid">
+              Get in Touch <span className="arrow" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ FOOTER ============ */}
+      <footer className="footer-v2">
+        <div className="container-lp">
+          <div className="foot-grid">
+            <div className="foot-brand">
+              <Image
+                src="/img/transparent-logo.webp"
+                alt="Sentinel Logo"
+                width={32}
+                height={32}
+              />
+              <div className="name">Sentinel.</div>
+              <p>The patient medical record for your vineyard. Built by winegrowers, for winegrowers -- from California to six countries worldwide. A product of Spongy Mesophyll Technologies.</p>
+            </div>
+
+            <div className="foot-col">
+              <h5>Product</h5>
+              <ul>
+                <li><Link href="/rapidMapping">Vine By Vine&trade;</Link></li>
+                <li><Link href="/maturityMonitoring">Maturity Monitoring</Link></li>
+                <li><Link href="/diseaseTracking">Pest &amp; Disease</Link></li>
+                <li><Link href="/historicalAnalysis">Historical Analysis</Link></li>
+                <li><Link href="/workOrders">Work Orders</Link></li>
+              </ul>
+            </div>
+
+            <div className="foot-col">
+              <h5>Company</h5>
+              <ul>
+                <li><Link href="/about">About</Link></li>
+                <li><Link href="/blog">Blog</Link></li>
+                <li><Link href="/press">Press</Link></li>
+                <li><Link href="/faqs">FAQs</Link></li>
+              </ul>
+            </div>
+
+            <div className="foot-col">
+              <h5>Get Started</h5>
+              <ul>
+                <li><Link href="/contact">Schedule a Demo</Link></li>
+                <li><a href="#">Buy Now</a></li>
+                <li><a href="https://apps.apple.com/app/sentinel-vine-manager/id1608970406" target="_blank" rel="noreferrer">Download on App Store</a></li>
+                <li><a href={APP_HOST + '/login'}>User Login</a></li>
+              </ul>
+            </div>
+
+            <div className="foot-col">
+              <h5>Contact</h5>
+              <ul>
+                <li><a href="mailto:support@sentineltech.eu">support@sentineltech.eu</a></li>
+                <li><a href="#">Napa &middot; California</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><Link href="/privacy">Privacy Policy</Link></li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="foot-bottom">
+            <span>&copy; 2026 Spongy Mesophyll Technologies &middot; Sentinel Vine Manager&trade;</span>
+            <div className="ver">
+              <span>Build 26.04.019</span>
+              <Link href="/cookies">Cookies</Link>
+              <Link href="/privacy">Privacy</Link>
+              <a href="#">Legal</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
 }
