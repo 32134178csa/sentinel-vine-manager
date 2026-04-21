@@ -191,7 +191,12 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
         <span className="sep">|</span>
         <span>VINE . BY . VINE&trade;</span>
         <span className="sep">|</span>
-        <span>CALIFORNIA . OREGON . MEXICO . ITALY . ARMENIA</span>
+        <span className="country-marquee-wrap">
+          <span className="country-marquee">
+            CALIFORNIA &middot; OREGON &middot; MEXICO &middot; ITALY &middot; ARMENIA &middot; NEW ZEALAND &middot; PORTUGAL &middot; ARGENTINA &middot; LEBANON &nbsp;&nbsp;&nbsp;
+            CALIFORNIA &middot; OREGON &middot; MEXICO &middot; ITALY &middot; ARMENIA &middot; NEW ZEALAND &middot; PORTUGAL &middot; ARGENTINA &middot; LEBANON &nbsp;&nbsp;&nbsp;
+          </span>
+        </span>
         <span className="spacer" />
         <span>GNSS ACC <b>0.009 m</b></span>
         <span className="sep">|</span>
