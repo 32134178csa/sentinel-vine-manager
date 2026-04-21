@@ -796,7 +796,10 @@ input::placeholder, textarea::placeholder {
 .container-lp { max-width: 1440px; margin: 0 auto; padding: 0 32px; }
 
 /* --- Pulse keyframe --- */
-@keyframes pulse { 0%,100% { opacity: 1 } 50% { opacity: .45 } }
+@keyframes pulse {
+  0%,100% { opacity: 1; box-shadow: 0 0 6px var(--accent), 0 0 12px var(--accent); transform: scale(1); }
+  50% { opacity: .5; box-shadow: 0 0 2px var(--accent), 0 0 4px var(--accent); transform: scale(0.85); }
+}
 
 /* --- Status Strip --- */
 .status-strip {
