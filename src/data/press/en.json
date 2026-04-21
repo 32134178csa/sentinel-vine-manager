@@ -142,5 +142,14 @@
     "title": "Vineyard Work Orders: How to Close the Loop Between Scout and Field Crew",
     "content": "Vineyard work orders break down when scouting data does not connect to crew execution. Learn how vine-level work orders with auto-updating statuses close the gap between what your scout finds and what your crew does about it.",
     "url": "/blog/vineyard-work-orders-crew-management"
+  },
+  "pesticide-use-reporting-vineyard-compliance": {
+    "filename": "pesticide-use-reporting-vineyard-compliance",
+    "author": "Sentinel Blog",
+    "id": "16",
+    "image": "/img/blog/pur-compliance.webp",
+    "title": "Pesticide Use Reporting for Vineyards: How to Automate California PUR Compliance",
+    "content": "Pesticide use reporting for vineyards is a compliance requirement that consumes hours of admin time each week. Learn how to automate California PUR filings, track REI/PHI intervals, and eliminate spreadsheet reconciliation.",
+    "url": "/blog/pesticide-use-reporting-vineyard-compliance"
   }
 }
