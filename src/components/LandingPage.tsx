@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { BlogPost } from '@/services/BlogService';
 import { APP_HOST } from '@/config';
+import { AnalyticsService } from '@/services/AnalyticsService';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface LandingPageProps {
@@ -236,7 +237,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
             </p>
 
             <div className="hero-ctas">
-              <Link href="/contact" className="cta-solid">
+              <Link href="/contact" className="cta-solid" onClick={() => AnalyticsService.trackDemoClick('home_hero')}>
                 Schedule a Demo <span className="arrow" />
               </Link>
               <a href="https://apps.apple.com/app/sentinel-vine-manager/id1608970406" className="cta-ghost" target="_blank" rel="noreferrer">
@@ -427,7 +428,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
           </h3>
           <div className="actions">
             <Link href="/faqs" className="cta-ghost">Read the FAQs</Link>
-            <Link href="/contact" className="cta-solid">
+            <Link href="/contact" className="cta-solid" onClick={() => AnalyticsService.trackDemoClick('home_cta_band')}>
               Schedule a Demo <span className="arrow" />
             </Link>
           </div>

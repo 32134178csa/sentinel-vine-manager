@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import AppPage from '@/components/AppPage'
 import { APP_HOST } from '@/config'
+import { AnalyticsService } from '@/services/AnalyticsService'
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
@@ -227,7 +228,7 @@ const NdviPage: NextPage = () => {
                 </h3>
               </div>
               <div className="actions">
-                <Link href="/contact" className="cta-solid">
+                <Link href="/contact" className="cta-solid" onClick={() => AnalyticsService.trackDemoClick('ndvi_cta_band')}>
                   Schedule a Demo <span className="arrow" />
                 </Link>
               </div>

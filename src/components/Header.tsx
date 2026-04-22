@@ -3,6 +3,7 @@ import { ChevronDown, ChevronLeft } from "react-bootstrap-icons";
 import { useState } from "react";
 import { useRouter } from 'next/router';
 import { APP_HOST } from "@/config";
+import { AnalyticsService } from '@/services/AnalyticsService';
 import Link from 'next/link';
 
 export default function Header() {
@@ -55,7 +56,7 @@ export default function Header() {
           <a href={APP_HOST + '/login'} className="cta-ghost">
             User Login
           </a>
-          <Link href="/contact" className="cta-solid">
+          <Link href="/contact" className="cta-solid" onClick={() => AnalyticsService.trackDemoClick('header_nav')}>
             Schedule a Demo <span className="arrow" />
           </Link>
         </div>
@@ -78,7 +79,7 @@ export default function Header() {
             </Link>
           ))}
           <a href={APP_HOST + '/login'} className="mobile-menu-item">User Login</a>
-          <Link href="/contact" className="mobile-menu-item mobile-menu-cta" onClick={() => setOpen(false)}>
+          <Link href="/contact" className="mobile-menu-item mobile-menu-cta" onClick={() => { setOpen(false); AnalyticsService.trackDemoClick('header_mobile'); }}>
             Schedule a Demo
           </Link>
         </div>

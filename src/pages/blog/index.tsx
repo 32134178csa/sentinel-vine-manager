@@ -6,6 +6,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import AppPage from '@/components/AppPage'
 import { useTranslation } from 'next-i18next'
 import { formatBlogContent, BlogPostMap } from '@/services/BlogService'
+import { AnalyticsService } from '@/services/AnalyticsService'
 import { APP_HOST } from '@/config'
 import fs from 'fs'
 import path from 'path'
@@ -129,7 +130,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
                 <Link href="/press" className="cta-ghost">
                   Press &amp; Media
                 </Link>
-                <Link href="/contact" className="cta-solid">
+                <Link href="/contact" className="cta-solid" onClick={() => AnalyticsService.trackDemoClick('blog_cta_band')}>
                   Schedule a Demo <span className="arrow" />
                 </Link>
               </div>

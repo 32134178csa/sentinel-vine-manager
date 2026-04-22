@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import { APP_HOST } from '@/config';
+import { AnalyticsService } from '@/services/AnalyticsService';
 
 interface FAQItem {
   num: string;
@@ -300,7 +301,7 @@ export default function FAQ() {
           </div>
           <div className="actions">
             <a href="mailto:support@sentineltech.eu" className="cta-ghost">Email us</a>
-            <Link href="/contact" className="cta-solid">
+            <Link href="/contact" className="cta-solid" onClick={() => AnalyticsService.trackDemoClick('faq_cta_band')}>
               Schedule a Demo <span className="arrow" />
             </Link>
           </div>

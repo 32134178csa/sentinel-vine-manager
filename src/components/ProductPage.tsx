@@ -2,6 +2,7 @@ import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { APP_HOST } from '@/config';
+import { AnalyticsService } from '@/services/AnalyticsService';
 
 /* ------------------------------------------------------------------ */
 /*  Seeded random for stable SSR/client hydration                      */
@@ -314,7 +315,7 @@ export default function ProductPage() {
         </div>
         <div className="actions">
           <Link href="/faqs" className="cta-ghost">FAQs</Link>
-          <Link href="/contact" className="cta-solid">
+          <Link href="/contact" className="cta-solid" onClick={() => AnalyticsService.trackDemoClick('product_cta_band')}>
             Schedule a Demo <span className="arrow" />
           </Link>
         </div>
