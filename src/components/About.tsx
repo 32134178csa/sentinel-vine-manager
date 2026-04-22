@@ -80,9 +80,9 @@ export default function About() {
             <div>
               <div className="role">CEO &amp; Co-Founder</div>
               <h4>Shawn DeMartino</h4>
-              <p>A decade in Napa -- Screaming Eagle, Harlan Estate, Grace Family Vineyards -- where he served as Director of Grace Family. Sentinel began as the spreadsheet he kept pinned to the cellar wall. He now runs the company from the vineyard side of the fence.</p>
+              <p>A decade managing premier Napa estates -- where he served as Director of Viticulture for a cult Cabernet producer. Sentinel began as the spreadsheet he kept pinned to the cellar wall. He now runs the company from the vineyard side of the fence.</p>
               <dl>
-                <dt>Prior</dt><dd>Grace Family Vineyards &middot; Harlan &middot; Screaming Eagle</dd>
+                <dt>Prior</dt><dd>Director of Viticulture &middot; Premier Napa Estates</dd>
                 <dt>Education</dt><dd>Harvard, A.B. &apos;14</dd>
                 <dt>Based</dt><dd>Napa Valley, CA</dd>
               </dl>
