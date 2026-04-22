@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
-import Image from 'next/image';
 import { BlogPost } from '@/services/BlogService';
-import { APP_HOST } from '@/config';
 import { AnalyticsService } from '@/services/AnalyticsService';
+import FooterV2 from '@/components/FooterV2';
+import PreFooterCTA from '@/components/PreFooterCTA';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface LandingPageProps {
@@ -435,79 +435,11 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
         </div>
       </section>
 
+      {/* ============ PRE-FOOTER CTA ============ */}
+      <PreFooterCTA source="home_pre_footer" />
+
       {/* ============ FOOTER ============ */}
-      <footer className="footer-v2">
-        <div className="container-lp">
-          <div className="foot-grid">
-            {/* Brand */}
-            <div className="foot-brand">
-              <Image
-                src="/img/transparent-logo.webp"
-                alt="Sentinel Logo"
-                width={32}
-                height={32}
-              />
-              <div className="name">Sentinel.</div>
-              <p>The patient medical record for your vineyard. Built by winegrowers, for winegrowers -- from California to six countries worldwide. A product of Spongy Mesophyll Technologies.</p>
-            </div>
-
-            {/* Product */}
-            <div className="foot-col">
-              <h5>Product</h5>
-              <ul>
-                <li><Link href="/rapidMapping">Vine By Vine&trade;</Link></li>
-                <li><Link href="/maturityMonitoring">Maturity Monitoring</Link></li>
-                <li><Link href="/diseaseTracking">Pest &amp; Disease</Link></li>
-                <li><Link href="/historicalAnalysis">Historical Analysis</Link></li>
-                <li><Link href="/workOrders">Work Orders</Link></li>
-              </ul>
-            </div>
-
-            {/* Company */}
-            <div className="foot-col">
-              <h5>Company</h5>
-              <ul>
-                <li><Link href="/about">About</Link></li>
-                <li><Link href="/blog">Blog</Link></li>
-                <li><Link href="/press">Press</Link></li>
-                <li><Link href="/faqs">FAQs</Link></li>
-              </ul>
-            </div>
-
-            {/* Get Started */}
-            <div className="foot-col">
-              <h5>Get Started</h5>
-              <ul>
-                <li><Link href="/contact">Schedule a Demo</Link></li>
-                <li><a href="#">Buy Now</a></li>
-                <li><a href="https://apps.apple.com/app/sentinel-vine-manager/id1608970406" target="_blank" rel="noreferrer">Download on App Store</a></li>
-                <li><a href={APP_HOST + '/login'}>User Login</a></li>
-              </ul>
-            </div>
-
-            {/* Contact */}
-            <div className="foot-col">
-              <h5>Contact</h5>
-              <ul>
-                <li><a href="mailto:support@sentineltech.eu">support@sentineltech.eu</a></li>
-                <li><a href="#">Napa . California</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><Link href="/privacy">Privacy Policy</Link></li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="foot-bottom">
-            <span>&copy; 2026 Spongy Mesophyll Technologies . Sentinel Vine Manager&trade;</span>
-            <div className="ver">
-              <span>Build 26.04.019</span>
-              <Link href="/cookies">Cookies</Link>
-              <Link href="/privacy">Privacy</Link>
-              <a href="#">Legal</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <FooterV2 />
     </div>
   );
 }

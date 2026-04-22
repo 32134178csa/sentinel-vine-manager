@@ -52,11 +52,11 @@ const Footer: React.FC = () => {
       <Container fluid>
         <Row className="gdpr-banner" style={{ width: '100%' }}>
           <Col xs>
-            <p style={{ color: 'var(--ink-dim)', margin: 0, fontSize: '0.85rem' }}>{t('GDPRBannerText')}</p>
+            <p style={{ color: 'var(--ink-dim)', margin: 0, fontSize: '0.65rem', lineHeight: 1.4 }}>{t('GDPRBannerText')}</p>
           </Col>
           <Col md="auto" className="d-flex gap-2">
-            <button className="btn-primary" onClick={handleAccept} style={{ padding: '8px 20px', fontSize: '0.75rem' }}>{t('accept')}</button>
-            <button className="btn-ghost" onClick={handleReject} style={{ padding: '8px 20px', fontSize: '0.75rem' }}>{t('reject')}</button>
+            <button className="btn-primary" onClick={handleAccept} style={{ padding: '4px 14px', fontSize: '0.65rem' }}>{t('accept')}</button>
+            <button className="btn-ghost" onClick={handleReject} style={{ padding: '4px 14px', fontSize: '0.65rem' }}>{t('reject')}</button>
           </Col>
         </Row>
         <Row className="footer" style={{ width: '100%' }}>

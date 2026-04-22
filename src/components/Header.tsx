@@ -1,5 +1,5 @@
 import { Image } from 'react-bootstrap';
-import { ChevronDown, ChevronLeft } from "react-bootstrap-icons";
+import { List, X } from "react-bootstrap-icons";
 import { useState } from "react";
 import { useRouter } from 'next/router';
 import { APP_HOST } from "@/config";
@@ -61,11 +61,11 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Mobile hamburger */}
+        {/* Hamburger / nav toggle */}
         <div className="nav-mobile-toggle" onClick={() => setOpen(!open)}>
           {open
-            ? <ChevronDown className="nav-chevron-icon darken" />
-            : <ChevronLeft className="nav-chevron-icon darken" />
+            ? <X className="nav-hamburger-icon darken" />
+            : <List className="nav-hamburger-icon darken" />
           }
         </div>
       </div>

@@ -27,7 +27,7 @@
 
   /* Typography */
   --font-display: 'Instrument Serif', Georgia, serif;
-  --font-body:    var(--font-body, 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif);
+  --font-body:    var(--font-body, Arial, Helvetica, 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif);
   --font-mono:    var(--font-mono, 'JetBrains Mono', 'Fira Code', monospace);
   --font-wordmark: var(--font-wordmark, 'Space Grotesk', sans-serif);
 
@@ -434,13 +434,15 @@ input::placeholder, textarea::placeholder {
   background: var(--bg-1);
   border-top: 1px solid var(--line);
   position: fixed;
-  bottom: 3vh;
+  bottom: 0;
   height: auto;
   width: 100%;
   color: var(--ink-dim);
   text-decoration: none;
-  padding: var(--space-md);
-  font-size: 0.75rem;
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  line-height: 1.4;
   z-index: 15;
 }
 
@@ -483,6 +485,11 @@ input::placeholder, textarea::placeholder {
   height: 30px; width: 30px;
   position: absolute; top: 20px; right: 20px;
 }
+.nav-hamburger-icon {
+  height: 24px; width: 24px; color: var(--ink-dim);
+  transition: color var(--duration-fast) var(--ease-default);
+}
+.nav-hamburger-icon:hover { color: var(--ink); }
 
 .mobile-nav-row {
   border-top: 1px solid var(--line);
@@ -855,7 +862,7 @@ nav.top {
 }
 .navspace { flex: 1 }
 .nav-ctas { display: flex; gap: 12px; align-items: center; }
-.nav-mobile-toggle { display: none; cursor: pointer; }
+.nav-mobile-toggle { display: block; cursor: pointer; margin-left: 12px; }
 
 /* --- CTA Buttons V2 --- */
 .cta-ghost {
@@ -1074,6 +1081,20 @@ nav.top {
 }
 .cta-band h3 em { font-style: italic; color: var(--ink-dim) }
 .cta-band .actions { display: flex; gap: 12px; padding-bottom: 6px }
+
+/* --- Pre-Footer CTA --- */
+.pre-footer-cta {
+  display: flex; justify-content: center; align-items: center; gap: 8px;
+  padding: 24px 32px; border-top: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2);
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em;
+  text-transform: uppercase; background: var(--bg);
+}
+.pre-footer-link {
+  color: var(--ink-dim); text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-default);
+}
+.pre-footer-link:hover { color: var(--ink); }
+.pre-footer-sep { color: var(--ink-mute); }
 
 /* --- Footer V2 --- */
 .footer-v2 { padding: 48px 32px 32px; background: var(--bg); border-top: 1px solid var(--line-2); }
