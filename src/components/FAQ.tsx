@@ -2,8 +2,6 @@ import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useState } from 'react';
 import { AnalyticsService } from '@/services/AnalyticsService';
-import FooterV2 from '@/components/FooterV2';
-import PreFooterCTA from '@/components/PreFooterCTA';
 
 interface FAQItem {
   num: string;
@@ -308,11 +306,6 @@ export default function FAQ() {
         </div>
       </section>
 
-      {/* ============ PRE-FOOTER CTA ============ */}
-      <PreFooterCTA source="faq_pre_footer" />
-
-      {/* ============ FOOTER ============ */}
-      <FooterV2 />
     </div>
   );
 }

@@ -1,7 +1,5 @@
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
-import FooterV2 from '@/components/FooterV2';
-import PreFooterCTA from '@/components/PreFooterCTA';
 
 export default function About() {
   useTranslation('common');
@@ -26,10 +24,10 @@ export default function About() {
         <div>
           <h2>Twenty years of spreadsheets, <em>pinned to a wall.</em></h2>
           <p className="first">
-            Sentinel was born from a simple observation: the world&apos;s finest vineyards were making billion-dollar decisions from clipboards, Excel workbooks, and memory.
+            Sentinel was born from a simple observation: the world&apos;s finest vineyards were making critical decisions from clipboards, Excel workbooks, and memory.
           </p>
           <p>
-            Our team had spent a combined two decades walking vineyard rows -- scouting for Leafroll, flagging Red Blotch symptoms with plastic tape, guessing at cluster counts, and watching the institutional knowledge walk out the gate every time a crew foreman retired.
+            Our team had spent years walking vineyard rows -- scouting for Leafroll, flagging Red Blotch symptoms with plastic tape, guessing at cluster counts, and watching the institutional knowledge walk out the gate every time a crew foreman retired.
           </p>
           <p>
             Drones and satellites promised a solution, but NDVI maps stop at the canopy. A vine with Red Blotch can look identical to a shaded, under-irrigated, or simply young vine from above. The ground truth -- the actual condition of the plant -- was still trapped in peoples&apos; heads.
@@ -149,11 +147,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* ============ PRE-FOOTER CTA ============ */}
-      <PreFooterCTA source="about_pre_footer" />
-
-      {/* ============ FOOTER ============ */}
-      <FooterV2 />
     </div>
   );
 }

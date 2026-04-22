@@ -27,9 +27,9 @@
 
   /* Typography */
   --font-display: 'Instrument Serif', Georgia, serif;
-  --font-body:    var(--font-body, Arial, Helvetica, 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif);
-  --font-mono:    var(--font-mono, 'JetBrains Mono', 'Fira Code', monospace);
-  --font-wordmark: var(--font-wordmark, 'Space Grotesk', sans-serif);
+  --font-body:    Arial, Helvetica, 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+  --font-wordmark: 'Space Grotesk', sans-serif;
 
   /* Spacing scale */
   --space-xs:  4px;

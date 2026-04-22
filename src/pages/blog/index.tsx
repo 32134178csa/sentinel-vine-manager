@@ -6,8 +6,6 @@ import AppPage from '@/components/AppPage'
 import { useTranslation } from 'next-i18next'
 import { formatBlogContent, BlogPostMap } from '@/services/BlogService'
 import { AnalyticsService } from '@/services/AnalyticsService'
-import FooterV2 from '@/components/FooterV2'
-import PreFooterCTA from '@/components/PreFooterCTA'
 import fs from 'fs'
 import path from 'path'
 
@@ -137,11 +135,6 @@ const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
             </div>
           </section>
 
-          {/* ============ PRE-FOOTER CTA ============ */}
-          <PreFooterCTA source="blog_pre_footer" />
-
-          {/* ============ FOOTER ============ */}
-          <FooterV2 />
         </div>
       </AppPage>
     </>

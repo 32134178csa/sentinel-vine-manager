@@ -1,8 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { AnalyticsService } from '@/services/AnalyticsService';
-import FooterV2 from '@/components/FooterV2';
-import PreFooterCTA from '@/components/PreFooterCTA';
 
 /* ------------------------------------------------------------------ */
 /*  Cellar mock visual                                                 */
@@ -204,11 +202,6 @@ export default function ProductPage() {
         </div>
       </section>
 
-      {/* ============ PRE-FOOTER CTA ============ */}
-      <PreFooterCTA source="product_pre_footer" />
-
-      {/* ============ FOOTER ============ */}
-      <FooterV2 />
     </div>
   );
 }

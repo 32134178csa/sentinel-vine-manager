@@ -2,8 +2,6 @@ import React from "react";
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import { formatBlogContent, BlogPostMap } from "@/services/BlogService";
-import FooterV2 from '@/components/FooterV2';
-import PreFooterCTA from '@/components/PreFooterCTA';
 
 interface PressProps {
     posts: BlogPostMap;
@@ -145,11 +143,6 @@ const Press: React.FC<PressProps> = ({ posts }) => {
                 </div>
             </section>
 
-            {/* ============ PRE-FOOTER CTA ============ */}
-            <PreFooterCTA source="press_pre_footer" />
-
-            {/* ============ FOOTER ============ */}
-            <FooterV2 />
         </div>
     );
 }

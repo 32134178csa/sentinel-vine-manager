@@ -26,10 +26,10 @@ export default function FooterV2() {
             <h5>Product</h5>
             <ul>
               <li><Link href="/rapidMapping">Vine By Vine&trade;</Link></li>
-              <li><Link href="/maturityMonitoring">Maturity Monitoring</Link></li>
-              <li><Link href="/diseaseTracking">Pest &amp; Disease</Link></li>
-              <li><Link href="/historicalAnalysis">Historical Analysis</Link></li>
-              <li><Link href="/workOrders">Work Orders</Link></li>
+              <li><Link href="/rapidMapping#maturity">Maturity Monitoring</Link></li>
+              <li><Link href="/rapidMapping#disease">Pest &amp; Disease</Link></li>
+              <li><Link href="/rapidMapping#historical">Historical Analysis</Link></li>
+              <li><Link href="/rapidMapping#workorders">Work Orders</Link></li>
             </ul>
           </div>
 

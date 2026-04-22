@@ -4,8 +4,6 @@ import Link from 'next/link'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import AppPage from '@/components/AppPage'
 import { AnalyticsService } from '@/services/AnalyticsService'
-import FooterV2 from '@/components/FooterV2'
-import PreFooterCTA from '@/components/PreFooterCTA'
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
@@ -250,11 +248,6 @@ const NdviPage: NextPage = () => {
             </div>
           </section>
 
-          {/* ============ PRE-FOOTER CTA ============ */}
-          <PreFooterCTA source="ndvi_pre_footer" />
-
-          {/* ============ FOOTER ============ */}
-          <FooterV2 />
         </div>
       </AppPage>
     </>
