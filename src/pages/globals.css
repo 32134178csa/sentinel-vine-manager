@@ -1124,6 +1124,20 @@ nav.top {
 .foot-bottom a:hover { color: var(--ink); }
 .foot-bottom .ver { display: flex; gap: 18px }
 
+/* --- Product Screenshots --- */
+.hero-screenshot {
+  width: 100%; height: 100%; object-fit: cover; border-radius: 6px;
+  border: 1px solid var(--line);
+}
+.split-screenshot {
+  width: 100%; border-radius: 6px; margin-top: 24px;
+  border: 1px solid var(--line);
+}
+.pillar-screenshot {
+  width: 100%; border-radius: 6px;
+  border: 1px solid var(--line);
+}
+
 /* --- Vine Map Placeholder --- */
 .vine-map-placeholder {
   position: relative; background: #0B0C0E; border: 1px solid var(--line);

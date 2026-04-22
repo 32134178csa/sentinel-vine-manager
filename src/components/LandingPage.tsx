@@ -6,7 +6,6 @@ import { AnalyticsService } from '@/services/AnalyticsService';
 import FooterV2 from '@/components/FooterV2';
 import PreFooterCTA from '@/components/PreFooterCTA';
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface LandingPageProps {
   recommendedBlogPost: BlogPost;
 }
@@ -73,91 +72,6 @@ const IcoBarrel = () => (
     <line x1="15" y1="13" x2="21" y2="13" stroke="var(--accent)" strokeWidth="1" />
   </svg>
 );
-
-/* ------------------------------------------------------------------ */
-/*  Seeded random for stable SSR/client hydration                      */
-/* ------------------------------------------------------------------ */
-function seededRandom(seed: number) {
-  let s = seed;
-  return () => {
-    s = (s * 16807 + 0) % 2147483647;
-    return s / 2147483647;
-  };
-}
-
-/* ------------------------------------------------------------------ */
-/*  Vine map placeholder (pure CSS dots)                               */
-/* ------------------------------------------------------------------ */
-const VINE_STATUSES = ['healthy', 'nominal', 'rootstock', 'miss', 'virus', 'tested', 'dry'] as const;
-const VINE_WEIGHTS = [0.48, 0.18, 0.1, 0.06, 0.08, 0.06, 0.04];
-
-function generateDots(rows: number, cols: number, seed: number) {
-  const rand = seededRandom(seed);
-  const result: string[] = [];
-  for (let i = 0; i < rows * cols; i++) {
-    const r = rand();
-    let cum = 0;
-    let status: string = VINE_STATUSES[0];
-    for (let j = 0; j < VINE_WEIGHTS.length; j++) {
-      cum += VINE_WEIGHTS[j];
-      if (r < cum) { status = VINE_STATUSES[j]; break; }
-    }
-    result.push(status);
-  }
-  return result;
-}
-
-const heroDots = generateDots(14, 40, 42);
-const splitDots = generateDots(10, 28, 99);
-
-function VineMapPlaceholder() {
-  return (
-    <div className="vine-map-placeholder">
-      <div className="vine-map-hud-top">
-        <span className="vine-map-label">Vineyard <b>Volcanic Ridge</b></span>
-        <span className="vine-map-pills">
-          <span className="vine-map-pill live"><span className="pulse-dot" /> RTK FIX</span>
-          <span className="vine-map-pill">BLOCK 8A</span>
-        </span>
-      </div>
-      <div className="vine-map-dots">
-        {heroDots.map((s, i) => (
-          <span key={i} className={`vine-dot vine-dot--${s}`} />
-        ))}
-      </div>
-      <div className="vine-map-hud-bottom">
-        <span>Scale 1 : 1 200</span>
-        <span>NAD83 . UTM 10N</span>
-      </div>
-    </div>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/*  NDVI placeholder                                                   */
-/* ------------------------------------------------------------------ */
-function NdviPlaceholder() {
-  return (
-    <div className="ndvi-wrap">
-      <div className="ndvi-viz" />
-    </div>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/*  Small vine map for the "Sentinel" side of the split panel          */
-/* ------------------------------------------------------------------ */
-function SmallVineMap() {
-  return (
-    <div className="split-vine-map">
-      <div className="vine-map-dots vine-map-dots--small">
-        {splitDots.map((s, i) => (
-          <span key={i} className={`vine-dot vine-dot--${s}`} />
-        ))}
-      </div>
-    </div>
-  );
-}
 
 /* ------------------------------------------------------------------ */
 /*  UTC clock                                                          */
@@ -262,7 +176,12 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
           </div>
 
           <div className="hero-right">
-            <VineMapPlaceholder />
+            <img
+              src="/images/product/hero-vine-map.png"
+              alt="Sentinel vine map showing color-coded vine statuses with vine detail popup"
+              className="hero-screenshot"
+              loading="eager"
+            />
           </div>
         </div>
       </header>
@@ -355,16 +274,24 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
             <h4>Exhibit A . Automated Vineyard Imaging</h4>
             <h3>More data <em>isn&apos;t better data.</em></h3>
             <p>Cameras and proprietary models can generate terabytes of imagery -- but the models are black boxes, the outputs need hand-validation, and the response they&apos;re prescribing may not match the scale of problem you actually want to tackle. Sentinel puts that control back in the hands of the people who know the vineyard.</p>
-            <NdviPlaceholder />
+            <img
+              src="/images/product/rtk-field-survey.png"
+              alt="RTK GPS field survey interface with color-coded sensor data points"
+              className="split-screenshot"
+              loading="lazy"
+            />
           </div>
 
           <div className="panel">
             <h4>Exhibit B . Sentinel</h4>
             <h3>Ground-truthed, <em>vine by vine.</em></h3>
             <p>Mapped once with sub-centimeter GNSS accuracy. Updated continuously with disease status, production history, photos, lab results, and every management decision made in the field. Ground truth that lives as long as your vineyard does.</p>
-            <div className="viz">
-              <SmallVineMap />
-            </div>
+            <img
+              src="/images/product/disease-tracking-map.png"
+              alt="Sentinel disease tracking map with vine-level health data and query system"
+              className="split-screenshot"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>

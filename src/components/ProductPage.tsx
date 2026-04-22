@@ -5,100 +5,6 @@ import FooterV2 from '@/components/FooterV2';
 import PreFooterCTA from '@/components/PreFooterCTA';
 
 /* ------------------------------------------------------------------ */
-/*  Seeded random for stable SSR/client hydration                      */
-/* ------------------------------------------------------------------ */
-function seededRandom(seed: number) {
-  let s = seed;
-  return () => {
-    s = (s * 16807 + 0) % 2147483647;
-    return s / 2147483647;
-  };
-}
-
-/* ------------------------------------------------------------------ */
-/*  Vine map for pillar visuals                                        */
-/* ------------------------------------------------------------------ */
-type MapVariant = 'production' | 'unified' | 'disease' | 'irrigation';
-
-function pickStatus(variant: MapVariant, n: number): string {
-  if (variant === 'disease') {
-    if (n < 0.03) return 'virus';
-    if (n < 0.07) return 'tested';
-    if (n < 0.10) return 'miss';
-    if (n < 0.55) return 'healthy';
-    return 'nominal';
-  }
-  if (variant === 'production') {
-    if (n < 0.04) return 'miss';
-    if (n < 0.08) return 'rootstock';
-    if (n < 0.50) return 'healthy';
-    return 'nominal';
-  }
-  if (variant === 'irrigation') {
-    if (n < 0.40) return 'irrig';
-    if (n < 0.70) return 'dry';
-    return 'nominal';
-  }
-  // unified
-  if (n < 0.02) return 'virus';
-  if (n < 0.05) return 'tested';
-  if (n < 0.09) return 'rootstock';
-  if (n < 0.12) return 'miss';
-  if (n < 0.55) return 'healthy';
-  return 'nominal';
-}
-
-function generatePillarDots(rows: number, cols: number, seed: number, variant: MapVariant) {
-  const rand = seededRandom(seed);
-  const result: string[] = [];
-  for (let i = 0; i < rows * cols; i++) {
-    const r = rand();
-    result.push(pickStatus(variant, r));
-  }
-  return result;
-}
-
-interface PillarMapProps {
-  rows: number;
-  cols: number;
-  seed: number;
-  variant: MapVariant;
-}
-
-function PillarVineMap({ rows, cols, seed, variant }: PillarMapProps) {
-  const dots = generatePillarDots(rows, cols, seed, variant);
-  return (
-    <div className="pillar-vine-map">
-      <div className="pillar-map-hud tl">
-        <span>Vineyard <b>Volcanic Ridge</b></span>
-      </div>
-      <div className="pillar-map-hud tr">
-        <span className="pillar-pill live"><span className="pulse-dot" /> RTK FIX</span>
-        <span className="pillar-pill">BLOCK 8A</span>
-      </div>
-      <div className="pillar-layer-toggle">
-        <span className={`seg ${variant === 'production' ? 'active' : ''}`}>Production</span>
-        <span className={`seg ${variant === 'irrigation' ? 'active' : ''}`}>Irrigation</span>
-        <span className={`seg ${variant === 'disease' ? 'active' : ''}`}>Virus</span>
-        <span className={`seg ${variant === 'unified' ? 'active' : ''}`}>Unified</span>
-      </div>
-      <div
-        className="pillar-dots"
-        style={{ gridTemplateColumns: `repeat(${cols}, 1fr)` }}
-      >
-        {dots.map((s, i) => (
-          <span key={i} className={`vine-dot vine-dot--${s}`} />
-        ))}
-      </div>
-      <div className="pillar-map-hud bl">
-        <span>Scale 1 : 1 200</span>
-        <span>NAD83 &middot; UTM 10N</span>
-      </div>
-    </div>
-  );
-}
-
-/* ------------------------------------------------------------------ */
 /*  Cellar mock visual                                                 */
 /* ------------------------------------------------------------------ */
 function CellarMock() {
@@ -130,29 +36,6 @@ function CellarMock() {
       </div>
       <div className="lot-row">
         <div className="block">24-ME-01</div><div className="name">Block S-4 &middot; Merlot</div><div>23.7</div><div>3.55</div><div>6.1</div><div>35</div>
-      </div>
-    </div>
-  );
-}
-
-/* ------------------------------------------------------------------ */
-/*  PUR screenshot placeholder                                         */
-/* ------------------------------------------------------------------ */
-function PurPlaceholder() {
-  return (
-    <div className="screenshot-placeholder">
-      <div className="sp-chrome">
-        <span className="sp-dot" /><span className="sp-dot" /><span className="sp-dot" />
-        <span className="sp-url">sentinelvine.com / reports / pur</span>
-      </div>
-      <div className="sp-body">
-        <svg viewBox="0 0 120 90" aria-hidden="true">
-          <rect x="10" y="10" width="100" height="70" fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.35" />
-          <line x1="10" y1="10" x2="110" y2="80" stroke="currentColor" strokeWidth="0.5" opacity="0.35" />
-          <line x1="110" y1="10" x2="10" y2="80" stroke="currentColor" strokeWidth="0.5" opacity="0.35" />
-        </svg>
-        <div className="sp-label">Screenshot &middot; PUR Form</div>
-        <div className="sp-sub">Replace with actual screenshot from the Sentinel app</div>
       </div>
     </div>
   );
@@ -193,7 +76,7 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <PillarVineMap rows={18} cols={44} seed={42} variant="production" />
+          <img src="/images/product/vine-by-vine.png" alt="Sentinel vine map with health grid and vine data panel" className="pillar-screenshot" loading="lazy" />
         </div>
       </section>
 
@@ -210,7 +93,7 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <PillarVineMap rows={16} cols={42} seed={99} variant="unified" />
+          <img src="/images/product/analytics-dashboard.png" alt="Sentinel analytics dashboard with vine production status breakdown" className="pillar-screenshot" loading="lazy" />
         </div>
       </section>
 
@@ -228,7 +111,7 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <PillarVineMap rows={16} cols={44} seed={77} variant="disease" />
+          <img src="/images/product/disease-tracking-map.png" alt="Sentinel disease tracking with vine-level health data and spatial queries" className="pillar-screenshot" loading="lazy" />
         </div>
       </section>
 
@@ -246,7 +129,7 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <PillarVineMap rows={14} cols={40} seed={55} variant="irrigation" />
+          <img src="/images/product/historical-analysis.png" alt="Vine count time-series bar chart showing production status across vintages" className="pillar-screenshot" loading="lazy" />
         </div>
       </section>
 
@@ -265,7 +148,7 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <PillarVineMap rows={16} cols={42} seed={33} variant="unified" />
+          <img src="/images/product/work-orders.png" alt="Sentinel work order management dashboard with active tasks and progress tracking" className="pillar-screenshot" loading="lazy" />
         </div>
       </section>
 
@@ -284,7 +167,7 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <PurPlaceholder />
+          <img src="/images/product/vine-detail-mobile.png" alt="Sentinel vine detail view showing individual vine profile with production and health status" className="pillar-screenshot" loading="lazy" />
         </div>
       </section>
 
