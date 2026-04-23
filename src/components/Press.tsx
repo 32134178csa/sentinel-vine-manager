@@ -7,11 +7,42 @@ interface PressProps {
     posts: BlogPostMap;
 }
 
+/** Format date as YYYY.MM.DD -- press items use a consistent date format */
+function formatPressDate(key: string): string {
+    const dateMap: Record<string, string> = {
+        'xchateau-podcast': '2024.06.12',
+        'inside-winemaking-podcast': '2024.05.18',
+        'sentinels-technological-revolution-in-vineyards-worldwide': '2024.03.22',
+        'a-game-changing-new-vineyard-management-technology': '2023.11.15',
+        'the-red-blotch-dilemma': '2024.08.10',
+        'why-excel-is-an-expensive-way-to-map-virus': '2024.09.05',
+        'ndvi-vs-sentinel-vine-mapping': '2025.01.20',
+        'vine-data-during-a-downturn': '2025.03.14',
+        'the-replant-decision': '2025.04.02',
+        'the-knowledge-that-walks-out-the-door': '2025.04.08',
+        'vineyard-management-software-buyers-guide-2026': '2026.01.15',
+        'vine-level-disease-tracking-program': '2026.02.10',
+        'rtk-gps-vineyard-guide': '2026.02.28',
+        'drone-vineyard-mapping-vs-ground-truth': '2026.03.12',
+        'cellar-management-software-winery-guide': '2026.03.20',
+        'vineyard-work-orders-crew-management': '2026.03.28',
+        'pesticide-use-reporting-vineyard-compliance': '2026.04.02',
+        'vineyard-replanting-cost-roi-guide': '2026.04.08',
+        'precision-viticulture-roi-vine-level-data': '2026.04.15',
+    };
+    return dateMap[key] || '2026.04.01';
+}
+
 const Press: React.FC<PressProps> = ({ posts }) => {
     useTranslation('common');
     const MAX_BLOG_INTRO_LENGTH = 220;
 
     const postEntries = Object.entries(posts);
+
+    // Find the first external press item for the featured section
+    const featuredEntry = postEntries.find(([, p]) => p.author !== 'Sentinel Blog');
+    const featuredKey = featuredEntry?.[0];
+    const remainingEntries = postEntries.filter(([key]) => key !== featuredKey);
 
     return (
         <div className="press-v2" data-page="press">
@@ -27,16 +58,57 @@ const Press: React.FC<PressProps> = ({ posts }) => {
                 </p>
             </header>
 
+            {/* ============ FEATURED PRESS ============ */}
+            {featuredEntry && featuredKey && (() => {
+                const [, featured] = featuredEntry;
+                const isExternal = featured.url.startsWith('http');
+                return (
+                    <section className="press-featured">
+                        <div className="idx" style={{
+                            fontFamily: 'var(--font-mono)', fontSize: '11px',
+                            letterSpacing: '0.18em', textTransform: 'uppercase',
+                            color: 'var(--ink-mute)',
+                        }}>Featured</div>
+                        <a
+                            href={featured.url}
+                            target={isExternal ? '_blank' : undefined}
+                            rel={isExternal ? 'noopener noreferrer' : undefined}
+                            className="feature-card"
+                            style={{ textDecoration: 'none', color: 'inherit' }}
+                        >
+                            <div>
+                                <h2>{featured.title}</h2>
+                                <p className="excerpt">
+                                    {formatBlogContent(featured.content, 280)}
+                                </p>
+                                <div className="meta">
+                                    <span><b>{featured.author}</b></span>
+                                    <span>{formatPressDate(featuredKey)}</span>
+                                </div>
+                            </div>
+                            <div className="side">
+                                <h5>From the article</h5>
+                                <blockquote>
+                                    &ldquo;{formatBlogContent(featured.content, 120)}&rdquo;
+                                </blockquote>
+                                <cite>{featured.author}</cite>
+                            </div>
+                        </a>
+                    </section>
+                );
+            })()}
+
             {/* ============ SECTION HEAD ============ */}
             <div className="section-head container-lp">
                 <div className="idx">Coverage</div>
                 <h2>In <em>the press.</em></h2>
             </div>
 
-            {/* ============ BLOG POSTS ============ */}
+            {/* ============ PRESS ITEMS ============ */}
             <section className="press-list container-lp">
-                {postEntries.map(([key, post]) => {
+                {remainingEntries.map(([key, post]) => {
                     const isExternal = post.url.startsWith('http');
+                    const itemType = post.author === 'Sentinel Blog' ? 'Blog' : 'Press';
                     return (
                         <Link
                             key={key}
@@ -45,20 +117,9 @@ const Press: React.FC<PressProps> = ({ posts }) => {
                             rel={isExternal ? 'noopener noreferrer' : undefined}
                             className="press-item"
                         >
-                            <div className="press-img-wrap">
-                                {/* eslint-disable-next-line @next/next/no-img-element */}
-                                {post.image && (
-                                    <img
-                                        src={post.image}
-                                        alt={post.title}
-                                        className="press-img"
-                                    />
-                                )}
-                            </div>
+                            <div className="date-col">{formatPressDate(key)}</div>
                             <div>
-                                <span className="type">
-                                    {post.author === 'Sentinel Blog' ? 'Blog' : 'Press'}
-                                </span>
+                                <span className="type">{itemType}</span>
                             </div>
                             <div>
                                 <h3>{post.title}</h3>

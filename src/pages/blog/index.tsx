@@ -6,11 +6,24 @@ import AppPage from '@/components/AppPage'
 import { useTranslation } from 'next-i18next'
 import { formatBlogContent, BlogPostMap } from '@/services/BlogService'
 import { AnalyticsService } from '@/services/AnalyticsService'
+import { useState } from 'react'
 import fs from 'fs'
 import path from 'path'
 
 interface BlogPageProps {
   posts: BlogPostMap;
+}
+
+const TOPICS = ['All', 'Disease', 'Precision Viticulture', 'Geospatial', 'Operations', 'Research'] as const;
+
+/** Simple topic classifier based on post title and content keywords */
+function classifyTopic(title: string, content: string): string {
+  const text = `${title} ${content}`.toLowerCase();
+  if (/red blotch|leafroll|disease|virus|crown gall|esca|mildew|botrytis/.test(text)) return 'Disease';
+  if (/gps|rtk|drone|ndvi|mapping|geospatial|satellite/.test(text)) return 'Geospatial';
+  if (/precision viticulture|vine.level|vine-by-vine|roi/.test(text)) return 'Precision Viticulture';
+  if (/work order|crew|compliance|pesticide|pur|replant|cellar|software|buyer/.test(text)) return 'Operations';
+  return 'Research';
 }
 
 export const getStaticProps: GetStaticProps<BlogPageProps> = async ({ locale }) => {
@@ -47,8 +60,22 @@ export const getStaticProps: GetStaticProps<BlogPageProps> = async ({ locale }) 
 
 const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
   useTranslation('common');
-  const MAX_BLOG_INTRO_LENGTH = 220;
+  const MAX_EXCERPT = 180;
+  const [activeTopic, setActiveTopic] = useState<string>('All');
+
   const postEntries = Object.entries(posts);
+  const [, featuredPost] = postEntries[0] || [];
+  const remainingPosts = postEntries.slice(1);
+
+  const filteredPosts = activeTopic === 'All'
+    ? remainingPosts
+    : remainingPosts.filter(([, p]) => classifyTopic(p.title, p.content) === activeTopic);
+
+  // Group into rows of 3
+  const rows: typeof filteredPosts[] = [];
+  for (let i = 0; i < filteredPosts.length; i += 3) {
+    rows.push(filteredPosts.slice(i, i + 3));
+  }
 
   return (
     <>
@@ -80,37 +107,75 @@ const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
             </p>
           </header>
 
+          {/* ============ TOPICS FILTER ============ */}
+          <div className="topics">
+            <span className="label">Topics</span>
+            {TOPICS.map((topic) => (
+              <button
+                key={topic}
+                className={activeTopic === topic ? 'active' : ''}
+                onClick={() => setActiveTopic(topic)}
+              >
+                {topic}
+              </button>
+            ))}
+          </div>
+
+          {/* ============ FEATURED POST ============ */}
+          {featuredPost && (
+            <section className="featured-post">
+              <div className="idx">Featured</div>
+              <Link href={featuredPost.url} className="card">
+                <div className="copy">
+                  <span className="tag">{classifyTopic(featuredPost.title, featuredPost.content)}</span>
+                  <h2>{featuredPost.title}</h2>
+                  <p className="excerpt">
+                    {formatBlogContent(featuredPost.content, 260)}
+                  </p>
+                  <div className="meta">
+                    <span><b>Author</b> Sentinel</span>
+                    <span><b>Topic</b> {classifyTopic(featuredPost.title, featuredPost.content)}</span>
+                  </div>
+                </div>
+                <div className="visual" aria-hidden="true" />
+              </Link>
+            </section>
+          )}
+
           {/* ============ SECTION HEAD ============ */}
           <div className="section-head container-lp">
             <div className="idx">Recent</div>
-            <h2>From <em>the field.</em></h2>
+            <h2>More from <em>the team.</em></h2>
           </div>
 
-          {/* ============ BLOG POSTS ============ */}
-          <section className="press-list container-lp">
-            {postEntries.map(([key, post]) => (
-              <Link key={key} href={post.url} className="press-item">
-                <div className="press-img-wrap">
-                  {post.image && (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="press-img"
-                    />
-                  )}
-                </div>
-                <div>
-                  <span className="type">Blog</span>
-                </div>
-                <div>
-                  <h3>{post.title}</h3>
-                  <p>{formatBlogContent(post.content, MAX_BLOG_INTRO_LENGTH)}</p>
-                </div>
-                <div className="pub">{post.author}</div>
-                <div className="arrow-r" />
-              </Link>
-            ))}
+          {/* ============ POST CARD GRID ============ */}
+          {rows.map((row, ri) => (
+            <div className="posts-grid" key={ri}>
+              {row.map(([key, post]) => {
+                const topic = classifyTopic(post.title, post.content);
+                return (
+                  <Link key={key} href={post.url} className="post-card">
+                    <div className="date">2026</div>
+                    <span className="tag">{topic}</span>
+                    <h3>{post.title}</h3>
+                    <p>{formatBlogContent(post.content, MAX_EXCERPT)}</p>
+                    <div className="read">Read</div>
+                  </Link>
+                );
+              })}
+            </div>
+          ))}
+
+          {/* ============ SUBSCRIBE CTA ============ */}
+          <section className="subscribe-band">
+            <span className="label">Subscribe</span>
+            <div className="inner">
+              <h3>Get new posts <em>in your inbox.</em></h3>
+              <form onSubmit={(e) => { e.preventDefault(); }}>
+                <input type="email" placeholder="you@estate.com" aria-label="Email address" />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
           </section>
 
           {/* ============ CTA BAND ============ */}
