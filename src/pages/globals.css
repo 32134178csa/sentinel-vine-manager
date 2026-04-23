@@ -1147,6 +1147,7 @@ nav.top {
   letter-spacing: 0.04em; text-transform: uppercase; margin: 8px 0 12px;
 }
 .foot-brand p { font-size: 13px; color: var(--ink-dim); max-width: 320px; line-height: 1.55; font-weight: 300 }
+.foot-brand .foot-geo { font-size: 11px; color: var(--ink-mute); margin-top: 6px; font-style: italic; }
 .foot-col h5 {
   font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em;
   color: var(--ink-mute); text-transform: uppercase; margin: 8px 0 16px; font-weight: 400;

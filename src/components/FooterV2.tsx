@@ -18,7 +18,8 @@ export default function FooterV2() {
               height={32}
             />
             <div className="name">Sentinel.</div>
-            <p>The patient medical record for your vineyard, built by winegrowers for winegrowers.</p>
+            <p>The permanent digital record for your vineyard.</p>
+            <p className="foot-geo">Operating in California, Oregon, and worldwide.</p>
           </div>
 
           {/* Product */}
