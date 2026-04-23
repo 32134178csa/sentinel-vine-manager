@@ -1560,7 +1560,7 @@ a.press-item:hover { background: var(--bg-1); }
 a.press-item:last-child { border-bottom: 0; }
 
 .press-item .date-col {
-  font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em;
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em;
   color: var(--ink-mute);
 }
 .press-item .type {
@@ -1570,9 +1570,10 @@ a.press-item:last-child { border-bottom: 0; }
   display: inline-block; align-self: start; line-height: 1;
 }
 .press-item h3 {
-  font-family: var(--font-display); font-size: 24px; line-height: 1.15;
+  font-family: var(--font-display); font-size: 26px; line-height: 1.15;
   margin: 0 0 8px; font-weight: 400; letter-spacing: -0.005em; color: var(--ink);
 }
+.press-item h3 em { font-style: italic; color: var(--ink-dim); }
 .press-item p {
   font-size: 13.5px; line-height: 1.55; color: var(--ink-dim);
   margin: 0; font-weight: 300; max-width: 520px;
