@@ -3,9 +3,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import AppPage from '@/components/AppPage'
+import VineMap from '@/components/VineMap'
 import { useTranslation } from 'next-i18next'
 import { formatBlogContent, BlogPostMap } from '@/services/BlogService'
-import { AnalyticsService } from '@/services/AnalyticsService'
 import { useState } from 'react'
 import fs from 'fs'
 import path from 'path'
@@ -24,6 +24,28 @@ function classifyTopic(title: string, content: string): string {
   if (/precision viticulture|vine.level|vine-by-vine|roi/.test(text)) return 'Precision Viticulture';
   if (/work order|crew|compliance|pesticide|pur|replant|cellar|software|buyer/.test(text)) return 'Operations';
   return 'Research';
+}
+
+/** Format date as YYYY.MM.DD from a post key or date string */
+function formatPostDate(key: string): string {
+  const dateMap: Record<string, string> = {
+    'the-red-blotch-dilemma': '2024.08.10',
+    'why-excel-is-an-expensive-way-to-map-virus': '2024.09.05',
+    'ndvi-vs-sentinel-vine-mapping': '2025.01.20',
+    'vine-data-during-a-downturn': '2025.03.14',
+    'the-replant-decision': '2025.04.02',
+    'the-knowledge-that-walks-out-the-door': '2025.04.08',
+    'vineyard-management-software-buyers-guide-2026': '2026.01.15',
+    'vine-level-disease-tracking-program': '2026.02.10',
+    'rtk-gps-vineyard-guide': '2026.02.28',
+    'drone-vineyard-mapping-vs-ground-truth': '2026.03.12',
+    'cellar-management-software-winery-guide': '2026.03.20',
+    'vineyard-work-orders-crew-management': '2026.03.28',
+    'pesticide-use-reporting-vineyard-compliance': '2026.04.02',
+    'vineyard-replanting-cost-roi-guide': '2026.04.08',
+    'precision-viticulture-roi-vine-level-data': '2026.04.15',
+  };
+  return dateMap[key] || '2026.01.01';
 }
 
 export const getStaticProps: GetStaticProps<BlogPageProps> = async ({ locale }) => {
@@ -64,7 +86,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
   const [activeTopic, setActiveTopic] = useState<string>('All');
 
   const postEntries = Object.entries(posts);
-  const [, featuredPost] = postEntries[0] || [];
+  const [featuredKey, featuredPost] = postEntries[0] || [];
   const remainingPosts = postEntries.slice(1);
 
   const filteredPosts = activeTopic === 'All'
@@ -99,7 +121,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
           <header className="page-hero container-lp">
             <div className="idx">Blog &middot; Field Notes</div>
             <h1>
-              Notes from the rows, the lab, <em>&amp; the code.</em>
+              Notes from the rows, <em>the lab, &amp; the code.</em>
             </h1>
             <p className="lede">
               Things we learn running vine-by-vine management systems across
@@ -124,27 +146,37 @@ const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
           {/* ============ FEATURED POST ============ */}
           {featuredPost && (
             <section className="featured-post">
-              <div className="idx">Featured</div>
+              <div className="mono" style={{
+                color: 'var(--ink-mute)', fontSize: '11px',
+                letterSpacing: '0.18em', textTransform: 'uppercase',
+              }}>Featured</div>
               <Link href={featuredPost.url} className="card">
                 <div className="copy">
-                  <span className="tag">{classifyTopic(featuredPost.title, featuredPost.content)}</span>
+                  <span className="tag">
+                    {classifyTopic(featuredPost.title, featuredPost.content)} &middot; 7 min read
+                  </span>
                   <h2>{featuredPost.title}</h2>
                   <p className="excerpt">
                     {formatBlogContent(featuredPost.content, 260)}
                   </p>
                   <div className="meta">
-                    <span><b>Author</b> Sentinel</span>
-                    <span><b>Topic</b> {classifyTopic(featuredPost.title, featuredPost.content)}</span>
+                    <span>{formatPostDate(featuredKey)?.replace(/\./g, '/').replace(/^(\d{4})\/(\d{2})\/\d{2}$/, (_, y, m) => {
+                      const months = ['','January','February','March','April','May','June','July','August','September','October','November','December'];
+                      return `${months[parseInt(m)]} ${y}`;
+                    })}</span>
+                    <span><b>Sentinel</b> &middot; Field Notes</span>
                   </div>
                 </div>
-                <div className="visual" aria-hidden="true" />
+                <div className="visual" aria-hidden="true">
+                  <VineMap rows={14} vines={36} variant="disease" hud={false} />
+                </div>
               </Link>
             </section>
           )}
 
           {/* ============ SECTION HEAD ============ */}
           <div className="section-head container-lp">
-            <div className="idx">Recent</div>
+            <div className="idx">Recent Posts</div>
             <h2>More from <em>the team.</em></h2>
           </div>
 
@@ -155,7 +187,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
                 const topic = classifyTopic(post.title, post.content);
                 return (
                   <Link key={key} href={post.url} className="post-card">
-                    <div className="date">2026</div>
+                    <div className="date">{formatPostDate(key)}</div>
                     <span className="tag">{topic}</span>
                     <h3>{post.title}</h3>
                     <p>{formatBlogContent(post.content, MAX_EXCERPT)}</p>
@@ -167,36 +199,38 @@ const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
           ))}
 
           {/* ============ SUBSCRIBE CTA ============ */}
-          <section className="subscribe-band">
-            <span className="label">Subscribe</span>
-            <div className="inner">
-              <h3>Get new posts <em>in your inbox.</em></h3>
-              <form onSubmit={(e) => { e.preventDefault(); }}>
-                <input type="email" placeholder="you@estate.com" aria-label="Email address" />
-                <button type="submit">Subscribe</button>
-              </form>
+          <section className="cta-band">
+            <div>
+              <div className="kicker" style={{ marginBottom: 24 }}>Subscribe</div>
+              <h3>Field notes, <em>monthly.</em></h3>
             </div>
-          </section>
-
-          {/* ============ CTA BAND ============ */}
-          <section>
-            <div className="cta-band container-lp">
-              <div>
-                <div className="kicker" style={{ marginBottom: 24 }}>
-                  Get Started
-                </div>
-                <h3>
-                  Ready to see your vineyard <em>vine by vine?</em>
-                </h3>
-              </div>
-              <div className="actions">
-                <Link href="/press" className="cta-ghost">
-                  Press &amp; Media
-                </Link>
-                <Link href="/contact" className="cta-solid" onClick={() => AnalyticsService.trackDemoClick('blog_cta_band')}>
-                  Schedule a Demo <span className="arrow" />
-                </Link>
-              </div>
+            <div className="actions">
+              <form
+                style={{ display: 'flex', gap: '8px' }}
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const btn = (e.target as HTMLFormElement).querySelector('button');
+                  if (btn) btn.textContent = 'Subscribed \u2713';
+                }}
+              >
+                <input
+                  type="email"
+                  placeholder="you@winery.com"
+                  style={{
+                    background: 'transparent',
+                    border: '1px solid var(--line)',
+                    color: 'var(--ink)',
+                    padding: '10px 14px',
+                    fontFamily: 'var(--font-mono)',
+                    fontSize: '12px',
+                    minWidth: '260px',
+                  }}
+                  required
+                />
+                <button className="cta-solid" type="submit">
+                  Subscribe <span className="arrow" />
+                </button>
+              </form>
             </div>
           </section>
 
