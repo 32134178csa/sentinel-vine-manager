@@ -8,6 +8,7 @@ import AppPage from '@/components/AppPage'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Spacer from '@/components/Spacer';
+import PreFooterCTA from '@/components/PreFooterCTA';
 import { AnalyticsService } from '@/services/AnalyticsService'
 
 
@@ -55,7 +56,9 @@ export default function BlogPostPage({ content, blogPostId, frontmatter }: BlogP
         <div className="container">
           <div className="markdown-container">
             <ReactMarkdown>{content}</ReactMarkdown>
-            <Spacer height={100}/>
+            <Spacer height={60}/>
+            <PreFooterCTA source="blog_post" />
+            <Spacer height={60}/>
           </div>
         </div> 
       </AppPage>

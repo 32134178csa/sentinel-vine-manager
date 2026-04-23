@@ -95,6 +95,4 @@ NDVI has its place—as a high-level scout. But to **farm smarter, longer, and w
 
 Sentinel Vine Manager is that solution.
 
- **[Schedule a demo](/contact)** today and see how it works in Napa, Oregon, or wherever you grow.
-
 ---

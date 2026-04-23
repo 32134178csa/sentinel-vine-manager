@@ -198,17 +198,12 @@ const sections: FAQSection[] = [
       {
         num: 'Q.24',
         question: 'How is Sentinel priced?',
-        answer: 'Annual subscription, priced per-acre with volume breaks. Small estates start around $40/acre/yr; large operations with 500+ acres are priced per-vineyard. Hardware is purchased separately (one-time). Cellar Management and pesticide use reporting are included. Schedule a demo for a quote on your specific operation.',
+        answer: 'Annual subscription, priced per acre with volume breaks for larger operations. Hardware is purchased separately (one-time). Cellar Management and pesticide use reporting are included at no extra cost. Schedule a demo and we\u2019ll put together a quote for your specific operation.',
       },
       {
         num: 'Q.25',
         question: 'What does onboarding look like?',
-        answer: 'Two days of in-person onboarding on-site: mapping training, app setup, team training, work order templates, and your first full block mapped end-to-end with our team. We stay engaged through your first full vintage.',
-      },
-      {
-        num: 'Q.26',
-        question: 'Can I pilot on one block before rolling it out?',
-        answer: 'Absolutely. Most new clients start with a single block or AVA, prove out the workflow, then roll across the rest of the estate.',
+        answer: 'Roughly a week-long process, end-to-end. We train your team on the platform and on mapping in the field. Within a couple of days, most teams are mapping hundreds of acres on their own. We stay engaged through your first full vintage.',
       },
     ],
   },

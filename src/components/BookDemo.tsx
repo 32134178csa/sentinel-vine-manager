@@ -100,7 +100,7 @@ export default function BookDemo() {
     };
 
     return(
-      <Container style={didSubmit ? {}: {maxWidth:"800px"}}>
+      <Container style={didSubmit ? { paddingTop: '80px' }: { maxWidth:"800px", paddingTop: '80px' }}>
           <Fade in={didSubmit}>
             <Row className="justify-content-center">
               <Col xs={12} md={8} lg={6}>
@@ -123,8 +123,11 @@ export default function BookDemo() {
           <Fade in={!didSubmit}>
             <Row className="justify-content-center">
               <Col xs={12} md={8} lg={6}>
-                <div className="overline" style={{ textAlign: 'center', marginBottom: 'var(--space-sm)' }}>Contact</div>
-                <h2 style={{ textAlign: 'center', fontFamily: 'var(--font-display)' }}>{t("loveToHearFromYou")}</h2>
+                <div className="overline" style={{ textAlign: 'center', marginBottom: 'var(--space-sm)', letterSpacing: '0.18em' }}>Contact</div>
+                <h2 style={{ textAlign: 'center', fontFamily: 'var(--font-display)', fontSize: '2.2rem', marginBottom: '12px' }}>{t("loveToHearFromYou")}</h2>
+                <p style={{ textAlign: 'center', color: 'var(--ink-dim)', fontFamily: 'var(--font-body)', fontSize: '1rem', lineHeight: '1.6', marginBottom: '24px' }}>
+                  Whether you manage 50 acres or 5,000, we would love to learn about your operation and show you how Sentinel works in the field.
+                </p>
                 <hr className="section-divider" />
               </Col>
             </Row>

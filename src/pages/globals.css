@@ -510,10 +510,13 @@ input::placeholder, textarea::placeholder {
 
 /* --- Markdown Content --- */
 .markdown-container {
-  max-width: 1200px;
-  margin: 10px auto;
+  max-width: 860px;
+  margin: 40px auto;
   color: var(--ink);
-  padding: 0 7vw;
+  padding: 0 32px;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.75;
 }
 
 .markdown-container > blockquote {
@@ -600,6 +603,42 @@ input::placeholder, textarea::placeholder {
   display: block;
   margin: 1em auto;
   border-radius: var(--radius-md);
+}
+
+/* --- Privacy Policy --- */
+.privacy-policy {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 32px 80px;
+  color: var(--ink-dim);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.privacy-policy .privacy-title {
+  font-family: var(--font-display);
+  color: var(--ink);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.privacy-policy h2 {
+  font-family: var(--font-display);
+  color: var(--ink);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
+.privacy-policy p {
+  margin-bottom: 14px;
+}
+.privacy-policy ul {
+  margin: 0 0 14px 24px;
+  padding: 0;
+}
+.privacy-policy li {
+  margin-bottom: 6px;
 }
 
 /* --- Zoom Scheduler --- */

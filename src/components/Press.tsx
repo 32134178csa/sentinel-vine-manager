@@ -29,8 +29,8 @@ const Press: React.FC<PressProps> = ({ posts }) => {
 
             {/* ============ SECTION HEAD ============ */}
             <div className="section-head container-lp">
-                <div className="idx">Blog</div>
-                <h2>From <em>the field.</em></h2>
+                <div className="idx">Coverage</div>
+                <h2>In <em>the press.</em></h2>
             </div>
 
             {/* ============ BLOG POSTS ============ */}
@@ -135,7 +135,7 @@ const Press: React.FC<PressProps> = ({ posts }) => {
                         </h3>
                     </div>
                     <div className="actions">
-                        <Link href="/press" className="cta-ghost">Read the Blog</Link>
+                        <Link href="/blog" className="cta-ghost">Read the Blog</Link>
                         <a href="mailto:press@spongymesophyll.com" className="cta-solid">
                             Email Press <span className="arrow" />
                         </a>
