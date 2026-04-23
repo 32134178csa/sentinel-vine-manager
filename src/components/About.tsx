@@ -104,38 +104,11 @@ export default function About() {
         </div>
       </section>
 
-      {/* ============ SECTION 04 -- BY THE NUMBERS ============ */}
-      <section className="facts container-lp">
-        <div className="idx">04 &middot; By the Numbers</div>
-        <div className="fact-grid">
-          <div>
-            <div className="k">Client AUM</div>
-            <div className="v">$3.2<small>B</small></div>
-            <div className="n">Vineyard assets under management by our clients.</div>
-          </div>
-          <div>
-            <div className="k">Acres Mapped</div>
-            <div className="v">2,400<small>+</small></div>
-            <div className="n">Vine By Vine&trade; across CA, OR, and international sites.</div>
-          </div>
-          <div>
-            <div className="k">Vines Tracked</div>
-            <div className="v">3.1<small>M</small></div>
-            <div className="n">Permanent records, updated each vintage.</div>
-          </div>
-          <div>
-            <div className="k">Countries</div>
-            <div className="v">5</div>
-            <div className="n">US &middot; France &middot; Australia &middot; NZ &middot; Chile (pilot).</div>
-          </div>
-        </div>
-      </section>
-
-      {/* ============ SECTION 05 -- CONTACT CTA ============ */}
+      {/* ============ SECTION 04 -- CONTACT CTA ============ */}
       <section>
         <div className="cta-band container-lp">
           <div>
-            <div className="kicker" style={{ marginBottom: 24 }}>05 &middot; Contact</div>
+            <div className="kicker" style={{ marginBottom: 24 }}>04 &middot; Contact</div>
             <h3>Tell us about <em>your vineyard.</em></h3>
           </div>
           <div className="actions">
