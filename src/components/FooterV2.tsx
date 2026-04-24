@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { APP_HOST } from '@/config';
 
-const INSTAGRAM_URL = 'https://instagram.com/sentinelvineyard';
+const INSTAGRAM_URL = 'https://www.instagram.com/sentinelvinemanager/';
 
 export default function FooterV2() {
   return (
