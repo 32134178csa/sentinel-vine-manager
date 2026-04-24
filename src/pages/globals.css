@@ -1615,6 +1615,9 @@ a.press-item:hover .arrow-r { border-color: var(--accent); opacity: 1; }
   transition: border-color 0.2s; text-decoration: none; color: var(--ink-dim);
 }
 .press-kit .dl:hover { border-color: var(--accent); color: var(--ink); }
+.press-kit .dl.coming-soon {
+  opacity: 0.45; pointer-events: none; border-style: dashed;
+}
 .press-kit .dl .size {
   color: var(--ink-mute); font-size: 10px; letter-spacing: 0.1em;
 }

@@ -159,29 +159,29 @@ const Press: React.FC<PressProps> = ({ posts }) => {
                     </p>
                 </div>
                 <div className="downloads">
-                    <a className="dl" href="#">
-                        <span>SENTINEL_LOGOS.ZIP</span>
-                        <span className="size">2.1 MB</span>
-                    </a>
-                    <a className="dl" href="#">
-                        <span>FIELD_PHOTOGRAPHY_HIRES.ZIP</span>
-                        <span className="size">148 MB</span>
-                    </a>
-                    <a className="dl" href="#">
-                        <span>PRODUCT_SCREENSHOTS.ZIP</span>
-                        <span className="size">32 MB</span>
-                    </a>
-                    <a className="dl" href="#">
-                        <span>FOUNDER_BIOS_HEADSHOTS.PDF</span>
-                        <span className="size">4.2 MB</span>
-                    </a>
-                    <a className="dl" href="#">
+                    <a className="dl" href="/press/COMPANY_BOILERPLATE.txt" download>
                         <span>COMPANY_BOILERPLATE.TXT</span>
-                        <span className="size">3 KB</span>
+                        <span className="size">2 KB</span>
                     </a>
-                    <a className="dl" href="#">
-                        <span>FACT_SHEET_2026.PDF</span>
-                        <span className="size">1.1 MB</span>
+                    <a className="dl" href="/press/FACT_SHEET_2026.txt" download>
+                        <span>FACT_SHEET_2026.TXT</span>
+                        <span className="size">2 KB</span>
+                    </a>
+                    <a className="dl coming-soon" href="#">
+                        <span>SENTINEL_LOGOS.ZIP</span>
+                        <span className="size">Coming soon</span>
+                    </a>
+                    <a className="dl coming-soon" href="#">
+                        <span>FIELD_PHOTOGRAPHY_HIRES.ZIP</span>
+                        <span className="size">Coming soon</span>
+                    </a>
+                    <a className="dl coming-soon" href="#">
+                        <span>PRODUCT_SCREENSHOTS.ZIP</span>
+                        <span className="size">Coming soon</span>
+                    </a>
+                    <a className="dl coming-soon" href="#">
+                        <span>FOUNDER_BIOS_HEADSHOTS.PDF</span>
+                        <span className="size">Coming soon</span>
                     </a>
                 </div>
             </section>
