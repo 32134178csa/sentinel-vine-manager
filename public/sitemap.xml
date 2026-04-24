@@ -42,4 +42,10 @@
   <url><loc>https://site.sentineltech.eu/blog/vine-data-during-a-downturn</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://site.sentineltech.eu/blog/why-excel-is-an-expensive-way-to-map-virus</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://site.sentineltech.eu/blog/rtk-gps-vineyards-pinpoint-rtk-vs-sentinel</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+
+  <!-- Blog Posts (added Apr 2026) -->
+  <url><loc>https://site.sentineltech.eu/blog/what-is-digital-flagging-tape</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/vine-level-records-premium-estates</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/satellite-drone-gps-vineyard-accuracy-comparison</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://site.sentineltech.eu/blog/vineyard-management-at-scale-per-vine-records</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

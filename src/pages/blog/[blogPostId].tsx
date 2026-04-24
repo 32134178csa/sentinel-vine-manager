@@ -55,15 +55,54 @@ export default function BlogPostPage({ content, blogPostId, frontmatter, nextPos
         {frontmatter.keywords && (
           <meta name="keywords" content={frontmatter.keywords.join(', ')} />
         )}
+        <link rel="canonical" href={`https://site.sentineltech.eu/blog/${blogPostId}`} />
         {/* Open Graph */}
         <meta property="og:title" content={frontmatter.title} />
         <meta property="og:description" content={frontmatter.description || ''} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://sentineltech.eu/blog/${blogPostId}`} />
+        <meta property="og:url" content={`https://site.sentineltech.eu/blog/${blogPostId}`} />
+        <meta property="og:site_name" content="Sentinel" />
+        {frontmatter.image && (
+          <meta property="og:image" content={`https://site.sentineltech.eu${frontmatter.image}`} />
+        )}
+        {frontmatter.date && (
+          <meta property="article:published_time" content={frontmatter.date} />
+        )}
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={frontmatter.title} />
         <meta name="twitter:description" content={frontmatter.description || ''} />
+        {frontmatter.image && (
+          <meta name="twitter:image" content={`https://site.sentineltech.eu${frontmatter.image}`} />
+        )}
+        {/* JSON-LD Article Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": frontmatter.title,
+              "description": frontmatter.description || '',
+              "datePublished": frontmatter.date || '',
+              "author": {
+                "@type": "Person",
+                "name": frontmatter.author || "Sentinel"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Sentinel",
+                "url": "https://site.sentineltech.eu"
+              },
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": `https://site.sentineltech.eu/blog/${blogPostId}`
+              },
+              ...(frontmatter.image ? { "image": `https://site.sentineltech.eu${frontmatter.image}` } : {}),
+              ...(frontmatter.keywords ? { "keywords": frontmatter.keywords.join(', ') } : {})
+            })
+          }}
+        />
       </Head>
       <AppPage>
         <div className="press-v2" data-page="blog">
