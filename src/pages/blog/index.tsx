@@ -55,6 +55,7 @@ function formatPostDate(key: string): string {
     'vine-by-vine-tracking-vineyard-gps': '2025.08.20',
     'vineyard-management-company-software': '2025.09.12',
     'vineyard-work-order-management': '2025.10.05',
+    'vineyard-management-at-scale-per-vine-records': '2026.04.23',
   };
   return dateMap[key] || '2026.01.01';
 }

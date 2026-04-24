@@ -268,5 +268,14 @@
     "title": "Vineyard Work Order Management: From Paper Logs to GPS-Verified Records",
     "content": "Managing vineyard work orders on paper or in spreadsheets creates gaps in your spray records, roguing history, and harvest data. Here is how digital work order management with GPS verification closes those gaps.",
     "url": "/blog/vineyard-work-order-management"
+  },
+  "vineyard-management-at-scale-per-vine-records": {
+    "filename": "vineyard-management-at-scale-per-vine-records",
+    "author": "Sentinel Blog",
+    "id": "30",
+    "image": "/img/blog/precision-viticulture-roi.webp",
+    "title": "Vineyard Management at Scale: Why Per-Vine Records Matter More as You Grow",
+    "content": "How vineyard management companies and large estate operations maintain vine-level visibility across thousands of acres without drowning in paperwork. Covers crew turnover, client reporting, compliance, and the hidden cost of manual data management.",
+    "url": "/blog/vineyard-management-at-scale-per-vine-records"
   }
 }
