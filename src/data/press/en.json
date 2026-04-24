@@ -196,5 +196,77 @@
     "title": "Satellite vs. Drone vs. Ground-Level GPS: Which Accuracy Do You Actually Need?",
     "content": "A practical comparison of satellite imagery, drone NDVI, and RTK GPS ground-truth accuracy for vineyard management. Covers resolution, cost, and which decisions each technology supports.",
     "url": "/blog/satellite-drone-gps-vineyard-accuracy-comparison"
+  },
+  "california-pur-reporting-vineyard-automation": {
+    "filename": "california-pur-reporting-vineyard-automation",
+    "author": "Sentinel Blog",
+    "id": "22",
+    "image": "/img/blog/pur-compliance.webp",
+    "title": "How to Automate California Pesticide Use Reporting from Your Vineyard Spray Logs",
+    "content": "California PUR reporting is required for every pesticide application. Learn how Sentinel automates the submission process by connecting your vineyard spray logs directly to CalAgPermits.",
+    "url": "/blog/california-pur-reporting-vineyard-automation"
+  },
+  "leafroll-virus-vineyard-tracking-software": {
+    "filename": "leafroll-virus-vineyard-tracking-software",
+    "author": "Sentinel Blog",
+    "id": "23",
+    "image": "/blog-images/red-blotch-map.webp",
+    "title": "Leafroll Virus in Vineyards: Why Block-Level Maps Are Not Enough",
+    "content": "Leafroll is the most economically damaging vine disease in California and Oregon. But most vineyards track it at the block level, which is too coarse to manage it effectively. Here is why vine-level GPS records change the equation.",
+    "url": "/blog/leafroll-virus-vineyard-tracking-software"
+  },
+  "red-blotch-in-2025": {
+    "filename": "red-blotch-in-2025",
+    "author": "Sentinel Blog",
+    "id": "24",
+    "image": "/blog-images/red-blotch-map.webp",
+    "title": "Red Blotch Disease: What Napa Growers Need to Know in 2025",
+    "content": "Understanding the risks, hidden threats, and best practices for managing Grapevine Red Blotch Disease in Napa Valley vineyards in 2025.",
+    "url": "/blog/red-blotch-in-2025"
+  },
+  "rtk-gps-vineyards-pinpoint-rtk-vs-sentinel": {
+    "filename": "rtk-gps-vineyards-pinpoint-rtk-vs-sentinel",
+    "author": "Sentinel Blog",
+    "id": "25",
+    "image": "/img/blog/rtk-gps-vineyard.webp",
+    "title": "RTK GPS for Vineyards: PinPoint RTK vs Sentinel Vine Manager",
+    "content": "An honest comparison of VineView's PinPoint RTK hardware and Sentinel Vine Manager's full platform. Covers accuracy, software, disease tracking, work orders, and which tool fits your vineyard.",
+    "url": "/blog/rtk-gps-vineyards-pinpoint-rtk-vs-sentinel"
+  },
+  "should-i-fire-my-farming-company": {
+    "filename": "should-i-fire-my-farming-company",
+    "author": "Sentinel Blog",
+    "id": "26",
+    "image": "/blog-images/analytics_cropped.webp",
+    "title": "Should I Fire My Farming Company?",
+    "content": "When the data from your vineyard management company does not match what you see in the field, it raises hard questions. Here is how vine-level records help estate owners hold their farming partners accountable.",
+    "url": "/blog/should-i-fire-my-farming-company"
+  },
+  "vine-by-vine-tracking-vineyard-gps": {
+    "filename": "vine-by-vine-tracking-vineyard-gps",
+    "author": "Sentinel Blog",
+    "id": "27",
+    "image": "/img/blog/digital-flagging-tape.webp",
+    "title": "What Vine-by-Vine Tracking Actually Means (and Why Block-Level Data Falls Short)",
+    "content": "Most vineyard software tracks blocks. But the problems that cost you money -- virus spread, failed replants, variable block performance -- happen at the vine level. Here is what vine-by-vine GPS tracking actually captures.",
+    "url": "/blog/vine-by-vine-tracking-vineyard-gps"
+  },
+  "vineyard-management-company-software": {
+    "filename": "vineyard-management-company-software",
+    "author": "Sentinel Blog",
+    "id": "28",
+    "image": "/img/blog/precision-viticulture-roi.webp",
+    "title": "Vineyard Management Company Software: Managing Vine Records Across a Client Portfolio",
+    "content": "Vineyard management companies face data challenges that single estates don't. Here is why vine-level GPS records change the equation for VMCs managing multiple client properties.",
+    "url": "/blog/vineyard-management-company-software"
+  },
+  "vineyard-work-order-management": {
+    "filename": "vineyard-work-order-management",
+    "author": "Sentinel Blog",
+    "id": "29",
+    "image": "/img/blog/work-orders.webp",
+    "title": "Vineyard Work Order Management: From Paper Logs to GPS-Verified Records",
+    "content": "Managing vineyard work orders on paper or in spreadsheets creates gaps in your spray records, roguing history, and harvest data. Here is how digital work order management with GPS verification closes those gaps.",
+    "url": "/blog/vineyard-work-order-management"
   }
 }

@@ -47,6 +47,14 @@ function formatPostDate(key: string): string {
     'what-is-digital-flagging-tape': '2026.04.24',
     'vine-level-records-premium-estates': '2026.04.22',
     'satellite-drone-gps-vineyard-accuracy-comparison': '2026.04.20',
+    'california-pur-reporting-vineyard-automation': '2025.06.10',
+    'leafroll-virus-vineyard-tracking-software': '2025.07.15',
+    'red-blotch-in-2025': '2025.05.03',
+    'rtk-gps-vineyards-pinpoint-rtk-vs-sentinel': '2025.11.15',
+    'should-i-fire-my-farming-company': '2025.05.02',
+    'vine-by-vine-tracking-vineyard-gps': '2025.08.20',
+    'vineyard-management-company-software': '2025.09.12',
+    'vineyard-work-order-management': '2025.10.05',
   };
   return dateMap[key] || '2026.01.01';
 }
