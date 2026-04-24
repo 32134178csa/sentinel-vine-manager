@@ -169,5 +169,32 @@
     "title": "Precision Viticulture ROI: What Vine-Level Data Actually Saves You",
     "content": "Vine-level data is not a nice-to-have. It is the foundation that makes every other vineyard decision more precise and less expensive -- from disease containment to replanting to crew management to compliance.",
     "url": "/blog/precision-viticulture-roi-vine-level-data"
+  },
+  "what-is-digital-flagging-tape": {
+    "filename": "what-is-digital-flagging-tape",
+    "author": "Sentinel Blog",
+    "id": "19",
+    "image": "/img/blog/digital-flagging-tape.webp",
+    "title": "What Is Digital Flagging Tape?",
+    "content": "Digital flagging tape replaces physical ribbons and hand-drawn maps with permanent, GPS-anchored vine records. Learn how RTK-accurate digital markers transform vineyard management from seasonal guesswork into a lasting knowledge system.",
+    "url": "/blog/what-is-digital-flagging-tape"
+  },
+  "vine-level-records-premium-estates": {
+    "filename": "vine-level-records-premium-estates",
+    "author": "Sentinel Blog",
+    "id": "20",
+    "image": "/img/blog/premium-estates.webp",
+    "title": "How Premium Napa Estates Use Vine-Level Records",
+    "content": "A look at how top Napa Valley estates use vine-by-vine digital records to manage disease, plan replants, and preserve institutional knowledge across generations. Features practices from estates including Dominus, Abreu, Staglin, and Dalla Valle.",
+    "url": "/blog/vine-level-records-premium-estates"
+  },
+  "satellite-drone-gps-vineyard-accuracy-comparison": {
+    "filename": "satellite-drone-gps-vineyard-accuracy-comparison",
+    "author": "Sentinel Blog",
+    "id": "21",
+    "image": "/img/blog/accuracy-comparison.webp",
+    "title": "Satellite vs. Drone vs. Ground-Level GPS: Which Accuracy Do You Actually Need?",
+    "content": "A practical comparison of satellite imagery, drone NDVI, and RTK GPS ground-truth accuracy for vineyard management. Covers resolution, cost, and which decisions each technology supports.",
+    "url": "/blog/satellite-drone-gps-vineyard-accuracy-comparison"
   }
 }

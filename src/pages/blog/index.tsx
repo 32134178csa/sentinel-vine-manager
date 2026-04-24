@@ -44,6 +44,9 @@ function formatPostDate(key: string): string {
     'pesticide-use-reporting-vineyard-compliance': '2026.04.02',
     'vineyard-replanting-cost-roi-guide': '2026.04.08',
     'precision-viticulture-roi-vine-level-data': '2026.04.15',
+    'what-is-digital-flagging-tape': '2026.04.24',
+    'vine-level-records-premium-estates': '2026.04.22',
+    'satellite-drone-gps-vineyard-accuracy-comparison': '2026.04.20',
   };
   return dateMap[key] || '2026.01.01';
 }
