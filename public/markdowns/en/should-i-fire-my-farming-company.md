@@ -2,11 +2,11 @@
 title: "Should I fire my farming company?"
 description: "Comparing NDVI-based vineyard drone mapping with Sentinel's smartphone-based vine tracking system for long-term vineyard health and virus management."
 keywords:
-  - vineyard mapping
-  - NDVI vs vine tracking
-  - Sentinel Vine Manager
-  - vineyard disease management
-  - drone mapping
+ - vineyard mapping
+ - NDVI vs vine tracking
+ - Sentinel Vine Manager
+ - vineyard disease management
+ - drone mapping
 publishDate: "2025-05-02"
 author: "Sentinel Team"
 ---
@@ -49,4 +49,4 @@ If the answers aren’t satisfactory, you'll have actionable data—not guesswor
 
 Your vineyard is an investment. Sentinel Vine Manager helps you protect that investment by giving you clear, objective data on farming performance. Before making significant decisions like retaining or firing your vineyard management company, leverage the precision and transparency provided by Sentinel.
 
-👉 **[Schedule a demo](/contact)** and gain the clarity you need about your vineyard’s management.
+ **[Schedule a demo](/contact)** and gain the clarity you need about your vineyard’s management.

@@ -6,11 +6,11 @@ export default function PrivacyPolicy() {
     const { t } = useTranslation('common')
 
     return(
-        <div className="company-text p-4">
-        <h3>{t("privacyPolicy")}</h3>
+        <div className="privacy-policy">
+        <h1 className="privacy-title">{t("privacyPolicy")}</h1>
         <p>{t("weValueYourPrivacy")}</p>
         <p>{t("ifYouHaveAdditionalQuestions")}</p>
-        <h4>{t("GDPR")}</h4>
+        <h2>{t("GDPR")}</h2>
         <p>{t("weAreDataController")}</p>
         <p>{t("GDPRLegalBasis")}</p>
         <ul>
@@ -30,12 +30,12 @@ export default function PrivacyPolicy() {
             <li>{t("rightToDataPortability")}</li>
             <li>{t("rightToWithdrawConsent")}</li>
         </ul>
-        <h4>{t("logFilesH4")}</h4>
+        <h2>{t("logFilesH4")}</h2>
         <p>{t("logFilesP")}</p>
-        <h4>{t("cookiesH4")}</h4>
+        <h2>{t("cookiesH4")}</h2>
         <p>{t("cookiesP")}</p>
 
-        <h4>{t("CCPAcollectionNoticeH2")}</h4>
+        <h2>{t("CCPAcollectionNoticeH2")}</h2>
         <p>{t("CCPAweCollectTheFollowing")}</p>
         <ul>
             <li>{t("CCPAcollection1")}</li>
@@ -51,7 +51,7 @@ export default function PrivacyPolicy() {
             <li>{t("CCPAmobileCollection4")}</li>
         </ul>
         
-        <h4>{t("CCPArightsNoticeH2")}</h4>
+        <h2>{t("CCPArightsNoticeH2")}</h2>
         <p>{t("CCPArightsP")}</p>
         <ul>
             <li>{t("CCPAright1")}</li>
@@ -60,28 +60,28 @@ export default function PrivacyPolicy() {
             <li>{t("CCPAright4")}</li>
         </ul>
         
-        <h4>{t("CCPAsaleNoticeH2")}</h4>
+        <h2>{t("CCPAsaleNoticeH2")}</h2>
         <p>{t("CCPAsaleNoticeP")}</p>
         
-        <h4>{t("CCPAfinancialIncentivesH2")}</h4>
+        <h2>{t("CCPAfinancialIncentivesH2")}</h2>
         <p>{t("CCPAfinancialIncentivesP")}</p>
         
-        <h4>{t("CCPAauthorizedAgentH2")}</h4>
+        <h2>{t("CCPAauthorizedAgentH2")}</h2>
         <p>{t("CCPAauthorizedAgentP")}</p>
         
-        <h4>{t("privacyPoliciesH4")}</h4>
+        <h2>{t("privacyPoliciesH4")}</h2>
         <p>{t("privacyPoliciesP")}</p>
         <p>{t("thirdPartyAdServersP")}</p>
         <p>{t("noteThatSentinelHasNoAccessP")}</p>
-        <h4>{t("thirdPartyPrivacyPoliciesH4")}</h4>
+        <h2>{t("thirdPartyPrivacyPoliciesH4")}</h2>
         <p>{t("ourPrivacyPolicyDoesNotApplyToOtherWebsites")}</p>
         <p>{t("youMayDisableCookies")}</p>
-        <h4>{t("childrensInfoH4")}</h4>
+        <h2>{t("childrensInfoH4")}</h2>
         <p>{t("weValueChildrensPrivacy")}</p>
         <p>{t("weDontCollectChildrensData")}</p>
-        <h4>{t("onlinePrivacyPolicyH4")}</h4>
+        <h2>{t("onlinePrivacyPolicyH4")}</h2>
         <p>{t("ourPolicyIsOnlyOnline")}</p>
-        <h4>{t("GDPRconsentH4")}</h4>
+        <h2>{t("GDPRconsentH4")}</h2>
         <p>{t("GDPRconsentP")}</p>
         </div>
     )

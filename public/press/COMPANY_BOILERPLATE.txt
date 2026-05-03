@@ -1,0 +1,33 @@
+SENTINEL -- COMPANY BOILERPLATE
+Last updated: April 2026
+
+ABOUT SENTINEL
+
+Sentinel is a vine-level vineyard management platform built on RTK GPS technology. Operating like digital flagging tape, Sentinel creates a permanent, sub-centimeter-accurate record for every vine on the property. Vineyard crews carry a handheld GPS unit and tag each vine with health status, disease flags, replant decisions, and custom attributes as they walk the rows.
+
+The result is a living digital map of the vineyard where every plant has its own history. Managers can query by any attribute -- block, age cohort, production status, disease flag -- and generate work orders, compliance reports, or data exports directly from the results. The system replaces clipboard-based scouting with GPS-verified records that persist across seasons, crew changes, and ownership transitions.
+
+Founded by vineyard technology practitioners, Sentinel serves premium estate vineyards and vineyard management companies in California, Oregon, and internationally.
+
+PRODUCT OVERVIEW
+
+- Vine-by-vine GPS mapping at sub-centimeter accuracy (RTK)
+- Mobile field app for iOS with offline-first architecture
+- Disease tracking, replant planning, and work order generation
+- Data export to Excel with full query filtering
+- Multi-property, multi-user access with role-based permissions
+
+KEY FACTS
+
+- Headquarters: Napa Valley, California
+- Markets: California, Oregon, international
+- Target customers: Estate vineyards and vineyard management companies, 50+ acres
+- Technology: RTK GPS (Emlid Reach RX), iOS native app, cloud platform
+
+MEDIA CONTACT
+
+press@spongymesophyll.com
+Spongy Mesophyll Technologies, LLC
+
+---
+This material may be used freely in editorial coverage. For interview requests, custom photography, or additional information, contact press@spongymesophyll.com.

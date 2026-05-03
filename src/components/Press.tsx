@@ -1,50 +1,210 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
-import Spacer from "./Spacer";
-import ImageFadeIn from "./ImageFadeIn";
-import LocaleSwitcher from "./LocaleSwitcher";
 import { formatBlogContent, BlogPostMap } from "@/services/BlogService";
 
 interface PressProps {
     posts: BlogPostMap;
 }
 
+/** Format date as YYYY.MM.DD -- press items use a consistent date format */
+function formatPressDate(key: string): string {
+    const dateMap: Record<string, string> = {
+        'xchateau-podcast': '2024.06.12',
+        'inside-winemaking-podcast': '2024.05.18',
+        'sentinels-technological-revolution-in-vineyards-worldwide': '2024.03.22',
+        'a-game-changing-new-vineyard-management-technology': '2023.11.15',
+        'the-red-blotch-dilemma': '2024.08.10',
+        'why-excel-is-an-expensive-way-to-map-virus': '2024.09.05',
+        'ndvi-vs-sentinel-vine-mapping': '2025.01.20',
+        'vine-data-during-a-downturn': '2025.03.14',
+        'the-replant-decision': '2025.04.02',
+        'the-knowledge-that-walks-out-the-door': '2025.04.08',
+        'vineyard-management-software-buyers-guide-2026': '2026.01.15',
+        'vine-level-disease-tracking-program': '2026.02.10',
+        'rtk-gps-vineyard-guide': '2026.02.28',
+        'drone-vineyard-mapping-vs-ground-truth': '2026.03.12',
+        'cellar-management-software-winery-guide': '2026.03.20',
+        'vineyard-work-orders-crew-management': '2026.03.28',
+        'pesticide-use-reporting-vineyard-compliance': '2026.04.02',
+        'vineyard-replanting-cost-roi-guide': '2026.04.08',
+        'precision-viticulture-roi-vine-level-data': '2026.04.15',
+    };
+    return dateMap[key] || '2026.04.01';
+}
+
 const Press: React.FC<PressProps> = ({ posts }) => {
-    const { t } = useTranslation('common');
-    const MAX_BLOG_INTRO_LENGTH = 300;
+    useTranslation('common');
+    const MAX_BLOG_INTRO_LENGTH = 220;
+
+    const postEntries = Object.entries(posts);
+
+    // Find the first external press item for the featured section
+    const featuredEntry = postEntries.find(([, p]) => p.author !== 'Sentinel Blog');
+    const featuredKey = featuredEntry?.[0];
+    const remainingEntries = postEntries.filter(([key]) => key !== featuredKey);
 
     return (
-        <Container>
-            <Row className="justify-content-center">
-                <Col xs={12} md={8} lg={6}>
-                    <h2 className="company-title">{t("press")}</h2>
-                    <hr className="company-title" />
-                </Col>
-            </Row>
-            <Row className="justify-content-center">
-                <Col xs={12} md={8} lg={6}>
-                    <LocaleSwitcher/>
-                </Col>
-            </Row>
-            {Object.keys(posts).map((key) => (
-                <Row key={key} className="mt-4 justify-content-center">
-                    <Col md="auto">
-                        <ImageFadeIn src={posts[key].image} altText={"Blog Image"} imageClassName={"about-picture"} />
-                    </Col>
-                    <Col xs={12} md={6} className="mt-4 justify-content-center">
-                        <Link href={posts[key].url} target="_blank" rel="noopener noreferrer" className="company-text">
-                            <h4 className="company-text">{posts[key].title}</h4>
+        <div className="press-v2" data-page="press">
+
+            {/* ============ PAGE HERO ============ */}
+            <header className="page-hero container-lp">
+                <div className="idx">Press &middot; Media</div>
+                <h1>
+                    Signal, <em>not noise.</em>
+                </h1>
+                <p className="lede">
+                    Coverage, announcements, and downloadable assets for journalists, investors, and industry partners.
+                </p>
+            </header>
+
+            {/* ============ FEATURED PRESS ============ */}
+            {featuredEntry && featuredKey && (() => {
+                const [, featured] = featuredEntry;
+                const isExternal = featured.url.startsWith('http');
+                return (
+                    <section className="press-featured">
+                        <div className="idx" style={{
+                            fontFamily: 'var(--font-mono)', fontSize: '11px',
+                            letterSpacing: '0.18em', textTransform: 'uppercase',
+                            color: 'var(--ink-mute)',
+                        }}>Featured</div>
+                        <a
+                            href={featured.url}
+                            target={isExternal ? '_blank' : undefined}
+                            rel={isExternal ? 'noopener noreferrer' : undefined}
+                            className="feature-card"
+                            style={{ textDecoration: 'none', color: 'inherit' }}
+                        >
+                            <div>
+                                <h2>{featured.title}</h2>
+                                <p className="excerpt">
+                                    {formatBlogContent(featured.content, 280)}
+                                </p>
+                                <div className="meta">
+                                    <span><b>{featured.author}</b></span>
+                                    <span>{formatPressDate(featuredKey)}</span>
+                                </div>
+                            </div>
+                            <div className="side">
+                                <h5>From the article</h5>
+                                <blockquote>
+                                    &ldquo;{formatBlogContent(featured.content, 120)}&rdquo;
+                                </blockquote>
+                                <cite>{featured.author}</cite>
+                            </div>
+                        </a>
+                    </section>
+                );
+            })()}
+
+            {/* ============ SECTION HEAD ============ */}
+            <div className="section-head container-lp">
+                <div className="idx">Coverage</div>
+                <h2>In <em>the press.</em></h2>
+            </div>
+
+            {/* ============ PRESS ITEMS ============ */}
+            <section className="press-list container-lp">
+                {remainingEntries.map(([key, post]) => {
+                    const isExternal = post.url.startsWith('http');
+                    const itemType = post.author === 'Sentinel Blog' ? 'Blog' : 'Press';
+                    return (
+                        <Link
+                            key={key}
+                            href={post.url}
+                            target={isExternal ? '_blank' : undefined}
+                            rel={isExternal ? 'noopener noreferrer' : undefined}
+                            className="press-item"
+                        >
+                            <div className="date-col">{formatPressDate(key)}</div>
+                            <div>
+                                <span className="type">{itemType}</span>
+                            </div>
+                            <div>
+                                <h3>{post.title}</h3>
+                                <p>{formatBlogContent(post.content, MAX_BLOG_INTRO_LENGTH)}</p>
+                            </div>
+                            <div className="pub">
+                                {post.author}
+                                {isExternal && <span>External link</span>}
+                            </div>
+                            <div className="arrow-r" />
                         </Link>
-                        <h6 className="company-text">{posts[key].author}</h6>
-                        <p className="company-text">{formatBlogContent(posts[key].content, MAX_BLOG_INTRO_LENGTH)}</p>
-                       
-                    </Col>
-                </Row>
-            ))}
-            <Spacer height={200} />
-        </Container>
+                    );
+                })}
+            </section>
+
+            {/* ============ PRESS KIT ============ */}
+            <section className="press-kit container-lp">
+                <div
+                    className="mono"
+                    style={{
+                        color: 'var(--ink-mute)',
+                        fontSize: '11px',
+                        letterSpacing: '0.18em',
+                        textTransform: 'uppercase' as const,
+                    }}
+                >
+                    Press Kit
+                </div>
+                <div>
+                    <h3>
+                        Logos, photography, <em>and boilerplate.</em>
+                    </h3>
+                    <p>
+                        Everything you need for print, web, and broadcast. For interview
+                        requests and custom asks, email{' '}
+                        <b style={{ color: 'var(--ink)' }}>press@spongymesophyll.com</b>.
+                    </p>
+                </div>
+                <div className="downloads">
+                    <a className="dl" href="/press/COMPANY_BOILERPLATE.txt" download>
+                        <span>COMPANY_BOILERPLATE.TXT</span>
+                        <span className="size">2 KB</span>
+                    </a>
+                    <a className="dl" href="/press/FACT_SHEET_2026.txt" download>
+                        <span>FACT_SHEET_2026.TXT</span>
+                        <span className="size">2 KB</span>
+                    </a>
+                    <a className="dl coming-soon" href="#">
+                        <span>SENTINEL_LOGOS.ZIP</span>
+                        <span className="size">Coming soon</span>
+                    </a>
+                    <a className="dl coming-soon" href="#">
+                        <span>FIELD_PHOTOGRAPHY_HIRES.ZIP</span>
+                        <span className="size">Coming soon</span>
+                    </a>
+                    <a className="dl coming-soon" href="#">
+                        <span>PRODUCT_SCREENSHOTS.ZIP</span>
+                        <span className="size">Coming soon</span>
+                    </a>
+                    <a className="dl coming-soon" href="#">
+                        <span>FOUNDER_BIOS_HEADSHOTS.PDF</span>
+                        <span className="size">Coming soon</span>
+                    </a>
+                </div>
+            </section>
+
+            {/* ============ CTA BAND ============ */}
+            <section>
+                <div className="cta-band container-lp">
+                    <div>
+                        <div className="kicker" style={{ marginBottom: 24 }}>Contact</div>
+                        <h3>
+                            Writing about us? <em>We&apos;d love to talk.</em>
+                        </h3>
+                    </div>
+                    <div className="actions">
+                        <Link href="/blog" className="cta-ghost">Read the Blog</Link>
+                        <a href="mailto:press@spongymesophyll.com" className="cta-solid">
+                            Email Press <span className="arrow" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
     );
 }
 

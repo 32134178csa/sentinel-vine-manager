@@ -7,12 +7,19 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* 1) Load gtag.js */}
+          {/* Google Fonts: Instrument Serif (not in next/font/google) */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
+            rel="stylesheet"
+          />
+
+          {/* GA4 */}
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
           />
-          {/* 2) Initialize the dataLayer and gtag() function */}
           <script
             dangerouslySetInnerHTML={{
               __html: `

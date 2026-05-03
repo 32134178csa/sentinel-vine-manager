@@ -1,142 +1,372 @@
-import React from 'react';
-import { Row, Col, Container } from 'react-bootstrap'
-import Image from 'next/image'
-import Spacer from './Spacer'
-import { useTranslation } from 'next-i18next'
-import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
-import { BlogPost, formatBlogContent } from '@/services/BlogService';
-
+import { BlogPost } from '@/services/BlogService';
+import { AnalyticsService } from '@/services/AnalyticsService';
+import FooterV2 from '@/components/FooterV2';
+import PreFooterCTA from '@/components/PreFooterCTA';
 
 interface LandingPageProps {
   recommendedBlogPost: BlogPost;
 }
 
-// Hard-coded mapping of splash page IDs to titles
-const splashTitles: Record<string, string> = {
-  rapidMapping:       'CPrapidMappingTitle',
-  maturityMonitoring: 'CPmaturityMonitoringTitle',
-  diseaseTracking:    'CPdiseaseTrackingTitle',
-  historicalAnalysis: 'CPhistoricalAnalysisTitle',
-  workOrders:         'CPworkOrdersTitle',
+/* ------------------------------------------------------------------ */
+/*  Inline SVG icons for capability cards                              */
+/* ------------------------------------------------------------------ */
+const IcoGrid = () => (
+  <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+    <circle cx="4" cy="4" r="2" fill="var(--ink-mute)" />
+    <circle cx="11" cy="4" r="2" fill="var(--accent)" />
+    <circle cx="18" cy="4" r="2" fill="var(--ink-mute)" />
+    <circle cx="4" cy="11" r="2" fill="var(--accent)" />
+    <circle cx="11" cy="11" r="2" fill="var(--ink-mute)" />
+    <circle cx="18" cy="11" r="2" fill="var(--accent)" />
+    <circle cx="4" cy="18" r="2" fill="var(--ink-mute)" />
+    <circle cx="11" cy="18" r="2" fill="var(--ink-mute)" />
+    <circle cx="18" cy="18" r="2" fill="var(--ink-mute)" />
+  </svg>
+);
+
+const IcoRing = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <circle cx="12" cy="12" r="10" stroke="var(--ink-mute)" strokeWidth="1" />
+    <circle cx="12" cy="12" r="6" stroke="var(--accent)" strokeWidth="1" />
+    <circle cx="12" cy="12" r="2" fill="var(--accent)" />
+  </svg>
+);
+
+const IcoCross = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <line x1="12" y1="0" x2="12" y2="24" stroke="var(--ink-mute)" strokeWidth="1" />
+    <line x1="0" y1="12" x2="24" y2="12" stroke="var(--ink-mute)" strokeWidth="1" />
+    <rect x="9" y="9" width="6" height="6" stroke="var(--accent)" strokeWidth="1" fill="none" />
+  </svg>
+);
+
+const IcoBars = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <rect x="1" y="16" width="4" height="8" fill="var(--ink-mute)" />
+    <rect x="7" y="12" width="4" height="12" fill="var(--ink-mute)" />
+    <rect x="13" y="8" width="4" height="16" fill="var(--ink-mute)" />
+    <rect x="19" y="4" width="4" height="20" fill="var(--accent)" />
+  </svg>
+);
+
+const IcoSpray = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <line x1="12" y1="2" x2="12" y2="22" stroke="var(--ink-mute)" strokeWidth="1.5" />
+    <line x1="12" y1="6" x2="4" y2="6" stroke="var(--ink-mute)" strokeWidth="1" />
+    <line x1="12" y1="10" x2="6" y2="10" stroke="var(--ink-mute)" strokeWidth="1" />
+    <line x1="12" y1="14" x2="18" y2="14" stroke="var(--ink-mute)" strokeWidth="1" />
+    <circle cx="12" cy="20" r="2.5" fill="var(--accent)" />
+  </svg>
+);
+
+const IcoBarrel = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <rect x="2" y="3" width="8" height="18" rx="1" stroke="var(--ink-mute)" strokeWidth="1" fill="none" />
+    <line x1="3" y1="9" x2="9" y2="9" stroke="var(--accent)" strokeWidth="1" />
+    <line x1="3" y1="13" x2="9" y2="13" stroke="var(--accent)" strokeWidth="1" />
+    <rect x="14" y="3" width="8" height="18" rx="1" stroke="var(--ink-mute)" strokeWidth="1" fill="none" />
+    <line x1="15" y1="9" x2="21" y2="9" stroke="var(--accent)" strokeWidth="1" />
+    <line x1="15" y1="13" x2="21" y2="13" stroke="var(--accent)" strokeWidth="1" />
+  </svg>
+);
+
+/* ------------------------------------------------------------------ */
+/*  UTC clock                                                          */
+/* ------------------------------------------------------------------ */
+function UtcClock() {
+  const [time, setTime] = useState('00:00:00');
+  useEffect(() => {
+    const tick = () => {
+      const d = new Date();
+      setTime(d.toISOString().slice(11, 19));
+    };
+    tick();
+    const id = setInterval(tick, 1000);
+    return () => clearInterval(id);
+  }, []);
+  return <span>UTC <b>{time}</b></span>;
 }
 
-export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
-  const { t } = useTranslation('common')
-  const router = useRouter();
-  const imageURL = `/img/phone.webp`;
-  const MAX_BLOG_INTRO_LENGTH = 200;
-  
-  const [isMobile, setIsMobile] = React.useState(false);
-  React.useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 900);
+function GnssReadout() {
+  const [val, setVal] = useState('0.009');
+  useEffect(() => {
+    const tick = () => {
+      const base = 0.009;
+      const jitter = (Math.random() - 0.5) * 0.004;
+      const v = Math.max(0.006, Math.min(0.012, base + jitter));
+      setVal(v.toFixed(3));
     };
-    handleResize(); // set on mount
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    const id = setInterval(tick, 2200);
+    return () => clearInterval(id);
   }, []);
+  return <span>GNSS ACC <b>{val} m</b></span>;
+}
 
-  const splashButtons = React.useMemo(() => (
-    Object.entries(splashTitles).map(([id, title]) => (
-      <Col key={id} xs="auto" className="d-flex justify-content-center">
-        <div
-          className="explore-button darken"
-          onClick={() => router.push(`/${id}`)}
-          role="button"
-          tabIndex={0}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter') router.push(`/${id}`);
-          }}
-        >
-          {t(title)}
-        </div>
-      </Col>
-    ))
-  ), [t]);
+/* ------------------------------------------------------------------ */
+/*  Main component                                                     */
+/* ------------------------------------------------------------------ */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
+  useTranslation('common');
 
   return (
-    <Container>
-      <Row className="flex-nowrap">
-        <Col xs={12} md={8} lg={6}>
-          <div className="landing-page-splash">
-            <h1 className="company-title">{t('fullProductName')}</h1>
-            <hr className="company-title" />
-            <h3 className="company-title">{t('companySlogan')}</h3>
+    <div className="landing-v2" data-page="home">
+
+      {/* ============ STATUS STRIP ============ */}
+      <div className="status-strip">
+        <span><span className="dot" /> FIELD NETWORK . ONLINE</span>
+        <span className="sep">|</span>
+        <span>VINE . BY . VINE&trade;</span>
+        <span className="sep">|</span>
+        <span className="country-marquee-wrap">
+          <span className="country-marquee">
+            CALIFORNIA &middot; OREGON &middot; MEXICO &middot; ITALY &middot; ARMENIA &middot; NEW ZEALAND &middot; PORTUGAL &middot; ARGENTINA &middot; LEBANON &nbsp;&nbsp;&nbsp;
+            CALIFORNIA &middot; OREGON &middot; MEXICO &middot; ITALY &middot; ARMENIA &middot; NEW ZEALAND &middot; PORTUGAL &middot; ARGENTINA &middot; LEBANON &nbsp;&nbsp;&nbsp;
+          </span>
+        </span>
+        <span className="spacer" />
+        <GnssReadout />
+        <span className="sep">|</span>
+        <UtcClock />
+      </div>
+
+      {/* ============ HERO ============ */}
+      <header className="hero">
+        <div className="hero-grid container-lp">
+          <div className="hero-left">
+            <div className="hero-label kicker">
+              <span className="tick"><span /></span>
+              Sentinel Vine Manager . Vine By Vine&trade;
+            </div>
+
+            <h1>
+              Capturing the life history of your vineyard, <em>one vine at a time.</em>
+            </h1>
+
+            <p className="lede">
+              Sentinel creates and maintains a permanent vine record for every vine in your vineyard -- tracking any parameter you define: disease history, production status, vigor, cluster counts, photos, operations, and more. Query, analyze, chart, and report on that data today, next vintage, and for the full life of your vineyard.
+            </p>
+
+            <div className="hero-ctas">
+              <Link href="/contact" className="cta-solid" onClick={() => AnalyticsService.trackDemoClick('home_hero')}>
+                Schedule a Demo <span className="arrow" />
+              </Link>
+              <a href="https://apps.apple.com/app/sentinel-vine-manager/id1608970406" className="cta-ghost" target="_blank" rel="noreferrer">
+                Download on App Store
+              </a>
+            </div>
+
+            <div className="hero-stats">
+              <div>
+                <div className="k">MAPPING ACCURACY</div>
+                <div className="v">0.009 <small>m</small></div>
+              </div>
+              <div>
+                <div className="k">100 ACRES / 1 INTERN</div>
+                <div className="v">1 <small>week</small></div>
+              </div>
+              <div>
+                <div className="k">COUNTRIES DEPLOYED</div>
+                <div className="v">6</div>
+              </div>
+            </div>
           </div>
 
-          <Row className="justify-content-center align-items-center">
-            <Image
-              src={imageURL}
-              alt="sentinel-iphone-mobile"
-              className="mobile-content-picture d-block d-md-none" // only show on mobile
-              width={400}
-              height={800}
-              priority
-              fetchPriority="high"
-              sizes="(max-width: 900px) 90vw, 400px"
+          <div className="hero-right">
+            <img
+              src="/images/product/hero-vine-map.png"
+              alt="Sentinel vine map showing color-coded vine statuses with vine detail popup"
+              className="hero-screenshot"
+              loading="eager"
             />
-          </Row>
+          </div>
+        </div>
+      </header>
 
-          <Row className="justify-content-center align-items-center">
-            <Col md="auto">
-              <h3 className="company-text text-center">
-                {t('exploreOurTechnology')}
-              </h3>
-              <hr className="company-title" />
-            </Col>
-          </Row>
+      {/* ============ SECTION 01 -- PRODUCT ============ */}
+      <section>
+        <div className="section-head container-lp">
+          <span className="idx">01 . Product</span>
+          <h2>
+            Not just a dot map. <em>A permanent record for every vine in your vineyard.</em>
+          </h2>
+        </div>
 
+        <div className="caps container-lp">
+          {/* Card 1 */}
+          <Link href="/rapidMapping" className="cap">
+            <span className="code">MOD . 001</span>
+            <span className="icon"><IcoGrid /></span>
+            <h3>Vine By Vine&trade;</h3>
+            <p>Map hectares of vineyard in minutes with sub-centimeter accuracy. Each vine becomes a permanent, user-verified record -- no double entry, no re-mapping next season.</p>
+            <span className="spacer" />
+            <span className="more">Mapping</span>
+          </Link>
 
-          <Row className="justify-content-center align-items-center flex-wrap">
-            {splashButtons}
-          </Row>
-          
-          <Row className="latest-blog-container">
-            <Row className="mt-4 justify-content-center">
-              <Col md="auto">
-                <h3 className="company-text">{t('checkOutLatestBlogPost')}</h3>
-                <hr className="company-title" />
-              </Col>
-            </Row>
-            <Col md="auto">
-              <Image
-                src={recommendedBlogPost.image}
-                alt="Blog"
-                className="latest-blog-image"
-                width={600}
-                height={400}
-                sizes="(max-width: 768px) 100vw, 600px"
-              />
-            </Col>
-            <Col className="company-text">
-              <Link href={recommendedBlogPost.url} className="latest-blog-link">
-                <h4>{recommendedBlogPost.title}</h4>
-              </Link>
-              <p>{recommendedBlogPost.author}</p>
-              <p>{formatBlogContent(recommendedBlogPost.content, MAX_BLOG_INTRO_LENGTH)}</p>
-              
-            </Col>
-          </Row>
-        </Col>
+          {/* Card 2 */}
+          <Link href="/maturityMonitoring" className="cap">
+            <span className="code">MOD . 002</span>
+            <span className="icon"><IcoRing /></span>
+            <h3>Maturity Monitoring</h3>
+            <p>Vineyards develop greater heterogeneity as they age. Sentinel lets you identify underperforming vines early, quantify the problem, and follow up at the individual vine.</p>
+            <span className="spacer" />
+            <span className="more">Phenology</span>
+          </Link>
 
-        <Col>
-         {!isMobile && (
-          <Image
-            src={imageURL}
-            alt="sentinel-iphone"
-            className="phone-image"
-            width={600}
-            height={1200}
-            priority
-            fetchPriority="low"
-            sizes="(max-width: 1024px) 90vw, 600px"
-          />
-        )}
-        </Col>
-      </Row>
+          {/* Card 3 */}
+          <Link href="/diseaseTracking" className="cap">
+            <span className="code">MOD . 003</span>
+            <span className="icon"><IcoCross /></span>
+            <h3>Pest &amp; Disease Tracking</h3>
+            <p>Tag suspected vines, auto-generate lab sample labels, bulk-upload results, and auto-update disease status. Our goal: the medical record-keeping system for the world&apos;s great vineyards.</p>
+            <span className="spacer" />
+            <span className="more">Triage</span>
+          </Link>
 
-      <Spacer height={200} />
-    </Container>
-  )
+          {/* Card 4 */}
+          <Link href="/historicalAnalysis" className="cap">
+            <span className="code">MOD . 004</span>
+            <span className="icon"><IcoBars /></span>
+            <h3>Historical Analysis &amp; Work Orders</h3>
+            <p>Construct complex queries across vine age, production, and disease status. Operationalize roguing, grafting, planting and harvest -- with statuses that update on completion.</p>
+            <span className="spacer" />
+            <span className="more">Analytics</span>
+          </Link>
+
+          {/* Card 5 */}
+          <Link href="/rapidMapping" className="cap">
+            <span className="new-tag">NEW</span>
+            <span className="code">MOD . 005</span>
+            <span className="icon"><IcoSpray /></span>
+            <h3>Pesticide Use Reporting</h3>
+            <p>Log a spray in Sentinel and the system generates a compliant XML report -- permit number, site coordinates, product, acreage. Submit to county and state directly. No separate tool, no re-entry.</p>
+            <span className="spacer" />
+            <span className="more">Compliance</span>
+          </Link>
+
+          {/* Card 6 */}
+          <Link href="/rapidMapping" className="cap">
+            <span className="new-tag">NEW</span>
+            <span className="code">MOD . 006</span>
+            <span className="icon"><IcoBarrel /></span>
+            <h3>Cellar Management</h3>
+            <p>Track lots from harvest to bottle -- fermentation, Brix/pH/TA/SO2/VA, vessel assignments, barrel inventory. Every lot ties back to the block and vines it came from. Bundled in your subscription.</p>
+            <span className="spacer" />
+            <span className="more">Vine-to-bottle</span>
+          </Link>
+        </div>
+      </section>
+
+      {/* ============ SECTION 02 -- WHY SENTINEL ============ */}
+      <section>
+        <div className="section-head container-lp">
+          <span className="idx">02 . Why Sentinel</span>
+          <h2>
+            NDVI tells you <em>where.</em> Sentinel tells you <em>why.</em>
+          </h2>
+        </div>
+
+        <div className="split container-lp">
+          <div className="panel">
+            <h4>Exhibit A . Automated Vineyard Imaging</h4>
+            <h3>More data <em>isn&apos;t better data.</em></h3>
+            <p>Cameras and proprietary models can generate terabytes of imagery -- but the models are black boxes, the outputs need hand-validation, and the response they&apos;re prescribing may not match the scale of problem you actually want to tackle. Sentinel puts that control back in the hands of the people who know the vineyard.</p>
+            <img
+              src="/images/product/rtk-field-survey.png"
+              alt="RTK GPS field survey interface with color-coded sensor data points"
+              className="split-screenshot"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="panel">
+            <h4>Exhibit B . Sentinel</h4>
+            <h3>Ground-truthed, <em>vine by vine.</em></h3>
+            <p>Mapped once with sub-centimeter GNSS accuracy. Updated continuously with disease status, production history, photos, lab results, and every management decision made in the field. Ground truth that lives as long as your vineyard does.</p>
+            <img
+              src="/images/product/disease-tracking-map.png"
+              alt="Sentinel disease tracking map with vine-level health data and query system"
+              className="split-screenshot"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ============ SECTION 03 -- HOW IT WORKS ============ */}
+      <section>
+        <div className="section-head container-lp">
+          <span className="idx">03 . How It Works</span>
+          <h2>
+            Georeferenced. Interactive. <em>On every phone in your vineyard.</em>
+          </h2>
+        </div>
+
+        <div className="flow container-lp">
+          <div className="flow-label kicker">OPERATIONAL LOOP</div>
+          <div className="flow-steps">
+            <div className="flow-step">
+              <div className="step-n">STEP 01 / MAP</div>
+              <h4>Map in 3D</h4>
+              <p>One pass. Sub-centimeter accuracy. A permanent 3D base map of every vine in your vineyard -- built with nothing more than an iPhone and a pocket size GNSS receiver.</p>
+            </div>
+            <div className="flow-step">
+              <div className="step-n">STEP 02 / RECORD</div>
+              <h4>Build the vine record</h4>
+              <p>Walk up to any vine and its record opens automatically via geofence. Attach disease status, production status, cluster counts, captioned photos -- no Excel, no clipboards.</p>
+            </div>
+            <div className="flow-step">
+              <div className="step-n">STEP 03 / DISPATCH</div>
+              <h4>Issue work orders</h4>
+              <p>Create targeted tasks: rogue all Red-Blotch-positive vines, plant a list of misses, graft a cohort. Vine statuses auto-update as work is completed in the field.</p>
+            </div>
+            <div className="flow-step">
+              <div className="step-n">STEP 04 / ANALYZE</div>
+              <h4>Compare vintages</h4>
+              <p>Time-series analysis at the vine, block and vineyard level. Did the virus spread? Is production declining? Budget conversations come with a map, not a guess.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ SECTION 04 -- TESTIMONIAL ============ */}
+      <section>
+        <div className="quote container-lp">
+          <span className="idx kicker">04 . From the field</span>
+          <blockquote>
+            Flagging tape and Excel maps work until they don&apos;t. As the scale of the problem grew, so did the burden of managing it. With Sentinel, <em>the entire workflow -- tagging, testing, reporting, roguing -- lives in one system that remembers every vine and every action.</em>
+          </blockquote>
+          <div className="attrib">
+            <b>Napa Valley</b>
+            Director of Viticulture<br />
+            Second-vintage deployment
+          </div>
+        </div>
+      </section>
+
+      {/* ============ SECTION 05 -- GET STARTED ============ */}
+      <section id="contact">
+        <div className="cta-band container-lp">
+          <h3>
+            Vine-level farming <em>deserves vine-level data.</em>
+          </h3>
+          <div className="actions">
+            <Link href="/faqs" className="cta-ghost">Read the FAQs</Link>
+            <Link href="/contact" className="cta-solid" onClick={() => AnalyticsService.trackDemoClick('home_cta_band')}>
+              Schedule a Demo <span className="arrow" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ PRE-FOOTER CTA ============ */}
+      <PreFooterCTA source="home_pre_footer" />
+
+      {/* ============ FOOTER ============ */}
+      <FooterV2 />
+    </div>
+  );
 }

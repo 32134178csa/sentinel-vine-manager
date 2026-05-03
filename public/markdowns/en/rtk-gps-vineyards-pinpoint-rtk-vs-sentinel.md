@@ -1,3 +1,12 @@
+---
+title: "RTK GPS for Vineyards: PinPoint RTK vs Sentinel Vine Manager"
+description: "An honest comparison of VineView's PinPoint RTK hardware and Sentinel Vine Manager's full platform. Covers accuracy, software, disease tracking, work orders, and which tool fits your vineyard."
+keywords: ["PinPoint RTK", "VineView RTK", "vineyard GPS comparison", "RTK GPS vineyard software", "Sentinel vs PinPoint"]
+author: "Christian Sidak"
+date: "2025-11-15"
+image: "/blog-images/rtk-comparison.webp"
+---
+
 # RTK GPS for Vineyards: PinPoint RTK vs Sentinel Vine Manager
 
 If you have been researching vineyard GPS tools, you have probably come across two names: VineView's PinPoint RTK and Sentinel Vine Manager. Both use RTK GPS technology. Both are designed for vineyards. But they are built for fundamentally different purposes, and understanding the distinction will save you from buying the wrong tool.

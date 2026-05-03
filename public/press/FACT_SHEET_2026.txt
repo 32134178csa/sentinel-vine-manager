@@ -1,0 +1,51 @@
+SENTINEL -- FACT SHEET 2026
+
+COMPANY
+  Name:           Sentinel (by Spongy Mesophyll Technologies, LLC)
+  Founded:        Napa Valley, California
+  Website:        sentineltech.eu
+  Category:       Precision viticulture / AgTech
+
+WHAT WE DO
+  Sentinel creates a permanent digital record for every vine in a vineyard.
+  Using RTK GPS at sub-centimeter accuracy, crews map and tag each plant
+  as they walk the rows. The result is a queryable, GPS-verified history
+  of every vine on the property -- like digital flagging tape that never
+  falls off.
+
+CORE TECHNOLOGY
+  - RTK GPS positioning (Emlid Reach RX hardware)
+  - Sub-centimeter accuracy per vine
+  - iOS native field application (offline-first)
+  - Cloud-based management platform
+  - Excel/XLSX data export with filtered queries
+
+USE CASES
+  - Disease tracking and spread analysis (vine-by-vine)
+  - Replant planning with historical context
+  - Work order generation from map queries
+  - Compliance documentation and audit trails
+  - Institutional knowledge preservation across crew changes
+
+MARKETS
+  - Primary: Napa Valley, Sonoma County, Willamette Valley (Oregon)
+  - Expanding: Central Coast, Walla Walla, international
+
+IDEAL CUSTOMER PROFILE
+  - Premium estate vineyards, 50-5,000+ acres
+  - Vineyard management companies managing multiple properties
+  - Operations where vine-level precision creates ROI through
+    better replant decisions, targeted treatments, and data continuity
+
+COMPETITIVE DIFFERENTIATION
+  - Ground-level RTK GPS (sub-cm) vs. satellite/drone imagery (1-5m)
+  - Per-vine records vs. block-level aggregates
+  - Persistent history vs. point-in-time snapshots
+  - Crew-operated vs. third-party flyover
+
+CONTACT
+  General:        christian@sentineltech.eu
+  Press:          press@spongymesophyll.com
+
+---
+Updated April 2026. For the latest information, visit sentineltech.eu.

@@ -12,21 +12,31 @@ interface PressPageProps {
   posts: any;
 }
 
-export const getStaticProps: GetStaticProps<PressPageProps> = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale ?? 'en', ['common'])),
-    // Load posts JSON
-    posts: (() => {
-      try {
-        const fileContents = fs.readFileSync(path.join(process.cwd(), 'src/data/press', `${locale || 'en'}.json`), 'utf8');
-        return JSON.parse(fileContents);
-      } catch {
-        const defaultContents = fs.readFileSync(path.join(process.cwd(), 'src/data/press', 'en.json'), 'utf8');
-        return JSON.parse(defaultContents);
-      }
-    })(),
-  },
-})
+export const getStaticProps: GetStaticProps<PressPageProps> = async ({ locale }) => {
+  let allPosts: Record<string, { author: string; [key: string]: unknown }> = {};
+  try {
+    const fileContents = fs.readFileSync(path.join(process.cwd(), 'src/data/press', `${locale || 'en'}.json`), 'utf8');
+    allPosts = JSON.parse(fileContents);
+  } catch {
+    const defaultContents = fs.readFileSync(path.join(process.cwd(), 'src/data/press', 'en.json'), 'utf8');
+    allPosts = JSON.parse(defaultContents);
+  }
+
+  // Filter to only external press items (not blog posts)
+  const pressPosts: Record<string, unknown> = {};
+  for (const [key, post] of Object.entries(allPosts)) {
+    if (post.author !== 'Sentinel Blog') {
+      pressPosts[key] = post;
+    }
+  }
+
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? 'en', ['common'])),
+      posts: pressPosts,
+    },
+  };
+}
 
 const PressPage: NextPage<PressPageProps> = ({ posts }) => {
   const { t } = useTranslation('common');

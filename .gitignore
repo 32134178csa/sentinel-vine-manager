@@ -26,3 +26,7 @@ pnpm-debug.log*
 # Package manager locks (optional—keep the one you use)
 # yarn.lock
 # pnpm-lock.yaml
+.vercel
+.env*.local
+public/images/product/backup/
+copy_backup

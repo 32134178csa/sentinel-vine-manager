@@ -40,4 +40,15 @@ export class AnalyticsService {
         })
       }
     }
+
+    static trackDemoClick(source: string): void {
+      const win = typeof window !== 'undefined' ? window : undefined;
+      if (win?.gtag) {
+        win.gtag('event', 'demo_cta_click', {
+          event_category: 'conversion',
+          event_label: source,
+          link_url: '/contact',
+        })
+      }
+    }
 }

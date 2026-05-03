@@ -3,13 +3,21 @@ import fs from 'fs'
 import path from 'path'
 import ReactMarkdown from 'react-markdown'
 import Head from 'next/head'
+import Link from 'next/link'
 import matter from 'gray-matter';
 import AppPage from '@/components/AppPage'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import Spacer from '@/components/Spacer';
+import PreFooterCTA from '@/components/PreFooterCTA';
 import { AnalyticsService } from '@/services/AnalyticsService'
+import { BlogPostMap } from '@/services/BlogService'
 
+
+interface NextPost {
+  slug: string;
+  title: string;
+  date?: string;
+}
 
 interface BlogPostProps {
   content: string;
@@ -18,12 +26,18 @@ interface BlogPostProps {
     title: string;
     description?: string;
     keywords?: string[];
+    date?: string;
+    author?: string;
+    authorTitle?: string;
+    topic?: string;
+    readTime?: string;
     //eslint-disable-next-line
     [key: string]: any;
   };
+  nextPosts: NextPost[];
 }
 
-export default function BlogPostPage({ content, blogPostId, frontmatter }: BlogPostProps) {
+export default function BlogPostPage({ content, blogPostId, frontmatter, nextPosts }: BlogPostProps) {
   const { t } = useTranslation('common')
   AnalyticsService.logPageView();
 
@@ -41,30 +55,126 @@ export default function BlogPostPage({ content, blogPostId, frontmatter }: BlogP
         {frontmatter.keywords && (
           <meta name="keywords" content={frontmatter.keywords.join(', ')} />
         )}
+        <link rel="canonical" href={`https://sentineltech.eu/blog/${blogPostId}`} />
         {/* Open Graph */}
         <meta property="og:title" content={frontmatter.title} />
         <meta property="og:description" content={frontmatter.description || ''} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://yourdomain.com/blog/${blogPostId}`} />
+        <meta property="og:url" content={`https://sentineltech.eu/blog/${blogPostId}`} />
+        <meta property="og:site_name" content="Sentinel" />
+        {frontmatter.image && (
+          <meta property="og:image" content={`https://sentineltech.eu${frontmatter.image}`} />
+        )}
+        {frontmatter.date && (
+          <meta property="article:published_time" content={frontmatter.date} />
+        )}
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={frontmatter.title} />
         <meta name="twitter:description" content={frontmatter.description || ''} />
+        {frontmatter.image && (
+          <meta name="twitter:image" content={`https://sentineltech.eu${frontmatter.image}`} />
+        )}
+        {/* JSON-LD Article Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": frontmatter.title,
+              "description": frontmatter.description || '',
+              "datePublished": frontmatter.date || '',
+              "author": {
+                "@type": "Person",
+                "name": frontmatter.author || "Sentinel"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Sentinel",
+                "url": "https://sentineltech.eu"
+              },
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": `https://sentineltech.eu/blog/${blogPostId}`
+              },
+              ...(frontmatter.image ? { "image": `https://sentineltech.eu${frontmatter.image}` } : {}),
+              ...(frontmatter.keywords ? { "keywords": frontmatter.keywords.join(', ') } : {})
+            })
+          }}
+        />
       </Head>
       <AppPage>
-        <div className="container">
-          <div className="markdown-container">
+        <div className="press-v2" data-page="blog">
+
+          {/* ============ POST HERO ============ */}
+          <header className="post-hero">
+            <nav className="crumbs">
+              <Link href="/blog">Blog</Link> / {frontmatter.topic || 'Field Notes'}
+            </nav>
+            {frontmatter.topic && (
+              <span className="tag">{frontmatter.topic}</span>
+            )}
+            <h1>{frontmatter.title}</h1>
+            <div className="meta">
+              {frontmatter.date && (
+                <div>
+                  <b>Published</b>
+                  {frontmatter.date}
+                </div>
+              )}
+              <div>
+                <b>Author</b>
+                {frontmatter.author || 'Sentinel'}
+              </div>
+              {frontmatter.readTime && (
+                <div>
+                  <b>Read</b>
+                  {frontmatter.readTime}
+                </div>
+              )}
+              {frontmatter.topic && (
+                <div>
+                  <b>Topic</b>
+                  {frontmatter.topic}
+                </div>
+              )}
+            </div>
+          </header>
+
+          {/* ============ POST BODY ============ */}
+          <div className="post-body">
             <ReactMarkdown>{content}</ReactMarkdown>
-            <Spacer height={100}/>
           </div>
-        </div> 
+
+          {/* ============ KEEP READING ============ */}
+          {nextPosts.length > 0 && (
+            <div className="next-posts">
+              <h3>Keep Reading</h3>
+              <div className="links">
+                {nextPosts.map((np) => (
+                  <Link key={np.slug} href={`/blog/${np.slug}`}>
+                    {np.date && <div className="date">{np.date}</div>}
+                    <h4>{np.title}</h4>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* ============ CTA ============ */}
+          <div style={{ maxWidth: 760, margin: '0 auto', padding: '0 32px 64px' }}>
+            <PreFooterCTA source="blog_post" />
+          </div>
+
+        </div>
       </AppPage>
     </>
   )
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const locales = ['en', 'fr', 'es', 'it'] // Add your locales here manually or dynamically
+  const locales = ['en', 'fr', 'es', 'it']
 
   const paths: { params: { blogPostId: string }, locale: string }[] = []
 
@@ -85,7 +195,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false, // or 'blocking'
+    fallback: false,
   }
 }
 
@@ -126,6 +236,31 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
     return { notFound: true };
   }
 
+  // Build "Keep Reading" links from other blog posts
+  const nextPosts: NextPost[] = [];
+  try {
+    const pressJson = fs.readFileSync(
+      path.join(process.cwd(), 'src/data/press', 'en.json'),
+      'utf8'
+    );
+    const allPosts: BlogPostMap = JSON.parse(pressJson);
+    const blogEntries = Object.entries(allPosts).filter(
+      ([, p]) => p.author === 'Sentinel Blog' && !p.url.endsWith(blogPostId)
+    );
+    // Pick up to 2 other blog posts
+    const picked = blogEntries.slice(0, 2);
+    for (const [, post] of picked) {
+      const slug = post.url.replace('/blog/', '');
+      nextPosts.push({
+        slug,
+        title: post.title,
+        date: '2026',
+      });
+    }
+  } catch {
+    // Non-critical -- skip keep reading section
+  }
+
   const translations = await serverSideTranslations(locale ?? 'en', ['common']);
 
   return {
@@ -134,6 +269,7 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
       content,
       blogPostId,
       frontmatter,
+      nextPosts,
     },
   };
 };
