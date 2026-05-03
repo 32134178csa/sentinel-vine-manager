@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://site.sentineltech.eu/sitemap.xml
+Sitemap: https://sentineltech.eu/sitemap.xml

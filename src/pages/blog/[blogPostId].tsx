@@ -55,15 +55,15 @@ export default function BlogPostPage({ content, blogPostId, frontmatter, nextPos
         {frontmatter.keywords && (
           <meta name="keywords" content={frontmatter.keywords.join(', ')} />
         )}
-        <link rel="canonical" href={`https://site.sentineltech.eu/blog/${blogPostId}`} />
+        <link rel="canonical" href={`https://sentineltech.eu/blog/${blogPostId}`} />
         {/* Open Graph */}
         <meta property="og:title" content={frontmatter.title} />
         <meta property="og:description" content={frontmatter.description || ''} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://site.sentineltech.eu/blog/${blogPostId}`} />
+        <meta property="og:url" content={`https://sentineltech.eu/blog/${blogPostId}`} />
         <meta property="og:site_name" content="Sentinel" />
         {frontmatter.image && (
-          <meta property="og:image" content={`https://site.sentineltech.eu${frontmatter.image}`} />
+          <meta property="og:image" content={`https://sentineltech.eu${frontmatter.image}`} />
         )}
         {frontmatter.date && (
           <meta property="article:published_time" content={frontmatter.date} />
@@ -73,7 +73,7 @@ export default function BlogPostPage({ content, blogPostId, frontmatter, nextPos
         <meta name="twitter:title" content={frontmatter.title} />
         <meta name="twitter:description" content={frontmatter.description || ''} />
         {frontmatter.image && (
-          <meta name="twitter:image" content={`https://site.sentineltech.eu${frontmatter.image}`} />
+          <meta name="twitter:image" content={`https://sentineltech.eu${frontmatter.image}`} />
         )}
         {/* JSON-LD Article Schema */}
         <script
@@ -92,13 +92,13 @@ export default function BlogPostPage({ content, blogPostId, frontmatter, nextPos
               "publisher": {
                 "@type": "Organization",
                 "name": "Sentinel",
-                "url": "https://site.sentineltech.eu"
+                "url": "https://sentineltech.eu"
               },
               "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": `https://site.sentineltech.eu/blog/${blogPostId}`
+                "@id": `https://sentineltech.eu/blog/${blogPostId}`
               },
-              ...(frontmatter.image ? { "image": `https://site.sentineltech.eu${frontmatter.image}` } : {}),
+              ...(frontmatter.image ? { "image": `https://sentineltech.eu${frontmatter.image}` } : {}),
               ...(frontmatter.keywords ? { "keywords": frontmatter.keywords.join(', ') } : {})
             })
           }}
