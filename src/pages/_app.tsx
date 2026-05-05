@@ -4,6 +4,7 @@ import { appWithTranslation } from 'next-i18next';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { interTight, jetbrainsMono, spaceGrotesk } from '@/styles/fonts';
 import './globals.css';
+import '@/components/product-screens/product-screens.css';
 import { useEffect, useState } from 'react';
 import ReactGA from 'react-ga4';
 import { GA_ID } from '@/config';

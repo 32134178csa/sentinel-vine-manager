@@ -1,6 +1,35 @@
 import { useTranslation } from 'next-i18next';
+import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { AnalyticsService } from '@/services/AnalyticsService';
+import { MobileFieldMap, DesktopTime, DesktopChart, DesktopWorkOrders } from './product-screens';
+
+/* ------------------------------------------------------------------ */
+/*  Intersection observer wrapper for pillar visuals                    */
+/* ------------------------------------------------------------------ */
+function PillarVisual({ type, children }: { type: 'phone' | 'desktop'; children: React.ReactNode }) {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.classList.add('is-visible');
+          obs.disconnect();
+        }
+      },
+      { threshold: 0.15 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+  return (
+    <div ref={ref} className={`pillar-visual-wrap ${type}`}>
+      {children}
+    </div>
+  );
+}
 
 /* ------------------------------------------------------------------ */
 /*  Cellar mock visual                                                 */
@@ -74,7 +103,9 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <img src="/images/product/vine-by-vine.png" alt="Sentinel vine map with health grid and vine data panel" className="pillar-screenshot" loading="lazy" />
+          <PillarVisual type="phone">
+            <MobileFieldMap variant="production" />
+          </PillarVisual>
         </div>
       </section>
 
@@ -91,7 +122,9 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <img src="/images/product/analytics-dashboard.png" alt="Sentinel analytics dashboard with vine production status breakdown" className="pillar-screenshot" loading="lazy" />
+          <PillarVisual type="desktop">
+            <DesktopTime />
+          </PillarVisual>
         </div>
       </section>
 
@@ -109,7 +142,9 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <img src="/images/product/disease-tracking-map.png" alt="Sentinel disease tracking with vine-level health data and spatial queries" className="pillar-screenshot" loading="lazy" />
+          <PillarVisual type="phone">
+            <MobileFieldMap variant="virus" />
+          </PillarVisual>
         </div>
       </section>
 
@@ -127,7 +162,9 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <img src="/images/product/historical-analysis.png" alt="Vine count time-series bar chart showing production status across vintages" className="pillar-screenshot" loading="lazy" />
+          <PillarVisual type="desktop">
+            <DesktopChart />
+          </PillarVisual>
         </div>
       </section>
 
@@ -146,7 +183,9 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <img src="/images/product/work-orders.png" alt="Sentinel work order management dashboard with active tasks and progress tracking" className="pillar-screenshot" loading="lazy" />
+          <PillarVisual type="desktop">
+            <DesktopWorkOrders />
+          </PillarVisual>
         </div>
       </section>
 
