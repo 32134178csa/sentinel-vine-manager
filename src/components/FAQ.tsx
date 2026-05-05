@@ -36,11 +36,6 @@ const sections: FAQSection[] = [
       },
       {
         num: 'Q.03',
-        question: 'Who owns the data?',
-        answer: 'You do. Full stop. Every acre mapped, every vine recorded, every photo \u2014 the vineyard owns it. We provide the software and a hosted database; you can export any dataset to Excel at any time.',
-      },
-      {
-        num: 'Q.04',
         question: 'Does it work offline in the vineyard?',
         answer: 'Yes. The mobile app caches block data and queues every vine edit locally, syncing when a cellular or Wi-Fi signal returns. GNSS hardware works in the field regardless of cell coverage.',
       },
@@ -53,63 +48,40 @@ const sections: FAQSection[] = [
     titleEm: 'Hardware',
     faqs: [
       {
-        num: 'Q.05',
+        num: 'Q.04',
         question: 'What\u2019s the actual mapping accuracy?',
         answer: 'With an RTK GNSS receiver and a good correction source, horizontal accuracy is 0.9 cm \u00b1 0.4 cm in open sky conditions. Under heavy canopy or steep hillside blocks, expect 2\u20134 cm \u2014 still an order of magnitude better than consumer GPS.',
       },
       {
-        num: 'Q.06',
+        num: 'Q.05',
         question: 'What hardware do I need?',
         answer: 'An iPhone (iOS 16+) and a clip-on RTK GNSS receiver. We recommend specific receiver models depending on your geography and carrier-phase correction service. Total hardware cost is typically $1.5\u20133k per field unit.',
       },
       {
-        num: 'Q.07',
+        num: 'Q.06',
         question: 'Does it work on tractors or only on foot?',
         answer: 'Both. The mobile app works on foot, ATV, and tractor. Some clients mount a receiver on a UTV with a phone on a RAM mount; others prefer walking the rows for denser data capture.',
       },
     ],
   },
   {
-    id: 'data',
-    num: '03',
-    title: 'Data &',
-    titleEm: 'Privacy',
-    faqs: [
-      {
-        num: 'Q.08',
-        question: 'Where is my data stored?',
-        answer: 'Hosted on encrypted cloud infrastructure in the US (AWS), with regional hosting available for EU clients. Per-vine records are logically isolated per-vineyard; only users you invite can see your data.',
-      },
-      {
-        num: 'Q.09',
-        question: 'Do you train models on my vineyard data?',
-        answer: 'Not without explicit, written consent. Sentinel is not an ML-training pipeline for someone else\u2019s product. If we ever develop aggregate benchmarking features, participation is opt-in and data is de-identified.',
-      },
-      {
-        num: 'Q.10',
-        question: 'Can I give my crew limited access?',
-        answer: 'Yes. Role-based access includes: Admin, Viticulturist, Scout, Crew Lead, and Read-Only. Clients (if you manage vineyards for owners) see only their own vines; your internal team sees everything.',
-      },
-    ],
-  },
-  {
     id: 'disease',
-    num: '04',
+    num: '03',
     title: 'Disease',
     titleEm: 'Tracking',
     faqs: [
       {
-        num: 'Q.11',
+        num: 'Q.07',
         question: 'Which diseases can I track?',
         answer: 'Any \u2014 the disease list is user-configurable. Out of the box we ship templates for Red Blotch, Leafroll (GLRaV-3 and others), Pierce\u2019s Disease, Eutypa, Esca, and Phylloxera, with the user-definable status categories (Positive, Symptomatic but Untested, Tested Negative).',
       },
       {
-        num: 'Q.12',
+        num: 'Q.08',
         question: 'Can I auto-generate lab sample labels?',
         answer: 'Yes. Tag suspected vines in the field; Sentinel generates sample labels with vine IDs, block/row/vine coordinates, and a pre-filled lab submission form. Upload results in bulk; vine disease status updates automatically.',
       },
       {
-        num: 'Q.13',
+        num: 'Q.09',
         question: 'How is Sentinel different from NDVI drone imagery?',
         answer: 'NDVI measures canopy \u201cgreenness\u201d from above \u2014 it cannot distinguish disease from shade, irrigation failure, or young-vine vigor. Sentinel captures user-verified ground truth per vine. They\u2019re complements, not substitutes. Many clients use aerial imagery to prioritize scouting zones, then Sentinel to ground-truth and act.',
       },
@@ -117,22 +89,22 @@ const sections: FAQSection[] = [
   },
   {
     id: 'operations',
-    num: '05',
+    num: '04',
     title: 'Operations &',
     titleEm: 'Work Orders',
     faqs: [
       {
-        num: 'Q.14',
+        num: 'Q.10',
         question: 'How do work orders update vine statuses?',
         answer: 'Create a Roguing work order pointed at vines with the Positive Disease Status of your choice. When a crew member marks a vine \u201crogued\u201d in the field, Sentinel flips that vine\u2019s disease status to No-Virus and production status to Miss \u2014 ready for a Planting work order next spring.',
       },
       {
-        num: 'Q.15',
+        num: 'Q.11',
         question: 'Can Sentinel forecast yield?',
         answer: 'Yes. Our crop estimation and thinning simulator uses your historical cluster counts, cluster weights, and berry weights to project yield with statistical confidence intervals \u2014 block by block and across the vineyard.',
       },
       {
-        num: 'Q.16',
+        num: 'Q.12',
         question: 'Does it handle spray and pesticide compliance?',
         answer: 'Yes \u2014 and as of 2026, Sentinel generates the compliance submission itself. See section 06, Compliance & Reporting.',
       },
@@ -140,22 +112,22 @@ const sections: FAQSection[] = [
   },
   {
     id: 'compliance',
-    num: '06',
+    num: '05',
     title: 'Compliance &',
     titleEm: 'Reporting',
     faqs: [
       {
-        num: 'Q.17',
+        num: 'Q.13',
         question: 'Can Sentinel file my pesticide use reports?',
         answer: 'Yes. Every spray you log in the field feeds directly into your pesticide use submission. Sentinel generates a compliant XML report \u2014 county permit number, site coordinates, product EPA registration, rate, acreage treated, operator certification \u2014 ready for local and state submission.\n\nNo separate reporting tool. No end-of-month spreadsheet reconciliation. No re-entering the same data in two places.',
       },
       {
-        num: 'Q.18',
+        num: 'Q.14',
         question: 'Which jurisdictions are supported?',
         answer: 'California Department of Pesticide Regulation (CDPR) PUR format is supported out of the box; Oregon, Washington, and the EU (PPP-Directive) templates are rolling out through 2026. Custom jurisdictions are configurable.',
       },
       {
-        num: 'Q.19',
+        num: 'Q.15',
         question: 'What about restricted-entry intervals and applicator records?',
         answer: 'REI and PHI are tracked per-application and surface as alerts on the block map. Applicator certifications (QAC/QAL) are stored per operator and stamped onto every relevant work order.',
       },
@@ -163,27 +135,27 @@ const sections: FAQSection[] = [
   },
   {
     id: 'cellar',
-    num: '07',
+    num: '06',
     title: 'Cellar',
     titleEm: 'Management',
     faqs: [
       {
-        num: 'Q.20',
+        num: 'Q.16',
         question: 'What does Cellar Management actually cover?',
         answer: 'Lots tracked from harvest to bottle: fermentation timelines, lab analysis (Brix, pH, TA, SO\u2082, VA), vessel assignments, barrel inventory, topping schedules, and bottling runs. Every lot ties back to the specific block and vines it came from \u2014 so the same permanent record that started with a vine follows the wine into the cellar.',
       },
       {
-        num: 'Q.21',
+        num: 'Q.17',
         question: 'How does the pricing compare to dedicated cellar platforms?',
-        answer: 'Dedicated cellar software typically starts around $10,000 / year. Sentinel bundles Cellar Management into your existing vineyard subscription at no additional per-seat or per-lot cost. Lab results, vessel assignments and barrel inventory are all included.',
+        answer: 'Sentinel offers Cellar Management as an add-on module to the vineyard subscription -- one platform, one login, lot-to-vine traceability built in. Lab results, vessel assignments and barrel inventory are all part of the module.',
       },
       {
-        num: 'Q.22',
+        num: 'Q.18',
         question: 'Can I really trace a bottle back to individual vines?',
         answer: 'Yes. Pick maps recorded at harvest link the fruit entering a fermenter to the exact set of vines that produced it. From there, lot-to-lot transfers, blending and bottling are tracked, so a finished bottle carries the lineage of the vines all the way back to year-one mapping.',
       },
       {
-        num: 'Q.23',
+        num: 'Q.19',
         question: 'Does it replace my winemaking software?',
         answer: 'For most small and mid-size operations, yes. Larger cellars with very specific compliance or accounting integrations may keep a dedicated platform for a transition period and run Sentinel alongside it. We import historical lot data from InnoVint, Vintrace, and Winemaker\u2019s Database CSV exports.',
       },
@@ -191,17 +163,17 @@ const sections: FAQSection[] = [
   },
   {
     id: 'pricing',
-    num: '08',
+    num: '07',
     title: 'Pricing &',
     titleEm: 'Onboarding',
     faqs: [
       {
-        num: 'Q.24',
+        num: 'Q.20',
         question: 'How is Sentinel priced?',
-        answer: 'Annual subscription, priced per acre with volume breaks for larger operations. Hardware is purchased separately (one-time). Cellar Management and pesticide use reporting are included at no extra cost. Schedule a demo and we\u2019ll put together a quote for your specific operation.',
+        answer: 'Annual subscription, priced per acre with volume breaks for larger operations. Hardware is purchased separately (one-time). Cellar Management and pesticide use reporting are available as add-on modules. Schedule a demo and we\u2019ll put together a quote for your specific operation.',
       },
       {
-        num: 'Q.25',
+        num: 'Q.21',
         question: 'What does onboarding look like?',
         answer: 'Roughly a week-long process, end-to-end. We train your team on the platform and on mapping in the field. Within a couple of days, most teams are mapping hundreds of acres on their own. We stay engaged through your first full vintage.',
       },

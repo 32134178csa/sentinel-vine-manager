@@ -175,7 +175,7 @@ export default function ProductPage() {
           <div className="idx">07 &middot; Cellar Management <span style={{ color: 'var(--accent)', marginLeft: '10px' }}>&bull; New</span></div>
           <h2>From vine <em>to bottle,</em> on one record.</h2>
           <p>Sentinel is the first vineyard-native platform to extend a vine&apos;s record into the cellar. Every lot carries its block -- and every vine in it -- forward through fermentation, lab analysis, vessel assignments, barrel inventory, and bottling.</p>
-          <p>Dedicated cellar platforms typically start at <b style={{ color: 'var(--ink)', fontWeight: 500 }}>$10K / year</b>. Sentinel includes cellar management in your existing vineyard subscription.</p>
+          <p>Cellar Management is offered as an add-on module to your vineyard subscription -- one platform, one login, lot-to-vine traceability built in. Talk to us about pricing for your operation.</p>
           <ul>
             <li><div><b>Lot lineage</b><span>Every lot ties back to the specific block and vines it came from.</span></div></li>
             <li><div><b>Lab analysis</b><span>Brix, pH, TA, SO&#x2082;, VA tracked per lot, per time-stamped sample.</span></div></li>

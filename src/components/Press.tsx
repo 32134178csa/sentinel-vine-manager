@@ -135,56 +135,6 @@ const Press: React.FC<PressProps> = ({ posts }) => {
                 })}
             </section>
 
-            {/* ============ PRESS KIT ============ */}
-            <section className="press-kit container-lp">
-                <div
-                    className="mono"
-                    style={{
-                        color: 'var(--ink-mute)',
-                        fontSize: '11px',
-                        letterSpacing: '0.18em',
-                        textTransform: 'uppercase' as const,
-                    }}
-                >
-                    Press Kit
-                </div>
-                <div>
-                    <h3>
-                        Logos, photography, <em>and boilerplate.</em>
-                    </h3>
-                    <p>
-                        Everything you need for print, web, and broadcast. For interview
-                        requests and custom asks, email{' '}
-                        <b style={{ color: 'var(--ink)' }}>press@spongymesophyll.com</b>.
-                    </p>
-                </div>
-                <div className="downloads">
-                    <a className="dl" href="/press/COMPANY_BOILERPLATE.txt" download>
-                        <span>COMPANY_BOILERPLATE.TXT</span>
-                        <span className="size">2 KB</span>
-                    </a>
-                    <a className="dl" href="/press/FACT_SHEET_2026.txt" download>
-                        <span>FACT_SHEET_2026.TXT</span>
-                        <span className="size">2 KB</span>
-                    </a>
-                    <a className="dl coming-soon" href="#">
-                        <span>SENTINEL_LOGOS.ZIP</span>
-                        <span className="size">Coming soon</span>
-                    </a>
-                    <a className="dl coming-soon" href="#">
-                        <span>FIELD_PHOTOGRAPHY_HIRES.ZIP</span>
-                        <span className="size">Coming soon</span>
-                    </a>
-                    <a className="dl coming-soon" href="#">
-                        <span>PRODUCT_SCREENSHOTS.ZIP</span>
-                        <span className="size">Coming soon</span>
-                    </a>
-                    <a className="dl coming-soon" href="#">
-                        <span>FOUNDER_BIOS_HEADSHOTS.PDF</span>
-                        <span className="size">Coming soon</span>
-                    </a>
-                </div>
-            </section>
 
             {/* ============ CTA BAND ============ */}
             <section>
@@ -197,7 +147,7 @@ const Press: React.FC<PressProps> = ({ posts }) => {
                     </div>
                     <div className="actions">
                         <Link href="/blog" className="cta-ghost">Read the Blog</Link>
-                        <a href="mailto:press@spongymesophyll.com" className="cta-solid">
+                        <a href="mailto:support@sentineltech.eu" className="cta-solid">
                             Email Press <span className="arrow" />
                         </a>
                     </div>

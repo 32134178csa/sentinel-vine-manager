@@ -26,6 +26,7 @@ const NdviPage: NextPage = () => {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://sentineltech.eu/ndvi" />
         {/* Open Graph */}
         <meta property="og:title" content="NDVI tells you where. Sentinel tells you why." />
         <meta property="og:description" content="Aerial NDVI is beautiful. It's also abstract. Here's what changes when you measure a vineyard from the ground, vine by vine." />

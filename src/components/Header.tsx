@@ -27,7 +27,7 @@ export default function Header() {
 
   return (
     <nav className="top">
-      <div className="row nav-row-v2">
+      <div className="nav-row-v2">
         {/* Brand */}
         <Link href="/" className="brand">
           <span className="mark">

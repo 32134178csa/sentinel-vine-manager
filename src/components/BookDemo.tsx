@@ -112,7 +112,7 @@ export default function BookDemo() {
             <Row className="mt-4 justify-content-center">
               <div className="zoom-scheduler-container">
                 <iframe
-                  src={`https://scheduler.zoom.us/d/1i222xhk/sentinel-demo?embedStyle=%7B%22backgroundColor%22%3A%22%230A0B0D%22%2C%22textColor%22%3A%22%23EDEDE8%22%2C%22buttonColor%22%3A%22%237ea47f%22%7D&embed=true`}
+                  src="https://scheduler.zoom.us/d/1i222xhk/sentinel-demo?embed=true"
                   title="Zoom Scheduler"
                   className="zoom-scheduler-iframe"
                 />

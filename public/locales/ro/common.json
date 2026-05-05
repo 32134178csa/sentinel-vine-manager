@@ -248,7 +248,7 @@
   "faqs": "ÎNTREBĂRI FRECVENTE",
   "faqsDescription": "Găsiți răspunsuri la întrebările frecvente despre cum funcționează Sentinel Vine Manager, prețuri, cerințe hardware și multe altele.",
   "faqsKeywords": "FAQ, Sentinel Vine Manager FAQ, întrebări privind cartografierea podgoriilor, asistență pentru gestionarea podgoriilor",
-  "faqsTitle": "🍇 Întrebări frecvente - Sentinel Vine Manager",
+  "faqsTitle": "Întrebări frecvente - Sentinel Vine Manager",
   "fertilize": "Fertiliza",
   "fertilizer": "Îngrăşământ",
   "fieldNoteInbox": "Caseta de primire a notelor",
@@ -592,5 +592,6 @@
   "youCanInviteCoWorkers": "Puteți invita colaboratorii la Sentinel să le ofere automat acces la vinăria dvs. Pur și simplu introduceți informațiile lor, iar Sentinel le va trimite un e-mail.",
   "youHaveRights": "În anumite circumstanțe, aveți următoarele drepturi de protecție a datelor:",
   "youMayDisableCookies": "Puteți alege să dezactivați cookie -urile prin opțiunile de browser individuale. Pentru a cunoaște informații mai detaliate despre gestionarea cookie -urilor cu browsere web specifice, acestea pot fi găsite pe site -urile web ale browserelor.",
-  "youMustSelectGroupBy": "Mai întâi trebuie să selectați o proprietate după care să grupați în lista derulantă de mai sus."
+  "youMustSelectGroupBy": "Mai întâi trebuie să selectați o proprietate după care să grupați în lista derulantă de mai sus.",
+  "companyTitle": "Sentinel"
 }

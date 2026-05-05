@@ -248,7 +248,7 @@
   "faqs": "FAQS",
   "faqsDescription": "Trovate le risposte alle domande più frequenti sul funzionamento di Sentinel Vine Manager, sui prezzi, sui requisiti hardware e altro ancora.",
   "faqsKeywords": "FAQ, Sentinel Vine Manager FAQ, domande sulla mappatura del vigneto, supporto alla gestione del vigneto",
-  "faqsTitle": "🍇 FAQs – Sentinel Vine Manager",
+  "faqsTitle": "FAQs – Sentinel Vine Manager",
   "fertilize": "Fertilizzare",
   "fertilizer": "Fertilizzante",
   "fieldNoteInbox": "Posta in arrivo delle note di campo",
@@ -592,5 +592,6 @@
   "youCanInviteCoWorkers": "Potete invitare i vostri colleghi a Sentinel per dare loro automaticamente accesso alla vostra cantina. Basta inserire i loro dati e Sentinel invierà loro un'e-mail.",
   "youHaveRights": "In determinate circostanze, avete i seguenti diritti di protezione dei dati:",
   "youMayDisableCookies": "È possibile scegliere di disabilitare i cookie attraverso le opzioni del proprio browser. Per informazioni più dettagliate sulla gestione dei cookie con specifici browser web, è possibile consultare i rispettivi siti web.",
-  "youMustSelectGroupBy": "È necessario selezionare prima una proprietà da raggruppare nel menu a tendina in alto."
+  "youMustSelectGroupBy": "È necessario selezionare prima una proprietà da raggruppare nel menu a tendina in alto.",
+  "companyTitle": "Sentinel"
 }

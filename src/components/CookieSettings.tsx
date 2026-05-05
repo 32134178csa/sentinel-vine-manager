@@ -28,7 +28,7 @@ export default function CookieSettings() {
     }
 
     return (
-        <Container>
+        <Container style={{ paddingTop: "80px", paddingBottom: "120px" }}>
             <Row className="justify-content-center">
                 <Col xs={8} md={6} lg={4}>
                     <div className="overline" style={{ textAlign: 'center', marginBottom: 'var(--space-sm)' }}>Preferences</div>

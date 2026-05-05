@@ -17,11 +17,12 @@ const RapidMappingProductPage: NextPage = () => {
     return (
       <>
         <Head>
-          <title>Product -- Sentinel Vine Manager</title>
+          <title>Product – Sentinel Vine Manager</title>
           <meta name="description" content={t('rapidMappingDescription')} />
           <meta name="keywords" content={t('rapidMappingKeywords')} />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
+          <link rel="canonical" href="https://sentineltech.eu/rapidMapping" />
         </Head>
         <AppPage>
           <ProductPage />

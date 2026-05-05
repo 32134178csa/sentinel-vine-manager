@@ -19,17 +19,13 @@ The truth is, **NDVI isn’t a diagnostic tool—it’s a vague proxy for “gre
 
 ## Visual Comparison: NDVI vs Sentinel
 
----
+![Example NDVI Map](/blog-images/example-ndvi.webp)
 
-_Exihibit A - Your typical NDVI-based vegetation index map – beautiful but abstract._ 
+_Exhibit A. A typical NDVI-based vegetation index map. Beautiful, but abstract._
 
-![Example NDVI Map](/blog-images/example-ndvi.webp "NDVI Heatmap: green areas indicate high vigor, red areas low")
+![Example Sentinel Map](/blog-images/red-blotch-map.webp)
 
----
-
-_Exhibit B - A Sentinel Vine Manager map, with each vine pinpointed and its status directly actionable._
-
-![Example Sentinel Map](/blog-images/red-blotch-map.webp "Sentinel Vine Manager map showing vine-by-vine status")
+_Exhibit B. A Sentinel Vine Manager map, with each vine pinpointed and its status directly actionable._
 
 ---
 

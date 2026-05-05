@@ -123,8 +123,8 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
         <span className="sep">|</span>
         <span className="country-marquee-wrap">
           <span className="country-marquee">
-            CALIFORNIA &middot; OREGON &middot; MEXICO &middot; ITALY &middot; ARMENIA &middot; NEW ZEALAND &middot; PORTUGAL &middot; ARGENTINA &middot; LEBANON &nbsp;&nbsp;&nbsp;
-            CALIFORNIA &middot; OREGON &middot; MEXICO &middot; ITALY &middot; ARMENIA &middot; NEW ZEALAND &middot; PORTUGAL &middot; ARGENTINA &middot; LEBANON &nbsp;&nbsp;&nbsp;
+            CALIFORNIA &middot; OREGON &middot; MEXICO &middot; ITALY &middot; ARMENIA &middot; ARGENTINA &middot; PORTUGAL &middot; AND BEYOND &nbsp;&nbsp;&nbsp;
+            CALIFORNIA &middot; OREGON &middot; MEXICO &middot; ITALY &middot; ARMENIA &middot; ARGENTINA &middot; PORTUGAL &middot; AND BEYOND &nbsp;&nbsp;&nbsp;
           </span>
         </span>
         <span className="spacer" />

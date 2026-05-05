@@ -71,29 +71,33 @@ export default function About() {
       {/* ============ SECTION 03 -- TEAM ============ */}
       <section className="team container-lp">
         <div className="team-head">
-          <div className="idx">03 &middot; Team</div>
-          <h2>A small team, <em>deeply embedded.</em></h2>
+          <div className="idx">03 &middot; Leadership</div>
+          <h2>Napa meets <em>Silicon Valley.</em></h2>
         </div>
         <div className="team-grid">
           <div>
-            <div className="portrait" data-initials="SD" />
+            <div className="portrait">
+              <img src="/img/sdemartino.webp" alt="Shawn DeMartino" />
+            </div>
             <div>
               <div className="role">CEO &amp; Co-Founder</div>
               <h4>Shawn DeMartino</h4>
-              <p>A decade managing premier Napa estates -- where he served as Director of Viticulture for a cult Cabernet producer. Sentinel began as the spreadsheet he kept pinned to the cellar wall. He now runs the company from the vineyard side of the fence.</p>
+              <p>Shawn is the General Manager of Grace Family Vineyards in St. Helena, with prior viticulture roles at Harlan Estate and Screaming Eagle. As Director of Viticulture he pioneered the development and implementation of Sentinel&apos;s vine mapping technology. Shawn leads the company&apos;s strategic direction, sales and user engagement, as an expert in all things vineyard and wine related. He graduated from Harvard University in 2014.</p>
               <dl>
-                <dt>Prior</dt><dd>Director of Viticulture &middot; Premier Napa Estates</dd>
+                <dt>Currently</dt><dd>General Manager &middot; Grace Family Vineyards</dd>
+                <dt>Prior</dt><dd>Harlan Estate &middot; Screaming Eagle</dd>
                 <dt>Education</dt><dd>Harvard, A.B. &apos;14</dd>
-                <dt>Based</dt><dd>Napa Valley, CA</dd>
               </dl>
             </div>
           </div>
           <div>
-            <div className="portrait" data-initials="CS" />
+            <div className="portrait">
+              <img src="/img/csidak.webp" alt="Christian Sidak" />
+            </div>
             <div>
               <div className="role">CTO &amp; Co-Founder</div>
               <h4>Christian Sidak</h4>
-              <p>Formerly a product manager and engineer at Palantir, where he shipped data platforms for customers operating in harder conditions than a vineyard row. Leads Sentinel&apos;s geospatial stack, offline-first mobile capture, and the sync model that ties field data to web analytics.</p>
+              <p>Christian Sidak co-founded Spongy Mesophyll Technologies with Shawn in January 2023. Before, Christian worked as a product manager and engineer at Palantir Technologies, an enterprise software company, developing new AI products in the defense and healthcare sectors. At Spongy Mesophyll Technologies, Christian shapes the technical and engineering decisions of the company and translates user needs into code applications. He graduated from Harvard University in 2017.</p>
               <dl>
                 <dt>Prior</dt><dd>Palantir Technologies</dd>
                 <dt>Education</dt><dd>Harvard, A.B. &apos;17</dd>

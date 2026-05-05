@@ -67,7 +67,7 @@ export default function FooterV2() {
         </div>
 
         <div className="foot-bottom">
-          <span>&copy; Copyright 2026, Bungee Medical Technologies &middot; Sentinel Vine Manager&trade;</span>
+          <span>&copy; Copyright 2026, Spongy Mesophyll Technologies &middot; Sentinel Vine Manager&trade;</span>
           <div className="ver">
             <span>Build 26.04.019</span>
             <Link href="/cookies">Cookies</Link>

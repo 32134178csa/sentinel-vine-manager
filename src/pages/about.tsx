@@ -30,6 +30,7 @@ const AboutPage: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Favicon (same for all locales) */}
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://sentineltech.eu/about" />
       </Head>
       <AppPage>
         <About />
