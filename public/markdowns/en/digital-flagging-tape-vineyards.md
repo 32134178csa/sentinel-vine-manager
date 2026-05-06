@@ -145,44 +145,15 @@ Most vineyard management software operates at the **block level** — tracking h
 
 Digital flagging tape is **vine-level management** — every plant is a unique entity with its own history, status, and GPS coordinates.
 
-<div className="comparison-table">
-  <table>
-    <thead>
-      <tr>
-        <th>Feature</th>
-        <th>Traditional Vineyard Software</th>
-        <th>Digital Flagging Tape</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Spatial resolution</strong></td>
-        <td>Block-level (acres)</td>
-        <td>Vine-level (centimeters)</td>
-      </tr>
-      <tr>
-        <td><strong>Use case</strong></td>
-        <td>Financial tracking, compliance</td>
-        <td>Field operations, agronomy</td>
-      </tr>
-      <tr>
-        <td><strong>Data entry</strong></td>
-        <td>Office-based, retrospective</td>
-        <td>Mobile-first, real-time</td>
-      </tr>
-      <tr>
-        <td><strong>Historical depth</strong></td>
-        <td>1-3 seasons (harvest/spray logs)</td>
-        <td>10+ years (permanent vine records)</td>
-      </tr>
-      <tr>
-        <td><strong>Searchability</strong></td>
-        <td>Filter by block, date, variety</td>
-        <td>Filter by any vine attribute + location</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+
+| Feature | Traditional Vineyard Software | Digital Flagging Tape |
+|---------|------------------------------|----------------------|
+| **Spatial resolution** | Block-level (acres) | Vine-level (centimeters) |
+| **Use case** | Financial tracking, compliance | Field operations, agronomy |
+| **Data entry** | Office-based, retrospective | Mobile-first, real-time |
+| **Historical depth** | 1-3 seasons (harvest/spray logs) | 10+ years (permanent vine records) |
+| **Searchability** | Filter by block, date, variety | Filter by any vine attribute + location |
+
 
 The two approaches are complementary. You need block-level ERP for business operations. You need vine-level digital flagging tape for agronomic precision.
 
