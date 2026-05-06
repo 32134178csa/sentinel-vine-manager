@@ -1,6 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { AnalyticsService } from '@/services/AnalyticsService';
+import '@/styles/product-visuals.css';
 import { MobileFieldMap, DesktopMap, DesktopChart, MobileVineDetail, DesktopWorkOrders } from '@/components/product-visuals';
 
 /* ------------------------------------------------------------------ */
