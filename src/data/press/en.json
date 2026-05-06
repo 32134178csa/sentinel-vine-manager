@@ -1,4 +1,238 @@
 {
+  "digital-flagging-tape-vineyards": {
+    "filename": "digital-flagging-tape-vineyards",
+    "author": "Sentinel Blog",
+    "id": "30",
+    "image": "/img/blog/digital-flagging-tape.webp",
+    "title": "Digital Flagging Tape: The Future of Vineyard Vine Marking and Management",
+    "content": "Discover how digital flagging tape is replacing physical markers in modern vineyards. Learn how GPS-based vine tracking provides permanent, searchable records for premium estate wineries.",
+    "url": "/blog/digital-flagging-tape-vineyards"
+  },
+  "what-vine-level-records-look-like-at-scale": {
+    "filename": "what-vine-level-records-look-like-at-scale",
+    "author": "Sentinel Blog",
+    "id": "32",
+    "image": "/img/blog/precision-viticulture-roi.webp",
+    "title": "What Vine-Level Records Look Like at Scale: Lessons from a 184,000-Vine Estate",
+    "content": "Inside a real-world deployment of vine-by-vine digital records across three vineyards, 57 blocks, and 35 years of planting history. How one premium Napa estate replaced spreadsheets with GPS-verified vine records.",
+    "url": "/blog/what-vine-level-records-look-like-at-scale"
+  },
+  "what-is-digital-flagging-tape": {
+    "filename": "what-is-digital-flagging-tape",
+    "author": "Sentinel Blog",
+    "id": "19",
+    "image": "/img/blog/digital-flagging-tape.webp",
+    "title": "What Is Digital Flagging Tape?",
+    "content": "Digital flagging tape replaces physical ribbons and hand-drawn maps with permanent, GPS-anchored vine records. Learn how RTK-accurate digital markers transform vineyard management from seasonal guesswork into a lasting knowledge system.",
+    "url": "/blog/what-is-digital-flagging-tape"
+  },
+  "vineyard-management-at-scale-per-vine-records": {
+    "filename": "vineyard-management-at-scale-per-vine-records",
+    "author": "Sentinel Blog",
+    "id": "30",
+    "image": "/img/blog/precision-viticulture-roi.webp",
+    "title": "Vineyard Management at Scale: Why Per-Vine Records Matter More as You Grow",
+    "content": "How vineyard management companies and large estate operations maintain vine-level visibility across thousands of acres without drowning in paperwork. Covers crew turnover, client reporting, compliance, and the hidden cost of manual data management.",
+    "url": "/blog/vineyard-management-at-scale-per-vine-records"
+  },
+  "vine-level-records-premium-estates": {
+    "filename": "vine-level-records-premium-estates",
+    "author": "Sentinel Blog",
+    "id": "20",
+    "image": "/img/blog/premium-estates.webp",
+    "title": "How Premium Napa Estates Use Vine-Level Records",
+    "content": "A look at how top Napa Valley estates use vine-by-vine digital records to manage disease, plan replants, and preserve institutional knowledge across generations. Features practices from estates including Dominus, Abreu, Staglin, and Dalla Valle.",
+    "url": "/blog/vine-level-records-premium-estates"
+  },
+  "satellite-drone-gps-vineyard-accuracy-comparison": {
+    "filename": "satellite-drone-gps-vineyard-accuracy-comparison",
+    "author": "Sentinel Blog",
+    "id": "21",
+    "image": "/img/blog/accuracy-comparison.webp",
+    "title": "Satellite vs. Drone vs. Ground-Level GPS: Which Accuracy Do You Actually Need?",
+    "content": "A practical comparison of satellite imagery, drone NDVI, and RTK GPS ground-truth accuracy for vineyard management. Covers resolution, cost, and which decisions each technology supports.",
+    "url": "/blog/satellite-drone-gps-vineyard-accuracy-comparison"
+  },
+  "precision-viticulture-roi-vine-level-data": {
+    "filename": "precision-viticulture-roi-vine-level-data",
+    "author": "Sentinel Blog",
+    "id": "18",
+    "image": "/img/blog/precision-viticulture-roi.webp",
+    "title": "Precision Viticulture ROI: What Vine-Level Data Actually Saves You",
+    "content": "Vine-level data is not a nice-to-have. It is the foundation that makes every other vineyard decision more precise and less expensive -- from disease containment to replanting to crew management to compliance.",
+    "url": "/blog/precision-viticulture-roi-vine-level-data"
+  },
+  "vineyard-replanting-cost-roi-guide": {
+    "filename": "vineyard-replanting-cost-roi-guide",
+    "author": "Sentinel Blog",
+    "id": "17",
+    "image": "/img/blog/replant-decision.webp",
+    "title": "The Vineyard Replant Decision: When the Data Says Pull, When It Says Wait",
+    "content": "Vineyard replanting costs $50,000 to $80,000 per acre in Napa Valley when you factor in lost production. Vine-level data turns a gut call into a precise, block-by-block analysis -- and often reveals that a partial replant is the right answer.",
+    "url": "/blog/vineyard-replanting-cost-roi-guide"
+  },
+  "pesticide-use-reporting-vineyard-compliance": {
+    "filename": "pesticide-use-reporting-vineyard-compliance",
+    "author": "Sentinel Blog",
+    "id": "16",
+    "image": "/img/blog/pur-compliance.webp",
+    "title": "Pesticide Use Reporting for Vineyards: How to Automate California PUR Compliance",
+    "content": "Pesticide use reporting for vineyards is a compliance requirement that consumes hours of admin time each week. Learn how to automate California PUR filings, track REI/PHI intervals, and eliminate spreadsheet reconciliation.",
+    "url": "/blog/pesticide-use-reporting-vineyard-compliance"
+  },
+  "vineyard-work-orders-crew-management": {
+    "filename": "vineyard-work-orders-crew-management",
+    "author": "Sentinel Blog",
+    "id": "15",
+    "image": "/img/blog/work-orders.webp",
+    "title": "Vineyard Work Orders: How to Close the Loop Between Scout and Field Crew",
+    "content": "Vineyard work orders break down when scouting data does not connect to crew execution. Learn how vine-level work orders with auto-updating statuses close the gap between what your scout finds and what your crew does about it.",
+    "url": "/blog/vineyard-work-orders-crew-management"
+  },
+  "cellar-management-software-winery-guide": {
+    "filename": "cellar-management-software-winery-guide",
+    "author": "Sentinel Blog",
+    "id": "14",
+    "image": "/img/blog/cellar-software.webp",
+    "title": "Cellar Management Software: Why Your Winery Should Not Need Two Systems",
+    "content": "If you run a winery that grows its own fruit, you have probably encountered this problem: the software you use in the vineyard does not talk to the software you use in the cellar. This guide covers lot tracking, lab analysis, barrel inventory, and why bundling cellar with vineyard management eliminates data gaps and duplicate costs.",
+    "url": "/blog/cellar-management-software-winery-guide"
+  },
+  "drone-vineyard-mapping-vs-ground-truth": {
+    "filename": "drone-vineyard-mapping-vs-ground-truth",
+    "author": "Sentinel Blog",
+    "id": "13",
+    "image": "/img/blog/drone-vs-ground-truth.webp",
+    "title": "Drone Mapping vs. Ground-Truth Scouting: What Your Vineyard Actually Needs",
+    "content": "Drone vineyard mapping gives you a canopy heatmap. Ground-truth scouting gives you vine-by-vine records. This post breaks down when you need each, where they overlap, and why the best operations use both.",
+    "url": "/blog/drone-vineyard-mapping-vs-ground-truth"
+  },
+  "rtk-gps-vineyard-guide": {
+    "filename": "rtk-gps-vineyard-guide",
+    "author": "Sentinel Blog",
+    "id": "12",
+    "image": "/img/blog/rtk-gps-vineyard.webp",
+    "title": "RTK GPS for Vineyards: Why Sub-Inch Accuracy Changes Everything",
+    "content": "If you manage a vineyard and have started looking into GPS mapping, you have probably noticed that the technology landscape is confusing. This guide covers everything a vineyard manager needs to know about RTK GPS.",
+    "url": "/blog/rtk-gps-vineyard-guide"
+  },
+  "vine-level-disease-tracking-program": {
+    "filename": "vine-level-disease-tracking-program",
+    "author": "Sentinel Blog",
+    "id": "11",
+    "image": "/img/blog/disease-tracking.webp",
+    "title": "How to Build a Vine-Level Disease Tracking Program",
+    "content": "Every vineyard has disease. Red blotch, leafroll, crown gall, Esca -- the specific pathogen varies by region, but the management challenge is universal. The vineyards that contain disease effectively are the ones that know exactly where every infected vine is.",
+    "url": "/blog/vine-level-disease-tracking-program"
+  },
+  "vineyard-management-software-buyers-guide-2026": {
+    "filename": "vineyard-management-software-buyers-guide-2026",
+    "author": "Sentinel Blog",
+    "id": "10",
+    "image": "/img/blog/vineyard-software-guide.webp",
+    "title": "Vineyard Management Software: The 2026 Buyer's Guide",
+    "content": "If you manage a vineyard and you are evaluating software for the first time, or reconsidering what you already use, this guide is for you. The vineyard management software market has matured considerably over the past few years, but it has also become harder to navigate.",
+    "url": "/blog/vineyard-management-software-buyers-guide-2026"
+  },
+  "rtk-gps-vineyards-pinpoint-rtk-vs-sentinel": {
+    "filename": "rtk-gps-vineyards-pinpoint-rtk-vs-sentinel",
+    "author": "Sentinel Blog",
+    "id": "25",
+    "image": "/img/blog/rtk-gps-vineyard.webp",
+    "title": "RTK GPS for Vineyards: PinPoint RTK vs Sentinel Vine Manager",
+    "content": "An honest comparison of VineView's PinPoint RTK hardware and Sentinel Vine Manager's full platform. Covers accuracy, software, disease tracking, work orders, and which tool fits your vineyard.",
+    "url": "/blog/rtk-gps-vineyards-pinpoint-rtk-vs-sentinel"
+  },
+  "vineyard-work-order-management": {
+    "filename": "vineyard-work-order-management",
+    "author": "Sentinel Blog",
+    "id": "29",
+    "image": "/img/blog/work-orders.webp",
+    "title": "Vineyard Work Order Management: From Paper Logs to GPS-Verified Records",
+    "content": "Managing vineyard work orders on paper or in spreadsheets creates gaps in your spray records, roguing history, and harvest data. Here is how digital work order management with GPS verification closes those gaps.",
+    "url": "/blog/vineyard-work-order-management"
+  },
+  "vineyard-management-company-software": {
+    "filename": "vineyard-management-company-software",
+    "author": "Sentinel Blog",
+    "id": "28",
+    "image": "/img/blog/precision-viticulture-roi.webp",
+    "title": "Vineyard Management Company Software: Managing Vine Records Across a Client Portfolio",
+    "content": "Vineyard management companies face data challenges that single estates don't. Here is why vine-level GPS records change the equation for VMCs managing multiple client properties.",
+    "url": "/blog/vineyard-management-company-software"
+  },
+  "vine-by-vine-tracking-vineyard-gps": {
+    "filename": "vine-by-vine-tracking-vineyard-gps",
+    "author": "Sentinel Blog",
+    "id": "27",
+    "image": "/img/blog/digital-flagging-tape.webp",
+    "title": "What Vine-by-Vine Tracking Actually Means (and Why Block-Level Data Falls Short)",
+    "content": "Most vineyard software tracks blocks. But the problems that cost you money -- virus spread, failed replants, variable block performance -- happen at the vine level. Here is what vine-by-vine GPS tracking actually captures.",
+    "url": "/blog/vine-by-vine-tracking-vineyard-gps"
+  },
+  "leafroll-virus-vineyard-tracking-software": {
+    "filename": "leafroll-virus-vineyard-tracking-software",
+    "author": "Sentinel Blog",
+    "id": "23",
+    "image": "/blog-images/red-blotch-map.webp",
+    "title": "Leafroll Virus in Vineyards: Why Block-Level Maps Are Not Enough",
+    "content": "Leafroll is the most economically damaging vine disease in California and Oregon. But most vineyards track it at the block level, which is too coarse to manage it effectively. Here is why vine-level GPS records change the equation.",
+    "url": "/blog/leafroll-virus-vineyard-tracking-software"
+  },
+  "california-pur-reporting-vineyard-automation": {
+    "filename": "california-pur-reporting-vineyard-automation",
+    "author": "Sentinel Blog",
+    "id": "22",
+    "image": "/img/blog/pur-compliance.webp",
+    "title": "How to Automate California Pesticide Use Reporting from Your Vineyard Spray Logs",
+    "content": "California PUR reporting is required for every pesticide application. Learn how Sentinel automates the submission process by connecting your vineyard spray logs directly to CalAgPermits.",
+    "url": "/blog/california-pur-reporting-vineyard-automation"
+  },
+  "red-blotch-in-2025": {
+    "filename": "red-blotch-in-2025",
+    "author": "Sentinel Blog",
+    "id": "24",
+    "image": "/blog-images/red-blotch-map.webp",
+    "title": "Red Blotch Disease: What Napa Growers Need to Know in 2025",
+    "content": "Understanding the risks, hidden threats, and best practices for managing Grapevine Red Blotch Disease in Napa Valley vineyards in 2025.",
+    "url": "/blog/red-blotch-in-2025"
+  },
+  "should-i-fire-my-farming-company": {
+    "filename": "should-i-fire-my-farming-company",
+    "author": "Sentinel Blog",
+    "id": "26",
+    "image": "/blog-images/analytics_cropped.webp",
+    "title": "Should I Fire My Farming Company?",
+    "content": "When the data from your vineyard management company does not match what you see in the field, it raises hard questions. Here is how vine-level records help estate owners hold their farming partners accountable.",
+    "url": "/blog/should-i-fire-my-farming-company"
+  },
+  "the-knowledge-that-walks-out-the-door": {
+    "filename": "the-knowledge-that-walks-out-the-door",
+    "author": "Sentinel Blog",
+    "id": "9",
+    "image": "/blog-images/complicated-block.webp",
+    "title": "The Knowledge That Walks Out the Door",
+    "content": "When your most experienced vineyard worker retires, decades of vine-level knowledge leaves with them. Which row always gets mildew first. Where the old virus pocket was. Which vines are on different rootstock. A permanent digital record is the only way to keep that knowledge inside your estate.",
+    "url": "/blog/the-knowledge-that-walks-out-the-door"
+  },
+  "the-replant-decision": {
+    "filename": "the-replant-decision",
+    "author": "Sentinel Blog",
+    "id": "8",
+    "image": "/blog-images/replanting.webp",
+    "title": "The $80,000-Per-Acre Question: When to Replant",
+    "content": "Replanting a Napa vineyard block costs $50,000 to $80,000 per acre in real terms. Most estates still make that decision by feel. Vine-level data turns a gut call into a precise, block-by-block analysis -- and reveals how often the answer is a partial replant instead of a full one.",
+    "url": "/blog/the-replant-decision"
+  },
+  "vine-data-during-a-downturn": {
+    "filename": "vine-data-during-a-downturn",
+    "author": "Sentinel Blog",
+    "id": "7",
+    "image": "/blog-images/analytics_cropped.webp",
+    "title": "The Downturn Is the Wrong Time to Stop Counting Your Vines",
+    "content": "When the California wine market tightens, vineyard monitoring is the first budget line to get cut. That instinct is backwards. In a downturn, vine-level data is worth more than ever -- because the margins no longer cover the cost of decisions made without it.",
+    "url": "/blog/vine-data-during-a-downturn"
+  },
   "ndvi-vs-sentinel-vine-mapping": {
     "filename": "drone-vs-sentinel-vine-mapping",
     "author": "Sentinel Blog",
@@ -7,6 +241,24 @@
     "title": "Drone Mapping for Vineyards: The Good, the Bad, and the Ugly",
     "content": "NDVI drone mapping may generate colorful heatmaps, but it doesn’t give vineyard managers the actionable, historical insight needed to track disease or manage vines long term. Sentinel Vine Manager captures real vine-level data using smartphones and GNSS, preserving critical information year after year and transforming how vineyards make decisions.",
     "url": "/blog/drone-vs-sentinel-vine-mapping"
+  },
+  "why-excel-is-an-expensive-way-to-map-virus": {
+    "filename": "why-excel-is-an-expensive-way-to-map-virus",
+    "author": "Sentinel Blog",
+    "id": "5",
+    "image": "/blog-images/analytics_cropped.webp",
+    "title": "Why Spreadsheets are the Most Expensive Way to Map Virus",
+    "content": "In the ever-evolving landscape of viticulture, the Red Blotch virus has presented a formidable challenge to Napa Valley's vineyards. The quest for an elusive zero-virus scenario is proving financially unattainable, with the costs of testing and replanting reaching unprecedented heights. Decision-makers are grappling with the intricacies of managing virus outbreaks, often resorting to traditional tools such as hand-drawn maps and Excel spreadsheets. However, what they may not realize is that these seemingly cost-effective methods are, in fact, the most expensive way to map a virus. In this exploration, we delve into the overlooked labor costs associated with these manual approaches, shedding light on why Sentinel's streamlined solution emerges as the more financially sustainable alternative for Napa's vineyards.",
+    "url": "/blog/why-excel-is-an-expensive-way-to-map-virus"
+  },
+  "the-red-blotch-dilemma": {
+    "filename": "the-red-blotch-dilemma",
+    "author": "Sentinel Blog",
+    "id": "4",
+    "image": "/blog-images/red-blotch-map.webp",
+    "title": "Redefining the Red Blotch Challenge: Navigating the Reality of Vineyard Management in Napa",
+    "content": "Napa Valley, renowned for its picturesque vineyards and world-class wines, is facing a challenge that is reshaping the landscape of viticulture. The Red Blotch problem has become a prevalent issue, and while many are diligently working to address it, there are misconceptions about the nature of the problem and how to effectively manage it.",
+    "url": "/blog/the-red-blotch-dilemma"
   },
   "xchateau-podcast": {
     "filename": null,
@@ -43,257 +295,5 @@
     "title": "SevenFifty Daily - A Game-Changing New Vineyard Management Technology",
     "content": "A smartphone app called Sentinel Vine Manager generates revolutionary vineyard maps that track individual vine histories using Global Navigation Satellite Systems and cloud analytics.",
     "url": "https://daily.sevenfifty.com/a-game-changing-new-vineyard-management-technology/"
-  },
-  "the-red-blotch-dilemma": {
-    "filename": "the-red-blotch-dilemma",
-    "author": "Sentinel Blog",
-    "id": "4",
-    "image": "/blog-images/red-blotch-map.webp",
-    "title": "Redefining the Red Blotch Challenge: Navigating the Reality of Vineyard Management in Napa",
-    "content": "Napa Valley, renowned for its picturesque vineyards and world-class wines, is facing a challenge that is reshaping the landscape of viticulture. The Red Blotch problem has become a prevalent issue, and while many are diligently working to address it, there are misconceptions about the nature of the problem and how to effectively manage it.",
-    "url": "/blog/the-red-blotch-dilemma"
-  },
-  "why-excel-is-an-expensive-way-to-map-virus": {
-    "filename": "why-excel-is-an-expensive-way-to-map-virus",
-    "author": "Sentinel Blog",
-    "id": "5",
-    "image": "/blog-images/analytics_cropped.webp",
-    "title": "Why Spreadsheets are the Most Expensive Way to Map Virus",
-    "content": "In the ever-evolving landscape of viticulture, the Red Blotch virus has presented a formidable challenge to Napa Valley's vineyards. The quest for an elusive zero-virus scenario is proving financially unattainable, with the costs of testing and replanting reaching unprecedented heights. Decision-makers are grappling with the intricacies of managing virus outbreaks, often resorting to traditional tools such as hand-drawn maps and Excel spreadsheets. However, what they may not realize is that these seemingly cost-effective methods are, in fact, the most expensive way to map a virus. In this exploration, we delve into the overlooked labor costs associated with these manual approaches, shedding light on why Sentinel's streamlined solution emerges as the more financially sustainable alternative for Napa's vineyards.",
-    "url": "/blog/why-excel-is-an-expensive-way-to-map-virus"
-  },
-  "vine-data-during-a-downturn": {
-    "filename": "vine-data-during-a-downturn",
-    "author": "Sentinel Blog",
-    "id": "7",
-    "image": "/blog-images/analytics_cropped.webp",
-    "title": "The Downturn Is the Wrong Time to Stop Counting Your Vines",
-    "content": "When the California wine market tightens, vineyard monitoring is the first budget line to get cut. That instinct is backwards. In a downturn, vine-level data is worth more than ever -- because the margins no longer cover the cost of decisions made without it.",
-    "url": "/blog/vine-data-during-a-downturn"
-  },
-  "the-replant-decision": {
-    "filename": "the-replant-decision",
-    "author": "Sentinel Blog",
-    "id": "8",
-    "image": "/blog-images/replanting.webp",
-    "title": "The $80,000-Per-Acre Question: When to Replant",
-    "content": "Replanting a Napa vineyard block costs $50,000 to $80,000 per acre in real terms. Most estates still make that decision by feel. Vine-level data turns a gut call into a precise, block-by-block analysis -- and reveals how often the answer is a partial replant instead of a full one.",
-    "url": "/blog/the-replant-decision"
-  },
-  "the-knowledge-that-walks-out-the-door": {
-    "filename": "the-knowledge-that-walks-out-the-door",
-    "author": "Sentinel Blog",
-    "id": "9",
-    "image": "/blog-images/complicated-block.webp",
-    "title": "The Knowledge That Walks Out the Door",
-    "content": "When your most experienced vineyard worker retires, decades of vine-level knowledge leaves with them. Which row always gets mildew first. Where the old virus pocket was. Which vines are on different rootstock. A permanent digital record is the only way to keep that knowledge inside your estate.",
-    "url": "/blog/the-knowledge-that-walks-out-the-door"
-  },
-  "vineyard-management-software-buyers-guide-2026": {
-    "filename": "vineyard-management-software-buyers-guide-2026",
-    "author": "Sentinel Blog",
-    "id": "10",
-    "image": "/img/blog/vineyard-software-guide.webp",
-    "title": "Vineyard Management Software: The 2026 Buyer's Guide",
-    "content": "If you manage a vineyard and you are evaluating software for the first time, or reconsidering what you already use, this guide is for you. The vineyard management software market has matured considerably over the past few years, but it has also become harder to navigate.",
-    "url": "/blog/vineyard-management-software-buyers-guide-2026"
-  },
-  "vine-level-disease-tracking-program": {
-    "filename": "vine-level-disease-tracking-program",
-    "author": "Sentinel Blog",
-    "id": "11",
-    "image": "/img/blog/disease-tracking.webp",
-    "title": "How to Build a Vine-Level Disease Tracking Program",
-    "content": "Every vineyard has disease. Red blotch, leafroll, crown gall, Esca -- the specific pathogen varies by region, but the management challenge is universal. The vineyards that contain disease effectively are the ones that know exactly where every infected vine is.",
-    "url": "/blog/vine-level-disease-tracking-program"
-  },
-  "rtk-gps-vineyard-guide": {
-    "filename": "rtk-gps-vineyard-guide",
-    "author": "Sentinel Blog",
-    "id": "12",
-    "image": "/img/blog/rtk-gps-vineyard.webp",
-    "title": "RTK GPS for Vineyards: Why Sub-Inch Accuracy Changes Everything",
-    "content": "If you manage a vineyard and have started looking into GPS mapping, you have probably noticed that the technology landscape is confusing. This guide covers everything a vineyard manager needs to know about RTK GPS.",
-    "url": "/blog/rtk-gps-vineyard-guide"
-  },
-  "drone-vineyard-mapping-vs-ground-truth": {
-    "filename": "drone-vineyard-mapping-vs-ground-truth",
-    "author": "Sentinel Blog",
-    "id": "13",
-    "image": "/img/blog/drone-vs-ground-truth.webp",
-    "title": "Drone Mapping vs. Ground-Truth Scouting: What Your Vineyard Actually Needs",
-    "content": "Drone vineyard mapping gives you a canopy heatmap. Ground-truth scouting gives you vine-by-vine records. This post breaks down when you need each, where they overlap, and why the best operations use both.",
-    "url": "/blog/drone-vineyard-mapping-vs-ground-truth"
-  },
-  "cellar-management-software-winery-guide": {
-    "filename": "cellar-management-software-winery-guide",
-    "author": "Sentinel Blog",
-    "id": "14",
-    "image": "/img/blog/cellar-software.webp",
-    "title": "Cellar Management Software: Why Your Winery Should Not Need Two Systems",
-    "content": "If you run a winery that grows its own fruit, you have probably encountered this problem: the software you use in the vineyard does not talk to the software you use in the cellar. This guide covers lot tracking, lab analysis, barrel inventory, and why bundling cellar with vineyard management eliminates data gaps and duplicate costs.",
-    "url": "/blog/cellar-management-software-winery-guide"
-  },
-  "vineyard-work-orders-crew-management": {
-    "filename": "vineyard-work-orders-crew-management",
-    "author": "Sentinel Blog",
-    "id": "15",
-    "image": "/img/blog/work-orders.webp",
-    "title": "Vineyard Work Orders: How to Close the Loop Between Scout and Field Crew",
-    "content": "Vineyard work orders break down when scouting data does not connect to crew execution. Learn how vine-level work orders with auto-updating statuses close the gap between what your scout finds and what your crew does about it.",
-    "url": "/blog/vineyard-work-orders-crew-management"
-  },
-  "pesticide-use-reporting-vineyard-compliance": {
-    "filename": "pesticide-use-reporting-vineyard-compliance",
-    "author": "Sentinel Blog",
-    "id": "16",
-    "image": "/img/blog/pur-compliance.webp",
-    "title": "Pesticide Use Reporting for Vineyards: How to Automate California PUR Compliance",
-    "content": "Pesticide use reporting for vineyards is a compliance requirement that consumes hours of admin time each week. Learn how to automate California PUR filings, track REI/PHI intervals, and eliminate spreadsheet reconciliation.",
-    "url": "/blog/pesticide-use-reporting-vineyard-compliance"
-  },
-  "vineyard-replanting-cost-roi-guide": {
-    "filename": "vineyard-replanting-cost-roi-guide",
-    "author": "Sentinel Blog",
-    "id": "17",
-    "image": "/img/blog/replant-decision.webp",
-    "title": "The Vineyard Replant Decision: When the Data Says Pull, When It Says Wait",
-    "content": "Vineyard replanting costs $50,000 to $80,000 per acre in Napa Valley when you factor in lost production. Vine-level data turns a gut call into a precise, block-by-block analysis -- and often reveals that a partial replant is the right answer.",
-    "url": "/blog/vineyard-replanting-cost-roi-guide"
-  },
-  "precision-viticulture-roi-vine-level-data": {
-    "filename": "precision-viticulture-roi-vine-level-data",
-    "author": "Sentinel Blog",
-    "id": "18",
-    "image": "/img/blog/precision-viticulture-roi.webp",
-    "title": "Precision Viticulture ROI: What Vine-Level Data Actually Saves You",
-    "content": "Vine-level data is not a nice-to-have. It is the foundation that makes every other vineyard decision more precise and less expensive -- from disease containment to replanting to crew management to compliance.",
-    "url": "/blog/precision-viticulture-roi-vine-level-data"
-  },
-  "what-is-digital-flagging-tape": {
-    "filename": "what-is-digital-flagging-tape",
-    "author": "Sentinel Blog",
-    "id": "19",
-    "image": "/img/blog/digital-flagging-tape.webp",
-    "title": "What Is Digital Flagging Tape?",
-    "content": "Digital flagging tape replaces physical ribbons and hand-drawn maps with permanent, GPS-anchored vine records. Learn how RTK-accurate digital markers transform vineyard management from seasonal guesswork into a lasting knowledge system.",
-    "url": "/blog/what-is-digital-flagging-tape"
-  },
-  "vine-level-records-premium-estates": {
-    "filename": "vine-level-records-premium-estates",
-    "author": "Sentinel Blog",
-    "id": "20",
-    "image": "/img/blog/premium-estates.webp",
-    "title": "How Premium Napa Estates Use Vine-Level Records",
-    "content": "A look at how top Napa Valley estates use vine-by-vine digital records to manage disease, plan replants, and preserve institutional knowledge across generations. Features practices from estates including Dominus, Abreu, Staglin, and Dalla Valle.",
-    "url": "/blog/vine-level-records-premium-estates"
-  },
-  "satellite-drone-gps-vineyard-accuracy-comparison": {
-    "filename": "satellite-drone-gps-vineyard-accuracy-comparison",
-    "author": "Sentinel Blog",
-    "id": "21",
-    "image": "/img/blog/accuracy-comparison.webp",
-    "title": "Satellite vs. Drone vs. Ground-Level GPS: Which Accuracy Do You Actually Need?",
-    "content": "A practical comparison of satellite imagery, drone NDVI, and RTK GPS ground-truth accuracy for vineyard management. Covers resolution, cost, and which decisions each technology supports.",
-    "url": "/blog/satellite-drone-gps-vineyard-accuracy-comparison"
-  },
-  "california-pur-reporting-vineyard-automation": {
-    "filename": "california-pur-reporting-vineyard-automation",
-    "author": "Sentinel Blog",
-    "id": "22",
-    "image": "/img/blog/pur-compliance.webp",
-    "title": "How to Automate California Pesticide Use Reporting from Your Vineyard Spray Logs",
-    "content": "California PUR reporting is required for every pesticide application. Learn how Sentinel automates the submission process by connecting your vineyard spray logs directly to CalAgPermits.",
-    "url": "/blog/california-pur-reporting-vineyard-automation"
-  },
-  "leafroll-virus-vineyard-tracking-software": {
-    "filename": "leafroll-virus-vineyard-tracking-software",
-    "author": "Sentinel Blog",
-    "id": "23",
-    "image": "/blog-images/red-blotch-map.webp",
-    "title": "Leafroll Virus in Vineyards: Why Block-Level Maps Are Not Enough",
-    "content": "Leafroll is the most economically damaging vine disease in California and Oregon. But most vineyards track it at the block level, which is too coarse to manage it effectively. Here is why vine-level GPS records change the equation.",
-    "url": "/blog/leafroll-virus-vineyard-tracking-software"
-  },
-  "red-blotch-in-2025": {
-    "filename": "red-blotch-in-2025",
-    "author": "Sentinel Blog",
-    "id": "24",
-    "image": "/blog-images/red-blotch-map.webp",
-    "title": "Red Blotch Disease: What Napa Growers Need to Know in 2025",
-    "content": "Understanding the risks, hidden threats, and best practices for managing Grapevine Red Blotch Disease in Napa Valley vineyards in 2025.",
-    "url": "/blog/red-blotch-in-2025"
-  },
-  "rtk-gps-vineyards-pinpoint-rtk-vs-sentinel": {
-    "filename": "rtk-gps-vineyards-pinpoint-rtk-vs-sentinel",
-    "author": "Sentinel Blog",
-    "id": "25",
-    "image": "/img/blog/rtk-gps-vineyard.webp",
-    "title": "RTK GPS for Vineyards: PinPoint RTK vs Sentinel Vine Manager",
-    "content": "An honest comparison of VineView's PinPoint RTK hardware and Sentinel Vine Manager's full platform. Covers accuracy, software, disease tracking, work orders, and which tool fits your vineyard.",
-    "url": "/blog/rtk-gps-vineyards-pinpoint-rtk-vs-sentinel"
-  },
-  "should-i-fire-my-farming-company": {
-    "filename": "should-i-fire-my-farming-company",
-    "author": "Sentinel Blog",
-    "id": "26",
-    "image": "/blog-images/analytics_cropped.webp",
-    "title": "Should I Fire My Farming Company?",
-    "content": "When the data from your vineyard management company does not match what you see in the field, it raises hard questions. Here is how vine-level records help estate owners hold their farming partners accountable.",
-    "url": "/blog/should-i-fire-my-farming-company"
-  },
-  "vine-by-vine-tracking-vineyard-gps": {
-    "filename": "vine-by-vine-tracking-vineyard-gps",
-    "author": "Sentinel Blog",
-    "id": "27",
-    "image": "/img/blog/digital-flagging-tape.webp",
-    "title": "What Vine-by-Vine Tracking Actually Means (and Why Block-Level Data Falls Short)",
-    "content": "Most vineyard software tracks blocks. But the problems that cost you money -- virus spread, failed replants, variable block performance -- happen at the vine level. Here is what vine-by-vine GPS tracking actually captures.",
-    "url": "/blog/vine-by-vine-tracking-vineyard-gps"
-  },
-  "vineyard-management-company-software": {
-    "filename": "vineyard-management-company-software",
-    "author": "Sentinel Blog",
-    "id": "28",
-    "image": "/img/blog/precision-viticulture-roi.webp",
-    "title": "Vineyard Management Company Software: Managing Vine Records Across a Client Portfolio",
-    "content": "Vineyard management companies face data challenges that single estates don't. Here is why vine-level GPS records change the equation for VMCs managing multiple client properties.",
-    "url": "/blog/vineyard-management-company-software"
-  },
-  "vineyard-work-order-management": {
-    "filename": "vineyard-work-order-management",
-    "author": "Sentinel Blog",
-    "id": "29",
-    "image": "/img/blog/work-orders.webp",
-    "title": "Vineyard Work Order Management: From Paper Logs to GPS-Verified Records",
-    "content": "Managing vineyard work orders on paper or in spreadsheets creates gaps in your spray records, roguing history, and harvest data. Here is how digital work order management with GPS verification closes those gaps.",
-    "url": "/blog/vineyard-work-order-management"
-  },
-  "vineyard-management-at-scale-per-vine-records": {
-    "filename": "vineyard-management-at-scale-per-vine-records",
-    "author": "Sentinel Blog",
-    "id": "30",
-    "image": "/img/blog/precision-viticulture-roi.webp",
-    "title": "Vineyard Management at Scale: Why Per-Vine Records Matter More as You Grow",
-    "content": "How vineyard management companies and large estate operations maintain vine-level visibility across thousands of acres without drowning in paperwork. Covers crew turnover, client reporting, compliance, and the hidden cost of manual data management.",
-    "url": "/blog/vineyard-management-at-scale-per-vine-records"
-  },
-  "what-vine-level-records-look-like-at-scale": {
-    "filename": "what-vine-level-records-look-like-at-scale",
-    "author": "Sentinel Blog",
-    "id": "32",
-    "image": "/img/blog/precision-viticulture-roi.webp",
-    "title": "What Vine-Level Records Look Like at Scale: Lessons from a 184,000-Vine Estate",
-    "content": "Inside a real-world deployment of vine-by-vine digital records across three vineyards, 57 blocks, and 35 years of planting history. How one premium Napa estate replaced spreadsheets with GPS-verified vine records.",
-    "url": "/blog/what-vine-level-records-look-like-at-scale"
-  },
-  "digital-flagging-tape-vineyards": {
-    "filename": "digital-flagging-tape-vineyards",
-    "author": "Sentinel Blog",
-    "id": "30",
-    "image": "/img/blog/digital-flagging-tape.webp",
-    "title": "Digital Flagging Tape: The Future of Vineyard Vine Marking and Management",
-    "content": "Discover how digital flagging tape is replacing physical markers in modern vineyards. Learn how GPS-based vine tracking provides permanent, searchable records for premium estate wineries.",
-    "url": "/blog/digital-flagging-tape-vineyards"
   }
 }
