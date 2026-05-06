@@ -50,6 +50,9 @@ Think of it as **converting your vineyard from a filing cabinet full of paper no
 
 ### 1. Virus Management at Scale
 
+![Field worker GPS-marking vines for virus tracking](/blog-images/in_field_sentinel_worker.webp)
+
+
 Grapevine leafroll and red blotch viruses cost premium vineyards thousands of dollars per acre in lost production. Traditional containment involves:
 
 1. Visually identifying symptomatic vines during harvest
@@ -63,6 +66,9 @@ With digital flagging tape, every suspect vine gets GPS-tagged with a photo and 
 
 ### 2. Clone and Rootstock Mapping
 
+![Heterogeneous vineyard zones with multiple clones](/blog-images/heterogenous-zones.webp)
+
+
 Estate wineries often plant 5-15 different clones of the same varietal in a single block. Knowing exactly where Clone 4 ends and Clone 15 begins is critical for:
 
 - Selective harvesting by flavor profile
@@ -74,6 +80,9 @@ Physical maps get lost. CAD files sit on someone's old laptop. Field crews retir
 Digital flagging tape creates a **permanent, GPS-accurate clone map** that lives in the cloud and travels with every new vineyard manager.
 
 ### 3. Replanting and Establishment Tracking
+
+![Young vine replanting zones in premium vineyard](/blog-images/replanting.webp)
+
 
 Replanting a 10-acre block is a multi-million-dollar, multi-year investment. You need to track:
 
@@ -114,6 +123,8 @@ Need to find "all Cabernet vines on 110R rootstock flagged for virus testing aft
 
 ## Real-World Use Case: Tracking Virus Spread Over Three Years
 
+![Red Blotch virus heat map showing spatial spread](/blog-images/red-blotch-map.webp)
+
 **Scenario:** A 200-acre estate in Napa Valley discovers grapevine leafroll virus symptoms in Block 12 during 2023 harvest.
 
 **Traditional approach:**
@@ -141,13 +152,44 @@ Most vineyard management software operates at the **block level** -- tracking ha
 
 Digital flagging tape is **vine-level management** -- every plant is a unique entity with its own history, status, and GPS coordinates.
 
-| Feature | Traditional Vineyard Software | Digital Flagging Tape |
-|---------|------------------------------|----------------------|
-| **Spatial resolution** | Block-level (acres) | Vine-level (centimeters) |
-| **Use case** | Financial tracking, compliance | Field operations, agronomy |
-| **Data entry** | Office-based, retrospective | Mobile-first, real-time |
-| **Historical depth** | 1-3 seasons (harvest/spray logs) | 10+ years (permanent vine records) |
-| **Searchability** | Filter by block, date, variety | Filter by any vine attribute + location |
+<div className="comparison-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Traditional Vineyard Software</th>
+        <th>Digital Flagging Tape</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Spatial resolution</strong></td>
+        <td>Block-level (acres)</td>
+        <td>Vine-level (centimeters)</td>
+      </tr>
+      <tr>
+        <td><strong>Use case</strong></td>
+        <td>Financial tracking, compliance</td>
+        <td>Field operations, agronomy</td>
+      </tr>
+      <tr>
+        <td><strong>Data entry</strong></td>
+        <td>Office-based, retrospective</td>
+        <td>Mobile-first, real-time</td>
+      </tr>
+      <tr>
+        <td><strong>Historical depth</strong></td>
+        <td>1-3 seasons (harvest/spray logs)</td>
+        <td>10+ years (permanent vine records)</td>
+      </tr>
+      <tr>
+        <td><strong>Searchability</strong></td>
+        <td>Filter by block, date, variety</td>
+        <td>Filter by any vine attribute + location</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 The two approaches are complementary. You need block-level ERP for business operations. You need vine-level digital flagging tape for agronomic precision.
 

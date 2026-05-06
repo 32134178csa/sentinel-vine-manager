@@ -2395,3 +2395,73 @@ a.press-item:hover .arrow-r { border-color: var(--accent); opacity: 1; }
   .next-posts .links { grid-template-columns: 1fr; }
   .post-hero .meta { flex-direction: column; gap: 16px; }
 }
+
+/* --- Comparison Table --- */
+.post-body .comparison-table {
+  margin: 48px 0;
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid var(--line-2);
+}
+.post-body .comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-1);
+}
+.post-body .comparison-table th {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  text-align: left;
+  padding: 20px 24px;
+  border-bottom: 2px solid var(--line-2);
+  background: var(--bg-0);
+  letter-spacing: -0.01em;
+}
+.post-body .comparison-table td {
+  padding: 18px 24px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-dim);
+  border-bottom: 1px solid var(--line-2);
+  font-weight: 300;
+}
+.post-body .comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.post-body .comparison-table td strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+.post-body .comparison-table td:first-child {
+  color: var(--ink);
+  font-weight: 400;
+}
+
+/* Markdown tables (via remark-gfm) */
+.post-body table:not(.comparison-table table) {
+  width: 100%;
+  margin: 32px 0;
+  border-collapse: collapse;
+  font-size: 15px;
+  border: 1px solid var(--line-2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.post-body table:not(.comparison-table table) th {
+  background: var(--bg-0);
+  padding: 14px 18px;
+  text-align: left;
+  font-weight: 500;
+  border-bottom: 2px solid var(--line-2);
+  color: var(--ink);
+}
+.post-body table:not(.comparison-table table) td {
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--line-2);
+  color: var(--ink-dim);
+}
+.post-body table:not(.comparison-table table) tbody tr:last-child td {
+  border-bottom: none;
+}
