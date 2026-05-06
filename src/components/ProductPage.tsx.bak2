@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { AnalyticsService } from '@/services/AnalyticsService';
-import { MobileFieldMap, DesktopMap, DesktopChart, MobileVineDetail, DesktopWorkOrders } from '@/components/product-visuals';
+import { MobileFieldMap } from '@/components/product-visuals';
 
 /* ------------------------------------------------------------------ */
 /*  Cellar mock visual                                                 */
@@ -94,7 +94,7 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <DesktopMap />
+          <img src="/images/product/analytics-dashboard.png" alt="Sentinel analytics dashboard with vine production status breakdown" className="pillar-screenshot" loading="lazy" />
         </div>
       </section>
 
@@ -112,10 +112,8 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <div style={{ display: 'grid', placeItems: 'center', height: '100%' }}>
-            <MobileVineDetail />
-          </div>
-        </div>
+          <img src="/images/product/disease-tracking-map.png" alt="Sentinel disease tracking with vine-level health data and spatial queries" className="pillar-screenshot" loading="lazy" />
+        </div>
       </section>
 
       {/* ============ 04—HISTORICAL ANALYSIS ============ */}
@@ -132,7 +130,7 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <DesktopChart />
+          <img src="/images/product/historical-analysis.png" alt="Vine count time-series bar chart showing production status across vintages" className="pillar-screenshot" loading="lazy" />
         </div>
       </section>
 
@@ -151,7 +149,7 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <DesktopWorkOrders />
+          <img src="/images/product/work-orders.png" alt="Sentinel work order management dashboard with active tasks and progress tracking" className="pillar-screenshot" loading="lazy" />
         </div>
       </section>
 
