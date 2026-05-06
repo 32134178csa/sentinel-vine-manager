@@ -258,7 +258,7 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
       });
     }
   } catch {
-    // Non-critical -- skip keep reading section
+    // Non-critical—skip keep reading section
   }
 
   const translations = await serverSideTranslations(locale ?? 'en', ['common']);

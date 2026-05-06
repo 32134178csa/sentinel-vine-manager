@@ -7,7 +7,7 @@ interface PressProps {
     posts: BlogPostMap;
 }
 
-/** Format date as YYYY.MM.DD -- press items use a consistent date format */
+/** Format date as YYYY.MM.DD—press items use a consistent date format */
 function formatPressDate(key: string): string {
     const dateMap: Record<string, string> = {
         'xchateau-podcast': '2024.06.12',

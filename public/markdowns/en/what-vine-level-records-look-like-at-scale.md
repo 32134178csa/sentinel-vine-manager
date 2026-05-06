@@ -43,7 +43,7 @@ Every vine in the operation carries a digital record with:
 - **Production status** (Producing, Non-Producing, Miss, or Rootstock)
 - **Health history** (disease observations, treatments, roguing decisions)
 
-This is what we call "digital flagging tape." Just like physical flagging tape marks a vine in the field, a digital record marks it permanently in the system -- except the digital version never fades, never falls off, and is searchable from anywhere.
+This is what we call "digital flagging tape." Just like physical flagging tape marks a vine in the field, a digital record marks it permanently in the system—except the digital version never fades, never falls off, and is searchable from anywhere.
 
 The numbers behind this deployment:
 
@@ -64,7 +64,7 @@ Those last two numbers matter. 978 team logins and 74 saved queries mean this is
 
 ### 1. Replant Planning Without Guesswork
 
-The estate currently has a 5.2% miss rate -- 9,534 vines that need replacement. Another 9,326 are rootstock plantings in various stages of development.
+The estate currently has a 5.2% miss rate—9,534 vines that need replacement. Another 9,326 are rootstock plantings in various stages of development.
 
 Without vine-level records, replant planning looks like this: walk the blocks, count gaps, estimate from memory, order rootstock, hope the numbers are close enough.
 
@@ -76,7 +76,7 @@ When you are spending $15-25 per vine on replants, getting the count wrong by ev
 
 Red Blotch and Leafroll do not respect management transitions. A vine flagged for Red Blotch in 2019 needs to be tracked through every subsequent season, regardless of which crew member walks that row, which viticulturist manages that block, or whether the vineyard manager changes entirely.
 
-In a spreadsheet, disease history lives in a tab that nobody updates consistently. On paper maps, it lives in a filing cabinet that nobody opens. In a GPS-verified vine record, it lives permanently on that vine's digital profile -- visible to anyone with access, from anywhere.
+In a spreadsheet, disease history lives in a tab that nobody updates consistently. On paper maps, it lives in a filing cabinet that nobody opens. In a GPS-verified vine record, it lives permanently on that vine's digital profile—visible to anyone with access, from anywhere.
 
 This is institutional knowledge that does not depend on any single person's memory.
 
@@ -84,7 +84,7 @@ This is institutional knowledge that does not depend on any single person's memo
 
 Managing 57 blocks across three vineyards means the team needs to compare performance, allocate crew resources, and plan work orders across geography. A block at one vineyard might share the same variety-rootstock combination as a block five miles away, but perform completely differently.
 
-Vine-level records make these comparisons possible without anyone manually assembling data from three different spreadsheets. The team builds saved queries -- 74 of them, in this case -- that surface exactly the information they need for recurring decisions.
+Vine-level records make these comparisons possible without anyone manually assembling data from three different spreadsheets. The team builds saved queries—74 of them, in this case—that surface exactly the information they need for recurring decisions.
 
 ### 4. Crew Collaboration at Scale
 
@@ -96,7 +96,7 @@ For an estate operation where the vineyard manager, viticulturist, crew supervis
 
 There are multiple approaches to vineyard data collection. Drones and aerial imagery provide canopy-level views. ATV-mounted cameras use computer vision to scan rows. Satellite imagery offers broad coverage at lower resolution.
 
-Each has a place. But for permanent vine-level records -- the kind you build once and reference for decades -- the data has to be verified at the source. An AI model can predict that a vine looks unhealthy from a camera image. A crew member with an RTK GPS receiver can confirm that vine V-4782 in Row 23 of Block 7A has Red Blotch, tag it in the system, and that observation becomes a permanent, coordinates-verified record.
+Each has a place. But for permanent vine-level records—the kind you build once and reference for decades—the data has to be verified at the source. An AI model can predict that a vine looks unhealthy from a camera image. A crew member with an RTK GPS receiver can confirm that vine V-4782 in Row 23 of Block 7A has Red Blotch, tag it in the system, and that observation becomes a permanent, coordinates-verified record.
 
 The difference matters when you are making roguing decisions, planning replants, or defending compliance records. Predictions are useful for scouting. Verified observations are necessary for records.
 
