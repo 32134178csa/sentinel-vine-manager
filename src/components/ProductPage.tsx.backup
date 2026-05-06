@@ -1,7 +1,6 @@
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { AnalyticsService } from '@/services/AnalyticsService';
-import { MobileFieldMap } from '@/components/product-visuals';
 
 /* ------------------------------------------------------------------ */
 /*  Cellar mock visual                                                 */
@@ -75,9 +74,7 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <div style={{ display: 'grid', placeItems: 'center', height: '100%' }}>
-            <MobileFieldMap variant="production" />
-          </div>
+          <img src="/images/product/vine-by-vine.png" alt="Sentinel vine map with health grid and vine data panel" className="pillar-screenshot" loading="lazy" />
         </div>
       </section>
 

@@ -1,0 +1,7 @@
+/* Product visual color tokens - mobile-specific colors not in main site */
+:root {
+  --virus: #E4252B;           /* true red - disease-positive vines */
+  --orange: oklch(0.72 0.17 55);  /* tested / rootstock issues */
+  --miss: rgba(237,237,232,0.45);  /* missing / replanted vines */
+  --warn: oklch(0.78 0.16 75);  /* GNSS warnings, irrigation flags */
+}
