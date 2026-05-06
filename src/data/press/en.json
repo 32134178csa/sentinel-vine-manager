@@ -5,7 +5,7 @@
     "id": "6",
     "image": "/blog-images/drone-vs-sentinel.webp",
     "title": "Drone Mapping for Vineyards: The Good, the Bad, and the Ugly",
-    "content": "NDVI drone mapping may generate colorful heatmaps, but it doesn\u2019t give vineyard managers the actionable, historical insight needed to track disease or manage vines long term. Sentinel Vine Manager captures real vine-level data using smartphones and GNSS, preserving critical information year after year and transforming how vineyards make decisions.",
+    "content": "NDVI drone mapping may generate colorful heatmaps, but it doesn’t give vineyard managers the actionable, historical insight needed to track disease or manage vines long term. Sentinel Vine Manager captures real vine-level data using smartphones and GNSS, preserving critical information year after year and transforming how vineyards make decisions.",
     "url": "/blog/drone-vs-sentinel-vine-mapping"
   },
   "xchateau-podcast": {
@@ -14,7 +14,7 @@
     "id": "0",
     "image": "/img/xchateau.webp",
     "title": "A Medical Record for Each Vine w/ Shawn DeMartino, Sentinel",
-    "content": "After struggling with tracking vineyard data firsthand, Shawn DeMartino, CEO and Founder of Sentinel, decided to create a solution with his partner. Enabling vine by vine mapping and data collection that could stand the test of time enables vineyard managers to increase the lifespan of a vineyard, manage viruses, and effectively create a \u201cmedical record\u201d for each individual vine.  ",
+    "content": "After struggling with tracking vineyard data firsthand, Shawn DeMartino, CEO and Founder of Sentinel, decided to create a solution with his partner. Enabling vine by vine mapping and data collection that could stand the test of time enables vineyard managers to increase the lifespan of a vineyard, manage viruses, and effectively create a “medical record” for each individual vine.  ",
     "url": "https://shows.acast.com/xchateau-wine-podcast-1/episodes/a-medical-record-for-each-vine-w-shawn-demartino-sentinel"
   },
   "inside-winemaking-podcast": {
@@ -31,7 +31,7 @@
     "author": "James Bayley",
     "id": "2",
     "image": "/img/harpers.webp",
-    "title": "Harper's Wine and Spirits - Sentinel\u2019s technological revolution in vineyards worldwide",
+    "title": "Harper's Wine and Spirits - Sentinel’s technological revolution in vineyards worldwide",
     "content": "Sentinel Vine Manager is changing the way vineyards operate across the globe. The innovative tool, developed by Shawn DeMartino and Christian Sidak, is revolutionising vineyard management with precise, vine-by-vine data collection. This new approach is transforming vineyard operations, offering a more efficient and effective way to manage and maintain vineyards.",
     "url": "https://harpers.co.uk/news/fullstory.php/aid/33132/Tech:_Sentinel_92s_technological_revolution_in_vineyards_worldwide.html"
   },
@@ -286,5 +286,14 @@
     "title": "What Vine-Level Records Look Like at Scale: Lessons from a 184,000-Vine Estate",
     "content": "Inside a real-world deployment of vine-by-vine digital records across three vineyards, 57 blocks, and 35 years of planting history. How one premium Napa estate replaced spreadsheets with GPS-verified vine records.",
     "url": "/blog/what-vine-level-records-look-like-at-scale"
+  },
+  "digital-flagging-tape-vineyards": {
+    "filename": "digital-flagging-tape-vineyards",
+    "author": "Sentinel Blog",
+    "id": "30",
+    "image": "/img/blog/digital-flagging-tape.webp",
+    "title": "Digital Flagging Tape: The Future of Vineyard Vine Marking and Management",
+    "content": "Discover how digital flagging tape is replacing physical markers in modern vineyards. Learn how GPS-based vine tracking provides permanent, searchable records for premium estate wineries.",
+    "url": "/blog/digital-flagging-tape-vineyards"
   }
 }

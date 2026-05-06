@@ -45,6 +45,7 @@ function formatPostDate(key: string): string {
     'vineyard-replanting-cost-roi-guide': '2026.04.08',
     'precision-viticulture-roi-vine-level-data': '2026.04.15',
     'what-is-digital-flagging-tape': '2026.04.24',
+    'digital-flagging-tape-vineyards': '2026.05.06',
     'vine-level-records-premium-estates': '2026.04.22',
     'satellite-drone-gps-vineyard-accuracy-comparison': '2026.04.20',
     'california-pur-reporting-vineyard-automation': '2025.06.10',
