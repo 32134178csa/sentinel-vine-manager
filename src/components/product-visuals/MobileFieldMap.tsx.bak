@@ -65,7 +65,7 @@ function MapVariantSVG({ variant = 'production', width = 360, height = 740 }: Ma
   const diseaseR = Math.max(6, rows * 0.13);
   const DOT_R = 4.4;
 
-  const dots: React.ReactElement[] = [];
+  const dots: JSX.Element[] = [];
   for (let rr = 0; rr < rows; rr++) {
     for (let vv = 0; vv < vines; vv++) {
       const x = colXs[vv];
