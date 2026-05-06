@@ -36,6 +36,9 @@ Digital flagging tape is GPS-based vine marking that creates a permanent, search
 
 Think of it as **converting your vineyard from a filing cabinet full of paper notes to a searchable database** -- except the database lives in your pocket and updates in real-time.
 
+
+![Premium vineyard rows at sunrise](/blog-images/bonafide-vineyard-01.webp)
+
 ### Key Capabilities of Digital Flagging Tape
 
 - **Permanent vine identity:** Every vine gets a unique identifier based on its GPS coordinates
@@ -49,10 +52,6 @@ Think of it as **converting your vineyard from a filing cabinet full of paper no
 ## Why Premium Vineyards Are Adopting Digital Flagging Tape
 
 ### 1. Virus Management at Scale
-
-![Field worker GPS-marking vines for virus tracking](/blog-images/in_field_sentinel_worker.webp)
-
-
 Grapevine leafroll and red blotch viruses cost premium vineyards thousands of dollars per acre in lost production. Traditional containment involves:
 
 1. Visually identifying symptomatic vines during harvest
@@ -62,13 +61,12 @@ Grapevine leafroll and red blotch viruses cost premium vineyards thousands of do
 
 **The problem?** Physical flagging tape disappears between harvest and winter roguing. Crews forget which vines were marked. Infected vines stay in the ground another year, spreading the virus further.
 
+
+![Vineyard landscape showing vine rows](/blog-images/bonafide-vineyard-02.webp)
+
 With digital flagging tape, every suspect vine gets GPS-tagged with a photo and date. When the roguing crew arrives in January, they pull up the map and see exactly which vines to remove -- even if six months have passed and the physical leaves are long gone.
 
 ### 2. Clone and Rootstock Mapping
-
-![Heterogeneous vineyard zones with multiple clones](/blog-images/heterogenous-zones.webp)
-
-
 Estate wineries often plant 5-15 different clones of the same varietal in a single block. Knowing exactly where Clone 4 ends and Clone 15 begins is critical for:
 
 - Selective harvesting by flavor profile
@@ -79,11 +77,10 @@ Physical maps get lost. CAD files sit on someone's old laptop. Field crews retir
 
 Digital flagging tape creates a **permanent, GPS-accurate clone map** that lives in the cloud and travels with every new vineyard manager.
 
+
+![Close-up of grapevines in estate vineyard](/blog-images/bonafide-vineyard-03.webp)
+
 ### 3. Replanting and Establishment Tracking
-
-![Young vine replanting zones in premium vineyard](/blog-images/replanting.webp)
-
-
 Replanting a 10-acre block is a multi-million-dollar, multi-year investment. You need to track:
 
 - Which vines were planted when
@@ -122,9 +119,6 @@ Need to find "all Cabernet vines on 110R rootstock flagged for virus testing aft
 ---
 
 ## Real-World Use Case: Tracking Virus Spread Over Three Years
-
-![Red Blotch virus heat map showing spatial spread](/blog-images/red-blotch-map.webp)
-
 **Scenario:** A 200-acre estate in Napa Valley discovers grapevine leafroll virus symptoms in Block 12 during 2023 harvest.
 
 **Traditional approach:**
@@ -143,6 +137,9 @@ Need to find "all Cabernet vines on 110R rootstock flagged for virus testing aft
 - In 2025, intensified mealybug monitoring focuses on southern edge of block, catching infections earlier
 
 **Result:** Virus containment costs drop 30% and spread rate slows by 60% because every vine has a permanent, traceable history.
+
+
+![Vineyard blocks with varied terrain](/blog-images/bonafide-vineyard-04.webp)
 
 ---
 
