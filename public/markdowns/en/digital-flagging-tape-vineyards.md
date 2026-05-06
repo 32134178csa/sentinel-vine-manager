@@ -37,7 +37,6 @@ Digital flagging tape is GPS-based vine marking that creates a permanent, search
 Think of it as **converting your vineyard from a filing cabinet full of paper notes to a searchable database** -- except the database lives in your pocket and updates in real-time.
 
 
-![Premium vineyard rows at sunrise](/blog-images/bonafide-vineyard-01.webp)
 
 ### Key Capabilities of Digital Flagging Tape
 
@@ -62,7 +61,6 @@ Grapevine leafroll and red blotch viruses cost premium vineyards thousands of do
 **The problem?** Physical flagging tape disappears between harvest and winter roguing. Crews forget which vines were marked. Infected vines stay in the ground another year, spreading the virus further.
 
 
-![Vineyard landscape showing vine rows](/blog-images/bonafide-vineyard-02.webp)
 
 With digital flagging tape, every suspect vine gets GPS-tagged with a photo and date. When the roguing crew arrives in January, they pull up the map and see exactly which vines to remove -- even if six months have passed and the physical leaves are long gone.
 
@@ -78,7 +76,6 @@ Physical maps get lost. CAD files sit on someone's old laptop. Field crews retir
 Digital flagging tape creates a **permanent, GPS-accurate clone map** that lives in the cloud and travels with every new vineyard manager.
 
 
-![Close-up of grapevines in estate vineyard](/blog-images/bonafide-vineyard-03.webp)
 
 ### 3. Replanting and Establishment Tracking
 Replanting a 10-acre block is a multi-million-dollar, multi-year investment. You need to track:
@@ -139,7 +136,6 @@ Need to find "all Cabernet vines on 110R rootstock flagged for virus testing aft
 **Result:** Virus containment costs drop 30% and spread rate slows by 60% because every vine has a permanent, traceable history.
 
 
-![Vineyard blocks with varied terrain](/blog-images/bonafide-vineyard-04.webp)
 
 ---
 
