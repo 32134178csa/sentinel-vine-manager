@@ -42,6 +42,21 @@ That record does not degrade. It does not blow off in a wind event. It does not 
 
 That is digital flagging tape. A permanent marker that never fades.
 
+
+## Digital Flagging Tape vs. Traditional Vineyard Software
+
+Digital flagging tape is vine-level management—every plant is a unique entity with its own history, status, and GPS coordinates.
+
+| Feature | Traditional Vineyard Software | Digital Flagging Tape |
+|---------|------------------------------|----------------------|
+| **Spatial resolution** | Block-level (acres) | Vine-level (centimeters) |
+| **Use case** | Financial tracking, compliance | Field operations, agronomy |
+| **Data entry** | Office-based, retrospective | Mobile-first, real-time |
+| **Historical depth** | 1-3 seasons (harvest/spray logs) | 10+ years (permanent vine records) |
+| **Searchability** | Filter by block, date, variety | Filter by any vine attribute + location |
+
+The two approaches are complementary. You need block-level ERP for business operations, tax compliance, and inventory tracking. You need vine-level records for agronomy, disease management, and precision viticulture. Sentinel Vine Manager is designed to integrate with your existing ERP system, not replace it.
+
 ## Why Accuracy Matters: The Sub-Inch Threshold
 
 Digital flagging tape only works if the GPS accuracy is good enough to distinguish between adjacent vines. In most vineyards, vines are planted 4 to 6 feet apart within a row. Standard phone GPS, accurate to 3 to 5 meters, cannot tell which vine you are standing next to. You might tag Vine 14 when you meant Vine 17. Over a few thousand vines, those errors compound into a dataset you cannot trust.

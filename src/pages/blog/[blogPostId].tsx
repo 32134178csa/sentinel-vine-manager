@@ -2,6 +2,7 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import fs from 'fs'
 import path from 'path'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import Head from 'next/head'
 import Link from 'next/link'
 import matter from 'gray-matter';
@@ -144,7 +145,7 @@ export default function BlogPostPage({ content, blogPostId, frontmatter, nextPos
 
           {/* ============ POST BODY ============ */}
           <div className="post-body">
-            <ReactMarkdown>{content}</ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
           </div>
 
           {/* ============ KEEP READING ============ */}
