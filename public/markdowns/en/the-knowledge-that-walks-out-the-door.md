@@ -16,7 +16,7 @@ date: "2026-03-31"
 
 # The Knowledge That Walks Out the Door
 
-There is a person at most established Napa and Sonoma estates who has been farming the same blocks for twenty or thirty years. He knows which row in Block 12 always gets mildew first because of how the fog channel runs. He knows that the replanted vines in rows 4 through 7 are on a different rootstock than the rest of the block. He knows that the four vines in the northeast corner of the old Cabernet block are actually mislabeled -- they have always set differently and he suspects they are Merlot.
+There is a person at most established Napa and Sonoma estates who has been farming the same blocks for twenty or thirty years. He knows which row in Block 12 always gets mildew first because of how the fog channel runs. He knows that the replanted vines in rows 4 through 7 are on a different rootstock than the rest of the block. He knows that the four vines in the northeast corner of the old Cabernet block are actually mislabeled—they have always set differently and he suspects they are Merlot.
 
 He has never written any of this down. Why would he? He is always there.
 
@@ -24,7 +24,7 @@ Except one day he is not.
 
 ## The Retirement Wave in the Vineyard
 
-The California wine industry is facing a workforce transition that has been building for decades. The generation of vineyard workers who came of age in the 1980s and 1990s -- who learned under legendary vineyard managers, who watched the Napa boom from the ground up -- are at or near retirement age. Some have already left. The institutional knowledge they carry is not being systematically captured anywhere.
+The California wine industry is facing a workforce transition that has been building for decades. The generation of vineyard workers who came of age in the 1980s and 1990s—who learned under legendary vineyard managers, who watched the Napa boom from the ground up—are at or near retirement age. Some have already left. The institutional knowledge they carry is not being systematically captured anywhere.
 
 This is not a labor shortage story, exactly. The concern is not just finding bodies to do the work. The deeper problem is that the most valuable knowledge in a vineyard is not written in any manual. It lives in the heads of the people who have been walking the rows for thirty years.
 
@@ -48,7 +48,7 @@ When you lose that person, you do not just lose a warm body. You lose the mental
 
 Rebuilding that knowledge base is possible, but it is slow and expensive. A new vineyard manager or crew lead will spend their first several seasons essentially relearning the property from scratch. They will make decisions that an experienced predecessor would have made differently. Some of those decisions will be wrong, or at least suboptimal.
 
-In a forgiving year -- high yields, strong prices -- the cost of those errors is manageable. In a tight year, when margins are thin and every under-performing block shows up in the P&L, the cost of institutional knowledge loss becomes much more concrete.
+In a forgiving year—high yields, strong prices—the cost of those errors is manageable. In a tight year, when margins are thin and every under-performing block shows up in the P&L, the cost of institutional knowledge loss becomes much more concrete.
 
 The blocks that get misread. The virus pocket that gets missed because no one remembered it was there. The rootstock transition mid-block that is not accounted for in the harvest plan. These are not hypothetical losses. They happen on estates throughout Napa and Sonoma every time a long-tenured worker retires without a proper knowledge transfer.
 
@@ -56,7 +56,7 @@ The blocks that get misread. The virus pocket that gets missed because no one re
 
 A vine-by-vine digital record does not replace a thirty-year veteran. It cannot replicate the intuition that comes from thousands of hours in the rows. But it does something that no amount of institutional memory can: it persists.
 
-When a vineyard is mapped at the individual vine level -- GPS-anchored, with health status, production history, rootstock, and vine notes attached to each plant -- that information does not retire when a person does. It does not fade over the winter when crew turnover happens. It does not get lost when the vineyard manager changes.
+When a vineyard is mapped at the individual vine level—GPS-anchored, with health status, production history, rootstock, and vine notes attached to each plant—that information does not retire when a person does. It does not fade over the winter when crew turnover happens. It does not get lost when the vineyard manager changes.
 
 The new manager inherits not just rows of vines but a documented record of each one. The virus pocket in Block 7 is annotated. The partial replant in rows 4 through 7 is tagged with the different rootstock. The weak producers in the northwest corner are flagged, with three years of yield history attached.
 
@@ -76,7 +76,7 @@ The estates that did not are the ones that call us after the fact, trying to rec
 
 The right time to map a vineyard at vine level is not when a transition is imminent. By then, the people who know the most are already on their way out, and the knowledge transfer is partial at best.
 
-The right time is now, when the people who know the property best are still there to validate what gets recorded. An RTK GPS survey paired with a health assessment walk-through captures not just location data but the annotated history that an experienced worker can contribute in real time -- the notes, the flags, the anomalies that only they would think to mention.
+The right time is now, when the people who know the property best are still there to validate what gets recorded. An RTK GPS survey paired with a health assessment walk-through captures not just location data but the annotated history that an experienced worker can contribute in real time—the notes, the flags, the anomalies that only they would think to mention.
 
 That documented record is what your vineyard looks like with its memory intact. It is what you hand to the next generation instead of starting over.
 

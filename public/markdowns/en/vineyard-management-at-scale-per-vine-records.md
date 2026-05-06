@@ -38,7 +38,7 @@ When your operation spans thousands of acres:
 - **Crew turnover erases history.** The viticulturist who flagged those vines last fall left in January. The new hire is starting from zero.
 - **Client reporting becomes a bottleneck.** If you manage vineyards for multiple owners, each one wants to know exactly what happened on their property. Reconstructing that from field notes takes hours.
 - **Replant decisions rely on incomplete data.** Which vines are original? Which are second-generation replants? Which rootstocks are in which rows? At scale, this information scatters across years of records in different formats.
-- **Compliance compounds.** California PUR reporting, organic certification audits, sustainability scorecards -- each requires documentation that traces back to specific locations. Block-level averages do not satisfy auditors who want to see what was applied where.
+- **Compliance compounds.** California PUR reporting, organic certification audits, sustainability scorecards—each requires documentation that traces back to specific locations. Block-level averages do not satisfy auditors who want to see what was applied where.
 
 ## What Changes with Per-Vine Records
 
@@ -56,7 +56,7 @@ When you take on a new client property or plant a new block, the initial mapping
 
 Instead of clipboards and hand-drawn maps, scouts use their phones. Sentinel's geofencing technology identifies which vine the scout is standing next to (within centimeters) and pulls up that vine's full history. Tap to flag a symptom. Tap to record a treatment. The data is structured, georeferenced, and immediately available to everyone else on the team.
 
-For a 2,000-acre operation with multiple crews across multiple properties, this means the morning's scouting data from Carneros is visible to the manager in Napa by lunch -- no data entry, no transcription, no waiting for someone to update the spreadsheet.
+For a 2,000-acre operation with multiple crews across multiple properties, this means the morning's scouting data from Carneros is visible to the manager in Napa by lunch—no data entry, no transcription, no waiting for someone to update the spreadsheet.
 
 ### Client Reporting
 
@@ -64,19 +64,19 @@ If you manage vineyards for estate owners, per-vine records turn reporting from 
 
 ### Institutional Continuity
 
-People leave. Seasons change. But the vine records persist. When a new viticulturist joins your team, they are not starting from scratch -- they have the complete history of every vine they are responsible for. The knowledge that used to walk out the door with departing employees now stays permanently attached to the vines.
+People leave. Seasons change. But the vine records persist. When a new viticulturist joins your team, they are not starting from scratch—they have the complete history of every vine they are responsible for. The knowledge that used to walk out the door with departing employees now stays permanently attached to the vines.
 
 ## The Math on Manual Methods
 
-We hear it constantly: "We already track this stuff in Excel." And technically, that is true -- some of it gets tracked, some of the time.
+We hear it constantly: "We already track this stuff in Excel." And technically, that is true—some of it gets tracked, some of the time.
 
-But consider the actual labor cost. A salaried viticulturist in California runs at least $50,000 per year in wages, taxes, and benefits. If that person spends 30% of their time on data management (entering field notes into spreadsheets, cross-referencing maps, generating reports), that is $15,000 per year in labor cost for data entry alone. For an operation with three or four people doing this, you are looking at $45,000-$60,000 annually in hidden data management costs -- and the resulting data is still incomplete, hard to query, and impossible to hand off cleanly.
+But consider the actual labor cost. A salaried viticulturist in California runs at least $50,000 per year in wages, taxes, and benefits. If that person spends 30% of their time on data management (entering field notes into spreadsheets, cross-referencing maps, generating reports), that is $15,000 per year in labor cost for data entry alone. For an operation with three or four people doing this, you are looking at $45,000-$60,000 annually in hidden data management costs—and the resulting data is still incomplete, hard to query, and impossible to hand off cleanly.
 
 Sentinel replaces the data entry step entirely. The scouting still happens (it has to), but the recording happens automatically as part of the scouting workflow. No transcription. No post-processing. No "I'll update the spreadsheet this weekend."
 
 ## What Operations at This Scale Actually Need
 
-Based on the vineyard management companies and large estates we work with -- operations like Dominus Estate, Abreu Vineyard, and Staglin Family Vineyard -- the requirements at scale come down to a few things:
+Based on the vineyard management companies and large estates we work with—operations like Dominus Estate, Abreu Vineyard, and Staglin Family Vineyard—the requirements at scale come down to a few things:
 
 1. **One system of record.** Not a spreadsheet per block, not a different app per property. One place where every vine across every property lives, with role-based access so each client sees only their own data.
 
@@ -84,7 +84,7 @@ Based on the vineyard management companies and large estates we work with -- ope
 
 3. **Queryable history.** "Show me all vines planted on 110R rootstock that tested positive for leafroll in the last two years." If you cannot answer that question in 30 seconds, your data is not working for you.
 
-4. **Exportable records.** Auditors, clients, and county ag commissioners all want data in their own formats. The system needs to produce clean exports -- Excel, PDF maps, compliance reports -- without manual reformatting.
+4. **Exportable records.** Auditors, clients, and county ag commissioners all want data in their own formats. The system needs to produce clean exports—Excel, PDF maps, compliance reports—without manual reformatting.
 
 5. **GPS accuracy that matches reality.** Block-level coordinates are not enough when you need to distinguish between vine 42 and vine 43 in the same row. RTK GPS gives you sub-centimeter accuracy, which means your digital records actually correspond to specific physical vines.
 
@@ -92,7 +92,7 @@ Based on the vineyard management companies and large estates we work with -- ope
 
 The most common concern from large operations is disruption: "We cannot afford to shut down operations for a month to implement new software." That is a fair concern, but it does not apply here.
 
-Sentinel onboarding is designed to run alongside normal operations. The initial mapping -- where every vine gets its GPS position and baseline attributes -- takes about a week per 100 acres, done by your existing crews during normal rounds. There is no downtime, no data migration from legacy systems (though we can import historical data if it exists), and no steep learning curve. If your team can use a smartphone, they can use Sentinel.
+Sentinel onboarding is designed to run alongside normal operations. The initial mapping—where every vine gets its GPS position and baseline attributes—takes about a week per 100 acres, done by your existing crews during normal rounds. There is no downtime, no data migration from legacy systems (though we can import historical data if it exists), and no steep learning curve. If your team can use a smartphone, they can use Sentinel.
 
 Most operations are fully operational within two weeks, with historical context building naturally as crews use the system during their regular scouting and management activities.
 

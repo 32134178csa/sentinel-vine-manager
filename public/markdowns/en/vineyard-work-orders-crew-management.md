@@ -11,13 +11,13 @@ image: "/img/blog/work-orders.webp"
 
 Vineyard work orders are the connective tissue between scouting and field execution. When your scout walks a block and flags thirty vines with leafroll symptoms, the question is not whether those vines need attention. The question is whether the crew that shows up next week will know exactly which thirty vines to pull, whether they will pull the right ones, and whether the vineyard's records will update without someone manually editing a spreadsheet three days later.
 
-In most operations, the answer to all three is "not reliably." The scout flags. Someone writes it up. The crew gets instructions. The records catch up eventually, if at all. Between the scout's observation and the vineyard's official data, there is a gap -- and that gap is where decisions degrade.
+In most operations, the answer to all three is "not reliably." The scout flags. Someone writes it up. The crew gets instructions. The records catch up eventually, if at all. Between the scout's observation and the vineyard's official data, there is a gap—and that gap is where decisions degrade.
 
 This post is about closing that gap with vineyard work orders that operate at the vine level, connect scouting data directly to crew assignments, and auto-update the vineyard database the moment a task is marked complete.
 
 ## The Communication Gap in Vineyard Operations
 
-Every vineyard manager knows this pattern. A scout walks a block, identifies a problem -- Red Blotch symptoms, dead vines, gopher damage -- and records what they find on paper, in a phone app, or by tying flagging tape to affected vines. That information reaches the vineyard manager, who dispatches a crew.
+Every vineyard manager knows this pattern. A scout walks a block, identifies a problem—Red Blotch symptoms, dead vines, gopher damage—and records what they find on paper, in a phone app, or by tying flagging tape to affected vines. That information reaches the vineyard manager, who dispatches a crew.
 
 Between the scout's observation and the crew's action, several things go wrong.
 
@@ -27,23 +27,23 @@ Between the scout's observation and the crew's action, several things go wrong.
 
 **Completion is unverified.** The crew reports "Block 7 is done." But did they get all thirty vines? There is no spatial verification of what was actually done versus what was assigned.
 
-**The records lag behind reality.** After the crew finishes, someone needs to manually update thirty vine records -- disease status, production count, dates. In practice, this happens the following week, or not at all until someone needs the data.
+**The records lag behind reality.** After the crew finishes, someone needs to manually update thirty vine records—disease status, production count, dates. In practice, this happens the following week, or not at all until someone needs the data.
 
 This is not a people problem. It is a systems problem. When scouting data, work orders, and vine records live in separate places, the gap between them is structural. Closing it requires all three to live in the same system, referencing the same vines.
 
 ## What Vine-Level Vineyard Work Orders Actually Look Like
 
-In a block-level system, a work order targets a block or row range. "Spray Block 4 with sulfur." That is adequate for uniform operations -- canopy management, most spray programs, mowing. But many consequential vineyard operations are not uniform. Roguing targets specific infected vines. Replanting targets specific positions where vines were removed. These operations require the work order to know which individual vines are involved.
+In a block-level system, a work order targets a block or row range. "Spray Block 4 with sulfur." That is adequate for uniform operations—canopy management, most spray programs, mowing. But many consequential vineyard operations are not uniform. Roguing targets specific infected vines. Replanting targets specific positions where vines were removed. These operations require the work order to know which individual vines are involved.
 
 A vine-level [work order](/workOrders) starts with a query, not a location description. Instead of "Block 7, rows 14-20," the work order says "all vines in Block 7 where disease status equals leafroll-positive and test date is after January 2026." That query resolves to a specific list of vines, each with GPS coordinates and current status. The crew opens the work order on a mobile device and sees exactly which vines are highlighted on the map.
 
 Here is what that looks like in practice with Sentinel:
 
-1. **Scout walks the block** using the Sentinel iOS app. For each symptomatic vine, they tap the vine on the map (or walk to it and let GPS locate it) and update its status -- "symptomatic," "flagged for testing," or whatever the property's protocol dictates.
+1. **Scout walks the block** using the Sentinel iOS app. For each symptomatic vine, they tap the vine on the map (or walk to it and let GPS locate it) and update its status—"symptomatic," "flagged for testing," or whatever the property's protocol dictates.
 
 2. **Lab results come back.** The vineyard manager updates the tested vines' disease status to "positive" or "negative" based on the results. The map now shows confirmed infections, not just visual symptoms.
 
-3. **Manager creates a work order.** They select a vine query -- "Block 7, disease status = positive, not yet rogued" -- and the system generates a work order targeting exactly those vines. The work order includes a map view, a vine count, and any instructions the manager adds.
+3. **Manager creates a work order.** They select a vine query—"Block 7, disease status = positive, not yet rogued"—and the system generates a work order targeting exactly those vines. The work order includes a map view, a vine count, and any instructions the manager adds.
 
 4. **Crew receives the work order** on their mobile device. They see the targeted vines highlighted on the block map. As they rogue each vine, they mark it complete in the app.
 
@@ -51,13 +51,13 @@ Here is what that looks like in practice with Sentinel:
 
 6. **Manager reviews completion.** The work order shows how many vines were completed out of how many were assigned. The vineyard map already reflects the updated statuses. The roguing event is recorded in each vine's history.
 
-That six-step cycle -- scout, test, order, execute, auto-update, verify -- is the closed loop. No transcription. No reconciliation. No lag between field reality and database reality.
+That six-step cycle—scout, test, order, execute, auto-update, verify—is the closed loop. No transcription. No reconciliation. No lag between field reality and database reality.
 
 ## Auto-Updating Vine Statuses: Why It Matters More Than You Think
 
 The auto-update mechanism is what separates vine-level work orders from sophisticated to-do lists. When a crew member completes a task on a specific vine, the vine's properties change automatically based on the work order type. This is the mechanism that keeps a vineyard's data layer accurate over time.
 
-Without it, a crew rogues twenty vines in Block 3 and someone needs to manually change each vine's disease status and production status in the database -- forty edits. If they forget two, the database drifts from reality. Multiply that by every block, every season, and the gap becomes significant.
+Without it, a crew rogues twenty vines in Block 3 and someone needs to manually change each vine's disease status and production status in the database—forty edits. If they forget two, the database drifts from reality. Multiply that by every block, every season, and the gap becomes significant.
 
 With auto-updating statuses, the act of completing the work IS the record update. The crew member who marks a vine as rogued in the field has simultaneously:
 
@@ -66,7 +66,7 @@ With auto-updating statuses, the act of completing the work IS the record update
 - Added a roguing event to the vine's history with a timestamp
 - Updated block-level statistics (producing vine count, disease prevalence)
 
-That is what closing the loop means -- not faster paperwork, but eliminating the paperwork entirely by making the work itself generate the record. When the vineyard manager looks at the disease map after the crew finishes, it already shows current state. Replant orders, spray program adjustments, and yield estimates can be planned from data that reflects today, not last week.
+That is what closing the loop means—not faster paperwork, but eliminating the paperwork entirely by making the work itself generate the record. When the vineyard manager looks at the disease map after the crew finishes, it already shows current state. Replant orders, spray program adjustments, and yield estimates can be planned from data that reflects today, not last week.
 
 ## Work Order Types: From Roguing to Replanting
 
@@ -74,7 +74,7 @@ Different vineyard operations create different kinds of work orders, and each on
 
 ### Roguing Work Orders
 
-Roguing is the operation where vine-level work orders deliver the most value. A roguing work order targets vines with a specific disease status -- confirmed positive, symptomatic above a threshold, or whatever criteria the manager sets. When a vine is marked as rogued:
+Roguing is the operation where vine-level work orders deliver the most value. A roguing work order targets vines with a specific disease status—confirmed positive, symptomatic above a threshold, or whatever criteria the manager sets. When a vine is marked as rogued:
 
 - Disease status updates to reflect removal (typically "No-Virus" since the infected plant is gone)
 - Production status changes to "Miss"
@@ -85,7 +85,7 @@ For operations managing Red Blotch or leafroll, roguing work orders are the mech
 
 ### Replanting Work Orders
 
-After roguing, the missing vines need to be replaced. A replanting work order targets vine positions that are currently in "Miss" status within a block. The work order specifies what is being planted -- variety, rootstock, clone -- and when a position is marked as replanted:
+After roguing, the missing vines need to be replaced. A replanting work order targets vine positions that are currently in "Miss" status within a block. The work order specifies what is being planted—variety, rootstock, clone—and when a position is marked as replanted:
 
 - Production status changes from "Miss" to "Young Vine" (or equivalent non-producing status)
 - The vine record gets new variety and rootstock attributes if the replant differs from what was removed
@@ -96,7 +96,7 @@ This creates a continuous thread of data from the original vine through roguing 
 
 ### Grafting Work Orders
 
-Grafting work orders target vines that need variety changes -- typically field grafting to convert a block from one variety to another, or to replace underperforming clones. When a vine is marked as grafted:
+Grafting work orders target vines that need variety changes—typically field grafting to convert a block from one variety to another, or to replace underperforming clones. When a vine is marked as grafted:
 
 - Variety and/or clone attributes update to reflect the new scion
 - Production status may change to reflect the vine's return-to-production timeline
@@ -104,17 +104,17 @@ Grafting work orders target vines that need variety changes -- typically field g
 
 ### Spray and Scouting Work Orders
 
-Spray work orders target areas rather than individual vines -- blocks, sub-blocks, or polygons on the map. Completion records capture products, rates, coverage, and timing. The primary downstream value is compliance -- spray work orders generate the data needed for [PUR reporting](/blog/california-pur-reporting-vineyard-automation) and organic certification without manual re-entry.
+Spray work orders target areas rather than individual vines—blocks, sub-blocks, or polygons on the map. Completion records capture products, rates, coverage, and timing. The primary downstream value is compliance—spray work orders generate the data needed for [PUR reporting](/blog/california-pur-reporting-vineyard-automation) and organic certification without manual re-entry.
 
-Scouting work orders are where the cycle begins. They assign a crew member to walk specific blocks and record observations -- updating vine statuses, attaching photos, and recording notes. Scouting generates the data that drives roguing work orders, which drive replanting work orders. Each stage feeds the next, and the vine database stays current through all of it.
+Scouting work orders are where the cycle begins. They assign a crew member to walk specific blocks and record observations—updating vine statuses, attaching photos, and recording notes. Scouting generates the data that drives roguing work orders, which drive replanting work orders. Each stage feeds the next, and the vine database stays current through all of it.
 
 ## Crew Accountability Without Micromanagement
 
 How do you know the work was done correctly without physically walking behind the crew? Paper-based systems offer almost no verification. Vine-level work orders provide accountability through data, not surveillance.
 
-When a roguing work order assigns thirty vines and the crew marks twenty-eight complete, the two remaining vines are visible immediately. The manager sees which specific vines were skipped and can ask why. The conversation is specific, not vague. GPS verification adds another layer -- the system can confirm the crew was physically at each vine's coordinates, producing defensible records for compliance audits and insurance claims.
+When a roguing work order assigns thirty vines and the crew marks twenty-eight complete, the two remaining vines are visible immediately. The manager sees which specific vines were skipped and can ask why. The conversation is specific, not vague. GPS verification adds another layer—the system can confirm the crew was physically at each vine's coordinates, producing defensible records for compliance audits and insurance claims.
 
-For operations like Dominus Estate, where disease management precision directly affects fruit quality and property value, this visibility is a practical necessity. And critically, it is a byproduct of the workflow, not an extra burden on the crew. They complete work orders on their mobile device the same way they would in any system. The accountability comes from the fact that the system knows which vines were assigned and which were marked done. We wrote about the broader challenge of retaining operational knowledge in [The Knowledge That Walks Out the Door](/blog/the-knowledge-that-walks-out-the-door) -- vine-level work order records keep that knowledge in the system even when people leave.
+For operations like Dominus Estate, where disease management precision directly affects fruit quality and property value, this visibility is a practical necessity. And critically, it is a byproduct of the workflow, not an extra burden on the crew. They complete work orders on their mobile device the same way they would in any system. The accountability comes from the fact that the system knows which vines were assigned and which were marked done. We wrote about the broader challenge of retaining operational knowledge in [The Knowledge That Walks Out the Door](/blog/the-knowledge-that-walks-out-the-door)—vine-level work order records keep that knowledge in the system even when people leave.
 
 ## Before and After: A Roguing Campaign
 
@@ -128,9 +128,9 @@ Your scout walks Block 5 after harvest and ties pink tape to 45 symptomatic vine
 
 The scout walks Block 5 using the Sentinel app, tapping each symptomatic vine on the map. The manager sees 45 new flags alongside 12 from last year still showing "positive, not rogued." He creates a roguing work order: "Block 5, disease status = positive OR symptomatic." The system resolves to 57 vines.
 
-The crew sees 57 highlighted vines on their map. They mark each as rogued. When finished, 55 are complete. Two were skipped -- the app shows which two with the crew lead's note explaining why. The 55 rogued vines already have cleared disease status and "Miss" production status. The disease map is accurate today, and the replant order can target 55 specific GPS positions immediately.
+The crew sees 57 highlighted vines on their map. They mark each as rogued. When finished, 55 are complete. Two were skipped—the app shows which two with the crew lead's note explaining why. The 55 rogued vines already have cleared disease status and "Miss" production status. The disease map is accurate today, and the replant order can target 55 specific GPS positions immediately.
 
-The same pattern applies to replanting. When a replanting work order closes, every "Miss" position that received a new vine updates to "Young Vine" automatically. Three years later, you can trace every vine position from original flagging through roguing through replant -- all on the same GPS coordinate, all maintained by the work orders that drove each step. For a deeper look at how [rapid vine mapping](/rapidMapping) underpins this kind of longitudinal tracking, see our mapping overview.
+The same pattern applies to replanting. When a replanting work order closes, every "Miss" position that received a new vine updates to "Young Vine" automatically. Three years later, you can trace every vine position from original flagging through roguing through replant—all on the same GPS coordinate, all maintained by the work orders that drove each step. For a deeper look at how [rapid vine mapping](/rapidMapping) underpins this kind of longitudinal tracking, see our mapping overview.
 
 ## ROI and Time Savings
 
@@ -152,7 +152,7 @@ Transitioning to vine-level vineyard work orders is not an overnight switch, and
 
 ### Phase 1: Map the Vines
 
-Everything starts with the vine map. Before you can create work orders that target individual vines, those vines need to exist in the system with GPS coordinates. Sentinel's [rapid mapping](/rapidMapping) process uses RTK GPS to place every vine with sub-inch accuracy. For most properties, initial mapping takes one to three days depending on acreage, and it only needs to be done once. The map is permanent -- vines do not move.
+Everything starts with the vine map. Before you can create work orders that target individual vines, those vines need to exist in the system with GPS coordinates. Sentinel's [rapid mapping](/rapidMapping) process uses RTK GPS to place every vine with sub-inch accuracy. For most properties, initial mapping takes one to three days depending on acreage, and it only needs to be done once. The map is permanent—vines do not move.
 
 ### Phase 2: Establish Baseline Status
 
@@ -182,13 +182,13 @@ For a broader comparison of vineyard software capabilities, our [2026 buyer's gu
 
 ## Close the Loop
 
-The gap between scouting and execution in vineyard operations is not inevitable. It is a consequence of systems that were not designed to connect the two. When vineyard work orders operate at the vine level, when crew completion updates the database automatically, and when every operation -- from roguing to replanting to spraying -- generates records tied to specific GPS coordinates, the loop closes.
+The gap between scouting and execution in vineyard operations is not inevitable. It is a consequence of systems that were not designed to connect the two. When vineyard work orders operate at the vine level, when crew completion updates the database automatically, and when every operation—from roguing to replanting to spraying—generates records tied to specific GPS coordinates, the loop closes.
 
 Your scout finds a problem. The system turns it into a work order. The crew executes it. The records update themselves. The next decision is based on current data, not last month's spreadsheet.
 
 That is what vineyard crew management software should do. Not add another layer of data entry to your team's workload, but eliminate the data entry by making the work itself the record.
 
-If you want to see what this looks like with your own vineyard data -- your blocks, your disease pressure, your actual work order workflow -- we would welcome the chance to walk through it with you.
+If you want to see what this looks like with your own vineyard data—your blocks, your disease pressure, your actual work order workflow—we would welcome the chance to walk through it with you.
 
 [Schedule a demo](https://scheduler.zoom.us/d/1i222xhk/sentinel-demo) and we will show you how Sentinel closes the loop between scout and field crew on your specific property.
 
@@ -198,11 +198,11 @@ If you want to see what this looks like with your own vineyard data -- your bloc
 
 ### What are vineyard work orders and why are they different from regular task management?
 
-Vineyard work orders are task assignments specific to vineyard operations -- roguing, replanting, grafting, spraying, scouting, and harvest. What makes them different is the spatial component: a vineyard work order should reference specific vines on a GPS map, and completion should generate a verified spatial record. General task management tools have no concept of vine positions, disease statuses, or the spatial data that makes vineyard records useful over time.
+Vineyard work orders are task assignments specific to vineyard operations—roguing, replanting, grafting, spraying, scouting, and harvest. What makes them different is the spatial component: a vineyard work order should reference specific vines on a GPS map, and completion should generate a verified spatial record. General task management tools have no concept of vine positions, disease statuses, or the spatial data that makes vineyard records useful over time.
 
 ### How do auto-updating vine statuses work when a work order is completed?
 
-When a crew member marks a vine as "done" within a work order, the vine's properties update automatically based on the work order type. For roguing, disease status clears and production status changes to "Miss." For replanting, production status changes to "Young Vine" and new variety/rootstock are recorded. This happens immediately in the field -- the work itself becomes the data entry.
+When a crew member marks a vine as "done" within a work order, the vine's properties update automatically based on the work order type. For roguing, disease status clears and production status changes to "Miss." For replanting, production status changes to "Young Vine" and new variety/rootstock are recorded. This happens immediately in the field—the work itself becomes the data entry.
 
 ### Can vineyard crew management software work without cell signal in the field?
 
@@ -210,7 +210,7 @@ Yes, if designed for offline use. Sentinel's iOS app syncs data locally, so crew
 
 ### How long does it take to implement vine-level work orders?
 
-Implementation starts with mapping your vines -- typically one to three days of RTK GPS mapping depending on property size. Once vines are in the system, work orders can be dispatched immediately. Most operations start with roguing and replanting, then expand over the first season. The typical timeline from mapping to full adoption is one to two months.
+Implementation starts with mapping your vines—typically one to three days of RTK GPS mapping depending on property size. Once vines are in the system, work orders can be dispatched immediately. Most operations start with roguing and replanting, then expand over the first season. The typical timeline from mapping to full adoption is one to two months.
 
 ### What is the ROI of switching from paper work orders to digital vine-level work orders?
 

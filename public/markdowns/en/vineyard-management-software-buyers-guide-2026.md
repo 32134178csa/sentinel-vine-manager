@@ -1,6 +1,6 @@
 ---
 title: "Vineyard Management Software: The 2026 Buyer's Guide"
-description: "Compare vineyard management software options for 2026. Covers vine mapping, disease tracking, work orders, cellar management, and pricing -- everything you need to choose the right platform."
+description: "Compare vineyard management software options for 2026. Covers vine mapping, disease tracking, work orders, cellar management, and pricing—everything you need to choose the right platform."
 keywords: ["vineyard management software", "vine mapping software", "vineyard technology", "precision viticulture software"]
 author: "Christian Sidak"
 date: "2026-04-21"
@@ -17,12 +17,12 @@ This guide breaks down the landscape into categories, explains the trade-offs be
 
 Before comparing products, it helps to be specific about the job. "Vineyard management" is a broad term. In practice, when people say they need vineyard management software, they usually mean one or more of the following:
 
-- **Mapping and spatial data** -- knowing where things are in the vineyard, at the block or vine level
-- **Record keeping** -- tracking what was done, where, when, and by whom
-- **Task and work order management** -- dispatching and verifying field work
-- **Disease and virus tracking** -- monitoring the spread and treatment of problems like Red Blotch, leafroll, and Eutypa
-- **Compliance and reporting** -- generating records for PUR filings, organic certifications, or audit trails
-- **Crew coordination** -- assigning tasks, tracking progress, and capturing field data from multiple people simultaneously
+- **Mapping and spatial data**—knowing where things are in the vineyard, at the block or vine level
+- **Record keeping**—tracking what was done, where, when, and by whom
+- **Task and work order management**—dispatching and verifying field work
+- **Disease and virus tracking**—monitoring the spread and treatment of problems like Red Blotch, leafroll, and Eutypa
+- **Compliance and reporting**—generating records for PUR filings, organic certifications, or audit trails
+- **Crew coordination**—assigning tasks, tracking progress, and capturing field data from multiple people simultaneously
 
 Some operations also need harvest logistics, irrigation scheduling, or financial planning. But the core of vineyard management software lives in those first four categories: maps, records, tasks, and disease tracking.
 
@@ -184,11 +184,11 @@ Sentinel Vine Manager was built specifically for vine-level tracking with RTK GP
 
 Here is what that looks like in practice:
 
-- **Sub-inch RTK GPS mapping** -- every vine is placed once with survey-grade accuracy. No annual re-mapping. No canopy-level approximations.
-- **Vine-by-vine disease tracking** -- full history per vine: test results, symptoms, roguing dates, replant status. Visualize virus spread across blocks and seasons.
-- **Work orders tied to the vine map** -- dispatch tasks, verify completion with GPS, and generate records that link back to individual vines. More on this in our [work order management post](/blog/vineyard-work-order-management).
-- **Offline-first mobile app** -- the iOS app syncs locally and works without cell signal. Crews can map, record, and complete tasks in the field regardless of connectivity.
-- **Multi-property, multi-country** -- currently deployed across six countries, managing properties ranging from 15-acre Napa estates to large European operations.
+- **Sub-inch RTK GPS mapping**—every vine is placed once with survey-grade accuracy. No annual re-mapping. No canopy-level approximations.
+- **Vine-by-vine disease tracking**—full history per vine: test results, symptoms, roguing dates, replant status. Visualize virus spread across blocks and seasons.
+- **Work orders tied to the vine map**—dispatch tasks, verify completion with GPS, and generate records that link back to individual vines. More on this in our [work order management post](/blog/vineyard-work-order-management).
+- **Offline-first mobile app**—the iOS app syncs locally and works without cell signal. Crews can map, record, and complete tasks in the field regardless of connectivity.
+- **Multi-property, multi-country**—currently deployed across six countries, managing properties ranging from 15-acre Napa estates to large European operations.
 
 Sentinel is used by operations including Dominus Estate, Dalla Valle Vineyards, Abreu Vineyard, and Staglin Family Vineyard. These are high-value sites where vine-level precision is not a luxury but a management requirement.
 
@@ -212,7 +212,7 @@ Most vineyard software demos are polished presentations with clean sample data. 
 
 If your operation deals with virus management, replant planning, or any situation where individual vine data matters, we would welcome the chance to show you how Sentinel handles it with your actual vineyard data.
 
-[Schedule a demo here](https://scheduler.zoom.us/d/1i222xhk/sentinel-demo) -- we will walk through your specific blocks and use case, not a canned presentation.
+[Schedule a demo here](https://scheduler.zoom.us/d/1i222xhk/sentinel-demo)—we will walk through your specific blocks and use case, not a canned presentation.
 
 ---
 

@@ -18,7 +18,7 @@ export default function About() {
         </p>
       </header>
 
-      {/* ============ SECTION 01 -- OUR STORY ============ */}
+      {/* ============ SECTION 01—OUR STORY ============ */}
       <section className="story container-lp">
         <div className="idx">01 &middot; Our Story</div>
         <div>
@@ -27,10 +27,10 @@ export default function About() {
             Sentinel was born from a simple observation: the world&apos;s finest vineyards were making critical decisions from clipboards, Excel workbooks, and memory.
           </p>
           <p>
-            Our team had spent years walking vineyard rows -- scouting for Leafroll, flagging Red Blotch symptoms with plastic tape, guessing at cluster counts, and watching the institutional knowledge walk out the gate every time a crew foreman retired.
+            Our team had spent years walking vineyard rows—scouting for Leafroll, flagging Red Blotch symptoms with plastic tape, guessing at cluster counts, and watching the institutional knowledge walk out the gate every time a crew foreman retired.
           </p>
           <p>
-            Drones and satellites promised a solution, but NDVI maps stop at the canopy. A vine with Red Blotch can look identical to a shaded, under-irrigated, or simply young vine from above. The ground truth -- the actual condition of the plant -- was still trapped in peoples&apos; heads.
+            Drones and satellites promised a solution, but NDVI maps stop at the canopy. A vine with Red Blotch can look identical to a shaded, under-irrigated, or simply young vine from above. The ground truth—the actual condition of the plant—was still trapped in peoples&apos; heads.
           </p>
         </div>
         <div>
@@ -39,12 +39,12 @@ export default function About() {
             Sentinel is an end-to-end vine-level management system. Drop every vine once with sub-centimeter GNSS. Attach disease status, phenology, yield estimates, photos, and lab results. Issue vine-specific work orders that auto-update as work is completed. Analyze trends across vintages.
           </p>
           <p>
-            We operate out of Spongy Mesophyll Technologies -- named for the layer of leaf tissue where photosynthesis, transpiration, and most pathogens quietly do their work. Invisible, essential, and the foundation of everything above.
+            We operate out of Spongy Mesophyll Technologies—named for the layer of leaf tissue where photosynthesis, transpiration, and most pathogens quietly do their work. Invisible, essential, and the foundation of everything above.
           </p>
         </div>
       </section>
 
-      {/* ============ SECTION 02 -- PRINCIPLES ============ */}
+      {/* ============ SECTION 02—PRINCIPLES ============ */}
       <div className="section-head container-lp">
         <span className="idx">02 &middot; Principles</span>
         <h2>What we believe <em>about vineyard data.</em></h2>
@@ -54,12 +54,12 @@ export default function About() {
         <div className="principle">
           <div className="num">01</div>
           <h3>Ground truth beats aerial guesses.</h3>
-          <p>A vine&apos;s condition is something a human confirms, not an algorithm. We build tools that make confirming fast -- not tools that pretend pixels are plants.</p>
+          <p>A vine&apos;s condition is something a human confirms, not an algorithm. We build tools that make confirming fast—not tools that pretend pixels are plants.</p>
         </div>
         <div className="principle">
           <div className="num">02</div>
           <h3>Data has to live longer than crews.</h3>
-          <p>Vineyards outlive employees. The institutional memory of which vine was grafted when, and why, has to survive in a system -- not a crew foreman&apos;s head.</p>
+          <p>Vineyards outlive employees. The institutional memory of which vine was grafted when, and why, has to survive in a system—not a crew foreman&apos;s head.</p>
         </div>
         <div className="principle">
           <div className="num">03</div>
@@ -68,7 +68,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* ============ SECTION 03 -- TEAM ============ */}
+      {/* ============ SECTION 03—TEAM ============ */}
       <section className="team container-lp">
         <div className="team-head">
           <div className="idx">03 &middot; Leadership</div>
@@ -108,7 +108,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* ============ SECTION 04 -- CONTACT CTA ============ */}
+      {/* ============ SECTION 04—CONTACT CTA ============ */}
       <section>
         <div className="cta-band container-lp">
           <div>

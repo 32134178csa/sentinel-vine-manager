@@ -147,7 +147,7 @@ const sections: FAQSection[] = [
       {
         num: 'Q.17',
         question: 'How does the pricing compare to dedicated cellar platforms?',
-        answer: 'Sentinel offers Cellar Management as an add-on module to the vineyard subscription -- one platform, one login, lot-to-vine traceability built in. Lab results, vessel assignments and barrel inventory are all part of the module.',
+        answer: 'Sentinel offers Cellar Management as an add-on module to the vineyard subscription—one platform, one login, lot-to-vine traceability built in. Lab results, vessel assignments and barrel inventory are all part of the module.',
       },
       {
         num: 'Q.18',

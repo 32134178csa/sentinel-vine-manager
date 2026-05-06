@@ -55,16 +55,16 @@ export default function ProductPage() {
           A complete vineyard management platform, <em>built at the vine level.</em>
         </h1>
         <p className="lede">
-          Mapping, monitoring, disease tracking, analytics, work orders -- and now pesticide use reporting and cellar management. All bound to the individual vine, for the entire life of the vineyard, and the wine that comes from it.
+          Mapping, monitoring, disease tracking, analytics, work orders—and now pesticide use reporting and cellar management. All bound to the individual vine, for the entire life of the vineyard, and the wine that comes from it.
         </p>
       </header>
 
-      {/* ============ 01 -- VINE BY VINE ============ */}
+      {/* ============ 01—VINE BY VINE ============ */}
       <section className="pillar" id="vine">
         <div className="copy">
           <div className="idx">01 &middot; Vine By Vine&trade;</div>
           <h2>Map every vine, <em>once.</em></h2>
-          <p>Leveraging proprietary geospatial technologies, Sentinel&apos;s mobile app enables Vine By Vine&trade; mapping -- precisely recording the location of every vine in a vineyard with sub-centimeter accuracy.</p>
+          <p>Leveraging proprietary geospatial technologies, Sentinel&apos;s mobile app enables Vine By Vine&trade; mapping—precisely recording the location of every vine in a vineyard with sub-centimeter accuracy.</p>
           <p>Vines mapped in Sentinel represent user-verified ground truth, not speculation from drone imagery or AI models. Through proprietary automation, users map hectares in a matter of minutes, delivering full Vine By Vine&trade; coverage across entire blocks.</p>
           <ul>
             <li><div><b>RTK GNSS, sub-2cm accuracy</b><span>Every vine gets a permanent GPS location.</span></div></li>
@@ -78,12 +78,12 @@ export default function ProductPage() {
         </div>
       </section>
 
-      {/* ============ 02 -- MATURITY MONITORING ============ */}
+      {/* ============ 02—MATURITY MONITORING ============ */}
       <section className="pillar rev" id="maturity">
         <div className="copy">
           <div className="idx">02 &middot; Maturity Monitoring</div>
           <h2>Vineyards age <em>heterogeneously.</em></h2>
-          <p>Disease spread, tractor damage, persistent vigor differences -- many factors contribute to this effect. In time, vine-by-vine interventions or sporadic replanting can extend a vineyard&apos;s lifespan, but introduce their own challenges:</p>
+          <p>Disease spread, tractor damage, persistent vigor differences—many factors contribute to this effect. In time, vine-by-vine interventions or sporadic replanting can extend a vineyard&apos;s lifespan, but introduce their own challenges:</p>
           <ul>
             <li><div><b>Identify early</b><span>Catch damaged, diseased, or underperforming vines before losses compound.</span></div></li>
             <li><div><b>Quantify the problem</b><span>Gather enough detail to make an informed management decision.</span></div></li>
@@ -95,12 +95,12 @@ export default function ProductPage() {
         </div>
       </section>
 
-      {/* ============ 03 -- PEST & DISEASE TRACKING ============ */}
+      {/* ============ 03—PEST & DISEASE TRACKING ============ */}
       <section className="pillar" id="disease">
         <div className="copy">
           <div className="idx">03 &middot; Pest &amp; Disease Tracking</div>
           <h2>The patient medical record <em>for the world&apos;s great vineyards.</em></h2>
-          <p>Grapevine pests and diseases are the greatest threats to vineyard longevity, wine quality, and economic viability. Sentinel lets vineyard teams collect the highest quality spatial and historical disease data with the click of a button -- then maintains it indefinitely.</p>
+          <p>Grapevine pests and diseases are the greatest threats to vineyard longevity, wine quality, and economic viability. Sentinel lets vineyard teams collect the highest quality spatial and historical disease data with the click of a button—then maintains it indefinitely.</p>
           <ul>
             <li><div><b>User-definable status categories</b><span>Positive, symptomatic but untested, tested negative, and any custom state.</span></div></li>
             <li><div><b>Auto-generate lab labels</b><span>Tag suspected vines, bulk-upload results, auto-update vine disease status.</span></div></li>
@@ -113,7 +113,7 @@ export default function ProductPage() {
         </div>
       </section>
 
-      {/* ============ 04 -- HISTORICAL ANALYSIS ============ */}
+      {/* ============ 04—HISTORICAL ANALYSIS ============ */}
       <section className="pillar rev" id="historical">
         <div className="copy">
           <div className="idx">04 &middot; Historical Analysis</div>
@@ -123,7 +123,7 @@ export default function ProductPage() {
             <li><div><b>Cohort queries</b><span>Isolate vines by age, rootstock, disease, performance.</span></div></li>
             <li><div><b>Time-series charts</b><span>Vine, block, and vineyard-level trends over vintages.</span></div></li>
             <li><div><b>Custom maps</b><span>Publish ready-to-share maps for ownership or finance teams.</span></div></li>
-            <li><div><b>Export to Excel</b><span>Any dataset, any query -- out the door.</span></div></li>
+            <li><div><b>Export to Excel</b><span>Any dataset, any query—out the door.</span></div></li>
           </ul>
         </div>
         <div className="visual">
@@ -131,13 +131,13 @@ export default function ProductPage() {
         </div>
       </section>
 
-      {/* ============ 05 -- WORK ORDERS ============ */}
+      {/* ============ 05—WORK ORDERS ============ */}
       <section className="pillar" id="workorders">
         <div className="copy">
           <div className="idx">05 &middot; Work Orders</div>
           <h2>Operationalize <em>vine-by-vine activity.</em></h2>
-          <p>From roguing, to planting, to grafting, to harvesting and fertilizing -- vineyard managers can record operations at the block and vine level. Because operations change the inherent status of vines, Sentinel auto-updates vine statuses through work-order completion.</p>
-          <p><em style={{ color: 'var(--ink)' }}>Need to rogue all diseased vines across your vineyard?</em> Create a Roguing work order pointed at vines with the Positive Disease Status in question. Upon completion, every rogued vine flips from Virus-Positive to No-Virus, and production status changes to Miss -- ready for a Planting work order next spring.</p>
+          <p>From roguing, to planting, to grafting, to harvesting and fertilizing—vineyard managers can record operations at the block and vine level. Because operations change the inherent status of vines, Sentinel auto-updates vine statuses through work-order completion.</p>
+          <p><em style={{ color: 'var(--ink)' }}>Need to rogue all diseased vines across your vineyard?</em> Create a Roguing work order pointed at vines with the Positive Disease Status in question. Upon completion, every rogued vine flips from Virus-Positive to No-Virus, and production status changes to Miss—ready for a Planting work order next spring.</p>
           <ul>
             <li><div><b>Crop estimation &amp; thinning simulator</b><span>Project yield with statistical confidence intervals, block by block.</span></div></li>
             <li><div><b>Pick maps &amp; harvest tracking</b><span>Winemaker pick zones, receive-weight, Brix, bin counts per lot.</span></div></li>
@@ -150,16 +150,16 @@ export default function ProductPage() {
         </div>
       </section>
 
-      {/* ============ 06 -- PESTICIDE USE REPORTING ============ */}
+      {/* ============ 06—PESTICIDE USE REPORTING ============ */}
       <section className="pillar rev" id="pesticide">
         <div className="copy">
           <div className="idx">06 &middot; Pesticide Use Reporting <span style={{ color: 'var(--accent)', marginLeft: '10px' }}>&bull; New</span></div>
           <h2>Spray logs that <em>file themselves.</em></h2>
-          <p>Every spray application you record in Sentinel feeds directly into your pesticide use submissions. Log the event in the field, and the system generates a compliant XML report -- county permit number, site coordinates, product details, acreage treated -- ready for local and state submission.</p>
+          <p>Every spray application you record in Sentinel feeds directly into your pesticide use submissions. Log the event in the field, and the system generates a compliant XML report—county permit number, site coordinates, product details, acreage treated—ready for local and state submission.</p>
           <p>No separate reporting tool. No end-of-month spreadsheet reconciliation. No re-entering the same data in two places.</p>
           <ul>
             <li><div><b>Compliant XML output</b><span>Matches required submission formats for county agricultural commissioners and state agencies.</span></div></li>
-            <li><div><b>Auto-populated from field logs</b><span>Permit, coordinates, product EPA#, rate, acreage and operator -- pulled from the work order.</span></div></li>
+            <li><div><b>Auto-populated from field logs</b><span>Permit, coordinates, product EPA#, rate, acreage and operator—pulled from the work order.</span></div></li>
             <li><div><b>Operator &amp; REI tracking</b><span>Applicator certification and restricted-entry intervals stored per application.</span></div></li>
             <li><div><b>One-click resubmit</b><span>Amendments and corrections re-export without re-keying the whole record.</span></div></li>
           </ul>
@@ -169,17 +169,17 @@ export default function ProductPage() {
         </div>
       </section>
 
-      {/* ============ 07 -- CELLAR MANAGEMENT ============ */}
+      {/* ============ 07—CELLAR MANAGEMENT ============ */}
       <section className="pillar" id="cellar">
         <div className="copy">
           <div className="idx">07 &middot; Cellar Management <span style={{ color: 'var(--accent)', marginLeft: '10px' }}>&bull; New</span></div>
           <h2>From vine <em>to bottle,</em> on one record.</h2>
-          <p>Sentinel is the first vineyard-native platform to extend a vine&apos;s record into the cellar. Every lot carries its block -- and every vine in it -- forward through fermentation, lab analysis, vessel assignments, barrel inventory, and bottling.</p>
-          <p>Cellar Management is offered as an add-on module to your vineyard subscription -- one platform, one login, lot-to-vine traceability built in. Talk to us about pricing for your operation.</p>
+          <p>Sentinel is the first vineyard-native platform to extend a vine&apos;s record into the cellar. Every lot carries its block—and every vine in it—forward through fermentation, lab analysis, vessel assignments, barrel inventory, and bottling.</p>
+          <p>Cellar Management is offered as an add-on module to your vineyard subscription—one platform, one login, lot-to-vine traceability built in. Talk to us about pricing for your operation.</p>
           <ul>
             <li><div><b>Lot lineage</b><span>Every lot ties back to the specific block and vines it came from.</span></div></li>
             <li><div><b>Lab analysis</b><span>Brix, pH, TA, SO&#x2082;, VA tracked per lot, per time-stamped sample.</span></div></li>
-            <li><div><b>Vessel &amp; barrel inventory</b><span>Tanks, barrels, topping schedules, cooperage, age and toast profile -- assigned per lot.</span></div></li>
+            <li><div><b>Vessel &amp; barrel inventory</b><span>Tanks, barrels, topping schedules, cooperage, age and toast profile—assigned per lot.</span></div></li>
             <li><div><b>Vine-to-bottle traceability</b><span>First time a grower can trace winegrowing from multi-year vine data through fermentation, aging and bottling.</span></div></li>
           </ul>
         </div>
@@ -188,7 +188,7 @@ export default function ProductPage() {
         </div>
       </section>
 
-      {/* ============ 08 -- CTA BAND ============ */}
+      {/* ============ 08—CTA BAND ============ */}
       <section className="cta-band" id="contact">
         <div>
           <div className="kicker" style={{ marginBottom: '24px' }}>08 &middot; Get Started</div>

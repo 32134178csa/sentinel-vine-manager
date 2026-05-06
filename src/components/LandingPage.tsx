@@ -147,7 +147,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
             </h1>
 
             <p className="lede">
-              Sentinel creates and maintains a permanent vine record for every vine in your vineyard -- tracking any parameter you define: disease history, production status, vigor, cluster counts, photos, operations, and more. Query, analyze, chart, and report on that data today, next vintage, and for the full life of your vineyard.
+              Sentinel creates and maintains a permanent vine record for every vine in your vineyard—tracking any parameter you define: disease history, production status, vigor, cluster counts, photos, operations, and more. Query, analyze, chart, and report on that data today, next vintage, and for the full life of your vineyard.
             </p>
 
             <div className="hero-ctas">
@@ -186,7 +186,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
         </div>
       </header>
 
-      {/* ============ SECTION 01 -- PRODUCT ============ */}
+      {/* ============ SECTION 01—PRODUCT ============ */}
       <section>
         <div className="section-head container-lp">
           <span className="idx">01 . Product</span>
@@ -201,7 +201,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
             <span className="code">MOD . 001</span>
             <span className="icon"><IcoGrid /></span>
             <h3>Vine By Vine&trade;</h3>
-            <p>Map hectares of vineyard in minutes with sub-centimeter accuracy. Each vine becomes a permanent, user-verified record -- no double entry, no re-mapping next season.</p>
+            <p>Map hectares of vineyard in minutes with sub-centimeter accuracy. Each vine becomes a permanent, user-verified record—no double entry, no re-mapping next season.</p>
             <span className="spacer" />
             <span className="more">Mapping</span>
           </Link>
@@ -231,7 +231,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
             <span className="code">MOD . 004</span>
             <span className="icon"><IcoBars /></span>
             <h3>Historical Analysis &amp; Work Orders</h3>
-            <p>Construct complex queries across vine age, production, and disease status. Operationalize roguing, grafting, planting and harvest -- with statuses that update on completion.</p>
+            <p>Construct complex queries across vine age, production, and disease status. Operationalize roguing, grafting, planting and harvest—with statuses that update on completion.</p>
             <span className="spacer" />
             <span className="more">Analytics</span>
           </Link>
@@ -242,7 +242,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
             <span className="code">MOD . 005</span>
             <span className="icon"><IcoSpray /></span>
             <h3>Pesticide Use Reporting</h3>
-            <p>Log a spray in Sentinel and the system generates a compliant XML report -- permit number, site coordinates, product, acreage. Submit to county and state directly. No separate tool, no re-entry.</p>
+            <p>Log a spray in Sentinel and the system generates a compliant XML report—permit number, site coordinates, product, acreage. Submit to county and state directly. No separate tool, no re-entry.</p>
             <span className="spacer" />
             <span className="more">Compliance</span>
           </Link>
@@ -253,14 +253,14 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
             <span className="code">MOD . 006</span>
             <span className="icon"><IcoBarrel /></span>
             <h3>Cellar Management</h3>
-            <p>Track lots from harvest to bottle -- fermentation, Brix/pH/TA/SO2/VA, vessel assignments, barrel inventory. Every lot ties back to the block and vines it came from. Bundled in your subscription.</p>
+            <p>Track lots from harvest to bottle—fermentation, Brix/pH/TA/SO2/VA, vessel assignments, barrel inventory. Every lot ties back to the block and vines it came from. Bundled in your subscription.</p>
             <span className="spacer" />
             <span className="more">Vine-to-bottle</span>
           </Link>
         </div>
       </section>
 
-      {/* ============ SECTION 02 -- WHY SENTINEL ============ */}
+      {/* ============ SECTION 02—WHY SENTINEL ============ */}
       <section>
         <div className="section-head container-lp">
           <span className="idx">02 . Why Sentinel</span>
@@ -273,7 +273,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
           <div className="panel">
             <h4>Exhibit A . Automated Vineyard Imaging</h4>
             <h3>More data <em>isn&apos;t better data.</em></h3>
-            <p>Cameras and proprietary models can generate terabytes of imagery -- but the models are black boxes, the outputs need hand-validation, and the response they&apos;re prescribing may not match the scale of problem you actually want to tackle. Sentinel puts that control back in the hands of the people who know the vineyard.</p>
+            <p>Cameras and proprietary models can generate terabytes of imagery—but the models are black boxes, the outputs need hand-validation, and the response they&apos;re prescribing may not match the scale of problem you actually want to tackle. Sentinel puts that control back in the hands of the people who know the vineyard.</p>
             <img
               src="/images/product/rtk-field-survey.png"
               alt="RTK GPS field survey interface with color-coded sensor data points"
@@ -296,7 +296,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
         </div>
       </section>
 
-      {/* ============ SECTION 03 -- HOW IT WORKS ============ */}
+      {/* ============ SECTION 03—HOW IT WORKS ============ */}
       <section>
         <div className="section-head container-lp">
           <span className="idx">03 . How It Works</span>
@@ -311,12 +311,12 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
             <div className="flow-step">
               <div className="step-n">STEP 01 / MAP</div>
               <h4>Map in 3D</h4>
-              <p>One pass. Sub-centimeter accuracy. A permanent 3D base map of every vine in your vineyard -- built with nothing more than an iPhone and a pocket size GNSS receiver.</p>
+              <p>One pass. Sub-centimeter accuracy. A permanent 3D base map of every vine in your vineyard—built with nothing more than an iPhone and a pocket size GNSS receiver.</p>
             </div>
             <div className="flow-step">
               <div className="step-n">STEP 02 / RECORD</div>
               <h4>Build the vine record</h4>
-              <p>Walk up to any vine and its record opens automatically via geofence. Attach disease status, production status, cluster counts, captioned photos -- no Excel, no clipboards.</p>
+              <p>Walk up to any vine and its record opens automatically via geofence. Attach disease status, production status, cluster counts, captioned photos—no Excel, no clipboards.</p>
             </div>
             <div className="flow-step">
               <div className="step-n">STEP 03 / DISPATCH</div>
@@ -332,12 +332,12 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
         </div>
       </section>
 
-      {/* ============ SECTION 04 -- TESTIMONIAL ============ */}
+      {/* ============ SECTION 04—TESTIMONIAL ============ */}
       <section>
         <div className="quote container-lp">
           <span className="idx kicker">04 . From the field</span>
           <blockquote>
-            Flagging tape and Excel maps work until they don&apos;t. As the scale of the problem grew, so did the burden of managing it. With Sentinel, <em>the entire workflow -- tagging, testing, reporting, roguing -- lives in one system that remembers every vine and every action.</em>
+            Flagging tape and Excel maps work until they don&apos;t. As the scale of the problem grew, so did the burden of managing it. With Sentinel, <em>the entire workflow—tagging, testing, reporting, roguing—lives in one system that remembers every vine and every action.</em>
           </blockquote>
           <div className="attrib">
             <b>Napa Valley</b>
@@ -347,7 +347,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
         </div>
       </section>
 
-      {/* ============ SECTION 05 -- GET STARTED ============ */}
+      {/* ============ SECTION 05—GET STARTED ============ */}
       <section id="contact">
         <div className="cta-band container-lp">
           <h3>

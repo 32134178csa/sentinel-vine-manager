@@ -69,7 +69,7 @@ const NdviPage: NextPage = () => {
           <article className="post-body">
 
             <p className="lede">
-              Aerial NDVI is beautiful. It&apos;s also abstract. It can tell you that a patch of your vineyard is &quot;less green&quot; than another -- and it will stop there. Here&apos;s what changes when you measure a vineyard from the ground, vine by vine.
+              Aerial NDVI is beautiful. It&apos;s also abstract. It can tell you that a patch of your vineyard is &quot;less green&quot; than another—and it will stop there. Here&apos;s what changes when you measure a vineyard from the ground, vine by vine.
             </p>
 
             <p>
@@ -116,7 +116,7 @@ const NdviPage: NextPage = () => {
             </div>
 
             <p>
-              In this case, the aerial index and the ground truth roughly agree: there&apos;s a problem in the south-west. But they agree at completely different resolutions -- and, crucially, they don&apos;t agree on <strong>what</strong> the problem is. That&apos;s the gap Sentinel exists to close.
+              In this case, the aerial index and the ground truth roughly agree: there&apos;s a problem in the south-west. But they agree at completely different resolutions—and, crucially, they don&apos;t agree on <strong>what</strong> the problem is. That&apos;s the gap Sentinel exists to close.
             </p>
 
             <h2>Three things NDVI can&apos;t tell you.</h2>
@@ -131,7 +131,7 @@ const NdviPage: NextPage = () => {
                 <strong>Which vine.</strong> A warm-colored pixel contains five to twelve individual plants. You still have to walk the row to know which ones to tag, test, or rogue. The map doesn&apos;t do that work.
               </li>
               <li>
-                <strong>What changed since last year.</strong> NDVI baselines drift with weather, cover-crop height, pruning intensity, and camera calibration. Year-over-year spread of a pathogen -- the single most important number in premium viticulture -- is not directly recoverable from the index.
+                <strong>What changed since last year.</strong> NDVI baselines drift with weather, cover-crop height, pruning intensity, and camera calibration. Year-over-year spread of a pathogen—the single most important number in premium viticulture—is not directly recoverable from the index.
               </li>
             </ul>
 
@@ -143,7 +143,7 @@ const NdviPage: NextPage = () => {
             <h2>A worked example.</h2>
 
             <p>
-              Early in 2025 we onboarded a 14-hectare Napa Valley estate already running monthly NDVI flights. Their aerial reports consistently flagged a 0.3-hectare &quot;hot zone&quot; in Block 4 -- warm-colored, persistent, stressful to look at.
+              Early in 2025 we onboarded a 14-hectare Napa Valley estate already running monthly NDVI flights. Their aerial reports consistently flagged a 0.3-hectare &quot;hot zone&quot; in Block 4—warm-colored, persistent, stressful to look at.
             </p>
 
             <p>
@@ -151,7 +151,7 @@ const NdviPage: NextPage = () => {
             </p>
 
             <p>
-              We mapped every vine in Block 4 with Sentinel -- 3,840 of them -- in a single afternoon. Then their scouting crew walked the block with the Vine By Vine&trade; app, tagging any vine with symptoms consistent with Leafroll or Red Blotch. Samples went to the lab with auto-generated labels. Results came back two weeks later.
+              We mapped every vine in Block 4 with Sentinel—3,840 of them—in a single afternoon. Then their scouting crew walked the block with the Vine By Vine&trade; app, tagging any vine with symptoms consistent with Leafroll or Red Blotch. Samples went to the lab with auto-generated labels. Results came back two weeks later.
             </p>
 
             {/* ============ CALLOUT FIGURE ============ */}
@@ -170,7 +170,7 @@ const NdviPage: NextPage = () => {
             </p>
 
             <p>
-              Seventy-nine vines can be rogued and replanted for roughly the cost of two dinners for the Coravin club. The alternative -- rip out the whole zone, lose four vintages while the new vines mature, spend six figures -- was avoidable. The NDVI flight didn&apos;t make that visible. The vine-by-vine record did.
+              Seventy-nine vines can be rogued and replanted for roughly the cost of two dinners for the Coravin club. The alternative—rip out the whole zone, lose four vintages while the new vines mature, spend six figures—was avoidable. The NDVI flight didn&apos;t make that visible. The vine-by-vine record did.
             </p>
 
             <h2>So... do we still recommend aerial NDVI?</h2>
@@ -183,16 +183,16 @@ const NdviPage: NextPage = () => {
               The workflow we&apos;ve converged on with our clients looks like this:
             </p>
 
-            <h3>Step 1 -- NDVI</h3>
+            <h3>Step 1—NDVI</h3>
             <p>identifies blocks that deserve attention.</p>
 
-            <h3>Step 2 -- Sentinel</h3>
+            <h3>Step 2—Sentinel</h3>
             <p>ground-truths each vine in those blocks: disease status, production status, photos, lab results.</p>
 
-            <h3>Step 3 -- Work Orders</h3>
+            <h3>Step 3—Work Orders</h3>
             <p>dispatch roguing, sampling, or irrigation changes at the vine level.</p>
 
-            <h3>Step 4 -- Historical Analysis</h3>
+            <h3>Step 4—Historical Analysis</h3>
             <p>compares this vintage&apos;s vine-level map to last year&apos;s to measure actual spread.</p>
 
             <p>
