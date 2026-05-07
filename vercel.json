@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/rapidMapping",
+      "destination": "/product",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "destination": "https://sentineltech.eu/:path*",
       "permanent": true,

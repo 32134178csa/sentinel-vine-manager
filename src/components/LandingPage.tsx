@@ -197,7 +197,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
 
         <div className="caps container-lp">
           {/* Card 1 */}
-          <Link href="/rapidMapping" className="cap">
+          <Link href="/product" className="cap">
             <span className="code">MOD . 001</span>
             <span className="icon"><IcoGrid /></span>
             <h3>Vine By Vine&trade;</h3>
@@ -237,7 +237,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
           </Link>
 
           {/* Card 5 */}
-          <Link href="/rapidMapping" className="cap">
+          <Link href="/product" className="cap">
             <span className="new-tag">NEW</span>
             <span className="code">MOD . 005</span>
             <span className="icon"><IcoSpray /></span>
@@ -248,7 +248,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
           </Link>
 
           {/* Card 6 */}
-          <Link href="/rapidMapping" className="cap">
+          <Link href="/product" className="cap">
             <span className="new-tag">NEW</span>
             <span className="code">MOD . 006</span>
             <span className="icon"><IcoBarrel /></span>
