@@ -221,10 +221,43 @@ const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
             <div className="actions">
               <form
                 style={{ display: 'flex', gap: '8px' }}
-                onSubmit={(e) => {
+                onSubmit={async (e) => {
                   e.preventDefault();
-                  const btn = (e.target as HTMLFormElement).querySelector('button');
-                  if (btn) btn.textContent = 'Subscribed \u2713';
+                  const form = e.target as HTMLFormElement;
+                  const input = form.querySelector('input[type="email"]') as HTMLInputElement;
+                  const btn = form.querySelector('button') as HTMLButtonElement;
+                  const email = input.value.trim();
+
+                  if (!email) return;
+
+                  // Disable form during submission
+                  btn.disabled = true;
+                  input.disabled = true;
+                  const originalText = btn.textContent;
+                  btn.textContent = 'Subscribing...';
+
+                  try {
+                    const res = await fetch('/api/subscribe', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ email }),
+                    });
+
+                    const data = await res.json();
+
+                    if (res.ok) {
+                      btn.textContent = 'Subscribed \u2713';
+                      input.value = '';
+                    } else {
+                      throw new Error(data.error || 'Failed to subscribe');
+                    }
+                  } catch (error) {
+                    console.error('Subscription error:', error);
+                    btn.textContent = originalText || 'Subscribe';
+                    btn.disabled = false;
+                    input.disabled = false;
+                    alert('Failed to subscribe. Please try again.');
+                  }
                 }}
               >
                 <input
