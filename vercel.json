@@ -1,0 +1,26 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://sentineltech.eu/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "site.sentineltech.eu"
+        }
+      ]
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://sentineltech.eu/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "www.sentineltech.eu"
+        }
+      ]
+    }
+  ]
+}
