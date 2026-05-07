@@ -1,7 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { SESv2Client, CreateContactCommand } from '@aws-sdk/client-sesv2';
 
-const client = new SESv2Client({ region: 'us-east-1' });
 const CONTACT_LIST_NAME = 'sentinel-newsletter';
 
 export default async function handler(
@@ -25,6 +24,26 @@ export default async function handler(
   }
 
   try {
+    // Log environment check
+    const hasAccessKey = !!process.env.AWS_ACCESS_KEY_ID;
+    const hasSecretKey = !!process.env.AWS_SECRET_ACCESS_KEY;
+    const region = process.env.AWS_REGION || 'us-east-1';
+    
+    console.log('SES Config:', { 
+      hasAccessKey, 
+      hasSecretKey, 
+      region,
+      accessKeyPrefix: process.env.AWS_ACCESS_KEY_ID?.substring(0, 10)
+    });
+
+    const client = new SESv2Client({ 
+      region,
+      credentials: hasAccessKey && hasSecretKey ? {
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!
+      } : undefined
+    });
+
     const command = new CreateContactCommand({
       ContactListName: CONTACT_LIST_NAME,
       EmailAddress: email.toLowerCase().trim(),
@@ -46,8 +65,14 @@ export default async function handler(
     }
 
     console.error('SES subscription error:', error);
+    console.error('Error details:', {
+      name: error instanceof Error ? error.name : 'unknown',
+      message: error instanceof Error ? error.message : String(error)
+    });
+    
     return res.status(500).json({
       error: 'Failed to subscribe. Please try again later.',
+      debug: process.env.NODE_ENV === 'development' ? String(error) : undefined
     });
   }
 }
