@@ -17,7 +17,7 @@ export function DesktopMap() {
   const rows = Math.floor((H - 40) / rowStep);
   const padY = (H - (rows - 1) * rowStep) / 2;
   
-  let seed = 31;
+  const seed = 31;
   const r = seededRandom(seed);
   
   const C = {
@@ -32,7 +32,7 @@ export function DesktopMap() {
   const epiVv = selVv, epiRr = selRr;
   const epiRadius = 9;
   
-  const dots: JSX.Element[] = [];
+  const dots: React.ReactElement[] = [];
   for (let rr = 0; rr < rows; rr++) {
     for (let vv = 0; vv < vines; vv++) {
       const x = colXs[vv], y = padY + rr * rowStep;

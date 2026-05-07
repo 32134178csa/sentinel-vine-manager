@@ -36,8 +36,7 @@ function MapVariantSVG({ variant = 'production', W = 360, H = 740 }) {
     dry: 'oklch(0.55 0.05 240)',
   };
 
-  let seed = variant === 'virus' ? 91 : variant === 'production' ? 33 : variant === 'irrigation' ? 51 : 17;
-  const r = seededRandom(seed);
+  const seed = variant === 'virus' ? 91 : variant === 'production' ? 33 : variant === 'irrigation' ? 51 : 17;
   const diseaseCx = vines * 0.68;
   const diseaseCy = rows * 0.40;
   const diseaseR = Math.max(6, rows * 0.13);
