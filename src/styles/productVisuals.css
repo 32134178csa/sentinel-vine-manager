@@ -171,3 +171,347 @@
   justify-content: center;
   cursor: pointer;
 }
+
+/* Desktop product visuals */
+.product-visual-desktop {
+  width: 100%;
+  padding: 2rem;
+  background: #0A0B0D;
+  display: flex;
+  justify-content: center;
+}
+
+.browser-window {
+  width: 100%;
+  max-width: 1318px;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+.browser-chrome {
+  height: 40px;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 12px;
+}
+
+.chrome-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27c93f; }
+
+.url-bar {
+  flex: 1;
+  background: #2a2a2a;
+  border-radius: 4px;
+  padding: 6px 12px;
+  color: #888;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+}
+
+.sapp-top {
+  height: 56px;
+  background: #0F1013;
+  border-bottom: 1px solid #24272D;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  gap: 32px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #EDEDE8;
+  font-family: 'Instrument Serif', serif;
+  font-size: 18px;
+}
+
+.brand .mark {
+  width: 24px;
+  height: 24px;
+}
+
+.tabs {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: #9A9C98;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  padding: 4px 0;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.tab.active {
+  color: oklch(0.78 0.11 150);
+  border-bottom-color: oklch(0.78 0.11 150);
+}
+
+.utility {
+  color: #9A9C98;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+}
+
+.filter-bar {
+  padding: 16px 24px;
+  background: #0F1013;
+  border-bottom: 1px solid #1B1D21;
+  display: flex;
+  gap: 8px;
+}
+
+.chip {
+  background: #15171B;
+  border: 1px solid #24272D;
+  border-radius: 16px;
+  padding: 6px 12px;
+  color: #9A9C98;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.chip.active {
+  background: oklch(0.78 0.11 150);
+  color: #0A0B0D;
+  border-color: oklch(0.78 0.11 150);
+}
+
+.dmap {
+  width: 100%;
+  height: 640px;
+  position: relative;
+  background: #0A0B0D;
+  overflow: hidden;
+}
+
+.dmap .satellite-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.85) brightness(0.78);
+}
+
+.vine-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.crosshair {
+  pointer-events: none;
+}
+
+.vine-card {
+  background: rgba(15,16,19,0.95);
+  border: 1px solid #24272D;
+  border-radius: 8px;
+  padding: 16px;
+  color: #EDEDE8;
+}
+
+.vine-id {
+  font-family: 'Instrument Serif', serif;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #EDEDE8;
+}
+
+.vine-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #1B1D21;
+}
+
+.meta-row:last-child {
+  border-bottom: none;
+}
+
+.meta-row .label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: #9A9C98;
+  text-transform: uppercase;
+}
+
+.meta-row .value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #EDEDE8;
+}
+
+.meta-row .value.red {
+  color: #E4252B;
+}
+
+.legend {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background: rgba(15,16,19,0.95);
+  border: 1px solid #24272D;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #EDEDE8;
+}
+
+.legend-item .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.legend-item .count {
+  margin-left: auto;
+  color: #9A9C98;
+}
+
+/* Mobile vine detail */
+.vine-title {
+  flex: 1;
+  text-align: center;
+}
+
+.vine-id {
+  color: #EDEDE8;
+  font-family: 'Instrument Serif', serif;
+  font-size: 18px;
+}
+
+.vine-tabs {
+  display: flex;
+  height: 48px;
+  background: #0F1013;
+  border-bottom: 1px solid #24272D;
+}
+
+.vine-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #9A9C98;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.vine-tab.active {
+  color: oklch(0.78 0.11 150);
+  border-bottom-color: oklch(0.78 0.11 150);
+}
+
+.vine-content {
+  padding: 24px 16px;
+  overflow-y: auto;
+}
+
+.disease-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 32px;
+}
+
+.disease-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #15171B;
+  border-radius: 4px;
+}
+
+.disease-name {
+  font-family: 'Instrument Serif', serif;
+  font-size: 15px;
+  color: #EDEDE8;
+}
+
+.disease-status {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.test-info {
+  background: rgba(21,23,27,0.5);
+  border: 1px solid #24272D;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: #9A9C98;
+  text-transform: uppercase;
+}
+
+.info-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #EDEDE8;
+}

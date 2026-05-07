@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { AnalyticsService } from '@/services/AnalyticsService';
 
 import { MobileFieldMap } from './productVisuals/MobileFieldMap';
+import { DesktopMap } from './productVisuals/DesktopMap';
+import { MobileVineVirus } from './productVisuals/MobileVineVirus';
 /* ------------------------------------------------------------------ */
 /*  Cellar mock visual                                                 */
 /* ------------------------------------------------------------------ */
@@ -92,7 +94,7 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <img src="/images/product/analytics-dashboard.png" alt="Sentinel analytics dashboard with vine production status breakdown" className="pillar-screenshot" loading="lazy" />
+          <DesktopMap />
         </div>
       </section>
 
@@ -110,7 +112,7 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <img src="/images/product/disease-tracking-map.png" alt="Sentinel disease tracking with vine-level health data and spatial queries" className="pillar-screenshot" loading="lazy" />
+          <MobileVineVirus />
         </div>
       </section>
 
