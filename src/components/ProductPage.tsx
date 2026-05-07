@@ -5,6 +5,8 @@ import { AnalyticsService } from '@/services/AnalyticsService';
 import { MobileFieldMap } from './productVisuals/MobileFieldMap';
 import { DesktopMap } from './productVisuals/DesktopMap';
 import { MobileVineVirus } from './productVisuals/MobileVineVirus';
+import { DesktopChart } from './productVisuals/DesktopChart';
+import { DesktopWorkOrders } from './productVisuals/DesktopWorkOrders';
 /* ------------------------------------------------------------------ */
 /*  Cellar mock visual                                                 */
 /* ------------------------------------------------------------------ */
@@ -130,7 +132,7 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <img src="/images/product/historical-analysis.png" alt="Vine count time-series bar chart showing production status across vintages" className="pillar-screenshot" loading="lazy" />
+          <DesktopChart />
         </div>
       </section>
 
@@ -149,7 +151,7 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <img src="/images/product/work-orders.png" alt="Sentinel work order management dashboard with active tasks and progress tracking" className="pillar-screenshot" loading="lazy" />
+          <DesktopWorkOrders />
         </div>
       </section>
 
