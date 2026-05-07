@@ -213,7 +213,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
           ))}
 
           {/* ============ SUBSCRIBE CTA ============ */}
-          <section className="cta-band">
+          <section id="subscribe" className="cta-band">
             <div>
               <div className="kicker" style={{ marginBottom: 24 }}>Subscribe</div>
               <h3>Field notes, <em>monthly.</em></h3>
