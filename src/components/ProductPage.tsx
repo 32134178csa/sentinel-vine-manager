@@ -2,7 +2,7 @@ import { useTranslation } from 'next-i18next';
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { AnalyticsService } from '@/services/AnalyticsService';
-import { MobileFieldMap, DesktopTime, DesktopChart, DesktopWorkOrders } from './product-screens';
+import { MobileFieldMapExact, DesktopMap, DesktopTime, DesktopChart, DesktopWorkOrders } from './product-screens';
 
 /* ------------------------------------------------------------------ */
 /*  Intersection observer wrapper for pillar visuals                    */
@@ -104,7 +104,7 @@ export default function ProductPage() {
         </div>
         <div className="visual">
           <PillarVisual type="phone">
-            <MobileFieldMap variant="production" />
+            <MobileFieldMapExact variant="production" />
           </PillarVisual>
         </div>
       </section>
@@ -142,8 +142,8 @@ export default function ProductPage() {
           </ul>
         </div>
         <div className="visual">
-          <PillarVisual type="phone">
-            <MobileFieldMap variant="virus" />
+          <PillarVisual type="desktop">
+            <DesktopMap />
           </PillarVisual>
         </div>
       </section>
@@ -202,9 +202,6 @@ export default function ProductPage() {
             <li><div><b>Operator &amp; REI tracking</b><span>Applicator certification and restricted-entry intervals stored per application.</span></div></li>
             <li><div><b>One-click resubmit</b><span>Amendments and corrections re-export without re-keying the whole record.</span></div></li>
           </ul>
-        </div>
-        <div className="visual">
-          <img src="/images/product/vine-detail-mobile.png" alt="Sentinel vine detail view showing individual vine profile with production and health status" className="pillar-screenshot" loading="lazy" />
         </div>
       </section>
 

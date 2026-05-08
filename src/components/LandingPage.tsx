@@ -6,6 +6,7 @@ import { AnalyticsService } from '@/services/AnalyticsService';
 import FooterV2 from '@/components/FooterV2';
 import PreFooterCTA from '@/components/PreFooterCTA';
 
+import { DesktopMap } from '@/components/product-screens';
 interface LandingPageProps {
   recommendedBlogPost: BlogPost;
 }
@@ -176,12 +177,7 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
           </div>
 
           <div className="hero-right">
-            <img
-              src="/images/product/hero-vine-map.png"
-              alt="Sentinel vine map showing color-coded vine statuses with vine detail popup"
-              className="hero-screenshot"
-              loading="eager"
-            />
+            <DesktopMap />
           </div>
         </div>
       </header>
@@ -274,24 +270,13 @@ export default function LandingPage({ recommendedBlogPost }: LandingPageProps) {
             <h4>Exhibit A . Automated Vineyard Imaging</h4>
             <h3>More data <em>isn&apos;t better data.</em></h3>
             <p>Cameras and proprietary models can generate terabytes of imagery -- but the models are black boxes, the outputs need hand-validation, and the response they&apos;re prescribing may not match the scale of problem you actually want to tackle. Sentinel puts that control back in the hands of the people who know the vineyard.</p>
-            <img
-              src="/images/product/rtk-field-survey.png"
-              alt="RTK GPS field survey interface with color-coded sensor data points"
-              className="split-screenshot"
-              loading="lazy"
-            />
           </div>
 
           <div className="panel">
             <h4>Exhibit B . Sentinel</h4>
             <h3>Ground-truthed, <em>vine by vine.</em></h3>
             <p>Mapped once with sub-centimeter GNSS accuracy. Updated continuously with disease status, production history, photos, lab results, and every management decision made in the field. Ground truth that lives as long as your vineyard does.</p>
-            <img
-              src="/images/product/disease-tracking-map.png"
-              alt="Sentinel disease tracking map with vine-level health data and query system"
-              className="split-screenshot"
-              loading="lazy"
-            />
+            <DesktopMap />
           </div>
         </div>
       </section>

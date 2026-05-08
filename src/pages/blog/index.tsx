@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import AppPage from '@/components/AppPage'
-import VineMap from '@/components/VineMap'
+import { DesktopMap } from '@/components/product-screens';
 import { useTranslation } from 'next-i18next'
 import { formatBlogContent, BlogPostMap } from '@/services/BlogService'
 import { useState } from 'react'
@@ -181,7 +181,7 @@ const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
                   </div>
                 </div>
                 <div className="visual" aria-hidden="true">
-                  <VineMap rows={14} vines={36} variant="disease" hud={false} />
+                  <DesktopMap />
                 </div>
               </Link>
             </section>
